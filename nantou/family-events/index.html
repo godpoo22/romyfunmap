@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南投縣親子活動</title>
+    <meta name="description" content="南投縣親子活動列表，先看活動類型與交通資訊。">
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="/assets/header.js"></script>
+    <script src="/assets/location-sort-v2.js"></script>
+    <style>
+      .card-header{align-items:flex-start}
+      .tags-group{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0}
+      .tags-row{display:flex;gap:4px}
+      .event-date-badge{display:inline-block;background:#F0FDF4;color:#16A34A;font-size:12px;font-weight:700;padding:3px 10px;border-radius:20px}
+    </style>
+  </head>
+  <body>
+    <div id="site-header-container" data-active="events"></div>
+    <main class="page-pad">
+      <div class="container">
+        <section class="hero-block purple" style="margin-top:20px;text-align:left;">
+          <div class="breadcrumb">
+            <a href="/">首頁</a>
+            /
+            <a href="/nantou/">南投縣</a>
+            / 親子活動
+          </div>
+          <h1>南投縣親子活動</h1>
+          <p>先從館舍導覽、工作坊與季節活動開始整理，後續再持續更新。</p>
+          <div style="margin-top:16px;">
+            <button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
+          </div>
+        </section>
+        <section class="modern-cards-grid" id="listing-grid">
+          <article class="modern-card" data-lat="23.9609" data-lng="120.9719">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">妮娜巧克力 DIY 體驗</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">埔里鎮</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">適合整理手作巧克力和整點導覽等體驗，之後能持續補不同課程內容。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子活動
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/nantou/family-events/conas-diy/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="23.9609" data-lng="120.9719">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">九族季節活動</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">魚池鄉</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+                </div>
+                <span class="event-date-badge">年度檔期</span>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">把櫻花祭、寒暑假與夜間檔期收進同一頁，之後補年度活動會比較順。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子活動
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/nantou/family-events/nine-tribes-seasons/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="23.9609" data-lng="120.9719">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">紙教堂生態體驗</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">埔里鎮</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+                </div>
+                <span class="event-date-badge">常設更新</span>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">適合整理夜間點燈、園區導覽與桃米生態相關活動，之後可持續更新。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子活動
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/nantou/family-events/paper-dome-program/">閱讀整理詳情 ➜</a>
+          </article>
+        </section>
+      </div>
+    </main>
+    <div id="site-footer-container"></div>
+    <script src="/assets/footer.js"></script>
+
+  </body>
+</html>

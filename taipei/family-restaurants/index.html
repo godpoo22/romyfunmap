@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台北市親子餐廳</title>
+    <meta name="description" content="台北市親子餐廳列表，先看餐廳類型與交通資訊。">
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="/assets/header.js"></script>
+    <script src="/assets/location-sort-v2.js"></script>
+    <style>
+      .card-header{align-items:flex-start}
+      .tags-group{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0}
+      .tags-row{display:flex;gap:4px}
+      
+    </style>
+  </head>
+  <body>
+    <div id="site-header-container" data-active="restaurants"></div>
+    <main class="page-pad">
+      <div class="container">
+        <section class="hero-block orange" style="margin-top:20px;text-align:left;">
+          <div class="breadcrumb">
+            <a href="/">首頁</a>
+            /
+            <a href="/taipei/">台北市</a>
+            / 親子餐廳
+          </div>
+          <h1>台北市親子餐廳</h1>
+          <p>先看店型與交通方式，再決定要安排聚餐、下午茶或順遊用餐。</p>
+          <div style="margin-top:16px;">
+            <button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
+          </div>
+        </section>
+        <section class="modern-cards-grid" id="listing-grid">
+          <article class="modern-card" data-lat="25.0928" data-lng="121.5197">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">甲蟲秘境親子餐廳</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">士林區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子餐廳</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">全台唯一甲蟲主題親子餐廳，以森林風佈景與甲蟲標本展示為特色，設有球池、溜滑梯等遊戲區，假日定期舉辦甲蟲導覽與 DIY 手作體驗。對昆蟲有興趣的孩子接受度高。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子餐廳
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>大眾運輸可到
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taipei/family-restaurants/beetle-paradise/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="25.0687" data-lng="121.5889">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">象園咖啡 內湖店</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">內湖區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子友善餐廳</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">內湖很常被安排的親子友善餐廳，空間與餐點都穩定。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子友善餐廳
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taipei/family-restaurants/elephant-garden-neihu/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="25.0324" data-lng="121.5199">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">農人餐桌 FARM TABLE</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">中正區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子餐廳</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">由永豐餘生技設立的有機食材親子餐廳，餐點強調產地直送與無農藥，設有模擬廚房遊戲區。同棟大樓內有信誼親子館，步行可達郵政博物館，適合一起安排親子充實一日行程。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子餐廳
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>大眾運輸可到
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taipei/family-restaurants/farm-table/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="25.0260" data-lng="121.5437">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">HOVII Cafe</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">大安區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子友善咖啡廳</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">親子族群熟悉的咖啡型用餐空間，適合短停休息。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子友善咖啡廳
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taipei/family-restaurants/hovii-cafe/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="25.0687" data-lng="121.5889">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">覺旅咖啡 陽光店</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">內湖區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">咖啡餐館</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">空間寬鬆，適合安排內湖半日行程中的用餐休息。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>咖啡餐館 / 家庭友善
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taipei/family-restaurants/journey-kaffe-sunshine/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="25.0687" data-lng="121.5889">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">Money Jump 媽妳講 親子餐廳</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">內湖區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子餐廳</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">以夢幻旋轉木馬聞名的台北親子餐廳，設有球池、溜滑梯與家家酒區。披薩與義式料理在網路上評價不錯。內湖與南港環球各有一間分店，設施主題不同。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子餐廳
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taipei/family-restaurants/moneyjump/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="25.0324" data-lng="121.5199">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">大樹先生的家 古亭店</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">中正區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子餐廳</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">保留老屋庭院與百年桂花樹的親子餐廳，多面採光、自然清幽。設有球池、沙坑與迷你溜滑梯，定期與專業清潔團隊合作消毒。捷運古亭站步行約 8 分鐘，市區交通方便。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子餐廳
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>大眾運輸可到
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taipei/family-restaurants/mr-tree-guting/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="25.0580" data-lng="121.5570">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">富爸爸餐飲會所</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">松山區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子友善餐廳</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">家長聚餐和孩子同行都相對容易安排。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子友善餐廳
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taipei/family-restaurants/rich-daddy/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="25.0260" data-lng="121.5437">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">貳樓餐廳 仁愛店</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">大安區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">家庭聚餐</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">家庭聚餐和親子同行相對方便，菜單選擇也多。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>家庭聚餐 / 親子友善
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taipei/family-restaurants/second-floor-renai/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="25.0580" data-lng="121.5570">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">淘憩時光</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">松山區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子餐廳</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">位於民生社區附近，馬卡色系空間清爽舒適。遊戲區提供球池、積木、軌道火車、扮家家酒等設施，適合 0–6 歲孩子。採場次制，每場兩小時，大人低消約 200 元，未滿 6 歲不需低消。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子餐廳
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>大眾運輸可到
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taipei/family-restaurants/taoji-playtime/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="25.0826" data-lng="121.5797">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">Funny Mama 放了媽媽</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">內湖區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">結合用餐與遊戲區的親子餐廳，適合安排生日聚會與家庭聚餐。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子餐廳
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>大眾運輸可到
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taipei/family-restaurants/funny-mama/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="25.0799" data-lng="121.5758">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">Triple Cafe</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">內湖區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">內湖人氣早午餐與聚餐空間，適合搭配周邊公園或商場一起安排。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>家庭聚餐 / 早午餐
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taipei/family-restaurants/triple-cafe/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="25.1178" data-lng="121.5318">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">JB's Diner</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">士林區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">天母常見的家庭聚餐選擇，美式餐點份量足，適合多人帶孩子一起用餐。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>家庭聚餐 / 美式餐館
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taipei/family-restaurants/jbs-diner/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="25.0523" data-lng="121.6070">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">貳樓餐廳 南港車站店</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">南港區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">位於南港車站商場內，交通方便，適合家庭聚餐與景點順遊用餐。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>家庭聚餐 / 美式餐廳
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>大眾運輸可到
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taipei/family-restaurants/second-floor-nangang/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="25.0438" data-lng="121.5615">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">gonnaPLUS 松菸店</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">信義區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">松菸文創園區周邊的家庭聚餐餐廳，適合安排展覽或信義商圈順遊用餐。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>家庭聚餐 / 義式餐廳
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>大眾運輸可到
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taipei/family-restaurants/gonnaplus-songyan/">閱讀整理詳情 ➜</a>
+          </article>
+        </section>
+      </div>
+    </main>
+    <div id="site-footer-container"></div>
+    <script src="/assets/footer.js"></script>
+
+  </body>
+</html>

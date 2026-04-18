@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新北市親子活動</title>
+    <meta name="description" content="新北市親子活動列表，先看活動類型與交通資訊。">
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="/assets/header.js"></script>
+    <script src="/assets/location-sort-v2.js"></script>
+    <style>
+      .card-header{align-items:flex-start}
+      .tags-group{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0}
+      .tags-row{display:flex;gap:4px}
+      .event-date-badge{display:inline-block;background:#F0FDF4;color:#16A34A;font-size:12px;font-weight:700;padding:3px 10px;border-radius:20px}
+    </style>
+  </head>
+  <body>
+    <div id="site-header-container" data-active="events"></div>
+    <main class="page-pad">
+      <div class="container">
+        <section class="hero-block purple" style="margin-top:20px;text-align:left;">
+          <div class="breadcrumb">
+            <a href="/">首頁</a>
+            /
+            <a href="/newtaipei/">新北市</a>
+            / 親子活動
+          </div>
+          <h1>新北市親子活動</h1>
+          <p>先從館舍導覽、工作坊與季節活動開始整理，後續再持續更新。</p>
+          <div style="margin-top:16px;">
+            <button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
+          </div>
+        </section>
+        <section class="modern-cards-grid" id="listing-grid">
+          <article class="modern-card" data-lat="25.0121" data-lng="121.4657">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">陶博館親子陶藝課程</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鶯歌區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子活動</span>
+                </div>
+                <span class="event-date-badge">常設更新</span>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">適合整理陶藝手作課、兒少陶藝獎與春遊三鶯相關活動，後續可持續更新。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子活動
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/newtaipei/family-events/ceramics-family-program/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="25.0121" data-lng="121.4657">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">黃金博物館系列活動</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">瑞芳區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子活動</span>
+                </div>
+                <span class="event-date-badge">年度檔期</span>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">把博物館日、端午與礦山主題活動收進同一頁，後續可持續追加年度檔期。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子活動
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/newtaipei/family-events/gold-museum-series/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="25.0121" data-lng="121.4657">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">新北市美術館親子工作坊</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鶯歌區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子活動</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">館舍工作坊和新美學校很適合整理成長期更新頁，之後能再加不同梯次。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子活動
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/newtaipei/family-events/ntcam-family-workshops/">閱讀整理詳情 ➜</a>
+          </article>
+        </section>
+      </div>
+    </main>
+    <div id="site-footer-container"></div>
+    <script src="/assets/footer.js"></script>
+
+  </body>
+</html>

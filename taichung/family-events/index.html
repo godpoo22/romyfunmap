@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台中市親子活動</title>
+    <meta name="description" content="台中市親子活動列表，先看活動類型與交通資訊。">
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="/assets/header.js"></script>
+    <script src="/assets/location-sort-v2.js"></script>
+    <style>
+      .card-header{align-items:flex-start}
+      .tags-group{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0}
+      .tags-row{display:flex;gap:4px}
+      .event-date-badge{display:inline-block;background:#F0FDF4;color:#16A34A;font-size:12px;font-weight:700;padding:3px 10px;border-radius:20px}
+    </style>
+  </head>
+  <body>
+    <div id="site-header-container" data-active="events"></div>
+    <main class="page-pad">
+      <div class="container">
+        <section class="hero-block purple" style="margin-top:20px;text-align:left;">
+          <div class="breadcrumb">
+            <a href="/">首頁</a>
+            /
+            <a href="/taichung/">台中市</a>
+            / 親子活動
+          </div>
+          <h1>台中市親子活動</h1>
+          <p>先從館舍導覽、工作坊與季節活動開始整理，後續再持續更新。</p>
+          <div style="margin-top:16px;">
+            <button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
+          </div>
+        </section>
+        <section class="modern-cards-grid" id="listing-grid">
+          <article class="modern-card" data-lat="24.1815" data-lng="120.6278">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">中央公園遊客中心｜特色飛航主題館</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">西屯區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子活動</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">以飛機為主題的免費室內場館，設於台中中央公園遊客中心內。可以走進艙門體驗模擬搭機的過程、坐進駕駛艙以機長視角觀察場景，並有沉浸式劇場體驗。對於尚未有搭飛機經驗的孩子而言，是一個有趣的體驗型免費場館。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子活動
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>大眾運輸可到
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taichung/family-events/central-park-aviation-center/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.1564" data-lng="120.6829">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">科博館兒童節｜12 歲以下免費入館</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">北區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子活動</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">每年兒童節（4 月 4 日），科博館開放 12 歲以下兒童憑證免費參觀展示場、科學中心、植物園，以及三個館外園區。兒童節當日通常人潮較多，建議早點出發或錯開尖峰時段。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子活動
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taichung/family-events/nmns-childrens-day-2026/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.1564" data-lng="120.6829">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">科博館 40 週年｜週五午後免費入館</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">北區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子活動</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">國立自然科學博物館迎來建館 40 週年，2026 年全年推出「週五午後免費」優惠，每週五下午 14:00 起，展示場免費開放給所有民眾。平日下午場次人潮相對少，是帶孩子參觀科博館較舒適的時間選擇。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子活動
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taichung/family-events/nmns-friday-free-2026/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.1564" data-lng="120.6829">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">科博館國際博物館日｜全館免費開放</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">北區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子活動</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">每年 5 月 18 日為「國際博物館日」，科博館配合此節日開放一般民眾免費入館。2026 年訂於 5 月 17 日（日）舉行。展示場、科學中心、植物園與三個園區全數免費，是一個帶孩子免費參觀科博館的好時機。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子活動
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taichung/family-events/nmns-museum-day-2026/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.1383" data-lng="120.6167">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">2026 台中兒童藝術節</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">南屯區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子活動</span>
+                </div>
+                <span class="event-date-badge">年度檔期</span>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">今年以「藝同Fun電去」為主題，連續三天將文心森林公園化身為一座充滿藝術氣息的親子遊樂場。四大主題島嶼各有不同的體驗形式，紙風車劇團的大型戶外兒童劇也在圓滿戶外劇場連場演出，吸引大批親子提早到場排隊。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子活動
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taichung/family-events/taichung-children-arts-festival-2026/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="25.0330" data-lng="121.5654">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">台中市親子館（各行政區）</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">各行政區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子活動</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">由台中市社會局設立，目前共有 21 間親子館遍布各行政區。以 0–6 歲幼童為主要服務對象，提供免費的室內遊戲空間、繪本閱讀角與定期親子活動，是台中市區帶幼童最方便的免費室內選擇之一。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子活動
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taichung/family-events/taichung-family-centers/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.1815" data-lng="120.6278">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">2026 台中親子音樂季</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">西屯區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子活動</span>
+                </div>
+                <span class="event-date-badge">年度檔期</span>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">台中兒童月的壓軸活動，每年於夏綠地公園舉行。2026 年首度邀請全球知名 IP《彩虹小馬》來到台中，設置全台首座彩虹小馬大型氣偶，結合音樂演出與角色互動，成為兒童月的拍照打卡亮點。可帶野餐墊在草地上自在觀賞。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子活動
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taichung/family-events/taichung-family-music-festival-2026/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.2521" data-lng="120.7224">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">2026 親子歡樂派對</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">豐原區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子活動</span>
+                </div>
+                <span class="event-date-badge">年度檔期</span>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">台中兒童月開幕活動，由台中市社會局結合 21 個親子館於豐原葫蘆墩公園舉辦。軟埤仔溪的親水棧道兩側佈置特色琉璃裝置，草地上設有舞台表演、闖關遊戲與市集，是台中兒童月系列活動的第一砲。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子活動
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taichung/family-events/taichung-kids-party-2026/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.1815" data-lng="120.6278">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">臺中願景館</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">西屯區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子活動</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">位於台中市政府建築內的免費親子場館，是台中人氣頗高的市區親子景點之一。5D 劇場讓孩子體驗飛越台中的沉浸感；親子彩繪區則讓孩子的畫作直接投影至大螢幕，化為未來城市景象，互動性強。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子活動
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/taichung/family-events/taichung-vision-hall/">閱讀整理詳情 ➜</a>
+          </article>
+        </section>
+      </div>
+    </main>
+    <div id="site-footer-container"></div>
+    <script src="/assets/footer.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,489 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高雄市親子餐廳</title>
+    <meta name="description" content="高雄市親子餐廳列表，先看餐廳類型與交通資訊。">
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="/assets/header.js"></script>
+    <script src="/assets/location-sort-v2.js"></script>
+    <style>
+      .card-header{align-items:flex-start}
+      .tags-group{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0}
+      .tags-row{display:flex;gap:4px}
+      
+    </style>
+  </head>
+  <body>
+    <div id="site-header-container" data-active="restaurants"></div>
+    <main class="page-pad">
+      <div class="container">
+        <section class="hero-block orange" style="margin-top:20px;text-align:left;">
+          <div class="breadcrumb">
+            <a href="/">首頁</a>
+            /
+            <a href="/kaohsiung/">高雄市</a>
+            / 親子餐廳
+          </div>
+          <h1>高雄市親子餐廳</h1>
+          <p>先看店型與交通方式，再決定要安排聚餐、下午茶或順遊用餐。</p>
+          <div style="margin-top:16px;">
+            <button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
+          </div>
+        </section>
+        <section class="modern-cards-grid" id="listing-grid">
+          <article class="modern-card" data-lat="22.6678" data-lng="120.3029">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">漢來海港 巨蛋店</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">左營區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">適合多人家庭聚餐，餐點選擇多，對三代同行比較有彈性。</p>
+            <div class="info-list">
+              <div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>百匯餐廳 / 家庭聚餐</div></div>
+              <div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div>
+            </div>
+            <a class="action-btn" href="/kaohsiung/family-restaurants/hanlai-harbor-arena/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="22.7300" data-lng="120.4010">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">義大百匯餐廳</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">大樹區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">適合和義大世界、購物中心或摩天輪排在同一天，不必再額外找餐廳。</p>
+            <div class="info-list">
+              <div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>百匯餐廳 / 園區餐飲</div></div>
+              <div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div>
+            </div>
+            <a class="action-btn" href="/kaohsiung/family-restaurants/eda-buffet/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="22.6724" data-lng="120.2978">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">天水玥 秘境鍋物殿</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">左營區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">聚餐型火鍋店，較適合想穩定吃一餐、孩子也能一起入座的家庭。</p>
+            <div class="info-list">
+              <div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>火鍋餐廳 / 家庭聚餐</div></div>
+              <div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div>
+            </div>
+            <a class="action-btn" href="/kaohsiung/family-restaurants/tianshuiyue/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="22.8820" data-lng="120.3290">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">白色戀人貨櫃屋景觀餐廳</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">阿蓮區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">郊區景觀餐廳，適合草地拍照與安排較鬆的家庭聚會。</p>
+            <div class="info-list">
+              <div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>景觀餐廳 / 貨櫃屋餐廳</div></div>
+              <div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div>
+            </div>
+            <a class="action-btn" href="/kaohsiung/family-restaurants/white-lover-container/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">217好食複合式餐廳</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三民區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">位在新客家文化園區圓樓內，吃飯後可直接接戶外遊戲場。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>室內餐廳加園區動線。
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/kaohsiung/family-restaurants/217-family-restaurant/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">貳木言午親子友善餐廳</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">苓雅區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">高雄市苓雅區的親子友善餐廳，附遊戲區與聚餐空間。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>室內餐廳。
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/kaohsiung/family-restaurants/ermu-family-restaurant/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">森林中的馬戲團-糖廍</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">橋頭區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">位在橋頭台糖花卉農園中心內，適合和園區散步、玩沙一起安排。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>園區型親子餐廳。
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/kaohsiung/family-restaurants/forest-circus-tangbu/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">Happy Mama 親子餐廳</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">大社區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">大社區常見的親子派對餐廳，適合抓周、生日與家庭聚餐。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>室內親子餐廳。
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/kaohsiung/family-restaurants/happy-mama/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">淨園農場</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">小港區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">可看飛機、餵魚和玩沙的農場型用餐地點，適合安排較長停留。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>戶外農場餐飲空間。
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/kaohsiung/family-restaurants/jingyuan-farm/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">瑪莉桃桃親子生活餐廳</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三民區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">三民區河堤社區的老牌親子餐廳，適合安排家庭用餐與遊戲室時段。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>室內親子餐廳。
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/kaohsiung/family-restaurants/mary-peach/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">孟菲斯美式親子餐廳</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三民區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">高雄市三民區的親子餐廳，適合聚餐與雨天備案。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>室內餐廳。
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/kaohsiung/family-restaurants/memphis-family-restaurant/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">萊恩咖啡 RYAN CAFE &amp; MILK TEA</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">前鎮區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">高雄市前鎮區的親子咖啡廳與包場空間。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>室內咖啡廳。
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/kaohsiung/family-restaurants/ryan-cafe/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">弎籽親子友善餐廳</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">前鎮區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">位於前鎮區園區內的親子友善餐廳，適合搭配園區步行安排。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>園區型餐廳。
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>大眾運輸可到
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/kaohsiung/family-restaurants/sanci-family-restaurant/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">水庫沒關</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">燕巢區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">燕巢區郊外的親子景觀餐廳，部落客常拿來安排吃飯加草地、小動物行程。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>景觀型親子餐廳。
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/kaohsiung/family-restaurants/shuiku-meiguan/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">Zone Café 弄咖啡親子餐廳</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鳳山區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">鳳山區常見的遊戲區餐廳，適合聚餐與安排孩子短時間放電。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>室內親子餐廳。
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/kaohsiung/family-restaurants/zone-cafe-family/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="22.6651" data-lng="120.3072">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">糖果窩親子遊樂食館</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">左營區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">遊戲設施和家庭聚餐都能一起安排，適合左營一帶帶孩子用餐放電。</p>
+            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>親子餐廳 / 室內遊戲區</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+            <a class="action-btn" href="/kaohsiung/family-restaurants/candy-house-family/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="22.6631" data-lng="120.2968">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">Mochi Mochi 鬆餅屋 高雄義享店</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鼓山區</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">在義享天地裡很好安排，適合商場親子用餐、逛街或雨天備案。</p>
+            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>鬆餅甜點 / 家庭聚餐</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+            <a class="action-btn" href="/kaohsiung/family-restaurants/mochi-mochi-kaohsiung/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="22.6664" data-lng="120.3131">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">圓砌鴛鴦升降鍋物 高雄自由店</h3>
+              <div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">左營區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div>
+            </div>
+            <p class="card-desc">火鍋加上兒童遊樂空間的配置，對帶孩子一起聚餐的家庭很有吸引力。</p>
+            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>火鍋餐廳 / 親子友善</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+            <a class="action-btn" href="/kaohsiung/family-restaurants/yuanqi-hotpot/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="22.6631" data-lng="120.2968">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">叁和院 高雄義享店</h3>
+              <div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鼓山區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div>
+            </div>
+            <p class="card-desc">位在義享天地內，適合安排家庭聚餐、多人分享和商場順遊行程。</p>
+            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>台菜餐廳 / 家庭聚餐</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+            <a class="action-btn" href="/kaohsiung/family-restaurants/sunheyuan-esky/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="22.6521" data-lng="120.3027">
+            <div class="card-header"><h3 class="card-title" style="margin-right:10px;">圓樓餐廳</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三民區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
+            <p class="card-desc">位在客家文化園區內，適合先逛園區再聚餐，對帶孩子的家庭很方便。</p>
+            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>中式餐廳 / 園區聚餐</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+            <a class="action-btn" href="/kaohsiung/family-restaurants/yuan-lou-restaurant/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="22.6631" data-lng="120.2968">
+            <div class="card-header"><h3 class="card-title" style="margin-right:10px;">小食候義享店</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鼓山區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
+            <p class="card-desc">位在義享天地內，適合安排孩子吃得接受度高的餐點，再接商場內親子休閒行程。</p>
+            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>親子友善餐廳 / 商場聚餐</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+            <a class="action-btn" href="/kaohsiung/family-restaurants/little-meal-esky/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="22.6146" data-lng="120.3038">
+            <div class="card-header"><h3 class="card-title" style="margin-right:10px;">Zone Cafe 弄咖啡 總圖店</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">前鎮區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
+            <p class="card-desc">靠近高雄總圖和港灣商圈，用餐後很方便再接散步或圖書館行程。</p>
+            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>親子餐廳 / 遊戲區</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+            <a class="action-btn" href="/kaohsiung/family-restaurants/zone-cafe-library/">閱讀整理詳情 ➜</a>
+          </article>
+        </section>
+      </div>
+    </main>
+    <div id="site-footer-container"></div>
+    <script src="/assets/footer.js"></script>
+
+  </body>
+</html>

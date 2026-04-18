@@ -1,0 +1,398 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彰化縣親子餐廳</title>
+    <meta name="description" content="彰化縣親子餐廳列表，先看餐廳類型與交通資訊。">
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="/assets/header.js"></script>
+    <script src="/assets/location-sort-v2.js"></script>
+    <style>
+      .card-header{align-items:flex-start}
+      .tags-group{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0}
+      .tags-row{display:flex;gap:4px}
+      
+    </style>
+  </head>
+  <body>
+    <div id="site-header-container" data-active="restaurants"></div>
+    <main class="page-pad">
+      <div class="container">
+        <section class="hero-block orange" style="margin-top:20px;text-align:left;">
+          <div class="breadcrumb">
+            <a href="/">首頁</a>
+            /
+            <a href="/changhua/">彰化縣</a>
+            / 親子餐廳
+          </div>
+          <h1>彰化縣親子餐廳</h1>
+          <p>先看店型與交通方式，再決定要安排聚餐、下午茶或順遊用餐。</p>
+          <div style="margin-top:16px;">
+            <button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
+          </div>
+        </section>
+        <section class="modern-cards-grid" id="listing-grid">
+          <article class="modern-card" data-lat="23.9567" data-lng="120.5717">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">極光森林</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">員林市</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">可看景看夕陽，適合安排家庭聚餐。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>景觀餐廳 / 親子友善
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/changhua/family-restaurants/aurora-forest/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="23.9567" data-lng="120.5717">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">夏帕義大利麵 彰化員林店</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">員林市</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">員林常見的家庭聚餐與親子友善選擇。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>家庭聚餐 / 親子友善
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/changhua/family-restaurants/chappa-yuanlin/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.0810" data-lng="120.5380">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">銀河鐵道望景餐廳</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">社頭鄉</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">可看高鐵、草地和夜景，對交通迷孩子與家庭聚餐都很有吸引力。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>景觀餐廳 / 親子友善。
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/changhua/family-restaurants/galaxy-railway/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="23.9567" data-lng="120.5717">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">琉璃仙境</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">員林市</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">拍照場景和戶外空間辨識度高，適合家庭聚餐。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>景觀餐廳 / 親子友善
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/changhua/family-restaurants/glass-fairyland/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="23.8795" data-lng="120.5219">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">哈比雪兒</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">北斗鎮</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">地方型親子餐廳，適合帶孩子聚餐。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子餐廳
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/changhua/family-restaurants/happy-share/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="23.9567" data-lng="120.5717">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">KoKoMo 私房惑櫃</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">員林市</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">適合員林市區家庭聚餐與親子同行。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>家庭聚餐 / 親子友善
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/changhua/family-restaurants/kokomo/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.0810" data-lng="120.5380">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">探索迷宮歐式莊園</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">埤頭鄉</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">結合草地、拍照空間和用餐區的親子友善餐廳，適合安排家庭聚會。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>莊園餐廳 / 親子友善。
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/changhua/family-restaurants/maze-manor/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.0810" data-lng="120.5380">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">水之鄉咖啡館</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">秀水鄉</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">很適合同天安排水銡利觀光工廠，減少帶孩子換點移動。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>園區餐廳 / 輕食咖啡。
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/changhua/family-restaurants/mizuworld-cafe/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.0810" data-lng="120.5380">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">屁格豬樂園火鍋餐廳</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">彰化市</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">彰化親子餐廳清單中很常出現的一家，兩層樓遊戲室對孩子很有吸引力。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>親子餐廳 / 室內樂園型。
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/changhua/family-restaurants/pig-park-hotpot/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.0809" data-lng="120.5425">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">唯愛庭園 Vena Manor</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">彰化市</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">歐風庭園很適合拍照和家庭聚餐。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>庭園餐廳 / 親子友善
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/changhua/family-restaurants/vena-manor/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="23.9032" data-lng="120.5323">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">菁芳園</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">田尾鄉</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">庭園感明顯，散步和聚餐都能同站完成，適合家庭出遊安排。</p>
+            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>庭園餐廳 / 家庭聚餐</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+            <a class="action-btn" href="/changhua/family-restaurants/tenway-garden/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.0819" data-lng="120.5638">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">卦山月圓景觀餐廳</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">彰化市</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">看景和聚餐兼具，適合安排彰化市區周邊的親子半日行程。</p>
+            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>景觀餐廳 / 家庭聚餐</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+            <a class="action-btn" href="/changhua/family-restaurants/guashan-moon/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.0715" data-lng="120.5406">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">小班長的家</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">彰化市</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">親子餐廳型用餐空間，適合低齡孩子放電和家庭聚餐。</p>
+            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>親子餐廳 / 室內遊戲</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+            <a class="action-btn" href="/changhua/family-restaurants/jhu-tang/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.0282" data-lng="120.5481">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">茉莉花壇夢想館</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">花壇鄉</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">結合主題館和餐飲空間，適合花壇與周邊景點順遊後用餐。</p>
+            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>主題餐館 / 家庭聚餐</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+            <a class="action-btn" href="/changhua/family-restaurants/moli-dream/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.0786" data-lng="120.5351">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">花盒子飲食生活 彰化店</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">彰化市</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">彰化市區常見的家庭用餐空間，座位多，帶孩子聚餐相對方便。</p>
+            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>家庭聚餐 / 早午餐</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+            <a class="action-btn" href="/changhua/family-restaurants/fleur-de-chine/">閱讀整理詳情 ➜</a>
+          </article>
+        </section>
+      </div>
+    </main>
+    <div id="site-footer-container"></div>
+    <script src="/assets/footer.js"></script>
+
+  </body>
+</html>

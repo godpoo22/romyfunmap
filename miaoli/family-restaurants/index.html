@@ -1,0 +1,398 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>苗栗縣親子餐廳</title>
+    <meta name="description" content="苗栗縣親子餐廳列表，先看餐廳類型與交通資訊。">
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="/assets/header.js"></script>
+    <script src="/assets/location-sort-v2.js"></script>
+    <style>
+      .card-header{align-items:flex-start}
+      .tags-group{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0}
+      .tags-row{display:flex;gap:4px}
+      
+    </style>
+  </head>
+  <body>
+    <div id="site-header-container" data-active="restaurants"></div>
+    <main class="page-pad">
+      <div class="container">
+        <section class="hero-block orange" style="margin-top:20px;text-align:left;">
+          <div class="breadcrumb">
+            <a href="/">首頁</a>
+            /
+            <a href="/miaoli/">苗栗縣</a>
+            / 親子餐廳
+          </div>
+          <h1>苗栗縣親子餐廳</h1>
+          <p>先看店型與交通方式，再決定要安排聚餐、下午茶或順遊用餐。</p>
+          <div style="margin-top:16px;">
+            <button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
+          </div>
+        </section>
+        <section class="modern-cards-grid" id="listing-grid">
+          <article class="modern-card" data-lat="24.4221" data-lng="120.8637">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">勻淨湖法式餐廳</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">大湖鄉</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">景觀餐廳</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">湖景和景觀都很適合安排家庭聚餐。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>景觀餐廳 / 家庭聚餐
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/miaoli/family-restaurants/cloud-land-restaurant/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.4924" data-lng="120.6840">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">飛牛牧場餐廳</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">通霄鎮</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">園區餐飲</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">很適合直接接牧場行程，不用額外換點。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>園區餐飲 / 親子友善
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/miaoli/family-restaurants/flying-cow-restaurant/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.5602" data-lng="120.8214">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">尚順君樂飯店 食采</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">頭份市</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">飯店餐廳</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">整理尚順君樂飯店食采的用餐環境、順遊安排與停車資訊。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>飯店餐廳 / 景點順遊。
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/miaoli/family-restaurants/grand-royal-aura-court/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.4102" data-lng="120.7705">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">綠葉方舟餐廳</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三義鄉</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">景觀餐廳</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">很適合搭配莊園景點一起安排。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>景觀餐廳 / 親子友善
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/miaoli/family-restaurants/green-ark-restaurant/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.4866" data-lng="120.7861">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">居鳩堂景觀餐廳</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">銅鑼鄉</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">景觀餐廳</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">適合接銅鑼景點後的用餐休息。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>景觀餐廳 / 親子友善
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/miaoli/family-restaurants/jijiu-hall/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.6860" data-lng="120.9130">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">儷池咖啡屋</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">頭份市</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">咖啡餐館</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">景觀感和空間感都適合親子用餐。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>咖啡餐館 / 親子友善
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/miaoli/family-restaurants/lichi-cafe/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.5602" data-lng="120.8214">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">光之彩庭園餐廳</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">苗栗市</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">庭園餐廳</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">庭園環境寬鬆，適合孩子同行的聚餐。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>庭園餐廳 / 親子友善
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/miaoli/family-restaurants/light-garden/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.5602" data-lng="120.8214">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">Vilavilla 魔法莊園</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">卓蘭鎮</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">庭園餐廳</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">整理 Vilavilla 魔法莊園的庭園空間、停留時間與停車資訊。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>庭園餐廳 / 景觀空間。
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/miaoli/family-restaurants/vilavilla/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.5602" data-lng="120.8214">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">棗莊古藝庭園膳坊</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">公館鄉</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">客家料理</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">整理棗莊古藝庭園膳坊的用餐環境、庭園空間與停車資訊。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>客家料理 / 庭園餐廳。
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/miaoli/family-restaurants/zaozhuang-hakka-restaurant/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.4102" data-lng="120.7705">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">卓也小屋蔬食餐廳</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三義鄉</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">園區餐飲</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">藍染園區順遊用餐很方便。</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span>類型</span>園區餐飲 / 親子友善
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🚗</div>
+                <div class="info-text">
+                  <span>交通</span>開車方便
+                </div>
+              </div>
+            </div>
+            <a class="action-btn" href="/miaoli/family-restaurants/zhuoye-restaurant/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.4232" data-lng="120.8648">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">山吻泉餐廳咖啡</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">大湖鄉</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">景觀餐廳</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">大湖景觀與用餐空間結合，適合安排山線親子聚餐。</p>
+            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>景觀餐廳 / 家庭聚餐</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+            <a class="action-btn" href="/miaoli/family-restaurants/shanwenquan-restaurant/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.4086" data-lng="120.7726">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">桐花村客家料理</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三義鄉</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">客家料理</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">客家菜方向明確，適合家庭聚餐和三義、銅鑼一帶順遊用餐。</p>
+            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>客家料理 / 家庭聚餐</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+            <a class="action-btn" href="/miaoli/family-restaurants/tonghua-village/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.6035" data-lng="121.0163">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">雲水森林景觀餐廳</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">南庄鄉</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">景觀餐廳</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">南庄一帶常見的景觀用餐選擇，適合搭配山線慢步調行程。</p>
+            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>景觀餐廳 / 家庭聚餐</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+            <a class="action-btn" href="/miaoli/family-restaurants/yunshui-forest/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.6857" data-lng="120.9049">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">TGI FRIDAYS 尚順店</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">頭份市</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">頭份商場順遊用餐的常見選擇，適合安排室內行程後的家庭聚餐。</p>
+            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>家庭聚餐 / 美式餐廳</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+            <a class="action-btn" href="/miaoli/family-restaurants/fridays-shangshun/">閱讀整理詳情 ➜</a>
+          </article>
+          <article class="modern-card" data-lat="24.6005" data-lng="121.0009">
+            <div class="card-header">
+              <h3 class="card-title" style="margin-right:10px;">桂花巷食堂</h3>
+              <div class="tags-group">
+                <div class="tags-row">
+                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">南庄鄉</span>
+                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">家庭聚餐</span>
+                </div>
+                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+              </div>
+            </div>
+            <p class="card-desc">南庄老街散步後方便安排的家庭用餐點，適合慢步調山城行程。</p>
+            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>老街餐館 / 家庭聚餐</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+            <a class="action-btn" href="/miaoli/family-restaurants/nanzhuang-old-street-eatery/">閱讀整理詳情 ➜</a>
+          </article>
+        </section>
+      </div>
+    </main>
+    <div id="site-footer-container"></div>
+    <script src="/assets/footer.js"></script>
+
+  </body>
+</html>
