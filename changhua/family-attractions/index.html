@@ -1,398 +1,423 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+
 <html lang="zh-Hant">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>彰化縣親子景點</title>
-    <meta name="description" content="彰化縣親子景點列表，先看景點類型與交通資訊。">
-    <link rel="stylesheet" href="/assets/style.css">
-    <script src="/assets/header.js"></script>
-    <script src="/assets/location-sort-v2.js"></script>
-    <style>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>彰化縣親子景點｜羅米親子玩樂地圖</title>
+<meta content="整理彰化縣彰化縣親子景點的景點資訊、開放時間與停車建議，方便安排彰化縣親子出遊行程。彰化縣適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。" name="description"/><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YS1QEYCML9');</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YS1QEYCML9"></script><script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4879544848259502"></script><link href="https://romyfunmap.com/changhua/family-attractions/" rel="canonical"/><meta content="website" property="og:type"/><meta content="羅米親子玩樂地圖" property="og:site_name"/><meta content="zh_TW" property="og:locale"/><meta content="彰化縣親子景點｜羅米親子玩樂地圖" property="og:title"/><meta content="整理彰化縣彰化縣親子景點的景點資訊、開放時間與停車建議，方便安排彰化縣親子出遊行程。彰化縣適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。" property="og:description"/><meta content="https://romyfunmap.com/changhua/family-attractions/" property="og:url"/><meta content="https://romyfunmap.com/images/og-cover.png" property="og:image"/>
+<link href="/assets/style.css" rel="stylesheet"/>
+<script src="/assets/header.js"></script>
+<script src="/assets/location-sort-v2.js"></script>
+<style>
       .card-header{align-items:flex-start}
       .tags-group{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0}
       .tags-row{display:flex;gap:4px}
       
     </style>
-  </head>
-  <body>
-    <div id="site-header-container" data-active="attractions"></div>
-    <main class="page-pad">
-      <div class="container">
-        <section class="hero-block green" style="margin-top:20px;text-align:left;">
-          <div class="breadcrumb">
-            <a href="/">首頁</a>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "羅米親子玩樂地圖",
+      "item": "https://romyfunmap.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "彰化縣",
+      "item": "https://romyfunmap.com/changhua/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "親子景點",
+      "item": "https://romyfunmap.com/changhua/family-attractions/"
+    }
+  ]
+}
+</script></head>
+<body>
+<div data-active="attractions" id="site-header-container"></div>
+<main class="page-pad">
+<div class="container">
+<section class="hero-block green" style="margin-top:20px;text-align:left;">
+<div class="breadcrumb">
+<a href="/">首頁</a>
             /
             <a href="/changhua/">彰化縣</a>
             / 親子景點
           </div>
-          <h1>彰化縣親子景點</h1>
-          <p>彰化縣適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。</p>
-          <div style="margin-top:16px;">
-            <button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
-          </div>
-        </section>
-        <section class="modern-cards-grid" id="listing-grid">
-          <article class="modern-card" data-lat="24.0810" data-lng="120.5380">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">百果山探索樂園</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">員林市</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+<h1>彰化縣親子景點</h1>
+<p>彰化縣適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。</p>
+<div style="margin-top:16px;">
+<button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
+</div>
+</section>
+<section class="modern-cards-grid" id="listing-grid">
+<article class="modern-card" data-lat="24.0810" data-lng="120.5380">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">百果山探索樂園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">員林市</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">樂園型景點和戶外空間很適合孩子放電，通常會安排半天以上。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>遊樂設施、戶外探索與拍照景點。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">樂園型景點和戶外空間很適合孩子放電，通常會安排半天以上。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>遊樂設施、戶外探索與拍照景點。
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+</div>
+<a class="action-btn" href="/changhua/family-attractions/baiguoshan-explore/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.0810" data-lng="120.5380">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">成美文化園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">永靖鄉</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">園林、古厝與散步空間都很完整，適合想安排比較有景觀感的一日遊家庭。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>文化園區、日式庭園與古厝建築。
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/changhua/family-attractions/baiguoshan-explore/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.0810" data-lng="120.5380">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">成美文化園</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">永靖鄉</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">園林、古厝與散步空間都很完整，適合想安排比較有景觀感的一日遊家庭。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>文化園區、日式庭園與古厝建築。
+</div>
+</div>
+<a class="action-btn" href="/changhua/family-attractions/chengmei-culture-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.0810" data-lng="120.5380">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">台灣優格餅乾學院</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">線西鄉</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">免費入場的觀光工廠，對低齡孩子來說相對好走，DIY 也很有參與感。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>餅乾主題展示、產品區與 DIY。
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/changhua/family-attractions/chengmei-culture-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.0810" data-lng="120.5380">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">台灣優格餅乾學院</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">線西鄉</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+</div>
+<a class="action-btn" href="/changhua/family-attractions/cookie-school/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.0810" data-lng="120.5380">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">彰化扇形車庫</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">彰化市</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">火車迷親子很適合安排的市區景點，停留時間不會太長，順遊很方便。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>扇形車庫、火車頭與鐵道觀察。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">免費入場的觀光工廠，對低齡孩子來說相對好走，DIY 也很有參與感。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>餅乾主題展示、產品區與 DIY。
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>大眾運輸可到
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+</div>
+<a class="action-btn" href="/changhua/family-attractions/fan-shaped-roundhouse/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.0810" data-lng="120.5380">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">卷木森活館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鹿港鎮</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">木作主題明確，館內也適合安排親子手作和短暫休息。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>木工展示、品牌故事與木作手作。
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/changhua/family-attractions/cookie-school/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.0810" data-lng="120.5380">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">彰化扇形車庫</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">彰化市</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">火車迷親子很適合安排的市區景點，停留時間不會太長，順遊很方便。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>扇形車庫、火車頭與鐵道觀察。
+</div>
+</div>
+<a class="action-btn" href="/changhua/family-attractions/jwood/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.0810" data-lng="120.5380">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">鹿港民俗文物館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鹿港鎮</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">鹿港很穩定的室內景點，古厝和洋樓展示對親子來說有清楚的參觀節奏。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>民俗文物、古風樓與洋樓建築。
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>大眾運輸可到
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/changhua/family-attractions/fan-shaped-roundhouse/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.0810" data-lng="120.5380">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">卷木森活館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鹿港鎮</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+</div>
+<a class="action-btn" href="/changhua/family-attractions/lukang-folk-museum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.0810" data-lng="120.5380">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">水銡利廚衛生活村</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">秀水鄉</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">結合水資源主題、球池、DIY 和園區餐飲，是很好安排的親子觀光工廠。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>水資源展示、球池、戲水與親子手作。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">木作主題明確，館內也適合安排親子手作和短暫休息。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>木工展示、品牌故事與木作手作。
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+</div>
+<a class="action-btn" href="/changhua/family-attractions/mizuworld/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.0810" data-lng="120.5380">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">魔菇部落休閒農場</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">埔心鄉</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">草地、遊戲區與菇類主題結合得很完整，對幼兒到國小孩子都很好安排。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>菇類導覽、採菇與親子遊憩空間。
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/changhua/family-attractions/jwood/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.0810" data-lng="120.5380">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">鹿港民俗文物館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鹿港鎮</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">鹿港很穩定的室內景點，古厝和洋樓展示對親子來說有清楚的參觀節奏。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>民俗文物、古風樓與洋樓建築。
+</div>
+</div>
+<a class="action-btn" href="/changhua/family-attractions/mogu-tribe/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.0810" data-lng="120.5380">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">緞帶王觀光工廠</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鹿港鎮</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">色彩很鮮明的觀光工廠，對喜歡手作和拍照的親子家庭很有吸引力。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>緞帶展示、手作與造景拍照。
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/changhua/family-attractions/lukang-folk-museum/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.0810" data-lng="120.5380">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">水銡利廚衛生活村</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">秀水鄉</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+</div>
+<a class="action-btn" href="/changhua/family-attractions/ribbon-king/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.0810" data-lng="120.5380">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">台灣玻璃館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鹿港鎮</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">彰化海線很有辨識度的展館型景點，和鹿港周邊行程很好搭配。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>玻璃展示、主題造景與周邊拍照點。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">結合水資源主題、球池、DIY 和園區餐飲，是很好安排的親子觀光工廠。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>水資源展示、球池、戲水與親子手作。
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/changhua/family-attractions/mizuworld/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.0810" data-lng="120.5380">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">魔菇部落休閒農場</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">埔心鄉</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">草地、遊戲區與菇類主題結合得很完整，對幼兒到國小孩子都很好安排。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>菇類導覽、採菇與親子遊憩空間。
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/changhua/family-attractions/mogu-tribe/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.0810" data-lng="120.5380">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">緞帶王觀光工廠</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鹿港鎮</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">色彩很鮮明的觀光工廠，對喜歡手作和拍照的親子家庭很有吸引力。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>緞帶展示、手作與造景拍照。
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/changhua/family-attractions/ribbon-king/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.0810" data-lng="120.5380">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">台灣玻璃館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鹿港鎮</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">彰化海線很有辨識度的展館型景點，和鹿港周邊行程很好搭配。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>玻璃展示、主題造景與周邊拍照點。
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/changhua/family-attractions/taiwan-glass-gallery/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.0569" data-lng="120.4322">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">白蘭氏健康博物館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鹿港鎮</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">以健康知識與品牌展示為主的室內館舍，適合雨天和短時間共學行程。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>博物館 / 互動展示</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
-            <a class="action-btn" href="/changhua/family-attractions/brand-health-museum/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.0414" data-lng="120.4080">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">興麥蛋捲烘焙王國</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">線西鄉</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">烘焙主題明確，結合產品展示與手作課程，適合低齡親子短停參觀。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>觀光工廠 / DIY</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
-            <a class="action-btn" href="/changhua/family-attractions/hsing-mai-eggroll/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="23.9612" data-lng="120.4791">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">溪湖糖廠</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">溪湖鎮</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">小火車與糖廠園區散步結合得很完整，適合安排半日親子行程。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>糖廠園區 / 小火車</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
-            <a class="action-btn" href="/changhua/family-attractions/xihu-sugar-factory/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="23.9018" data-lng="120.5274">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">田尾公路花園</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">田尾鄉</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">花卉街區和租車散步路線很適合親子放慢步調安排半日遊。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>花卉街區 / 散步景點</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
-            <a class="action-btn" href="/changhua/family-attractions/tianwei-highway-garden/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.0738" data-lng="120.5478">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">彰化自然生態教育中心</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">彰化市</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">以自然觀察與生態展示為主的室內教育館，適合雨天共學和短時間參觀。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>教育館 / 生態展示</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
-            <a class="action-btn" href="/changhua/family-attractions/changhua-natural-ecology-center/">閱讀整理詳情 ➜</a>
-          </article>
-        </section>
-      </div>
-    </main>
-    <div id="site-footer-container"></div>
-    <script src="/assets/footer.js"></script>
-
-  </body>
+</div>
+</div>
+<a class="action-btn" href="/changhua/family-attractions/taiwan-glass-gallery/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.0569" data-lng="120.4322">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">白蘭氏健康博物館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鹿港鎮</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">以健康知識與品牌展示為主的室內館舍，適合雨天和短時間共學行程。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>博物館 / 互動展示</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/changhua/family-attractions/brand-health-museum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.0414" data-lng="120.4080">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">興麥蛋捲烘焙王國</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">線西鄉</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">烘焙主題明確，結合產品展示與手作課程，適合低齡親子短停參觀。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>觀光工廠 / DIY</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/changhua/family-attractions/hsing-mai-eggroll/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="23.9612" data-lng="120.4791">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">溪湖糖廠</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">溪湖鎮</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">小火車與糖廠園區散步結合得很完整，適合安排半日親子行程。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>糖廠園區 / 小火車</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/changhua/family-attractions/xihu-sugar-factory/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="23.9018" data-lng="120.5274">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">田尾公路花園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">田尾鄉</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">花卉街區和租車散步路線很適合親子放慢步調安排半日遊。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>花卉街區 / 散步景點</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/changhua/family-attractions/tianwei-highway-garden/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.0738" data-lng="120.5478">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">彰化自然生態教育中心</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">彰化市</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">以自然觀察與生態展示為主的室內教育館，適合雨天共學和短時間參觀。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>教育館 / 生態展示</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+<a class="action-btn" href="/changhua/family-attractions/changhua-natural-ecology-center/">閱讀整理詳情 ➜</a>
+</article>
+</section>
+</div>
+</main>
+<div id="site-footer-container"></div>
+<script src="/assets/footer.js"></script>
+</body>
 </html>

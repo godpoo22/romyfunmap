@@ -1,463 +1,488 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+
 <html lang="zh-Hant">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>台北市親子景點</title>
-    <meta name="description" content="台北市親子景點列表，先看景點類型與交通資訊。">
-    <link rel="stylesheet" href="/assets/style.css">
-    <script src="/assets/header.js"></script>
-    <script src="/assets/location-sort-v2.js"></script>
-    <style>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>台北市親子景點｜羅米親子玩樂地圖</title>
+<meta content="整理台北市台北市親子景點的景點資訊、開放時間與停車建議，方便安排台北市親子出遊行程。台北市適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。" name="description"/><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YS1QEYCML9');</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YS1QEYCML9"></script><script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4879544848259502"></script><link href="https://romyfunmap.com/taipei/family-attractions/" rel="canonical"/><meta content="website" property="og:type"/><meta content="羅米親子玩樂地圖" property="og:site_name"/><meta content="zh_TW" property="og:locale"/><meta content="台北市親子景點｜羅米親子玩樂地圖" property="og:title"/><meta content="整理台北市台北市親子景點的景點資訊、開放時間與停車建議，方便安排台北市親子出遊行程。台北市適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。" property="og:description"/><meta content="https://romyfunmap.com/taipei/family-attractions/" property="og:url"/><meta content="https://romyfunmap.com/images/og-cover.png" property="og:image"/>
+<link href="/assets/style.css" rel="stylesheet"/>
+<script src="/assets/header.js"></script>
+<script src="/assets/location-sort-v2.js"></script>
+<style>
       .card-header{align-items:flex-start}
       .tags-group{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0}
       .tags-row{display:flex;gap:4px}
       
     </style>
-  </head>
-  <body>
-    <div id="site-header-container" data-active="attractions"></div>
-    <main class="page-pad">
-      <div class="container">
-        <section class="hero-block green" style="margin-top:20px;text-align:left;">
-          <div class="breadcrumb">
-            <a href="/">首頁</a>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "羅米親子玩樂地圖",
+      "item": "https://romyfunmap.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "台北市",
+      "item": "https://romyfunmap.com/taipei/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "親子景點",
+      "item": "https://romyfunmap.com/taipei/family-attractions/"
+    }
+  ]
+}
+</script></head>
+<body>
+<div data-active="attractions" id="site-header-container"></div>
+<main class="page-pad">
+<div class="container">
+<section class="hero-block green" style="margin-top:20px;text-align:left;">
+<div class="breadcrumb">
+<a href="/">首頁</a>
             /
             <a href="/taipei/">台北市</a>
             / 親子景點
           </div>
-          <h1>台北市親子景點</h1>
-          <p>台北市適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。</p>
-          <div style="margin-top:16px;">
-            <button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
-          </div>
-        </section>
-        <section class="modern-cards-grid" id="listing-grid">
-          <article class="modern-card" data-lat="25.0928" data-lng="121.5197">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">台北市立天文科學教育館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">士林區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子景點</span>
+<h1>台北市親子景點</h1>
+<p>台北市適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。</p>
+<div style="margin-top:16px;">
+<button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
+</div>
+</section>
+<section class="modern-cards-grid" id="listing-grid">
+<article class="modern-card" data-lat="25.0928" data-lng="121.5197">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">台北市立天文科學教育館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">士林區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子景點</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">設有東南亞最大宇宙劇場的天文主題教育館，緊鄰兒童新樂園，適合兩個景點串連安排。展示內容涵蓋宇宙探索、天文觀測等主題，劇場體驗是多數親子的首選。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>親子景點
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">設有東南亞最大宇宙劇場的天文主題教育館，緊鄰兒童新樂園，適合兩個景點串連安排。展示內容涵蓋宇宙探索、天文觀測等主題，劇場體驗是多數親子的首選。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>親子景點
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>大眾運輸可到
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>大眾運輸可到
+</div>
+</div>
+<a class="action-btn" href="/taipei/family-attractions/astronomy-museum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.0260" data-lng="121.5437">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">大安森林公園兒童遊戲場</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">大安區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">特色公園</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">市中心就能安排的大型公園，放電和散步都方便。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>特色公園 / 遊戲場
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taipei/family-attractions/astronomy-museum/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.0260" data-lng="121.5437">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">大安森林公園兒童遊戲場</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">大安區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">特色公園</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">市中心就能安排的大型公園，放電和散步都方便。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>特色公園 / 遊戲場
+</div>
+</div>
+<a class="action-btn" href="/taipei/family-attractions/daan-forest-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.0687" data-lng="121.5889">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">湖山6號公園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">內湖區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子景點</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">以消防車為主題的免費兒童遊具公園，設有實物大小消防車模型、紅色水管造型溜滑梯與火焰圖案鞦韆區。旁有涼亭樹蔭，可與大湖公園串連安排內湖半日行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>親子景點
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taipei/family-attractions/daan-forest-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.0687" data-lng="121.5889">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">湖山6號公園</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">內湖區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子景點</span>
+</div>
+</div>
+<a class="action-btn" href="/taipei/family-attractions/hushan-park-6/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.9889" data-lng="121.5705">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">貓空纜車</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">文山區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子景點</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">搭乘纜車俯瞰台北盆地的戶外體驗景點。緊鄰台北市立動物園，可串連安排成完整一日行程。有透明底板的水晶車廂是孩子最期待的體驗，但假日等候時間較長。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>親子景點
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">以消防車為主題的免費兒童遊具公園，設有實物大小消防車模型、紅色水管造型溜滑梯與火焰圖案鞦韆區。旁有涼亭樹蔭，可與大湖公園串連安排內湖半日行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>親子景點
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+</div>
+<a class="action-btn" href="/taipei/family-attractions/maokong-gondola/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.0337" data-lng="121.5660">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">國家鐵道博物館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">信義區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子景點</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">2025 年正式開放的鐵道文化園區，以原台北機廠舊址保留古蹟建築群。假日可搭乘藍皮火車穿越廠區，對鐵道、火車有興趣的孩子來說是特別的體驗景點。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>親子景點
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taipei/family-attractions/hushan-park-6/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.9889" data-lng="121.5705">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">貓空纜車</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">文山區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子景點</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>大眾運輸可到
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">搭乘纜車俯瞰台北盆地的戶外體驗景點。緊鄰台北市立動物園，可串連安排成完整一日行程。有透明底板的水晶車廂是孩子最期待的體驗，但假日等候時間較長。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>親子景點
+</div>
+</div>
+<a class="action-btn" href="/taipei/family-attractions/railway-museum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.0928" data-lng="121.5197">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">國立臺灣科學教育館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">士林區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子景點</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">互動展品豐富的室內科學教育館，以橫越高樓層的空中腳踏車最具辨識度。常設展涵蓋力學、光學、生命科學等主題，鼓勵孩子動手探索，雨天也很好安排。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>親子景點
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>大眾運輸可到
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taipei/family-attractions/maokong-gondola/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.0337" data-lng="121.5660">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">國家鐵道博物館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">信義區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子景點</span>
+</div>
+</div>
+<a class="action-btn" href="/taipei/family-attractions/science-education-museum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.0928" data-lng="121.5197">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">台北市立兒童新樂園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">士林區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子景點</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">設施集中的兒童遊樂園，入園免費採代幣制，摩天輪、碰碰車、海盜船等設施辨識度高。緊鄰天文館，適合安排半日到一日行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>親子景點
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">2025 年正式開放的鐵道文化園區，以原台北機廠舊址保留古蹟建築群。假日可搭乘藍皮火車穿越廠區，對鐵道、火車有興趣的孩子來說是特別的體驗景點。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>親子景點
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>大眾運輸可到
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>大眾運輸可到
+</div>
+</div>
+<a class="action-btn" href="/taipei/family-attractions/taipei-children-amusement-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.0643" data-lng="121.5330">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">臺北市立美術館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">中山區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">美術館</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">適合安排藝術展覽與附近公園散步的親子行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>美術館 / 藝文景點
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taipei/family-attractions/railway-museum/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.0928" data-lng="121.5197">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">國立臺灣科學教育館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">士林區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子景點</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">互動展品豐富的室內科學教育館，以橫越高樓層的空中腳踏車最具辨識度。常設展涵蓋力學、光學、生命科學等主題，鼓勵孩子動手探索，雨天也很好安排。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>親子景點
+</div>
+</div>
+<a class="action-btn" href="/taipei/family-attractions/taipei-fine-arts-museum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.0324" data-lng="121.5199">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">自來水園區</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">中正區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">園區景點</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">夏季特別受歡迎，適合安排親水和館舍參觀。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>園區景點 / 親水主題
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>大眾運輸可到
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taipei/family-attractions/science-education-museum/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.0928" data-lng="121.5197">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">台北市立兒童新樂園</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">士林區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子景點</span>
+</div>
+</div>
+<a class="action-btn" href="/taipei/family-attractions/taipei-water-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.9889" data-lng="121.5705">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">臺北市立動物園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">文山區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子景點</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">動物種類多元、動線成熟，是台北最經典的親子一日行程之一。捷運文湖線直達，各年齡層均有對應展區，兒童動物區可觸摸溫馴動物，大貓熊館與無尾熊館是高人氣展區。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>親子景點
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">設施集中的兒童遊樂園，入園免費採代幣制，摩天輪、碰碰車、海盜船等設施辨識度高。緊鄰天文館，適合安排半日到一日行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>親子景點
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>大眾運輸可到
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>大眾運輸可到
+</div>
+</div>
+<a class="action-btn" href="/taipei/family-attractions/taipei-zoo/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.0440" data-lng="121.5298">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">華山大草原遊戲場</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">中正區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">華山文創園區旁的大型特色遊戲場，適合安排市區放電和短時間散步行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>特色公園 / 遊戲場
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taipei/family-attractions/taipei-children-amusement-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.0643" data-lng="121.5330">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">臺北市立美術館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">中山區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">美術館</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>大眾運輸可到
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">適合安排藝術展覽與附近公園散步的親子行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>美術館 / 藝文景點
+</div>
+</div>
+<a class="action-btn" href="/taipei/family-attractions/huashan-grassland/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.0502" data-lng="121.5195">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">台北當代藝術館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">大同區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">中山站周邊的室內藝文館舍，雨天也方便安排親子展覽行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>美術館 / 藝文景點
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>大眾運輸可到
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taipei/family-attractions/taipei-fine-arts-museum/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.0324" data-lng="121.5199">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">自來水園區</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">中正區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">園區景點</span>
+</div>
+</div>
+<a class="action-btn" href="/taipei/family-attractions/moca-taipei/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.1367" data-lng="121.5061">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">北投溫泉博物館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">北投區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">百年浴場改建的歷史館舍，適合搭配地熱谷與新北投周邊景點一起安排。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>博物館 / 歷史館舍
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">夏季特別受歡迎，適合安排親水和館舍參觀。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>園區景點 / 親水主題
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>大眾運輸可到
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+</div>
+<a class="action-btn" href="/taipei/family-attractions/beitou-hot-spring-museum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.1168" data-lng="121.5346">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">天母夢想樂園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">士林區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">大型共融遊戲場，遊具量體大，適合安排天母半日放電行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>特色公園 / 遊戲場
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taipei/family-attractions/taipei-water-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.9889" data-lng="121.5705">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">臺北市立動物園</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">文山區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子景點</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">動物種類多元、動線成熟，是台北最經典的親子一日行程之一。捷運文湖線直達，各年齡層均有對應展區，兒童動物區可觸摸溫馴動物，大貓熊館與無尾熊館是高人氣展區。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>親子景點
+</div>
+</div>
+<a class="action-btn" href="/taipei/family-attractions/tianmu-dream-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.0499" data-lng="121.5109">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">國立臺灣博物館 鐵道部園區</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">大同區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">台北車站周邊的室內鐵道主題展館，適合火車迷與雨天親子行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>博物館 / 鐵道主題
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>大眾運輸可到
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>大眾運輸可到
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taipei/family-attractions/taipei-zoo/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.0440" data-lng="121.5298">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">華山大草原遊戲場</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">中正區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">華山文創園區旁的大型特色遊戲場，適合安排市區放電和短時間散步行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>特色公園 / 遊戲場
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>大眾運輸可到
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taipei/family-attractions/huashan-grassland/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.0502" data-lng="121.5195">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">台北當代藝術館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">大同區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">中山站周邊的室內藝文館舍，雨天也方便安排親子展覽行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>美術館 / 藝文景點
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>大眾運輸可到
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taipei/family-attractions/moca-taipei/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.1367" data-lng="121.5061">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">北投溫泉博物館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">北投區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">百年浴場改建的歷史館舍，適合搭配地熱谷與新北投周邊景點一起安排。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>博物館 / 歷史館舍
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>大眾運輸可到
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taipei/family-attractions/beitou-hot-spring-museum/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.1168" data-lng="121.5346">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">天母夢想樂園</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">士林區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">大型共融遊戲場，遊具量體大，適合安排天母半日放電行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>特色公園 / 遊戲場
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taipei/family-attractions/tianmu-dream-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.0499" data-lng="121.5109">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">國立臺灣博物館 鐵道部園區</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">大同區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">台北車站周邊的室內鐵道主題展館，適合火車迷與雨天親子行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>博物館 / 鐵道主題
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>大眾運輸可到
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taipei/family-attractions/ntm-railway-department/">閱讀整理詳情 ➜</a>
-          </article>
-        </section>
-      </div>
-    </main>
-    <div id="site-footer-container"></div>
-    <script src="/assets/footer.js"></script>
-
-  </body>
+</div>
+</div>
+<a class="action-btn" href="/taipei/family-attractions/ntm-railway-department/">閱讀整理詳情 ➜</a>
+</article>
+</section>
+</div>
+</main>
+<div id="site-footer-container"></div>
+<script src="/assets/footer.js"></script>
+</body>
 </html>

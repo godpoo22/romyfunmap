@@ -1,398 +1,423 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+
 <html lang="zh-Hant">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>苗栗縣親子景點</title>
-    <meta name="description" content="苗栗縣親子景點列表，先看景點類型與交通資訊。">
-    <link rel="stylesheet" href="/assets/style.css">
-    <script src="/assets/header.js"></script>
-    <script src="/assets/location-sort-v2.js"></script>
-    <style>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>苗栗縣親子景點｜羅米親子玩樂地圖</title>
+<meta content="整理苗栗縣苗栗縣親子景點的景點資訊、開放時間與停車建議，方便安排苗栗縣親子出遊行程。苗栗縣適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。" name="description"/><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YS1QEYCML9');</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YS1QEYCML9"></script><script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4879544848259502"></script><link href="https://romyfunmap.com/miaoli/family-attractions/" rel="canonical"/><meta content="website" property="og:type"/><meta content="羅米親子玩樂地圖" property="og:site_name"/><meta content="zh_TW" property="og:locale"/><meta content="苗栗縣親子景點｜羅米親子玩樂地圖" property="og:title"/><meta content="整理苗栗縣苗栗縣親子景點的景點資訊、開放時間與停車建議，方便安排苗栗縣親子出遊行程。苗栗縣適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。" property="og:description"/><meta content="https://romyfunmap.com/miaoli/family-attractions/" property="og:url"/><meta content="https://romyfunmap.com/images/og-cover.png" property="og:image"/>
+<link href="/assets/style.css" rel="stylesheet"/>
+<script src="/assets/header.js"></script>
+<script src="/assets/location-sort-v2.js"></script>
+<style>
       .card-header{align-items:flex-start}
       .tags-group{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0}
       .tags-row{display:flex;gap:4px}
       
     </style>
-  </head>
-  <body>
-    <div id="site-header-container" data-active="attractions"></div>
-    <main class="page-pad">
-      <div class="container">
-        <section class="hero-block green" style="margin-top:20px;text-align:left;">
-          <div class="breadcrumb">
-            <a href="/">首頁</a>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "羅米親子玩樂地圖",
+      "item": "https://romyfunmap.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "苗栗縣",
+      "item": "https://romyfunmap.com/miaoli/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "親子景點",
+      "item": "https://romyfunmap.com/miaoli/family-attractions/"
+    }
+  ]
+}
+</script></head>
+<body>
+<div data-active="attractions" id="site-header-container"></div>
+<main class="page-pad">
+<div class="container">
+<section class="hero-block green" style="margin-top:20px;text-align:left;">
+<div class="breadcrumb">
+<a href="/">首頁</a>
             /
             <a href="/miaoli/">苗栗縣</a>
             / 親子景點
           </div>
-          <h1>苗栗縣親子景點</h1>
-          <p>苗栗縣適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。</p>
-          <div style="margin-top:16px;">
-            <button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
-          </div>
-        </section>
-        <section class="modern-cards-grid" id="listing-grid">
-          <article class="modern-card" data-lat="24.5602" data-lng="120.8214">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">雅聞七里香玫瑰森林</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三義鄉</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+<h1>苗栗縣親子景點</h1>
+<p>苗栗縣適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。</p>
+<div style="margin-top:16px;">
+<button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
+</div>
+</section>
+<section class="modern-cards-grid" id="listing-grid">
+<article class="modern-card" data-lat="24.5602" data-lng="120.8214">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">雅聞七里香玫瑰森林</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三義鄉</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">整理雅聞七里香玫瑰森林的散步動線、停留時間與停車資訊。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>戶外園區。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">整理雅聞七里香玫瑰森林的散步動線、停留時間與停車資訊。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>戶外園區。
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+</div>
+<a class="action-btn" href="/miaoli/family-attractions/arwin-rose-garden/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.5602" data-lng="120.8214">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">飛牛牧場</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">通霄鎮</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">整理飛牛牧場的動物互動、園區停留時間與停車資訊。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>戶外牧場。
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/miaoli/family-attractions/arwin-rose-garden/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.5602" data-lng="120.8214">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">飛牛牧場</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">通霄鎮</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">整理飛牛牧場的動物互動、園區停留時間與停車資訊。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>戶外牧場。
+</div>
+</div>
+<a class="action-btn" href="/miaoli/family-attractions/flying-cow-ranch/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.4102" data-lng="120.7705">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">綠葉方舟</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三義鄉</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">莊園景點</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">森林系景觀很適合親子散步和拍照。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>莊園景點 / 散步
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/miaoli/family-attractions/flying-cow-ranch/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.4102" data-lng="120.7705">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">綠葉方舟</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三義鄉</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">莊園景點</span>
+</div>
+</div>
+<a class="action-btn" href="/miaoli/family-attractions/green-ark/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.6115" data-lng="120.7865">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">客家圓樓</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">後龍鎮</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">文化景點</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">建築造型辨識度高，適合短停散步。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>文化景點 / 散步
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">森林系景觀很適合親子散步和拍照。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>莊園景點 / 散步
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+</div>
+<a class="action-btn" href="/miaoli/family-attractions/hakka-round-house/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.4102" data-lng="120.7705">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">龍騰斷橋</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三義鄉</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">古蹟景點</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">鐵道古蹟與山景很適合安排三義親子散步。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>古蹟景點 / 散步
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/miaoli/family-attractions/green-ark/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.6115" data-lng="120.7865">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">客家圓樓</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">後龍鎮</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">文化景點</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">建築造型辨識度高，適合短停散步。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>文化景點 / 散步
+</div>
+</div>
+<a class="action-btn" href="/miaoli/family-attractions/longteng-bridge/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.5602" data-lng="120.8214">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">貓裏喵親子公園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">苗栗市</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">整理貓裏喵親子公園的遊具重點、停留時間與停車方式。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>戶外特色公園。
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/miaoli/family-attractions/hakka-round-house/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.4102" data-lng="120.7705">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">龍騰斷橋</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三義鄉</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">古蹟景點</span>
+</div>
+</div>
+<a class="action-btn" href="/miaoli/family-attractions/maolimao-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.5602" data-lng="120.8214">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">尚順育樂世界</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">頭份市</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">整理尚順育樂世界的室內遊樂設施、停留時間與停車方式。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>室內遊樂世界。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">鐵道古蹟與山景很適合安排三義親子散步。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>古蹟景點 / 散步
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+</div>
+<a class="action-btn" href="/miaoli/family-attractions/shangshun-theme-world/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.5602" data-lng="120.8214">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">臺灣客家文化館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">銅鑼鄉</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">文化館舍。</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">整理臺灣客家文化館的展覽空間、草地環境與停車資訊。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>文化館舍。
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/miaoli/family-attractions/longteng-bridge/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.5602" data-lng="120.8214">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">貓裏喵親子公園</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">苗栗市</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">整理貓裏喵親子公園的遊具重點、停留時間與停車方式。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>戶外特色公園。
+</div>
+</div>
+<a class="action-btn" href="/miaoli/family-attractions/taiwan-hakka-museum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.5602" data-lng="120.8214">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">西湖渡假村</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三義鄉</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">整理西湖渡假村的園區玩法、停留時間與停車資訊。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>戶外渡假園區。
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/miaoli/family-attractions/maolimao-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.5602" data-lng="120.8214">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">尚順育樂世界</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">頭份市</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+</div>
+<a class="action-btn" href="/miaoli/family-attractions/westlake-resort/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.4102" data-lng="120.7705">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">卓也小屋</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三義鄉</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">文化園區</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">藍染和園區散步很適合安排慢步調親子行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>文化園區 / 親子景點
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">整理尚順育樂世界的室內遊樂設施、停留時間與停車方式。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>室內遊樂世界。
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/miaoli/family-attractions/shangshun-theme-world/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.5602" data-lng="120.8214">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">臺灣客家文化館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">銅鑼鄉</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">文化館舍。</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">整理臺灣客家文化館的展覽空間、草地環境與停車資訊。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>文化館舍。
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/miaoli/family-attractions/taiwan-hakka-museum/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.5602" data-lng="120.8214">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">西湖渡假村</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三義鄉</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">整理西湖渡假村的園區玩法、停留時間與停車資訊。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>戶外渡假園區。
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/miaoli/family-attractions/westlake-resort/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.4102" data-lng="120.7705">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">卓也小屋</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三義鄉</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">文化園區</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">藍染和園區散步很適合安排慢步調親子行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>文化園區 / 親子景點
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/miaoli/family-attractions/zhuoye-cottage/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.4088" data-lng="120.7756">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">舊山線鐵道自行車</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三義鄉</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">結合鐵道、隧道與山景的體驗型景點，適合火車迷親子安排半日行程。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>鐵道體驗 / 山城景點</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
-            <a class="action-btn" href="/miaoli/family-attractions/old-mountain-line-rail-bike/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.5743" data-lng="120.8871">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">明德水庫</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">頭屋鄉</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">湖景與散步路線清楚，適合安排親子慢步調半日行程。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>水岸景點 / 散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
-            <a class="action-btn" href="/miaoli/family-attractions/mingde-reservoir/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.6002" data-lng="121.0006">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">南庄老街</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">南庄鄉</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">山城老街步調慢，適合安排親子散步、吃點心和短時間探索。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>老街景點 / 散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
-            <a class="action-btn" href="/miaoli/family-attractions/nanzhuang-old-street/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.4716" data-lng="121.0795">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">泰安溫泉風景區</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">泰安鄉</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">山景和溫泉街氛圍明確，適合安排山區散步與溫泉旅宿順遊。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>山區景點 / 溫泉順遊</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
-            <a class="action-btn" href="/miaoli/family-attractions/tai-an-hot-spring-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.5608" data-lng="120.8218">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">苗栗特色館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">苗栗市</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">在地特色與品牌展示集中，停留時間短，適合接市區或公園行程一起安排。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>展館 / 在地特色展示</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
-            <a class="action-btn" href="/miaoli/family-attractions/miaoli-feature-pavilion/">閱讀整理詳情 ➜</a>
-          </article>
-        </section>
-      </div>
-    </main>
-    <div id="site-footer-container"></div>
-    <script src="/assets/footer.js"></script>
-
-  </body>
+</div>
+</div>
+<a class="action-btn" href="/miaoli/family-attractions/zhuoye-cottage/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.4088" data-lng="120.7756">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">舊山線鐵道自行車</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三義鄉</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">結合鐵道、隧道與山景的體驗型景點，適合火車迷親子安排半日行程。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>鐵道體驗 / 山城景點</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/miaoli/family-attractions/old-mountain-line-rail-bike/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.5743" data-lng="120.8871">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">明德水庫</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">頭屋鄉</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">湖景與散步路線清楚，適合安排親子慢步調半日行程。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>水岸景點 / 散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/miaoli/family-attractions/mingde-reservoir/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.6002" data-lng="121.0006">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">南庄老街</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">南庄鄉</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">山城老街步調慢，適合安排親子散步、吃點心和短時間探索。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>老街景點 / 散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/miaoli/family-attractions/nanzhuang-old-street/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.4716" data-lng="121.0795">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">泰安溫泉風景區</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">泰安鄉</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">山景和溫泉街氛圍明確，適合安排山區散步與溫泉旅宿順遊。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>山區景點 / 溫泉順遊</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/miaoli/family-attractions/tai-an-hot-spring-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.5608" data-lng="120.8218">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">苗栗特色館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">苗栗市</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">在地特色與品牌展示集中，停留時間短，適合接市區或公園行程一起安排。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>展館 / 在地特色展示</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+<a class="action-btn" href="/miaoli/family-attractions/miaoli-feature-pavilion/">閱讀整理詳情 ➜</a>
+</article>
+</section>
+</div>
+</main>
+<div id="site-footer-container"></div>
+<script src="/assets/footer.js"></script>
+</body>
 </html>

@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
       event.preventDefault();
       const city = finderForm.querySelector('[name="city"]').value;
       const category = finderForm.querySelector('[name="category"]').value;
-      window.location.href = `${city}/${category}/index.html`;
+      window.location.href = `${city}/${category}/`;
     });
   }
 });

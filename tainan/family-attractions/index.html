@@ -1,635 +1,660 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+
 <html lang="zh-Hant">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>台南市親子景點</title>
-    <meta name="description" content="台南市親子景點列表，先看景點類型與交通資訊。">
-    <link rel="stylesheet" href="/assets/style.css">
-    <script src="/assets/header.js"></script>
-    <script src="/assets/location-sort-v2.js"></script>
-    <style>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>台南市親子景點｜羅米親子玩樂地圖</title>
+<meta content="整理台南市台南市親子景點的景點資訊、開放時間與停車建議，方便安排台南市親子出遊行程。台南市適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。" name="description"/><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YS1QEYCML9');</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YS1QEYCML9"></script><script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4879544848259502"></script><link href="https://romyfunmap.com/tainan/family-attractions/" rel="canonical"/><meta content="website" property="og:type"/><meta content="羅米親子玩樂地圖" property="og:site_name"/><meta content="zh_TW" property="og:locale"/><meta content="台南市親子景點｜羅米親子玩樂地圖" property="og:title"/><meta content="整理台南市台南市親子景點的景點資訊、開放時間與停車建議，方便安排台南市親子出遊行程。台南市適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。" property="og:description"/><meta content="https://romyfunmap.com/tainan/family-attractions/" property="og:url"/><meta content="https://romyfunmap.com/images/og-cover.png" property="og:image"/>
+<link href="/assets/style.css" rel="stylesheet"/>
+<script src="/assets/header.js"></script>
+<script src="/assets/location-sort-v2.js"></script>
+<style>
       .card-header{align-items:flex-start}
       .tags-group{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0}
       .tags-row{display:flex;gap:4px}
       
     </style>
-  </head>
-  <body>
-    <div id="site-header-container" data-active="attractions"></div>
-    <main class="page-pad">
-      <div class="container">
-        <section class="hero-block green" style="margin-top:20px;text-align:left;">
-          <div class="breadcrumb">
-            <a href="/">首頁</a>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "羅米親子玩樂地圖",
+      "item": "https://romyfunmap.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "台南市",
+      "item": "https://romyfunmap.com/tainan/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "親子景點",
+      "item": "https://romyfunmap.com/tainan/family-attractions/"
+    }
+  ]
+}
+</script></head>
+<body>
+<div data-active="attractions" id="site-header-container"></div>
+<main class="page-pad">
+<div class="container">
+<section class="hero-block green" style="margin-top:20px;text-align:left;">
+<div class="breadcrumb">
+<a href="/">首頁</a>
             /
             <a href="/tainan/">台南市</a>
             / 親子景點
           </div>
-          <h1>台南市親子景點</h1>
-          <p>台南市適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。</p>
-          <div style="margin-top:16px;">
-            <button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
-          </div>
-        </section>
-        <section class="modern-cards-grid" id="listing-grid">
-          <article class="modern-card" data-lat="22.9778" data-lng="120.2062">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">水交社文化園區</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">南區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+<h1>台南市親子景點</h1>
+<p>台南市適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。</p>
+<div style="margin-top:16px;">
+<button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
+</div>
+</section>
+<section class="modern-cards-grid" id="listing-grid">
+<article class="modern-card" data-lat="22.9778" data-lng="120.2062">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">水交社文化園區</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">南區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">眷村館舍、草地和飛機意象遊具適合排成輕鬆的市區半日行程。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>文化園區 / 公園步道</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+<a class="action-btn" href="/tainan/family-attractions/shueijiaoshe-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.9743" data-lng="120.2244">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">巴克禮紀念公園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">東區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">樹蔭、湖景和散步步道都很舒服，適合短時間放風或滑步車行程。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>森林公園 / 湖景步道</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/tainan/family-attractions/bakel-memorial-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="23.1040" data-lng="120.2975">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">南科考古館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">新市區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">考古主題很有辨識度，雨天或炎熱時段都很好安排成室內備案。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>考古博物館 / 室內展館</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/tainan/family-attractions/nkamueseum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="23.0028" data-lng="120.1532">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">夕遊出張所</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">安平區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">彩鹽和生日鹽主題辨識度高，適合當作安平半日行程中的順遊小景點。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>安平小景點 / 文創館舍</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/tainan/family-attractions/siyou-salt-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">奇美博物館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">仁德區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">博物館本館與免費戶外園區可以分開安排，親子行程通常會把動物廳和戶外草地一起排進去。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>室內博物館加戶外園區。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">眷村館舍、草地和飛機意象遊具適合排成輕鬆的市區半日行程。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>文化園區 / 公園步道</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
-            <a class="action-btn" href="/tainan/family-attractions/shueijiaoshe-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.9743" data-lng="120.2244">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">巴克禮紀念公園</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">東區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">樹蔭、湖景和散步步道都很舒服，適合短時間放風或滑步車行程。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>森林公園 / 湖景步道</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
-            <a class="action-btn" href="/tainan/family-attractions/bakel-memorial-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="23.1040" data-lng="120.2975">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">南科考古館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">新市區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+</div>
+<a class="action-btn" href="/tainan/family-attractions/chimei-museum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">安平定情碼頭德陽艦園區</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">安平區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">退役軍艦、港邊步道和主題展可以一起安排，適合排進安平半日順遊行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>戶外港邊園區搭配艦內展區。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">考古主題很有辨識度，雨天或炎熱時段都很好安排成室內備案。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>考古博物館 / 室內展館</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
-            <a class="action-btn" href="/tainan/family-attractions/nkamueseum/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="23.0028" data-lng="120.1532">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">夕遊出張所</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">安平區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">彩鹽和生日鹽主題辨識度高，適合當作安平半日行程中的順遊小景點。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>安平小景點 / 文創館舍</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
-            <a class="action-btn" href="/tainan/family-attractions/siyou-salt-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.9997" data-lng="120.2270">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">奇美博物館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">仁德區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+</div>
+<a class="action-btn" href="/tainan/family-attractions/deyang-ship/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">港濱歷史特色遊戲場</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">安平區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">以深海歷險趣為主題的共融遊戲場，遊具密度高，也很適合和安平港邊景點一起順遊。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>戶外特色公園。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">博物館本館與免費戶外園區可以分開安排，親子行程通常會把動物廳和戶外草地一起排進去。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>室內博物館加戶外園區。
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+</div>
+<a class="action-btn" href="/tainan/family-attractions/gangbin-history-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">光賢交通公園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">北區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">把交通號誌、圓環、平交道等情境做進公園裡，對幼兒和學齡前孩子特別有吸引力。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>戶外主題公園。
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/tainan/family-attractions/chimei-museum/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.9997" data-lng="120.2270">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">安平定情碼頭德陽艦園區</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">安平區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">退役軍艦、港邊步道和主題展可以一起安排，適合排進安平半日順遊行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>戶外港邊園區搭配艦內展區。
+</div>
+</div>
+<a class="action-btn" href="/tainan/family-attractions/guangxian-traffic-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">河樂廣場</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">中西區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親水空間、散步、廣場活動。</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">台南市區很好安排的親水廣場，適合安排短時間放電，再接海安路、正興街或安平方向行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>親水空間、散步、廣場活動。
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/tainan/family-attractions/deyang-ship/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.9997" data-lng="120.2270">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">港濱歷史特色遊戲場</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">安平區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+</div>
+<a class="action-btn" href="/tainan/family-attractions/he-le-plaza/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">健康綠洲公園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">南區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">以「大船來了」為主題的特色公園，船型高塔、滑梯和滑索都很適合喜歡挑戰型遊具的孩子。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>戶外特色公園。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">以深海歷險趣為主題的共融遊戲場，遊具密度高，也很適合和安平港邊景點一起順遊。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>戶外特色公園。
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+</div>
+<a class="action-btn" href="/tainan/family-attractions/health-oasis-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">虎頭埤風景區</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">新化區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">湖畔散步、環湖步道與親子環教空間。</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">湖景散步和親子環教空間很適合慢節奏家庭，也能安排野餐感行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>湖畔散步、環湖步道與親子環教空間。
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/tainan/family-attractions/gangbin-history-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.9997" data-lng="120.2270">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">光賢交通公園</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">北區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">把交通號誌、圓環、平交道等情境做進公園裡，對幼兒和學齡前孩子特別有吸引力。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>戶外主題公園。
+</div>
+</div>
+<a class="action-btn" href="/tainan/family-attractions/hutoupi-scenic-area/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">南瀛天文館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">大內區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">展示館、星象劇場和週六夜觀是主要內容，屬於台南山線的科教型親子景點。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>室內場館加部分戶外觀測區。
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/tainan/family-attractions/guangxian-traffic-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.9997" data-lng="120.2270">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">河樂廣場</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">中西區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親水空間、散步、廣場活動。</span>
+</div>
+</div>
+<a class="action-btn" href="/tainan/family-attractions/nanying-astronomical/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">國立臺灣歷史博物館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">安南區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">館舍動線和戶外園區都很完整，適合雨天版與輕鬆散步版兩種安排。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>台灣歷史常設展、特展與戶外園區。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">台南市區很好安排的親水廣場，適合安排短時間放電，再接海安路、正興街或安平方向行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>親水空間、散步、廣場活動。
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+</div>
+<a class="action-btn" href="/tainan/family-attractions/nmth/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">山上花園水道博物館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">山上區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">古蹟園區和大草地一起安排，適合喜歡散步、拍照和看建築的家庭。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>水道古蹟、淨水設施與戶外草地。
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/tainan/family-attractions/he-le-plaza/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.9997" data-lng="120.2270">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">健康綠洲公園</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">南區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">以「大船來了」為主題的特色公園，船型高塔、滑梯和滑索都很適合喜歡挑戰型遊具的孩子。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>戶外特色公園。
+</div>
+</div>
+<a class="action-btn" href="/tainan/family-attractions/shanshang-waterworks-museum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">臺南市美術館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">中西區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">兒童藝術中心、創意工坊和館內展覽可一起安排，適合排進台南市區藝文型親子行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>室內美術館。
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/tainan/family-attractions/health-oasis-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.9997" data-lng="120.2270">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">虎頭埤風景區</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">新化區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">湖畔散步、環湖步道與親子環教空間。</span>
+</div>
+</div>
+<a class="action-btn" href="/tainan/family-attractions/tainan-art-museum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">十鼓文創園區</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">仁德區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">舊糖廠改造園區，表演、遊樂設施和打卡點很多，通常會排成半天以上放電行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>戶外園區搭配部分室內展演空間。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">湖景散步和親子環教空間很適合慢節奏家庭，也能安排野餐感行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>湖畔散步、環湖步道與親子環教空間。
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+</div>
+<a class="action-btn" href="/tainan/family-attractions/ten-drum-cultural/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">樹谷生活科學館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">新市區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">恐龍、化石、骨骼與自然科學展示。</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">以恐龍、骨骼與自然科學為主題的室內場館，對喜歡恐龍的孩子很有吸引力，也很適合雨天安排。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>恐龍、化石、骨骼與自然科學展示。
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/tainan/family-attractions/hutoupi-scenic-area/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.9997" data-lng="120.2270">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">南瀛天文館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">大內區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">展示館、星象劇場和週六夜觀是主要內容，屬於台南山線的科教型親子景點。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>室內場館加部分戶外觀測區。
+</div>
+</div>
+<a class="action-btn" href="/tainan/family-attractions/tree-valley-science/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">頑皮世界野生動物園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">學甲區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">動物觀察、互動體驗、遊樂設施。</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">動物互動和遊樂設施都很受孩子歡迎，通常會直接排整天，也很適合安排學齡前親子出遊。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>動物觀察、互動體驗、遊樂設施。
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/tainan/family-attractions/nanying-astronomical/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.9997" data-lng="120.2270">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">國立臺灣歷史博物館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">安南區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+</div>
+<a class="action-btn" href="/tainan/family-attractions/wanpi-world/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">竹溪水岸園區</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">南區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">水岸步道、生態景觀和遊戲場可以一起安排，適合想散步也想讓孩子玩公園的家庭。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>戶外水岸公園。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">館舍動線和戶外園區都很完整，適合雨天版與輕鬆散步版兩種安排。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>台灣歷史常設展、特展與戶外園區。
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+</div>
+<a class="action-btn" href="/tainan/family-attractions/zhuxi-riverside-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">臺南左鎮化石園區</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">左鎮區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">化石主題明確，屬於台南山線很常被排進去的親子室內景點。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>室內展館為主。
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/tainan/family-attractions/nmth/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.9997" data-lng="120.2270">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">山上花園水道博物館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">山上區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">古蹟園區和大草地一起安排，適合喜歡散步、拍照和看建築的家庭。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>水道古蹟、淨水設施與戶外草地。
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/tainan/family-attractions/shanshang-waterworks-museum/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.9997" data-lng="120.2270">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">臺南市美術館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">中西區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">兒童藝術中心、創意工坊和館內展覽可一起安排，適合排進台南市區藝文型親子行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>室內美術館。
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/tainan/family-attractions/tainan-art-museum/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.9997" data-lng="120.2270">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">十鼓文創園區</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">仁德區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">舊糖廠改造園區，表演、遊樂設施和打卡點很多，通常會排成半天以上放電行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>戶外園區搭配部分室內展演空間。
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/tainan/family-attractions/ten-drum-cultural/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.9997" data-lng="120.2270">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">樹谷生活科學館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">新市區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">恐龍、化石、骨骼與自然科學展示。</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">以恐龍、骨骼與自然科學為主題的室內場館，對喜歡恐龍的孩子很有吸引力，也很適合雨天安排。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>恐龍、化石、骨骼與自然科學展示。
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/tainan/family-attractions/tree-valley-science/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.9997" data-lng="120.2270">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">頑皮世界野生動物園</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">學甲區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">動物觀察、互動體驗、遊樂設施。</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">動物互動和遊樂設施都很受孩子歡迎，通常會直接排整天，也很適合安排學齡前親子出遊。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>動物觀察、互動體驗、遊樂設施。
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/tainan/family-attractions/wanpi-world/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.9997" data-lng="120.2270">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">竹溪水岸園區</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">南區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">水岸步道、生態景觀和遊戲場可以一起安排，適合想散步也想讓孩子玩公園的家庭。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>戶外水岸公園。
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/tainan/family-attractions/zhuxi-riverside-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.9997" data-lng="120.2270">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">臺南左鎮化石園區</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">左鎮區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">化石主題明確，屬於台南山線很常被排進去的親子室內景點。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>室內展館為主。
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/tainan/family-attractions/zuozhen-fossil-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="23.1186" data-lng="120.2798">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">南科考古館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">新市區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">考古展示和互動展區主題清楚，適合安排台南新市一帶的室內知性親子行程。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>考古博物館 / 互動展區</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
-            <a class="action-btn" href="/tainan/family-attractions/nanke-archaeology-museum/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="23.0453" data-lng="120.1321">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">台江國家公園遊客中心</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">安南區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">純白高腳屋建築和濕地景觀都很有辨識度，適合安排安南區半日慢遊行程。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>遊客中心 / 生態展示</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
-            <a class="action-btn" href="/tainan/family-attractions/taijiang-visitor-center/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.9305" data-lng="120.1630">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">鯤喜灣文化園區</h3>
-              <div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">南區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div>
-            </div>
-            <p class="card-desc">海岸、沙灘、藝術聚落和商圈可以一起安排，適合台南南區的放風型親子半日遊。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>海岸景點 / 文化園區</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
-            <a class="action-btn" href="/tainan/family-attractions/kunxiwan-cultural-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="23.3080" data-lng="120.3165">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">南瀛綠都心5號公園</h3>
-              <div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">新營區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div>
-            </div>
-            <p class="card-desc">草地、玻璃屋和池塘景觀很適合北台南家庭安排野餐、散步與拍照的放鬆行程。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>公園綠地 / 散步野餐</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
-            <a class="action-btn" href="/tainan/family-attractions/nanying-green-heart-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.9293" data-lng="120.1518">
-            <div class="card-header"><h3 class="card-title" style="margin-right:10px;">黃金海岸</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">南區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
-            <p class="card-desc">海灘、夕陽和海線散步都很有辨識度，適合安排台南南區的親子放風與看海行程。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>海岸景點 / 沙灘散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
-            <a class="action-btn" href="/tainan/family-attractions/golden-coast/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="23.3032" data-lng="120.3191">
-            <div class="card-header"><h3 class="card-title" style="margin-right:10px;">新營鐵道文化園區</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">新營區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
-            <p class="card-desc">糖廠五分車和鐵道展示都很有辨識度，適合安排北台南的火車主題親子半日遊。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>鐵道園區 / 五分車</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
-            <a class="action-btn" href="/tainan/family-attractions/sinying-railway-cultural-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="23.0008" data-lng="120.1596">
-            <div class="card-header"><h3 class="card-title" style="margin-right:10px;">安平樹屋</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">安平區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
-            <p class="card-desc">樹根包覆老屋和木棧道的畫面很有辨識度，適合排進安平老街與港邊散步的半日行程。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>歷史園區 / 木棧道散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
-            <a class="action-btn" href="/tainan/family-attractions/anping-tree-house/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.9919" data-lng="120.1617">
-            <div class="card-header"><h3 class="card-title" style="margin-right:10px;">漁光島</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">安平區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
-            <p class="card-desc">海灘、木麻黃林和看海步道很適合放風，通常會和安平景點一起排成輕鬆的海線半日遊。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>海灘景點 / 看海散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
-            <a class="action-btn" href="/tainan/family-attractions/yuguang-island/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="23.0459" data-lng="120.1063">
-            <div class="card-header"><h3 class="card-title" style="margin-right:10px;">四草綠色隧道</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">安南區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
-            <p class="card-desc">搭船穿越紅樹林的畫面很有辨識度，適合安排台南海線的自然觀察親子行程。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>生態體驗 / 搭船景點</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
-            <a class="action-btn" href="/tainan/family-attractions/sicao-green-tunnel/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="23.1545" data-lng="120.1009">
-            <div class="card-header"><h3 class="card-title" style="margin-right:10px;">七股鹽山</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">七股區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
-            <p class="card-desc">鹽山地景、冰棒和短時間散步都很好安排，很適合七股海線順遊時帶孩子停留。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>地景園區 / 海線順遊</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
-            <a class="action-btn" href="/tainan/family-attractions/qigu-salt-mountain/">閱讀整理詳情 ➜</a>
-          </article>
-        </section>
-      </div>
-    </main>
-    <div id="site-footer-container"></div>
-    <script src="/assets/footer.js"></script>
-
-  </body>
+</div>
+</div>
+<a class="action-btn" href="/tainan/family-attractions/zuozhen-fossil-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="23.1186" data-lng="120.2798">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">南科考古館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">新市區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">考古展示和互動展區主題清楚，適合安排台南新市一帶的室內知性親子行程。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>考古博物館 / 互動展區</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/tainan/family-attractions/nanke-archaeology-museum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="23.0453" data-lng="120.1321">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">台江國家公園遊客中心</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">安南區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">純白高腳屋建築和濕地景觀都很有辨識度，適合安排安南區半日慢遊行程。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>遊客中心 / 生態展示</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/tainan/family-attractions/taijiang-visitor-center/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.9305" data-lng="120.1630">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">鯤喜灣文化園區</h3>
+<div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">南區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div>
+</div>
+<p class="card-desc">海岸、沙灘、藝術聚落和商圈可以一起安排，適合台南南區的放風型親子半日遊。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>海岸景點 / 文化園區</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/tainan/family-attractions/kunxiwan-cultural-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="23.3080" data-lng="120.3165">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">南瀛綠都心5號公園</h3>
+<div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">新營區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div>
+</div>
+<p class="card-desc">草地、玻璃屋和池塘景觀很適合北台南家庭安排野餐、散步與拍照的放鬆行程。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>公園綠地 / 散步野餐</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+<a class="action-btn" href="/tainan/family-attractions/nanying-green-heart-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.9293" data-lng="120.1518">
+<div class="card-header"><h3 class="card-title" style="margin-right:10px;">黃金海岸</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">南區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
+<p class="card-desc">海灘、夕陽和海線散步都很有辨識度，適合安排台南南區的親子放風與看海行程。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>海岸景點 / 沙灘散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/tainan/family-attractions/golden-coast/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="23.3032" data-lng="120.3191">
+<div class="card-header"><h3 class="card-title" style="margin-right:10px;">新營鐵道文化園區</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">新營區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
+<p class="card-desc">糖廠五分車和鐵道展示都很有辨識度，適合安排北台南的火車主題親子半日遊。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>鐵道園區 / 五分車</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+<a class="action-btn" href="/tainan/family-attractions/sinying-railway-cultural-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="23.0008" data-lng="120.1596">
+<div class="card-header"><h3 class="card-title" style="margin-right:10px;">安平樹屋</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">安平區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
+<p class="card-desc">樹根包覆老屋和木棧道的畫面很有辨識度，適合排進安平老街與港邊散步的半日行程。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>歷史園區 / 木棧道散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+<a class="action-btn" href="/tainan/family-attractions/anping-tree-house/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.9919" data-lng="120.1617">
+<div class="card-header"><h3 class="card-title" style="margin-right:10px;">漁光島</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">安平區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
+<p class="card-desc">海灘、木麻黃林和看海步道很適合放風，通常會和安平景點一起排成輕鬆的海線半日遊。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>海灘景點 / 看海散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/tainan/family-attractions/yuguang-island/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="23.0459" data-lng="120.1063">
+<div class="card-header"><h3 class="card-title" style="margin-right:10px;">四草綠色隧道</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">安南區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
+<p class="card-desc">搭船穿越紅樹林的畫面很有辨識度，適合安排台南海線的自然觀察親子行程。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>生態體驗 / 搭船景點</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+<a class="action-btn" href="/tainan/family-attractions/sicao-green-tunnel/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="23.1545" data-lng="120.1009">
+<div class="card-header"><h3 class="card-title" style="margin-right:10px;">七股鹽山</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">七股區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
+<p class="card-desc">鹽山地景、冰棒和短時間散步都很好安排，很適合七股海線順遊時帶孩子停留。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>地景園區 / 海線順遊</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/tainan/family-attractions/qigu-salt-mountain/">閱讀整理詳情 ➜</a>
+</article>
+</section>
+</div>
+</main>
+<div id="site-footer-container"></div>
+<script src="/assets/footer.js"></script>
+</body>
 </html>

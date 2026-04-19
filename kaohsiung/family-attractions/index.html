@@ -1,657 +1,682 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+
 <html lang="zh-Hant">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>高雄市親子景點</title>
-    <meta name="description" content="高雄市親子景點列表，先看景點類型與交通資訊。">
-    <link rel="stylesheet" href="/assets/style.css">
-    <script src="/assets/header.js"></script>
-    <script src="/assets/location-sort-v2.js"></script>
-    <style>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>高雄市親子景點｜羅米親子玩樂地圖</title>
+<meta content="整理高雄市高雄市親子景點的景點資訊、開放時間與停車建議，方便安排高雄市親子出遊行程。高雄市適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。" name="description"/><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YS1QEYCML9');</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YS1QEYCML9"></script><script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4879544848259502"></script><link href="https://romyfunmap.com/kaohsiung/family-attractions/" rel="canonical"/><meta content="website" property="og:type"/><meta content="羅米親子玩樂地圖" property="og:site_name"/><meta content="zh_TW" property="og:locale"/><meta content="高雄市親子景點｜羅米親子玩樂地圖" property="og:title"/><meta content="整理高雄市高雄市親子景點的景點資訊、開放時間與停車建議，方便安排高雄市親子出遊行程。高雄市適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。" property="og:description"/><meta content="https://romyfunmap.com/kaohsiung/family-attractions/" property="og:url"/><meta content="https://romyfunmap.com/images/og-cover.png" property="og:image"/>
+<link href="/assets/style.css" rel="stylesheet"/>
+<script src="/assets/header.js"></script>
+<script src="/assets/location-sort-v2.js"></script>
+<style>
       .card-header{align-items:flex-start}
       .tags-group{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0}
       .tags-row{display:flex;gap:4px}
       
     </style>
-  </head>
-  <body>
-    <div id="site-header-container" data-active="attractions"></div>
-    <main class="page-pad">
-      <div class="container">
-        <section class="hero-block green" style="margin-top:20px;text-align:left;">
-          <div class="breadcrumb">
-            <a href="/">首頁</a>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "羅米親子玩樂地圖",
+      "item": "https://romyfunmap.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "高雄市",
+      "item": "https://romyfunmap.com/kaohsiung/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "親子景點",
+      "item": "https://romyfunmap.com/kaohsiung/family-attractions/"
+    }
+  ]
+}
+</script></head>
+<body>
+<div data-active="attractions" id="site-header-container"></div>
+<main class="page-pad">
+<div class="container">
+<section class="hero-block green" style="margin-top:20px;text-align:left;">
+<div class="breadcrumb">
+<a href="/">首頁</a>
             /
             <a href="/kaohsiung/">高雄市</a>
             / 親子景點
           </div>
-          <h1>高雄市親子景點</h1>
-          <p>高雄市適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。</p>
-          <div style="margin-top:16px;">
-            <button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
-          </div>
-        </section>
-        <section class="modern-cards-grid" id="listing-grid">
-          <article class="modern-card" data-lat="22.5722" data-lng="120.3258">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">鈴鹿賽道樂園</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">前鎮區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+<h1>高雄市親子景點</h1>
+<p>高雄市適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。</p>
+<div style="margin-top:16px;">
+<button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
+</div>
+</section>
+<section class="modern-cards-grid" id="listing-grid">
+<article class="modern-card" data-lat="22.5722" data-lng="120.3258">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">鈴鹿賽道樂園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">前鎮區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">賽車和駕駛主題對孩子很有辨識度，也方便和商場吃飯排成同一天。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>主題樂園 / 賽車體驗</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+<a class="action-btn" href="/kaohsiung/family-attractions/suzuka-circuit-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6606" data-lng="120.2866">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">內惟藝術中心</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鼓山區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">藝文館舍和電影空間適合安排市區半日藝文行程，也可和高美館順遊。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>藝術中心 / 室內館舍</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+<a class="action-btn" href="/kaohsiung/family-attractions/neiwei-art-center/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.7310" data-lng="120.2840">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">高雄都會公園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">楠梓區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">大草地和步道範圍都很大，適合安排滑步車、野餐與長時間放風。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>大型公園 / 草地步道</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+<a class="action-btn" href="/kaohsiung/family-attractions/metropolitan-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.7965" data-lng="120.2968">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">岡山公園共融遊戲場</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">岡山區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">適合短時間公園放電，也很方便串在岡山市區或火車周邊行程裡。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>共融遊戲場 / 公園景點</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+<a class="action-btn" href="/kaohsiung/family-attractions/gangshan-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">航空教育展示館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">岡山區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">岡山區的飛機主題展示館，適合飛機迷和喜歡大型展示物的孩子。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>室內展示館為主。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">賽車和駕駛主題對孩子很有辨識度，也方便和商場吃飯排成同一天。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>主題樂園 / 賽車體驗</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/suzuka-circuit-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6606" data-lng="120.2866">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">內惟藝術中心</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鼓山區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">藝文館舍和電影空間適合安排市區半日藝文行程，也可和高美館順遊。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>藝術中心 / 室內館舍</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/neiwei-art-center/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.7310" data-lng="120.2840">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">高雄都會公園</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">楠梓區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+</div>
+<a class="action-btn" href="/kaohsiung/family-attractions/aviation-education-museum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">佛光山佛陀紀念館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">大樹區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">大樹區的大型文化園區，適合安排半日步行、看展與靜態參觀行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>大型文化園區。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">大草地和步道範圍都很大，適合安排滑步車、野餐與長時間放風。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>大型公園 / 草地步道</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/metropolitan-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.7965" data-lng="120.2968">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">岡山公園共融遊戲場</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">岡山區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>大眾運輸可到
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">適合短時間公園放電，也很方便串在岡山市區或火車周邊行程裡。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>共融遊戲場 / 公園景點</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/gangshan-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">航空教育展示館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">岡山區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+</div>
+<a class="action-btn" href="/kaohsiung/family-attractions/buddha-memorial-center/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">澄清湖風景區</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鳥松區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">湖景步道與大草地為主的風景區，適合安排親子散步與較長時間停留。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>戶外湖景風景區。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">岡山區的飛機主題展示館，適合飛機迷和喜歡大型展示物的孩子。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>室內展示館為主。
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+</div>
+<a class="action-btn" href="/kaohsiung/family-attractions/chengcing-lake/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">旗津貝殼館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">旗津區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">旗津區的室內展示館，適合與海岸公園、貝殼地景一起安排。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>室內展示館。
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/aviation-education-museum/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">佛光山佛陀紀念館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">大樹區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">大樹區的大型文化園區，適合安排半日步行、看展與靜態參觀行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>大型文化園區。
+</div>
+</div>
+<a class="action-btn" href="/kaohsiung/family-attractions/cijin-shell-museum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">大東文化藝術中心</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鳳山區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">鳳山區的藝文館舍，適合和圖書館、捷運站周邊一起安排市區半日行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>室內館舍加戶外廣場。
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>大眾運輸可到
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>大眾運輸可到
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/buddha-memorial-center/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">澄清湖風景區</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鳥松區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+</div>
+<a class="action-btn" href="/kaohsiung/family-attractions/dadong-art-center/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">鳳儀書院</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鳳山區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">鳳山區的清代書院古蹟，適合安排短程文化散步與親子拍照行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>室內外混合古蹟景點。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">湖景步道與大草地為主的風景區，適合安排親子散步與較長時間停留。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>戶外湖景風景區。
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+</div>
+<a class="action-btn" href="/kaohsiung/family-attractions/fengyi-academy/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">哈瑪星鐵道文化園區</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鼓山區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">高雄市鼓山區的鐵道園區景點，可搭配駁二與港邊散步路線安排。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>戶外園區。
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/chengcing-lake/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">旗津貝殼館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">旗津區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">旗津區的室內展示館，適合與海岸公園、貝殼地景一起安排。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>室內展示館。
+</div>
+</div>
+<a class="action-btn" href="/kaohsiung/family-attractions/hamasen-railway-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">金獅湖蝴蝶園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三民區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">高雄市三民區的自然觀察景點，適合安排短時間散步行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>戶外景點。
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>大眾運輸可到
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/cijin-shell-museum/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">大東文化藝術中心</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鳳山區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+</div>
+<a class="action-btn" href="/kaohsiung/family-attractions/jinshihu-butterfly-garden/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">高雄兒童美術館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鼓山區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">高雄市鼓山區的兒童藝文空間，適合安排低齡親子半日行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>室內藝文空間。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">鳳山區的藝文館舍，適合和圖書館、捷運站周邊一起安排市區半日行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>室內館舍加戶外廣場。
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>大眾運輸可到
+</div>
+</div>
+<a class="action-btn" href="/kaohsiung/family-attractions/kaohsiung-childrens-museum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">高雄流行音樂中心</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鹽埕區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">海風步道和港灣視野很適合親子散步，傍晚時段特別好安排。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>港灣散步、建築拍照與展演空間。
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/dadong-art-center/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">鳳儀書院</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鳳山區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">鳳山區的清代書院古蹟，適合安排短程文化散步與親子拍照行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>室內外混合古蹟景點。
+</div>
+</div>
+<a class="action-btn" href="/kaohsiung/family-attractions/kaohsiung-music-center/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">高雄市立圖書館總館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">前鎮區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">室內冷氣穩定、兒童閱覽空間明確，適合雨天和高溫日的親子備案。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>兒童閱覽、親子共讀與館內展區。
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/fengyi-academy/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">哈瑪星鐵道文化園區</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鼓山區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+</div>
+<a class="action-btn" href="/kaohsiung/family-attractions/main-public-library/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">國立科學工藝博物館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三民區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">高雄市三民區的室內博物館景點，適合雨天與夏季行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>室內博物館。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">高雄市鼓山區的鐵道園區景點，可搭配駁二與港邊散步路線安排。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>戶外園區。
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+</div>
+<a class="action-btn" href="/kaohsiung/family-attractions/nstm/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">駁二藝術特區</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鹽埕區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">鹽埕區港邊藝文園區，適合散步、拍照與安排輕鬆半日行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>戶外園區搭配館舍展區。
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/hamasen-railway-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">金獅湖蝴蝶園</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三民區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">高雄市三民區的自然觀察景點，適合安排短時間散步行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>戶外景點。
+</div>
+</div>
+<a class="action-btn" href="/kaohsiung/family-attractions/pier-2-art-center/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">旗糖農創園區</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">旗山區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">旗山糖廠舊址改造園區，適合散步、拍照與安排老街順遊行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>戶外園區為主。
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>大眾運輸可到
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/jinshihu-butterfly-garden/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">高雄兒童美術館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鼓山區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+</div>
+<a class="action-btn" href="/kaohsiung/family-attractions/qishan-sugar-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">壽山動物園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鼓山區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">高雄市鼓山區的動物園景點，適合安排半日到一日行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>戶外園區。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">高雄市鼓山區的兒童藝文空間，適合安排低齡親子半日行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>室內藝文空間。
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+</div>
+<a class="action-btn" href="/kaohsiung/family-attractions/shoushan-zoo/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">衛武營國家藝術文化中心</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鳳山區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">高雄市鳳山區的藝文場館，可安排散步、導覽或親子節目行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>室內外混合場館。
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/kaohsiung-childrens-museum/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">高雄流行音樂中心</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鹽埕區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">海風步道和港灣視野很適合親子散步，傍晚時段特別好安排。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>港灣散步、建築拍照與展演空間。
+</div>
+</div>
+<a class="action-btn" href="/kaohsiung/family-attractions/weiwuying/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">衛武營共融遊戲場</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鳳山區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">位在衛武營都會公園內，適合安排 3 到 12 歲孩子的戶外放電行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>戶外公園遊戲場。
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/kaohsiung-music-center/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">高雄市立圖書館總館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">前鎮區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">室內冷氣穩定、兒童閱覽空間明確，適合雨天和高溫日的親子備案。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>兒童閱覽、親子共讀與館內展區。
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/main-public-library/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">國立科學工藝博物館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三民區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">高雄市三民區的室內博物館景點，適合雨天與夏季行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>室內博物館。
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/nstm/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">駁二藝術特區</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鹽埕區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">鹽埕區港邊藝文園區，適合散步、拍照與安排輕鬆半日行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>戶外園區搭配館舍展區。
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/pier-2-art-center/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">旗糖農創園區</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">旗山區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">旗山糖廠舊址改造園區，適合散步、拍照與安排老街順遊行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>戶外園區為主。
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/qishan-sugar-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">壽山動物園</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鼓山區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">高雄市鼓山區的動物園景點，適合安排半日到一日行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>戶外園區。
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/shoushan-zoo/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">衛武營國家藝術文化中心</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鳳山區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">高雄市鳳山區的藝文場館，可安排散步、導覽或親子節目行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>室內外混合場館。
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/weiwuying/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6273" data-lng="120.3014">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">衛武營共融遊戲場</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鳳山區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">位在衛武營都會公園內，適合安排 3 到 12 歲孩子的戶外放電行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>戶外公園遊戲場。
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/weiwuying-playground/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6521" data-lng="120.3027">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">新客家文化園區</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三民區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">客家文物館、步道和戶外活動空間都能一起安排，適合城市裡的文化型半日遊。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>文化園區 / 文物館</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/hakka-cultural-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.7788" data-lng="120.2455">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">彌陀漁港海岸光廊</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">彌陀區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">海景步道、看海和遊戲設施很容易排成高雄海線的半日放風行程。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>海岸步道 / 遊戲場</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/mituo-coast-corridor/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.5831" data-lng="120.3116">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">旗津風車公園</h3>
-              <div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">旗津區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div>
-            </div>
-            <p class="card-desc">海景、風車和觀海步道都很有辨識度，適合旗津半日放風與看海行程。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>海岸公園 / 觀景步道</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/cijin-windmill-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6183" data-lng="120.2814">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">哈瑪星台灣鐵道館</h3>
-              <div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鼓山區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div>
-            </div>
-            <p class="card-desc">大型鐵道模型和小火車體驗很有辨識度，對喜歡火車的孩子特別有吸引力。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>鐵道展館 / 模型體驗</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/hamasen-railway-museum/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6242" data-lng="120.3435">
-            <div class="card-header"><h3 class="card-title" style="margin-right:10px;">衛武營都會公園</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鳳山區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
-            <p class="card-desc">大草地、樹蔭和散步空間很完整，適合和衛武營表演場館一起排成半日親子行程。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>都會公園 / 草地散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/weiwuying-metropolitan-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6439" data-lng="120.3029">
-            <div class="card-header"><h3 class="card-title" style="margin-right:10px;">愛河之心</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三民區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
-            <p class="card-desc">水岸步道和橋景很好安排，適合傍晚散步、騎車或短時間放風。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>水岸步道 / 城市散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/heart-of-love-river/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.7307" data-lng="120.4042">
-            <div class="card-header"><h3 class="card-title" style="margin-right:10px;">義大遊樂世界</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">大樹區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
-            <p class="card-desc">遊樂設施、主題街景和園區餐飲都很完整，適合安排整天型親子出遊。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>遊樂園 / 一日行程</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/eda-theme-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6163" data-lng="120.2673">
-            <div class="card-header"><h3 class="card-title" style="margin-right:10px;">棧貳庫 KW2</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鼓山區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
-            <p class="card-desc">港邊倉庫活化空間結合散步、看海與小火車，很適合高雄港區的親子半日遊。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>港區景點 / 倉庫散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/kw2/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="22.6253" data-lng="120.3610">
-            <div class="card-header"><h3 class="card-title" style="margin-right:10px;">大東濕地公園</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鳳山區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
-            <p class="card-desc">在鳳山市區就能安排的濕地散步點，適合和大東文化藝術中心一起順遊。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>濕地公園 / 生態散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
-            <a class="action-btn" href="/kaohsiung/family-attractions/dadong-wetland-park/">閱讀整理詳情 ➜</a>
-          </article>
-        </section>
-      </div>
-    </main>
-    <div id="site-footer-container"></div>
-    <script src="/assets/footer.js"></script>
-
-  </body>
+</div>
+</div>
+<a class="action-btn" href="/kaohsiung/family-attractions/weiwuying-playground/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6521" data-lng="120.3027">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">新客家文化園區</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三民區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">客家文物館、步道和戶外活動空間都能一起安排，適合城市裡的文化型半日遊。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>文化園區 / 文物館</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+<a class="action-btn" href="/kaohsiung/family-attractions/hakka-cultural-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.7788" data-lng="120.2455">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">彌陀漁港海岸光廊</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">彌陀區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">海景步道、看海和遊戲設施很容易排成高雄海線的半日放風行程。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>海岸步道 / 遊戲場</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/kaohsiung/family-attractions/mituo-coast-corridor/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.5831" data-lng="120.3116">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">旗津風車公園</h3>
+<div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">旗津區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div>
+</div>
+<p class="card-desc">海景、風車和觀海步道都很有辨識度，適合旗津半日放風與看海行程。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>海岸公園 / 觀景步道</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+<a class="action-btn" href="/kaohsiung/family-attractions/cijin-windmill-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6183" data-lng="120.2814">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">哈瑪星台灣鐵道館</h3>
+<div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鼓山區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div>
+</div>
+<p class="card-desc">大型鐵道模型和小火車體驗很有辨識度，對喜歡火車的孩子特別有吸引力。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>鐵道展館 / 模型體驗</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+<a class="action-btn" href="/kaohsiung/family-attractions/hamasen-railway-museum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6242" data-lng="120.3435">
+<div class="card-header"><h3 class="card-title" style="margin-right:10px;">衛武營都會公園</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鳳山區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
+<p class="card-desc">大草地、樹蔭和散步空間很完整，適合和衛武營表演場館一起排成半日親子行程。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>都會公園 / 草地散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+<a class="action-btn" href="/kaohsiung/family-attractions/weiwuying-metropolitan-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6439" data-lng="120.3029">
+<div class="card-header"><h3 class="card-title" style="margin-right:10px;">愛河之心</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三民區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
+<p class="card-desc">水岸步道和橋景很好安排，適合傍晚散步、騎車或短時間放風。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>水岸步道 / 城市散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+<a class="action-btn" href="/kaohsiung/family-attractions/heart-of-love-river/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.7307" data-lng="120.4042">
+<div class="card-header"><h3 class="card-title" style="margin-right:10px;">義大遊樂世界</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">大樹區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
+<p class="card-desc">遊樂設施、主題街景和園區餐飲都很完整，適合安排整天型親子出遊。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>遊樂園 / 一日行程</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/kaohsiung/family-attractions/eda-theme-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6163" data-lng="120.2673">
+<div class="card-header"><h3 class="card-title" style="margin-right:10px;">棧貳庫 KW2</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鼓山區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
+<p class="card-desc">港邊倉庫活化空間結合散步、看海與小火車，很適合高雄港區的親子半日遊。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>港區景點 / 倉庫散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+<a class="action-btn" href="/kaohsiung/family-attractions/kw2/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="22.6253" data-lng="120.3610">
+<div class="card-header"><h3 class="card-title" style="margin-right:10px;">大東濕地公園</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鳳山區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
+<p class="card-desc">在鳳山市區就能安排的濕地散步點，適合和大東文化藝術中心一起順遊。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>濕地公園 / 生態散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+<a class="action-btn" href="/kaohsiung/family-attractions/dadong-wetland-park/">閱讀整理詳情 ➜</a>
+</article>
+</section>
+</div>
+</main>
+<div id="site-footer-container"></div>
+<script src="/assets/footer.js"></script>
+</body>
 </html>

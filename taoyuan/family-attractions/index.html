@@ -1,398 +1,423 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+
 <html lang="zh-Hant">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>桃園市親子景點</title>
-    <meta name="description" content="桃園市親子景點列表，先看景點類型與交通資訊。">
-    <link rel="stylesheet" href="/assets/style.css">
-    <script src="/assets/header.js"></script>
-    <script src="/assets/location-sort-v2.js"></script>
-    <style>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>桃園市親子景點｜羅米親子玩樂地圖</title>
+<meta content="整理桃園市桃園市親子景點的景點資訊、開放時間與停車建議，方便安排桃園市親子出遊行程。桃園市適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。" name="description"/><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YS1QEYCML9');</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YS1QEYCML9"></script><script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4879544848259502"></script><link href="https://romyfunmap.com/taoyuan/family-attractions/" rel="canonical"/><meta content="website" property="og:type"/><meta content="羅米親子玩樂地圖" property="og:site_name"/><meta content="zh_TW" property="og:locale"/><meta content="桃園市親子景點｜羅米親子玩樂地圖" property="og:title"/><meta content="整理桃園市桃園市親子景點的景點資訊、開放時間與停車建議，方便安排桃園市親子出遊行程。桃園市適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。" property="og:description"/><meta content="https://romyfunmap.com/taoyuan/family-attractions/" property="og:url"/><meta content="https://romyfunmap.com/images/og-cover.png" property="og:image"/>
+<link href="/assets/style.css" rel="stylesheet"/>
+<script src="/assets/header.js"></script>
+<script src="/assets/location-sort-v2.js"></script>
+<style>
       .card-header{align-items:flex-start}
       .tags-group{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0}
       .tags-row{display:flex;gap:4px}
       
     </style>
-  </head>
-  <body>
-    <div id="site-header-container" data-active="attractions"></div>
-    <main class="page-pad">
-      <div class="container">
-        <section class="hero-block green" style="margin-top:20px;text-align:left;">
-          <div class="breadcrumb">
-            <a href="/">首頁</a>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "羅米親子玩樂地圖",
+      "item": "https://romyfunmap.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "桃園市",
+      "item": "https://romyfunmap.com/taoyuan/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "親子景點",
+      "item": "https://romyfunmap.com/taoyuan/family-attractions/"
+    }
+  ]
+}
+</script></head>
+<body>
+<div data-active="attractions" id="site-header-container"></div>
+<main class="page-pad">
+<div class="container">
+<section class="hero-block green" style="margin-top:20px;text-align:left;">
+<div class="breadcrumb">
+<a href="/">首頁</a>
             /
             <a href="/taoyuan/">桃園市</a>
             / 親子景點
           </div>
-          <h1>桃園市親子景點</h1>
-          <p>桃園市適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。</p>
-          <div style="margin-top:16px;">
-            <button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
-          </div>
-        </section>
-        <section class="modern-cards-grid" id="listing-grid">
-          <article class="modern-card" data-lat="24.9936" data-lng="121.3010">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">大有梯田生態公園</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">桃園區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">梯田地景、生態散步、遊戲場。</span>
+<h1>桃園市親子景點</h1>
+<p>桃園市適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。</p>
+<div style="margin-top:16px;">
+<button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
+</div>
+</section>
+<section class="modern-cards-grid" id="listing-grid">
+<article class="modern-card" data-lat="24.9936" data-lng="121.3010">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">大有梯田生態公園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">桃園區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">梯田地景、生態散步、遊戲場。</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">桃園市區辨識度很高的特色公園，結合梯田地景與共融遊戲空間，適合短時間放電。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>梯田地景、生態散步、遊戲場。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">桃園市區辨識度很高的特色公園，結合梯田地景與共融遊戲空間，適合短時間放電。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>梯田地景、生態散步、遊戲場。
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+</div>
+<a class="action-btn" href="/taoyuan/family-attractions/dayou-terrace-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.9936" data-lng="121.3010">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">風禾公園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">桃園區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">大滑梯、草地、水池與共融遊戲空間。</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">桃園市區很有代表性的特色公園，大滑梯和草地空間都很適合放電。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>大滑梯、草地、水池與共融遊戲空間。
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taoyuan/family-attractions/dayou-terrace-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.9936" data-lng="121.3010">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">風禾公園</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">桃園區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">大滑梯、草地、水池與共融遊戲空間。</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">桃園市區很有代表性的特色公園，大滑梯和草地空間都很適合放電。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>大滑梯、草地、水池與共融遊戲空間。
+</div>
+</div>
+<a class="action-btn" href="/taoyuan/family-attractions/fenghe-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.9939" data-lng="121.3010">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">虎頭山公園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">桃園區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">公園</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">大草地與步道很適合安排放風型親子行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>公園 / 山林步道
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taoyuan/family-attractions/fenghe-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.9939" data-lng="121.3010">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">虎頭山公園</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">桃園區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">公園</span>
+</div>
+</div>
+<a class="action-btn" href="/taoyuan/family-attractions/hutoushan-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.9936" data-lng="121.3010">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">郭元益糕餅博物館楊梅館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">楊梅區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">糕餅文化展示、模具故事與手作課程。</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">可以參觀也能接糕餅手作，對學齡前到國小孩子都很好安排。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>糕餅文化展示、模具故事與手作課程。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">大草地與步道很適合安排放風型親子行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>公園 / 山林步道
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+</div>
+<a class="action-btn" href="/taoyuan/family-attractions/kuos-museum-yangmei/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.9936" data-lng="121.3010">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">桃園市土地公文化館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">桃園區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">民俗信仰展示、互動裝置與兒童導覽活動。</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">免費入館，互動展示與民俗主題都很適合低齡親子安排短時停留。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>民俗信仰展示、互動裝置與兒童導覽活動。
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taoyuan/family-attractions/hutoushan-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.9936" data-lng="121.3010">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">郭元益糕餅博物館楊梅館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">楊梅區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">糕餅文化展示、模具故事與手作課程。</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">可以參觀也能接糕餅手作，對學齡前到國小孩子都很好安排。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>糕餅文化展示、模具故事與手作課程。
+</div>
+</div>
+<a class="action-btn" href="/taoyuan/family-attractions/land-god-cultural-museum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.9657" data-lng="121.2243">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">青塘園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">中壢區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">公園</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">青埔很適合親子散步的水岸公園。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>公園 / 散步
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taoyuan/family-attractions/kuos-museum-yangmei/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.9936" data-lng="121.3010">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">桃園市土地公文化館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">桃園區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">民俗信仰展示、互動裝置與兒童導覽活動。</span>
+</div>
+</div>
+<a class="action-btn" href="/taoyuan/family-attractions/qingtang-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.9936" data-lng="121.3010">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">桃園軌道願景館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">桃園區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">軌道模型、鐵道歷史與互動展示。</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">鐵道主題很鮮明的館舍型景點，停留時間不會太長，適合搭配市區半日行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>軌道模型、鐵道歷史與互動展示。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">免費入館，互動展示與民俗主題都很適合低齡親子安排短時停留。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>民俗信仰展示、互動裝置與兒童導覽活動。
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+</div>
+<a class="action-btn" href="/taoyuan/family-attractions/railway-pavilion/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.9936" data-lng="121.3010">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">雄獅文具想像力製造所</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">龍潭區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">文具製造展示、顏色互動、繪畫與手作課程。</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">互動彩繪、手作課程和製造展示都很完整，適合排半日以上。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>文具製造展示、顏色互動、繪畫與手作課程。
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taoyuan/family-attractions/land-god-cultural-museum/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.9657" data-lng="121.2243">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">青塘園</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">中壢區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">公園</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">青埔很適合親子散步的水岸公園。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>公園 / 散步
+</div>
+</div>
+<a class="action-btn" href="/taoyuan/family-attractions/simbalion-art-studio/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.9936" data-lng="121.3010">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">桃園市兒童美術館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">中壢區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">兒童藝術展覽、講座與工作坊。</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">很適合親子一起看展和參加工作坊，也是桃園比較容易持續更新的館舍內容來源。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>兒童藝術展覽、講座與工作坊。
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taoyuan/family-attractions/qingtang-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.9936" data-lng="121.3010">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">桃園軌道願景館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">桃園區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">軌道模型、鐵道歷史與互動展示。</span>
+</div>
+</div>
+<a class="action-btn" href="/taoyuan/family-attractions/taoyuan-childrens-art-museum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.9936" data-lng="121.3010">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">Xpark</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">中壢區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">水族展示、沉浸式空間與互動觀察。</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">桃園青埔熱門室內景點，適合安排半日到一日行程，雨天和夏天都很好用。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>水族展示、沉浸式空間與互動觀察。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">鐵道主題很鮮明的館舍型景點，停留時間不會太長，適合搭配市區半日行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>軌道模型、鐵道歷史與互動展示。
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taoyuan/family-attractions/railway-pavilion/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.9936" data-lng="121.3010">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">雄獅文具想像力製造所</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">龍潭區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">文具製造展示、顏色互動、繪畫與手作課程。</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">互動彩繪、手作課程和製造展示都很完整，適合排半日以上。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>文具製造展示、顏色互動、繪畫與手作課程。
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taoyuan/family-attractions/simbalion-art-studio/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.9936" data-lng="121.3010">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">桃園市兒童美術館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">中壢區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">兒童藝術展覽、講座與工作坊。</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">很適合親子一起看展和參加工作坊，也是桃園比較容易持續更新的館舍內容來源。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>兒童藝術展覽、講座與工作坊。
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taoyuan/family-attractions/taoyuan-childrens-art-museum/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.9936" data-lng="121.3010">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">Xpark</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">中壢區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">水族展示、沉浸式空間與互動觀察。</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">桃園青埔熱門室內景點，適合安排半日到一日行程，雨天和夏天都很好用。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>水族展示、沉浸式空間與互動觀察。
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/taoyuan/family-attractions/xpark/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.8397" data-lng="121.1860">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">小人國主題樂園</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">龍潭區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">桃園龍潭很有代表性的主題樂園，適合安排一整天的遊樂設施與表演行程。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>主題樂園 / 遊樂設施</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
-            <a class="action-btn" href="/taoyuan/family-attractions/leofoo-village/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.9187" data-lng="121.1452">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">埔心牧場</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">楊梅區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">牧場動物互動、草地活動與簡易設施集中，適合安排楊梅親子一日行程。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>牧場 / 動物互動</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
-            <a class="action-btn" href="/taoyuan/family-attractions/pushin-ranch/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.9987" data-lng="121.3256">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">桃園忠烈祠暨神社文化園區</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">桃園區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">木造建築與日式園區氛圍明確，適合散步拍照和短時間參觀。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>歷史園區 / 散步景點</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
-            <a class="action-btn" href="/taoyuan/family-attractions/taoyuan-shrine-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.9908" data-lng="121.3126">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">桃園 77 藝文町</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">桃園區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">市區裡適合短時間散步的日式街區空間，適合搭配周邊館舍安排半日行程。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>藝文街區 / 散步景點</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
-            <a class="action-btn" href="/taoyuan/family-attractions/taoyuan-77art-zone/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.9585" data-lng="121.2945">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">桃園防災教育館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">八德區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">互動式防災展示適合共學和雨天行程，安排彈性高。</p>
-            <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>教育館 / 互動展示</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
-            <a class="action-btn" href="/taoyuan/family-attractions/taoyuan-disaster-education-center/">閱讀整理詳情 ➜</a>
-          </article>
-        </section>
-      </div>
-    </main>
-    <div id="site-footer-container"></div>
-    <script src="/assets/footer.js"></script>
-
-  </body>
+</div>
+</div>
+<a class="action-btn" href="/taoyuan/family-attractions/xpark/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.8397" data-lng="121.1860">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">小人國主題樂園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">龍潭區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">桃園龍潭很有代表性的主題樂園，適合安排一整天的遊樂設施與表演行程。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>主題樂園 / 遊樂設施</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/taoyuan/family-attractions/leofoo-village/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.9187" data-lng="121.1452">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">埔心牧場</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">楊梅區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">牧場動物互動、草地活動與簡易設施集中，適合安排楊梅親子一日行程。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>牧場 / 動物互動</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/taoyuan/family-attractions/pushin-ranch/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.9987" data-lng="121.3256">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">桃園忠烈祠暨神社文化園區</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">桃園區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">木造建築與日式園區氛圍明確，適合散步拍照和短時間參觀。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>歷史園區 / 散步景點</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+<a class="action-btn" href="/taoyuan/family-attractions/taoyuan-shrine-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.9908" data-lng="121.3126">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">桃園 77 藝文町</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">桃園區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">市區裡適合短時間散步的日式街區空間，適合搭配周邊館舍安排半日行程。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>藝文街區 / 散步景點</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+<a class="action-btn" href="/taoyuan/family-attractions/taoyuan-77art-zone/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.9585" data-lng="121.2945">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">桃園防災教育館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">八德區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">互動式防災展示適合共學和雨天行程，安排彈性高。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>教育館 / 互動展示</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+<a class="action-btn" href="/taoyuan/family-attractions/taoyuan-disaster-education-center/">閱讀整理詳情 ➜</a>
+</article>
+</section>
+</div>
+</main>
+<div id="site-footer-container"></div>
+<script src="/assets/footer.js"></script>
+</body>
 </html>

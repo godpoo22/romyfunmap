@@ -1,443 +1,468 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+
 <html lang="zh-Hant">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新北市親子景點</title>
-    <meta name="description" content="新北市親子景點列表，先看景點類型與交通資訊。">
-    <link rel="stylesheet" href="/assets/style.css">
-    <script src="/assets/header.js"></script>
-    <script src="/assets/location-sort-v2.js"></script>
-    <style>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>新北市親子景點｜羅米親子玩樂地圖</title>
+<meta content="整理新北市新北市親子景點的景點資訊、開放時間與停車建議，方便安排新北市親子出遊行程。新北市適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。" name="description"/><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YS1QEYCML9');</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YS1QEYCML9"></script><script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4879544848259502"></script><link href="https://romyfunmap.com/newtaipei/family-attractions/" rel="canonical"/><meta content="website" property="og:type"/><meta content="羅米親子玩樂地圖" property="og:site_name"/><meta content="zh_TW" property="og:locale"/><meta content="新北市親子景點｜羅米親子玩樂地圖" property="og:title"/><meta content="整理新北市新北市親子景點的景點資訊、開放時間與停車建議，方便安排新北市親子出遊行程。新北市適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。" property="og:description"/><meta content="https://romyfunmap.com/newtaipei/family-attractions/" property="og:url"/><meta content="https://romyfunmap.com/images/og-cover.png" property="og:image"/>
+<link href="/assets/style.css" rel="stylesheet"/>
+<script src="/assets/header.js"></script>
+<script src="/assets/location-sort-v2.js"></script>
+<style>
       .card-header{align-items:flex-start}
       .tags-group{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0}
       .tags-row{display:flex;gap:4px}
       
     </style>
-  </head>
-  <body>
-    <div id="site-header-container" data-active="attractions"></div>
-    <main class="page-pad">
-      <div class="container">
-        <section class="hero-block green" style="margin-top:20px;text-align:left;">
-          <div class="breadcrumb">
-            <a href="/">首頁</a>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "羅米親子玩樂地圖",
+      "item": "https://romyfunmap.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "新北市",
+      "item": "https://romyfunmap.com/newtaipei/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "親子景點",
+      "item": "https://romyfunmap.com/newtaipei/family-attractions/"
+    }
+  ]
+}
+</script></head>
+<body>
+<div data-active="attractions" id="site-header-container"></div>
+<main class="page-pad">
+<div class="container">
+<section class="hero-block green" style="margin-top:20px;text-align:left;">
+<div class="breadcrumb">
+<a href="/">首頁</a>
             /
             <a href="/newtaipei/">新北市</a>
             / 親子景點
           </div>
-          <h1>新北市親子景點</h1>
-          <p>新北市適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。</p>
-          <div style="margin-top:16px;">
-            <button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
-          </div>
-        </section>
-        <section class="modern-cards-grid" id="listing-grid">
-          <article class="modern-card" data-lat="25.1461" data-lng="121.4068">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">八里左岸公園</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">八里區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">水岸公園</span>
+<h1>新北市親子景點</h1>
+<p>新北市適合帶孩子去的館舍、公園和特色景點整理，方便安排雨天版和放電版行程。</p>
+<div style="margin-top:16px;">
+<button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
+</div>
+</section>
+<section class="modern-cards-grid" id="listing-grid">
+<article class="modern-card" data-lat="25.1461" data-lng="121.4068">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">八里左岸公園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">八里區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">水岸公園</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">腳踏車、散步和放風都很適合安排。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>水岸公園 / 散步
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">腳踏車、散步和放風都很適合安排。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>水岸公園 / 散步
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+</div>
+<a class="action-btn" href="/newtaipei/family-attractions/bali-left-bank-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.0121" data-lng="121.4657">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">黃金博物館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">瑞芳區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">礦業文化、山城建築與館舍展示。</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">山城礦業園區型景點，適合安排瑞芳、九份或金瓜石半日到一日行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>礦業文化、山城建築與館舍展示。
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/newtaipei/family-attractions/bali-left-bank-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.0121" data-lng="121.4657">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">黃金博物館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">瑞芳區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">礦業文化、山城建築與館舍展示。</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">山城礦業園區型景點，適合安排瑞芳、九份或金瓜石半日到一日行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>礦業文化、山城建築與館舍展示。
+</div>
+</div>
+<a class="action-btn" href="/newtaipei/family-attractions/gold-museum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.1086" data-lng="121.8080">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">猴硐貓村</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">瑞芳區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">貓村景點</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">貓村和鐵道氛圍對孩子很有吸引力。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>貓村景點 / 散步
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/newtaipei/family-attractions/gold-museum/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.1086" data-lng="121.8080">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">猴硐貓村</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">瑞芳區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">貓村景點</span>
+</div>
+</div>
+<a class="action-btn" href="/newtaipei/family-attractions/houtong-cat-village/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.9548" data-lng="121.3545">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">新北市美術館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鶯歌區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">美術館</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">新北近年很適合安排藝文型親子行程的館舍。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>美術館 / 藝文景點
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">貓村和鐵道氛圍對孩子很有吸引力。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>貓村景點 / 散步
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+</div>
+<a class="action-btn" href="/newtaipei/family-attractions/new-taipei-art-museum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.0257" data-lng="121.7382">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">十分老街</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">平溪區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">老街景點</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">天燈與鐵道風景讓平溪行程很有辨識度。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>老街景點 / 鐵道風景
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/newtaipei/family-attractions/houtong-cat-village/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.9548" data-lng="121.3545">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">新北市美術館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鶯歌區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">美術館</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">新北近年很適合安排藝文型親子行程的館舍。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>美術館 / 藝文景點
+</div>
+</div>
+<a class="action-btn" href="/newtaipei/family-attractions/shifen-old-street/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.0121" data-lng="121.4657">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">十分瀑布</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">平溪區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">瀑布觀景、步道散步與平溪線周邊景點。</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">平溪線很常安排的自然景點，瀑布景觀明確，適合搭配老街與鐵道行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>瀑布觀景、步道散步與平溪線周邊景點。
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/newtaipei/family-attractions/new-taipei-art-museum/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.0257" data-lng="121.7382">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">十分老街</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">平溪區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">老街景點</span>
+</div>
+</div>
+<a class="action-btn" href="/newtaipei/family-attractions/shifen-waterfall/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.0121" data-lng="121.4657">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">十三行博物館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">八里區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">考古文物、史前文化與親子互動展示。</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">八里代表性的館舍型親子景點，考古主題明確，也方便順遊左岸。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>考古文物、史前文化與親子互動展示。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">天燈與鐵道風景讓平溪行程很有辨識度。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>老街景點 / 鐵道風景
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+</div>
+<a class="action-btn" href="/newtaipei/family-attractions/shihsanhang-museum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.1719" data-lng="121.4440">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">淡水漁人碼頭</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">淡水區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">港灣散步</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">海風、夕陽與散步路線都很適合家庭出遊。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>港灣散步 / 親子景點
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/newtaipei/family-attractions/shifen-old-street/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.0121" data-lng="121.4657">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">十分瀑布</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">平溪區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">瀑布觀景、步道散步與平溪線周邊景點。</span>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">平溪線很常安排的自然景點，瀑布景觀明確，適合搭配老街與鐵道行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>瀑布觀景、步道散步與平溪線周邊景點。
+</div>
+</div>
+<a class="action-btn" href="/newtaipei/family-attractions/tamsui-fishermans-wharf/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.1811" data-lng="121.6895">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">野柳海洋世界</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">萬里區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">海洋主題景點</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">北海岸很適合安排的海洋主題景點。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>海洋主題景點
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/newtaipei/family-attractions/shifen-waterfall/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.0121" data-lng="121.4657">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">十三行博物館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">八里區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">考古文物、史前文化與親子互動展示。</span>
+</div>
+</div>
+<a class="action-btn" href="/newtaipei/family-attractions/yehliu-ocean-world/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.0121" data-lng="121.4657">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">鶯歌陶瓷博物館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鶯歌區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">陶瓷常設展、兒童體驗與當期特展。</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">新北很穩定的室內親子景點，館舍展覽加上陶藝體驗，雨天也好安排。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>陶瓷常設展、兒童體驗與當期特展。
                 </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">八里代表性的館舍型親子景點，考古主題明確，也方便順遊左岸。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>考古文物、史前文化與親子互動展示。
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text">
+<span>交通</span>開車方便
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/newtaipei/family-attractions/shihsanhang-museum/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.1719" data-lng="121.4440">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">淡水漁人碼頭</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">淡水區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">港灣散步</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">海風、夕陽與散步路線都很適合家庭出遊。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>港灣散步 / 親子景點
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/newtaipei/family-attractions/tamsui-fishermans-wharf/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.1811" data-lng="121.6895">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">野柳海洋世界</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">萬里區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">海洋主題景點</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">北海岸很適合安排的海洋主題景點。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>海洋主題景點
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/newtaipei/family-attractions/yehliu-ocean-world/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.0121" data-lng="121.4657">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">鶯歌陶瓷博物館</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鶯歌區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">陶瓷常設展、兒童體驗與當期特展。</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">新北很穩定的室內親子景點，館舍展覽加上陶藝體驗，雨天也好安排。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text">
-                  <span>類型</span>陶瓷常設展、兒童體驗與當期特展。
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text">
-                  <span>交通</span>開車方便
-                </div>
-              </div>
-            </div>
-            <a class="action-btn" href="/newtaipei/family-attractions/yingge-ceramics-museum/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.0610" data-lng="121.4812">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">新北大都會公園 熊猴森樂園</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三重區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">大型共融遊戲場與河濱綠地結合，適合安排半日以上的放電行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text"><span>類型</span>特色公園 / 遊戲場</div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text"><span>交通</span>大眾運輸可到</div>
-              </div>
-            </div>
-            <a class="action-btn" href="/newtaipei/family-attractions/ntpc-metropolitan-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.0237" data-lng="121.4501">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">板橋 435 藝文特區</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">板橋區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">結合草地、裝置藝術與展覽空間，適合市區散步和簡單放電。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text"><span>類型</span>藝文園區 / 散步景點</div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text"><span>交通</span>大眾運輸可到</div>
-              </div>
-            </div>
-            <a class="action-btn" href="/newtaipei/family-attractions/banqiao-435-art-zone/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.1705" data-lng="121.4380">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">淡水海關碼頭園區</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">淡水區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">河岸草地與碼頭景觀適合推車散步，也方便串淡水老街行程。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text"><span>類型</span>河岸園區 / 散步景點</div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text"><span>交通</span>大眾運輸可到</div>
-              </div>
-            </div>
-            <a class="action-btn" href="/newtaipei/family-attractions/tamsui-customs-dock-park/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="25.0171" data-lng="121.9448">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">福隆海水浴場</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">貢寮區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">東北角常見的玩沙與海邊放風景點，夏季很適合親子安排。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text"><span>類型</span>海灘 / 玩沙景點</div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text"><span>交通</span>大眾運輸可到</div>
-              </div>
-            </div>
-            <a class="action-btn" href="/newtaipei/family-attractions/fulong-beach/">閱讀整理詳情 ➜</a>
-          </article>
-          <article class="modern-card" data-lat="24.8629" data-lng="121.5512">
-            <div class="card-header">
-              <h3 class="card-title" style="margin-right:10px;">烏來台車</h3>
-              <div class="tags-group">
-                <div class="tags-row">
-                  <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">烏來區</span>
-                  <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
-                </div>
-                <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-              </div>
-            </div>
-            <p class="card-desc">短程鐵道與山林景觀結合，是烏來很受孩子歡迎的交通體驗型景點。</p>
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div class="info-text"><span>類型</span>交通體驗 / 山林景點</div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">🚗</div>
-                <div class="info-text"><span>交通</span>開車方便</div>
-              </div>
-            </div>
-            <a class="action-btn" href="/newtaipei/family-attractions/wulai-trolley/">閱讀整理詳情 ➜</a>
-          </article>
-        </section>
-      </div>
-    </main>
-    <div id="site-footer-container"></div>
-    <script src="/assets/footer.js"></script>
-
-  </body>
+</div>
+</div>
+<a class="action-btn" href="/newtaipei/family-attractions/yingge-ceramics-museum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.0610" data-lng="121.4812">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">新北大都會公園 熊猴森樂園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三重區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">大型共融遊戲場與河濱綠地結合，適合安排半日以上的放電行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text"><span>類型</span>特色公園 / 遊戲場</div>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text"><span>交通</span>大眾運輸可到</div>
+</div>
+</div>
+<a class="action-btn" href="/newtaipei/family-attractions/ntpc-metropolitan-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.0237" data-lng="121.4501">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">板橋 435 藝文特區</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">板橋區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">結合草地、裝置藝術與展覽空間，適合市區散步和簡單放電。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text"><span>類型</span>藝文園區 / 散步景點</div>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text"><span>交通</span>大眾運輸可到</div>
+</div>
+</div>
+<a class="action-btn" href="/newtaipei/family-attractions/banqiao-435-art-zone/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.1705" data-lng="121.4380">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">淡水海關碼頭園區</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">淡水區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">河岸草地與碼頭景觀適合推車散步，也方便串淡水老街行程。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text"><span>類型</span>河岸園區 / 散步景點</div>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text"><span>交通</span>大眾運輸可到</div>
+</div>
+</div>
+<a class="action-btn" href="/newtaipei/family-attractions/tamsui-customs-dock-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="25.0171" data-lng="121.9448">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">福隆海水浴場</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">貢寮區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">東北角常見的玩沙與海邊放風景點，夏季很適合親子安排。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text"><span>類型</span>海灘 / 玩沙景點</div>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text"><span>交通</span>大眾運輸可到</div>
+</div>
+</div>
+<a class="action-btn" href="/newtaipei/family-attractions/fulong-beach/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-lat="24.8629" data-lng="121.5512">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">烏來台車</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">烏來區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">短程鐵道與山林景觀結合，是烏來很受孩子歡迎的交通體驗型景點。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text"><span>類型</span>交通體驗 / 山林景點</div>
+</div>
+<div class="info-item">
+<div class="info-icon">🚗</div>
+<div class="info-text"><span>交通</span>開車方便</div>
+</div>
+</div>
+<a class="action-btn" href="/newtaipei/family-attractions/wulai-trolley/">閱讀整理詳情 ➜</a>
+</article>
+</section>
+</div>
+</main>
+<div id="site-footer-container"></div>
+<script src="/assets/footer.js"></script>
+</body>
 </html>

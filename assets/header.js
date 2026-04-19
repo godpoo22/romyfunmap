@@ -17,14 +17,14 @@ function loadSiteHeader() {
 
   // 依目前縣市決定導覽連結：在縣市頁面下指向該縣市分類；否則用全站預設
   const attractionsHref = currentCity
-    ? '/' + currentCity + '/family-attractions/index.html'
-    : '/attractions/index.html';
+    ? '/' + currentCity + '/family-attractions/'
+    : '/attractions/';
   const restaurantsHref = currentCity
-    ? '/' + currentCity + '/family-restaurants/index.html'
-    : '/restaurants/index.html';
+    ? '/' + currentCity + '/family-restaurants/'
+    : '/restaurants/';
   const eventsHref = currentCity
-    ? '/' + currentCity + '/family-events/index.html'
-    : '/events/index.html';
+    ? '/' + currentCity + '/family-events/'
+    : '/events/';
 
   const getActiveStyle = (menu) => {
     if (active !== menu) return '';
@@ -39,7 +39,7 @@ function loadSiteHeader() {
   const headerHTML = `
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="/index.html">
+        <a class="brand" href="/">
           <span class="brand-logo">🎒</span>
           <span class="brand-title" style="color:#14B8A6; text-decoration:none;">羅米親子玩樂地圖</span>
         </a>
