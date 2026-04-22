@@ -40,7 +40,9 @@
     }
   ]
 }
-</script></head>
+</script><link href="/assets/filter.css" rel="stylesheet"/>
+<script defer="" src="/assets/city-filter.js"></script>
+</head>
 <body>
 <div data-active="attractions" id="site-header-container"></div>
 <main class="page-pad">
@@ -59,7 +61,38 @@
 </div>
 </section>
 <section class="modern-cards-grid" id="listing-grid">
-<article class="modern-card" data-lat="25.1461" data-lng="121.4068">
+<div style="background:rgba(255,255,255,0.7);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.8);border-radius:16px;padding:14px 16px;margin-top:16px;display:flex;flex-direction:column;gap:10px;">
+<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+<span style="font-size:12px;color:var(--text-muted);font-weight:600;min-width:28px;">地區</span>
+<button class="f-btn dist-btn" data-district="板橋區">板橋區</button>
+<button class="f-btn dist-btn" data-district="八里區">八里區</button>
+<button class="f-btn dist-btn" data-district="淡水區">淡水區</button>
+<button class="f-btn dist-btn" data-district="瑞芳區">瑞芳區</button>
+<button class="f-btn dist-btn" data-district="平溪區">平溪區</button>
+<button class="f-btn dist-btn" data-district="鶯歌區">鶯歌區</button>
+<button class="f-btn dist-btn" data-district="三重區">三重區</button>
+<button class="f-btn dist-btn" data-district="萬里區">萬里區</button>
+<button class="f-btn dist-btn" data-district="貢寮區">貢寮區</button>
+<button class="f-btn dist-btn" data-district="烏來區">烏來區</button>
+</div>
+<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+<span style="font-size:12px;color:var(--text-muted);font-weight:600;min-width:28px;">特色</span>
+<button class="f-btn tag-btn" data-tag="free">🎟 免費入場</button>
+<button class="f-btn tag-btn" data-tag="interactive">🔬 互動體驗</button>
+<button class="f-btn tag-btn" data-tag="nature">🌊 自然景觀</button>
+</div>
+<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+<span style="font-size:12px;color:var(--text-muted);font-weight:600;min-width:28px;">空間</span>
+<button class="f-btn space-btn" data-space="室內">室內</button>
+<button class="f-btn space-btn" data-space="戶外">戶外</button>
+<button class="f-btn space-btn" data-space="室內外">室內外</button>
+</div>
+<div style="display:flex;justify-content:flex-end;">
+<button id="filter-reset" style="font-size:12px;color:var(--text-muted);background:none;border:none;cursor:pointer;padding:0;">清除篩選</button>
+</div>
+<p id="filter-count" style="display:none;font-size:13px;color:var(--text-muted);margin:0;">找到 <strong id="visible-count">0</strong> 筆結果</p>
+</div>
+<article class="modern-card" data-district="八里區" data-lat="25.1461" data-lng="121.4068" data-space="戶外" data-tags='["free", "nature"]'>
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">八里左岸公園</h3>
 <div class="tags-group">
@@ -87,7 +120,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-attractions/bali-left-bank-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.0121" data-lng="121.4657">
+<article class="modern-card" data-district="瑞芳區" data-lat="25.0121" data-lng="121.4657" data-space="室內外" data-tags='["interactive"]'>
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">黃金博物館</h3>
 <div class="tags-group">
@@ -115,7 +148,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-attractions/gold-museum/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.1086" data-lng="121.8080">
+<article class="modern-card" data-district="瑞芳區" data-lat="25.1086" data-lng="121.8080" data-space="戶外" data-tags='["free", "nature"]'>
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">猴硐貓村</h3>
 <div class="tags-group">
@@ -143,7 +176,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-attractions/houtong-cat-village/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.9548" data-lng="121.3545">
+<article class="modern-card" data-district="鶯歌區" data-lat="24.9548" data-lng="121.3545" data-space="室內" data-tags='["interactive"]'>
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">新北市美術館</h3>
 <div class="tags-group">
@@ -171,7 +204,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-attractions/new-taipei-art-museum/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.0257" data-lng="121.7382">
+<article class="modern-card" data-district="平溪區" data-lat="25.0257" data-lng="121.7382" data-space="戶外" data-tags='["nature"]'>
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">十分老街</h3>
 <div class="tags-group">
@@ -199,7 +232,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-attractions/shifen-old-street/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.0121" data-lng="121.4657">
+<article class="modern-card" data-district="平溪區" data-lat="25.0121" data-lng="121.4657" data-space="戶外" data-tags='["free", "nature"]'>
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">十分瀑布</h3>
 <div class="tags-group">
@@ -227,7 +260,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-attractions/shifen-waterfall/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.0121" data-lng="121.4657">
+<article class="modern-card" data-district="八里區" data-lat="25.0121" data-lng="121.4657" data-space="室內外" data-tags='["interactive"]'>
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">十三行博物館</h3>
 <div class="tags-group">
@@ -255,7 +288,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-attractions/shihsanhang-museum/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.1719" data-lng="121.4440">
+<article class="modern-card" data-district="淡水區" data-lat="25.1719" data-lng="121.4440" data-space="戶外" data-tags='["free", "nature"]'>
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">淡水漁人碼頭</h3>
 <div class="tags-group">
@@ -283,7 +316,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-attractions/tamsui-fishermans-wharf/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.1811" data-lng="121.6895">
+<article class="modern-card" data-district="萬里區" data-lat="25.1811" data-lng="121.6895" data-space="室內外" data-tags='["interactive"]'>
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">野柳海洋世界</h3>
 <div class="tags-group">
@@ -311,7 +344,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-attractions/yehliu-ocean-world/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.0121" data-lng="121.4657">
+<article class="modern-card" data-district="鶯歌區" data-lat="25.0121" data-lng="121.4657" data-space="室內外" data-tags='["interactive"]'>
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">鶯歌陶瓷博物館</h3>
 <div class="tags-group">
@@ -339,7 +372,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-attractions/yingge-ceramics-museum/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.0610" data-lng="121.4812">
+<article class="modern-card" data-district="三重區" data-lat="25.0610" data-lng="121.4812" data-space="戶外" data-tags='["free", "nature"]'>
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">新北大都會公園 熊猴森樂園</h3>
 <div class="tags-group">
@@ -363,7 +396,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-attractions/ntpc-metropolitan-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.0237" data-lng="121.4501">
+<article class="modern-card" data-district="板橋區" data-lat="25.0237" data-lng="121.4501" data-space="戶外" data-tags='["free", "nature"]'>
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">板橋 435 藝文特區</h3>
 <div class="tags-group">
@@ -387,7 +420,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-attractions/banqiao-435-art-zone/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.1705" data-lng="121.4380">
+<article class="modern-card" data-district="淡水區" data-lat="25.1705" data-lng="121.4380" data-space="戶外" data-tags='["free", "nature"]'>
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">淡水海關碼頭園區</h3>
 <div class="tags-group">
@@ -411,7 +444,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-attractions/tamsui-customs-dock-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.0171" data-lng="121.9448">
+<article class="modern-card" data-district="貢寮區" data-lat="25.0171" data-lng="121.9448" data-space="戶外" data-tags='["nature"]'>
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">福隆海水浴場</h3>
 <div class="tags-group">
@@ -435,7 +468,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-attractions/fulong-beach/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.8629" data-lng="121.5512">
+<article class="modern-card" data-district="烏來區" data-lat="24.8629" data-lng="121.5512" data-space="戶外" data-tags='["nature"]'>
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">烏來台車</h3>
 <div class="tags-group">
@@ -448,21 +481,9 @@
 </div>
 <p class="card-desc">短程鐵道與山林景觀結合，是烏來很受孩子歡迎的交通體驗型景點。</p>
 <div class="info-list">
-<div class="info-item">
-<div class="info-icon">📍</div>
-<div class="info-text"><span>類型</span>交通體驗 / 山林景點</div>
-</div>
-<div class="info-item">
-<div class="info-icon">🚗</div>
-<div class="info-text"><span>交通</span>開車方便</div>
-</div>
+<div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>交通體驗景點 / 山林鐵道</div></div>
+<div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div>
 </div>
 <a class="action-btn" href="/newtaipei/family-attractions/wulai-trolley/">閱讀整理詳情 ➜</a>
-</article>
-</section>
-</div>
-</main>
-<div id="site-footer-container"></div>
-<script src="/assets/footer.js"></script>
-</body>
-</html>
+
+</article></section></div></main></body></html>

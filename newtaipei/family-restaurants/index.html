@@ -40,7 +40,9 @@
     }
   ]
 }
-</script></head>
+</script><link href="/assets/filter.css" rel="stylesheet"/>
+<script defer="" src="/assets/city-filter.js"></script>
+</head>
 <body>
 <div data-active="restaurants" id="site-header-container"></div>
 <main class="page-pad">
@@ -59,7 +61,34 @@
 </div>
 </section>
 <section class="modern-cards-grid" id="listing-grid">
-<article class="modern-card" data-lat="25.1461" data-lng="121.4068">
+<div style="background:rgba(255,255,255,0.7);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.8);border-radius:16px;padding:14px 16px;margin-top:16px;display:flex;flex-direction:column;gap:10px;">
+<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+<span style="font-size:12px;color:var(--text-muted);font-weight:600;min-width:28px;">地區</span>
+<button class="f-btn dist-btn" data-district="板橋區">板橋區</button>
+<button class="f-btn dist-btn" data-district="八里區">八里區</button>
+<button class="f-btn dist-btn" data-district="蘆洲區">蘆洲區</button>
+<button class="f-btn dist-btn" data-district="樹林區">樹林區</button>
+<button class="f-btn dist-btn" data-district="永和區">永和區</button>
+<button class="f-btn dist-btn" data-district="三芝區">三芝區</button>
+</div>
+<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+<span style="font-size:12px;color:var(--text-muted);font-weight:600;min-width:28px;">設施</span>
+<button class="f-btn tag-btn" data-tag="play">🎠 兒童遊戲區</button>
+<button class="f-btn tag-btn" data-tag="kidsmeal">🍱 兒童餐點</button>
+<button class="f-btn tag-btn" data-tag="outdoor">🌿 廣場跑跳空間</button>
+</div>
+<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+<span style="font-size:12px;color:var(--text-muted);font-weight:600;min-width:28px;">空間</span>
+<button class="f-btn space-btn" data-space="室內">室內</button>
+<button class="f-btn space-btn" data-space="戶外">戶外</button>
+<button class="f-btn space-btn" data-space="室內外">室內外</button>
+</div>
+<div style="display:flex;justify-content:flex-end;">
+<button id="filter-reset" style="font-size:12px;color:var(--text-muted);background:none;border:none;cursor:pointer;padding:0;">清除篩選</button>
+</div>
+<p id="filter-count" style="display:none;font-size:13px;color:var(--text-muted);margin:0;">找到 <strong id="visible-count">0</strong> 筆結果</p>
+</div>
+<article class="modern-card" data-district="八里區" data-lat="25.1461" data-lng="121.4068" data-space="室內" data-tags="[]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">安然餐酒館</h3>
 <div class="tags-group">
@@ -87,7 +116,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-restaurants/anran-bistro/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.0103" data-lng="121.5146">
+<article class="modern-card" data-district="永和區" data-lat="25.0103" data-lng="121.5146" data-space="室內" data-tags='["play", "kidsmeal"]'>
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">Baby Wonderland 童話世界親子餐廳</h3>
 <div class="tags-group">
@@ -115,7 +144,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-restaurants/baby-wonderland/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.2574" data-lng="121.5008">
+<article class="modern-card" data-district="三芝區" data-lat="25.2574" data-lng="121.5008" data-space="室內外" data-tags='["outdoor"]'>
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">牛仔莊園</h3>
 <div class="tags-group">
@@ -143,7 +172,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-restaurants/cowboy-manor/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.1461" data-lng="121.4068">
+<article class="modern-card" data-district="八里區" data-lat="25.1461" data-lng="121.4068" data-space="室內外" data-tags='["outdoor"]'>
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">桃樂絲森林餐廳</h3>
 <div class="tags-group">
@@ -171,7 +200,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-restaurants/doris-forest/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.0121" data-lng="121.4657">
+<article class="modern-card" data-district="蘆洲區" data-lat="25.0121" data-lng="121.4657" data-space="室內" data-tags='["play"]'>
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">放了媽媽</h3>
 <div class="tags-group">
@@ -199,7 +228,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-restaurants/funny-mama/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.1461" data-lng="121.4068">
+<article class="modern-card" data-district="八里區" data-lat="25.1461" data-lng="121.4068" data-space="室內" data-tags="[]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">Island 小島泰式料理 八里店</h3>
 <div class="tags-group">
@@ -227,7 +256,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-restaurants/little-island-thai/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.0119" data-lng="121.4637">
+<article class="modern-card" data-district="板橋區" data-lat="25.0119" data-lng="121.4637" data-space="室內" data-tags='["play"]'>
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">一二三丸桐趣吧</h3>
 <div class="tags-group">
@@ -255,7 +284,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-restaurants/marutong-funbar/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.0121" data-lng="121.4657">
+<article class="modern-card" data-district="樹林區" data-lat="25.0121" data-lng="121.4657" data-space="室內" data-tags='["play"]'>
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">童鍋 秀泰樹林店</h3>
 <div class="tags-group">
@@ -283,7 +312,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-restaurants/tong-guo-shulin/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.1461" data-lng="121.4068">
+<article class="modern-card" data-district="八里區" data-lat="25.1461" data-lng="121.4068" data-space="室內" data-tags="[]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">Tonup Cafe</h3>
 <div class="tags-group">
@@ -311,7 +340,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-restaurants/tonup-cafe/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.0119" data-lng="121.4637">
+<article class="modern-card" data-district="板橋區" data-lat="25.0119" data-lng="121.4637" data-space="室內" data-tags="[]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">暖暖窩16號 義式廚房</h3>
 <div class="tags-group">
@@ -339,7 +368,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-restaurants/warmnest-16/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.0118" data-lng="121.4638">
+<article class="modern-card" data-district="板橋區" data-lat="25.0118" data-lng="121.4638" data-space="室內" data-tags="[]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">貳樓餐廳 板橋店</h3>
 <div class="tags-group">
@@ -363,7 +392,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-restaurants/second-floor-banqiao/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.1529" data-lng="121.4066">
+<article class="modern-card" data-district="八里區" data-lat="25.1529" data-lng="121.4066" data-space="室內外" data-tags="[]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">水灣 BALI 景觀餐廳</h3>
 <div class="tags-group">
@@ -387,7 +416,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-restaurants/bali-waterfront/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.0132" data-lng="121.4648">
+<article class="modern-card" data-district="板橋區" data-lat="25.0132" data-lng="121.4648" data-space="室內" data-tags="[]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">樂雅樂 板橋車站店</h3>
 <div class="tags-group">
@@ -411,7 +440,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-restaurants/royal-host-banqiao/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.0141" data-lng="121.4643">
+<article class="modern-card" data-district="板橋區" data-lat="25.0141" data-lng="121.4643" data-space="室內" data-tags="[]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">PUTIEN 莆田 板橋環球店</h3>
 <div class="tags-group">
