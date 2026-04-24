@@ -39,76 +39,76 @@
 <h1>彰化縣親子資訊</h1>
 <p style="color:var(--text-muted); margin-top:8px;">整理彰化縣親子景點、餐廳與活動，先看交通方式、室內外與適合安排的行程方向。</p>
 <div class="wrap-nav">
-<a class="mini-pill active" href="/changhua/family-attractions/">景點 (15)</a>
-<a class="mini-pill" href="/changhua/family-restaurants/">餐廳 (14)</a>
-<a class="mini-pill" href="/changhua/family-events/">活動 (5)</a>
+<a class="mini-pill active" href="/changhua/family-attractions/">景點(15)</a>
+<a class="mini-pill" href="/changhua/family-restaurants/">餐廳(14)</a>
+<a class="mini-pill" href="/changhua/family-events/">活動(5)</a>
 </div>
 </div>
 <div class="preview-grid">
-<a class="mini-card" href="/changhua/family-attractions/baiguoshan-explore/">
+<a class="mini-card" data-cat="att" href="/changhua/family-attractions/baiguoshan-explore/">
 <div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
 <div class="mini-card-info">
 <h3>百果山探索樂園</h3>
 <p>樂園型景點和戶外空間很適合孩子放電，通常會安排半天以上。</p>
 </div>
 </a>
-<a class="mini-card" href="/changhua/family-attractions/chengmei-culture-park/">
+<a class="mini-card" data-cat="att" href="/changhua/family-attractions/chengmei-culture-park/">
 <div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
 <div class="mini-card-info">
 <h3>成美文化園</h3>
 <p>園林、古厝與散步空間都很完整，適合想安排比較有景觀感的一日遊家庭。</p>
 </div>
 </a>
-<a class="mini-card" href="/changhua/family-attractions/cookie-school/">
+<a class="mini-card" data-cat="att" href="/changhua/family-attractions/cookie-school/">
 <div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
 <div class="mini-card-info">
 <h3>台灣優格餅乾學院</h3>
 <p>免費入場的觀光工廠，對低齡孩子來說相對好走，DIY 也很有參與感。</p>
 </div>
 </a>
-<a class="mini-card" href="/changhua/family-attractions/fan-shaped-roundhouse/">
+<a class="mini-card" data-cat="att" href="/changhua/family-attractions/fan-shaped-roundhouse/">
 <div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
 <div class="mini-card-info">
 <h3>彰化扇形車庫</h3>
 <p>火車迷親子很適合安排的市區景點，停留時間不會太長，順遊很方便。</p>
 </div>
 </a>
-<a class="mini-card" href="/changhua/family-attractions/brand-health-museum/">
+<a class="mini-card" data-cat="att" href="/changhua/family-attractions/brand-health-museum/">
 <div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
 <div class="mini-card-info">
 <h3>白蘭氏健康博物館</h3>
 <p>以健康知識與品牌展示為主的室內館舍，適合雨天和短時間共學行程。</p>
 </div>
 </a>
-<a class="mini-card" href="/changhua/family-restaurants/aurora-forest/">
+<a class="mini-card" data-cat="res" href="/changhua/family-restaurants/aurora-forest/">
 <div class="mini-card-icon" style="background:#FDF2F8;color:#DB2777;">🍽️</div>
 <div class="mini-card-info">
 <h3>極光森林</h3>
 <p>可看景看夕陽，適合安排家庭聚餐。</p>
 </div>
 </a>
-<a class="mini-card" href="/changhua/family-restaurants/chappa-yuanlin/">
+<a class="mini-card" data-cat="res" href="/changhua/family-restaurants/chappa-yuanlin/">
 <div class="mini-card-icon" style="background:#FDF2F8;color:#DB2777;">🍽️</div>
 <div class="mini-card-info">
 <h3>夏帕義大利麵 彰化員林店</h3>
 <p>員林常見的家庭聚餐與親子友善選擇。</p>
 </div>
 </a>
-<a class="mini-card" href="/changhua/family-restaurants/tenway-garden/">
+<a class="mini-card" data-cat="res" href="/changhua/family-restaurants/tenway-garden/">
 <div class="mini-card-icon" style="background:#FDF2F8;color:#DB2777;">🍽️</div>
 <div class="mini-card-info">
 <h3>菁芳園</h3>
 <p>庭園感明顯，散步和聚餐都能同站完成，適合家庭出遊安排。</p>
 </div>
 </a>
-<a class="mini-card" href="/changhua/family-events/chengmei-guided-tour/">
+<a class="mini-card" data-cat="evt" href="/changhua/family-events/chengmei-guided-tour/">
 <div class="mini-card-icon" style="background:#DCFCE7;color:#16A34A;">🎉</div>
 <div class="mini-card-info">
 <h3>成美文化園導覽活動</h3>
 <p>適合整理園區導覽、季節花景和假日活動，之後可以往同一頁持續補內容。</p>
 </div>
 </a>
-<a class="mini-card" href="/changhua/family-events/cookie-diy-workshop/">
+<a class="mini-card" data-cat="evt" href="/changhua/family-events/cookie-diy-workshop/">
 <div class="mini-card-icon" style="background:#DCFCE7;color:#16A34A;">🎉</div>
 <div class="mini-card-info">
 <h3>台灣優格餅乾學院 Cookie DIY</h3>
@@ -119,5 +119,21 @@
 </main>
 <div id="site-footer-container"></div>
 <script src="/assets/footer.js"></script>
+
+<script>
+(function () {
+  // 各類別最多顯示 2 筆，其餘隱藏；每次載入隨機選取
+  ['att','res','evt'].forEach(function (cat) {
+    var pool = Array.from(document.querySelectorAll('.mini-card[data-cat="' + cat + '"]'));
+    if (pool.length <= 2) return;
+    // Fisher-Yates shuffle
+    for (var i = pool.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = pool[i]; pool[i] = pool[j]; pool[j] = tmp;
+    }
+    pool.slice(2).forEach(function (c) { c.style.display = 'none'; });
+  });
+})();
+</script>
 </body>
 </html>

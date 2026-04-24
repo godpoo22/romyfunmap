@@ -40,7 +40,8 @@
     }
   ]
 }
-</script></head>
+</script><link href="/assets/filter.css" rel="stylesheet"/>
+</head>
 <body>
 <div data-active="events" id="site-header-container"></div>
 <main class="page-pad">
@@ -58,9 +59,28 @@
 <button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
 </div>
 </section>
-<h2 style="font-size:18px;font-weight:800;color:var(--text-dark);margin:28px 0 12px;">特展與限期活動</h2>
+<div id="filter-bar" style="background:rgba(255,255,255,0.82);backdrop-filter:blur(14px);border:1px solid var(--border-color);border-radius:14px;padding:12px 16px;margin-bottom:20px;display:flex;flex-direction:column;gap:8px;">
+  <div class="filter-row">
+  <span class="filter-label">類型</span>
+  <button class="f-btn tag-btn" data-tag="展覽特展">🖼️ 展覽特展</button>
+  <button class="f-btn tag-btn" data-tag="手作體驗">🎨 手作體驗</button>
+  <button class="f-btn tag-btn" data-tag="生態自然">🌿 生態自然</button>
+  <button class="f-btn tag-btn" data-tag="演出劇場">🎭 演出劇場</button>
+  <button class="f-btn tag-btn" data-tag="節慶活動">🎊 節慶活動</button>
+  <button class="f-btn tag-btn" data-tag="博物館活動">🏛️ 博物館活動</button>
+  <button class="f-btn tag-btn" data-tag="戶外探索">🧭 戶外探索</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">費用</span>
+  <button class="f-btn tag-btn" data-tag="免費">✅ 免費</button>
+  <button class="f-btn tag-btn" data-tag="付費">💳 付費</button>
+  <button class="f-btn reset-btn" id="filter-reset">清除篩選</button>
+  </div>
+</div>
+<div id="filter-count" style="font-size:13px;color:var(--text-muted);margin-bottom:8px;display:none;">共 <strong id="visible-count">0</strong> 個</div>
 <section class="modern-cards-grid" id="listing-grid">
-<article class="modern-card" data-lat="24.9694" data-lng="121.2457">
+<div class="section-divider">特展與限期活動</div>
+<article class="modern-card" data-lat="24.9694" data-lng="121.2457" data-tags="[&quot;節慶活動&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">2026 桃園桐花祭・客庄親子桐樂會</h3>
 <div class="tags-group">
@@ -85,7 +105,7 @@
 </div>
 <a class="action-btn" href="/taoyuan/family-events/tonghwa-festival-2026/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.9933" data-lng="121.3007">
+<article class="modern-card" data-lat="24.9933" data-lng="121.3007" data-tags="[&quot;演出劇場&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">鐵玫瑰藝術節・好餓的毛毛蟲秀</h3>
 <div class="tags-group">
@@ -110,7 +130,7 @@
 </div>
 <a class="action-btn" href="/taoyuan/family-events/iron-rose-caterpillar-2026/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.9907" data-lng="121.3031">
+<article class="modern-card" data-lat="24.9907" data-lng="121.3031" data-tags="[&quot;博物館活動&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">桃園市孔廟・文化體驗與祈福系列</h3>
 <div class="tags-group">
@@ -135,7 +155,7 @@
 </div>
 <a class="action-btn" href="/taoyuan/family-events/confucius-temple-2026/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.9932" data-lng="121.2958">
+<article class="modern-card" data-lat="24.9932" data-lng="121.2958" data-tags="[&quot;手作體驗&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">Toyota 玩具復活節・桃園場</h3>
 <div class="tags-group">
@@ -160,7 +180,7 @@
 </div>
 <a class="action-btn" href="/taoyuan/family-events/toy-revival-taoyuan-2026/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.9955" data-lng="121.2995">
+<article class="modern-card" data-lat="24.9955" data-lng="121.2995" data-tags="[&quot;手作體驗&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">童演童語・兒童心理互動工作坊</h3>
 <div class="tags-group">
@@ -185,10 +205,9 @@
 </div>
 <a class="action-btn" href="/taoyuan/family-events/children-drama-workshop-2026/">閱讀整理詳情 ➜</a>
 </article>
-</section>
-<h2 style="font-size:18px;font-weight:800;color:var(--text-dark);margin:36px 0 12px;">館舍常設與工作坊</h2>
-<section class="modern-cards-grid">
-<article class="modern-card" data-lat="24.9936" data-lng="121.3010">
+
+<div class="section-divider">館舍常設與工作坊</div>
+<article class="modern-card" data-lat="24.9936" data-lng="121.3010" data-tags="[&quot;手作體驗&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">郭元益糕餅手作體驗</h3>
 <div class="tags-group">
@@ -213,7 +232,7 @@
 </div>
 <a class="action-btn" href="/taoyuan/family-events/kuos-diy-workshop/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.9936" data-lng="121.3010">
+<article class="modern-card" data-lat="24.9936" data-lng="121.3010" data-tags="[&quot;博物館活動&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">土地公文化館預約導覽</h3>
 <div class="tags-group">
@@ -238,7 +257,7 @@
 </div>
 <a class="action-btn" href="/taoyuan/family-events/land-god-guided-tour/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.9936" data-lng="121.3010">
+<article class="modern-card" data-lat="24.9936" data-lng="121.3010" data-tags="[&quot;博物館活動&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">桃園軌道願景館導覽</h3>
 <div class="tags-group">
@@ -263,7 +282,7 @@
 </div>
 <a class="action-btn" href="/taoyuan/family-events/railway-pavilion-guided-tour/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.9528" data-lng="121.2236">
+<article class="modern-card" data-lat="24.9528" data-lng="121.2236" data-tags="[&quot;手作體驗&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">桃園市兒童美術館工作坊</h3>
 <div class="tags-group">
@@ -291,4 +310,5 @@
 </section>
 </div>
 </main>
-<div id="site-footer-container"></div><script src="/assets/footer.js"></script></body></html>
+<div id="site-footer-container"></div><script src="/assets/footer.js"></script><script src="/assets/city-filter.js"></script>
+</body></html>

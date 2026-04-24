@@ -41,70 +41,94 @@
 <div class="wrap-nav">
 <a class="mini-pill active" href="/miaoli/family-attractions/">景點 (14)</a>
 <a class="mini-pill" href="/miaoli/family-restaurants/">餐廳 (13)</a>
-<a class="mini-pill" href="/miaoli/family-events/">活動 (3)</a>
+<a class="mini-pill" href="/miaoli/family-events/">活動 (9)</a>
 </div>
 </div>
 <div class="preview-grid">
-<a class="mini-card" href="/miaoli/family-attractions/arwin-rose-garden/">
+<a class="mini-card" data-cat="att" href="/miaoli/family-attractions/arwin-rose-garden/">
 <div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
 <div class="mini-card-info">
 <h3>雅聞七里香玫瑰森林</h3>
 <p>整理雅聞七里香玫瑰森林的散步動線、停留時間與停車資訊。</p>
 </div>
 </a>
-<a class="mini-card" href="/miaoli/family-attractions/flying-cow-ranch/">
+<a class="mini-card" data-cat="att" href="/miaoli/family-attractions/flying-cow-ranch/">
 <div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
 <div class="mini-card-info">
 <h3>飛牛牧場</h3>
 <p>整理飛牛牧場的動物互動、園區停留時間與停車資訊。</p>
 </div>
 </a>
-<a class="mini-card" href="/miaoli/family-attractions/green-ark/">
+<a class="mini-card" data-cat="att" href="/miaoli/family-attractions/green-ark/">
 <div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
 <div class="mini-card-info">
 <h3>綠葉方舟</h3>
 <p>森林系景觀很適合親子散步和拍照。</p>
 </div>
 </a>
-<a class="mini-card" href="/miaoli/family-attractions/old-mountain-line-rail-bike/">
+<a class="mini-card" data-cat="att" href="/miaoli/family-attractions/old-mountain-line-rail-bike/">
 <div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
 <div class="mini-card-info">
 <h3>舊山線鐵道自行車</h3>
 <p>結合鐵道、隧道與山景的體驗型景點，適合火車迷親子安排半日行程。</p>
 </div>
 </a>
-<a class="mini-card" href="/miaoli/family-restaurants/cloud-land-restaurant/">
+<a class="mini-card" data-cat="res" href="/miaoli/family-restaurants/cloud-land-restaurant/">
 <div class="mini-card-icon" style="background:#FDF2F8;color:#DB2777;">🍽️</div>
 <div class="mini-card-info">
 <h3>勻淨湖法式餐廳</h3>
 <p>湖景和景觀都很適合安排家庭聚餐。</p>
 </div>
 </a>
-<a class="mini-card" href="/miaoli/family-restaurants/flying-cow-restaurant/">
+<a class="mini-card" data-cat="res" href="/miaoli/family-restaurants/flying-cow-restaurant/">
 <div class="mini-card-icon" style="background:#FDF2F8;color:#DB2777;">🍽️</div>
 <div class="mini-card-info">
 <h3>飛牛牧場餐廳</h3>
 <p>很適合直接接牧場行程，不用額外換點。</p>
 </div>
 </a>
-<a class="mini-card" href="/miaoli/family-restaurants/shanwenquan-restaurant/">
+<a class="mini-card" data-cat="res" href="/miaoli/family-restaurants/shanwenquan-restaurant/">
 <div class="mini-card-icon" style="background:#FDF2F8;color:#DB2777;">🍽️</div>
 <div class="mini-card-info">
 <h3>山吻泉餐廳咖啡</h3>
 <p>大湖景觀與用餐空間結合，適合安排山線親子聚餐。</p>
 </div>
 </a>
-<a class="mini-card" href="/miaoli/family-events/arwin-rose-program/">
+<a class="mini-card" data-cat="evt" href="/miaoli/family-events/arwin-rose-program/">
 <div class="mini-card-icon" style="background:#DCFCE7;color:#16A34A;">🎉</div>
 <div class="mini-card-info">
 <h3>雅聞七里香季節活動</h3>
 <p>整理雅聞七里香玫瑰森林的花季活動、假日活動與停車資訊。</p>
 </div>
 </a>
-<a class="mini-card" href="/miaoli/family-events/taiwan-hakka-museum-program/">
+<a class="mini-card" data-cat="evt" href="/miaoli/family-events/taiwan-hakka-museum-program/">
 <div class="mini-card-icon" style="background:#DCFCE7;color:#16A34A;">🎉</div>
 <div class="mini-card-info">
 <h3>臺灣客家文化館親子活動</h3>
 <p>整理臺灣客家文化館的導覽、工作坊與節慶活動資訊。</p>
 </div>
 <
+</div>
+</a>
+</div>
+</main>
+<div id="site-footer-container"></div>
+<script src="/assets/footer.js"></script>
+
+<script>
+(function () {
+  // 各類別最多顯示 2 筆，其餘隱藏；每次載入隨機選取
+  ['att','res','evt'].forEach(function (cat) {
+    var pool = Array.from(document.querySelectorAll('.mini-card[data-cat="' + cat + '"]'));
+    if (pool.length <= 2) return;
+    // Fisher-Yates shuffle
+    for (var i = pool.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = pool[i]; pool[i] = pool[j]; pool[j] = tmp;
+    }
+    pool.slice(2).forEach(function (c) { c.style.display = 'none'; });
+  });
+})();
+</script>
+</body>
+</html>

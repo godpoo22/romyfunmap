@@ -52,31 +52,43 @@
 </div>
 </section>
 <div id="filter-bar" style="background:rgba(255,255,255,0.82);backdrop-filter:blur(14px);border:1px solid var(--border-color);border-radius:14px;padding:12px 16px;margin-bottom:20px;display:flex;flex-direction:column;gap:8px;">
-<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
-<span style="font-size:12px;font-weight:700;color:var(--text-muted);white-space:nowrap;width:32px;flex-shrink:0;">地區</span>
-<button class="f-btn dist-btn" data-district="士林區">士林區</button>
-<button class="f-btn dist-btn" data-district="內湖區">內湖區</button>
-<button class="f-btn dist-btn" data-district="中正區">中正區</button>
-<button class="f-btn dist-btn" data-district="信義區">信義區</button>
-<button class="f-btn dist-btn" data-district="大安區">大安區</button>
-<button class="f-btn dist-btn" data-district="南港區">南港區</button>
-<button class="f-btn dist-btn" data-district="中山區">中山區</button>
-</div>
-<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
-<span style="font-size:12px;font-weight:700;color:var(--text-muted);white-space:nowrap;width:32px;flex-shrink:0;">設施</span>
-<button class="f-btn tag-btn" data-tag="play">🎠 兒童遊戲區</button>
-<button class="f-btn tag-btn" data-tag="kidsmeal">🍱 兒童餐點</button>
-<button class="f-btn tag-btn" data-tag="outdoor">🌿 廣場跑跳空間</button>
-</div>
-<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
-<span style="font-size:12px;font-weight:700;color:var(--text-muted);white-space:nowrap;width:32px;flex-shrink:0;">空間</span>
-<button class="f-btn space-btn" data-space="室內">🏠 室內</button>
-<button class="f-btn space-btn" data-space="戶外">☀️ 戶外</button>
-<button class="f-btn reset-btn" id="filter-reset">清除篩選</button>
-</div>
+  <div class="filter-row">
+  <span class="filter-label">地區</span>
+  <button class="f-btn dist-btn" data-district="士林區">士林區</button>
+  <button class="f-btn dist-btn" data-district="內湖區">內湖區</button>
+  <button class="f-btn dist-btn" data-district="中正區">中正區</button>
+  <button class="f-btn dist-btn" data-district="信義區">信義區</button>
+  <button class="f-btn dist-btn" data-district="大安區">大安區</button>
+  <button class="f-btn dist-btn" data-district="南港區">南港區</button>
+  <button class="f-btn dist-btn" data-district="中山區">中山區</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">類型</span>
+  <button class="f-btn tag-btn" data-tag="親子餐廳">🧸 親子餐廳</button>
+  <button class="f-btn tag-btn" data-tag="景觀餐廳">🌄 景觀餐廳</button>
+  <button class="f-btn tag-btn" data-tag="咖啡廳">☕ 咖啡廳</button>
+  <button class="f-btn tag-btn" data-tag="農場用餐">🐄 農場用餐</button>
+  <button class="f-btn tag-btn" data-tag="兒童餐點">🍱 兒童餐點</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">設施</span>
+  <button class="f-btn tag-btn" data-tag="兒童遊戲區">🎠 兒童遊戲區</button>
+  <button class="f-btn tag-btn" data-tag="可包場">🎉 可包場</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">空間</span>
+  <button class="f-btn tag-btn" data-tag="室內">🏠 室內</button>
+  <button class="f-btn tag-btn" data-tag="戶外">☀️ 戶外</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">費用</span>
+  <button class="f-btn tag-btn" data-tag="有低消">💳 有低消</button>
+  <button class="f-btn tag-btn" data-tag="無低消">✅ 無低消</button>
+  <button class="f-btn reset-btn" id="filter-reset">清除篩選</button>
+  </div>
 </div>
 <div id="filter-count" style="font-size:13px;color:var(--text-muted);margin-bottom:8px;display:none;">共 <strong id="visible-count">0</strong> 間餐廳</div><section class="modern-cards-grid" id="listing-grid">
-<article class="modern-card" data-district="士林區" data-lat="25.0928" data-lng="121.5197" data-space="室內" data-tags='["play", "kidsmeal"]'>
+<article class="modern-card" data-district="士林區" data-lat="25.0928" data-lng="121.5197" data-space="室內" data-tags='["play", "kidsmeal"]' data-tags="[&quot;親子餐廳&quot;, &quot;咖啡廳&quot;, &quot;兒童遊戲區&quot;, &quot;室內&quot;, &quot;有低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">甲蟲秘境親子餐廳</h3>
 <div class="tags-group">
@@ -94,7 +106,7 @@
 </div>
 <a class="action-btn" href="/taipei/family-restaurants/beetle-paradise/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="內湖區" data-lat="25.0687" data-lng="121.5889" data-space="室內" data-tags='["play", "kidsmeal", "outdoor"]'>
+<article class="modern-card" data-district="內湖區" data-lat="25.0687" data-lng="121.5889" data-space="室內" data-tags='["play", "kidsmeal", "outdoor"]' data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;有低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">象園咖啡 內湖店</h3>
 <div class="tags-group">
@@ -112,7 +124,7 @@
 </div>
 <a class="action-btn" href="/taipei/family-restaurants/elephant-garden-neihu/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="中正區" data-lat="25.0324" data-lng="121.5199" data-space="室內" data-tags='["play"]'>
+<article class="modern-card" data-district="中正區" data-lat="25.0324" data-lng="121.5199" data-space="室內" data-tags='["play"]' data-tags="[&quot;親子餐廳&quot;, &quot;兒童遊戲區&quot;, &quot;室內&quot;, &quot;無低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">農人餐桌 FARM TABLE</h3>
 <div class="tags-group">
@@ -130,7 +142,7 @@
 </div>
 <a class="action-btn" href="/taipei/family-restaurants/farm-table/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="信義區" data-lat="25.0438" data-lng="121.5615" data-space="室內" data-tags="[]">
+<article class="modern-card" data-district="信義區" data-lat="25.0438" data-lng="121.5615" data-space="室內" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;有低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">gonnaPLUS 松菸店</h3>
 <div class="tags-group">
@@ -148,7 +160,7 @@
 </div>
 <a class="action-btn" href="/taipei/family-restaurants/gonnaplus-songyan/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="士林區" data-lat="25.1178" data-lng="121.5318" data-space="室內" data-tags='["kidsmeal"]'>
+<article class="modern-card" data-district="士林區" data-lat="25.1178" data-lng="121.5318" data-space="室內" data-tags='["kidsmeal"]' data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;有低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">JB's Diner</h3>
 <div class="tags-group">
@@ -166,7 +178,7 @@
 </div>
 <a class="action-btn" href="/taipei/family-restaurants/jbs-diner/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="內湖區" data-lat="25.0687" data-lng="121.5889" data-space="室內" data-tags="[]">
+<article class="modern-card" data-district="內湖區" data-lat="25.0687" data-lng="121.5889" data-space="室內" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;有低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">覺旅咖啡 陽光店</h3>
 <div class="tags-group">
@@ -184,7 +196,7 @@
 </div>
 <a class="action-btn" href="/taipei/family-restaurants/journey-kaffe-sunshine/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="內湖區" data-lat="25.0687" data-lng="121.5889" data-space="室內" data-tags='["play"]'>
+<article class="modern-card" data-district="內湖區" data-lat="25.0687" data-lng="121.5889" data-space="室內" data-tags='["play"]' data-tags="[&quot;親子餐廳&quot;, &quot;兒童遊戲區&quot;, &quot;室內&quot;, &quot;有低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">Money Jump 媽妳講 親子餐廳</h3>
 <div class="tags-group">
@@ -202,7 +214,7 @@
 </div>
 <a class="action-btn" href="/taipei/family-restaurants/moneyjump/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="大安區" data-lat="25.0324" data-lng="121.5199" data-space="室內" data-tags='["play"]'>
+<article class="modern-card" data-district="大安區" data-lat="25.0324" data-lng="121.5199" data-space="室內" data-tags='["play"]' data-tags="[&quot;親子餐廳&quot;, &quot;兒童遊戲區&quot;, &quot;室內&quot;, &quot;有低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">大樹先生的家 古亭店</h3>
 <div class="tags-group">
@@ -220,7 +232,7 @@
 </div>
 <a class="action-btn" href="/taipei/family-restaurants/mr-tree-guting/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="南港區" data-lat="25.0523" data-lng="121.6070" data-space="室內" data-tags='["kidsmeal"]'>
+<article class="modern-card" data-district="南港區" data-lat="25.0523" data-lng="121.6070" data-space="室內" data-tags='["kidsmeal"]' data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;有低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">貳樓餐廳 南港車站店</h3>
 <div class="tags-group">
@@ -238,7 +250,7 @@
 </div>
 <a class="action-btn" href="/taipei/family-restaurants/second-floor-nangang/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="中正區" data-lat="25.0260" data-lng="121.5437" data-space="室內" data-tags='["kidsmeal"]'>
+<article class="modern-card" data-district="中正區" data-lat="25.0260" data-lng="121.5437" data-space="室內" data-tags='["kidsmeal"]' data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;有低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">貳樓餐廳 仁愛店</h3>
 <div class="tags-group">
@@ -256,7 +268,7 @@
 </div>
 <a class="action-btn" href="/taipei/family-restaurants/second-floor-renai/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="中山區" data-lat="25.0580" data-lng="121.5570" data-space="室內" data-tags='["play", "kidsmeal"]'>
+<article class="modern-card" data-district="中山區" data-lat="25.0580" data-lng="121.5570" data-space="室內" data-tags='["play", "kidsmeal"]' data-tags="[&quot;親子餐廳&quot;, &quot;兒童遊戲區&quot;, &quot;室內&quot;, &quot;有低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">淘憩時光</h3>
 <div class="tags-group">
@@ -274,7 +286,7 @@
 </div>
 <a class="action-btn" href="/taipei/family-restaurants/taoji-playtime/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="內湖區" data-lat="25.0799" data-lng="121.5758" data-space="室內" data-tags='["play"]'>
+<article class="modern-card" data-district="內湖區" data-lat="25.0799" data-lng="121.5758" data-space="室內" data-tags='["play"]' data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;有低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">Triple Cafe</h3>
 <div class="tags-group">

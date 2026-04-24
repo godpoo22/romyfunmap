@@ -40,7 +40,8 @@
     }
   ]
 }
-</script></head>
+</script><link href="/assets/filter.css" rel="stylesheet"/>
+</head>
 <body>
 <div data-active="attractions" id="site-header-container"></div>
 <main class="page-pad">
@@ -58,8 +59,33 @@
 <button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
 </div>
 </section>
+<div id="filter-bar" style="background:rgba(255,255,255,0.82);backdrop-filter:blur(14px);border:1px solid var(--border-color);border-radius:14px;padding:12px 16px;margin-bottom:20px;display:flex;flex-direction:column;gap:8px;">
+  <div class="filter-row">
+  <span class="filter-label">類型</span>
+  <button class="f-btn tag-btn" data-tag="公園遊具">🛝 公園遊具</button>
+  <button class="f-btn tag-btn" data-tag="動物農場">🐄 動物農場</button>
+  <button class="f-btn tag-btn" data-tag="博物館">🏛️ 博物館</button>
+  <button class="f-btn tag-btn" data-tag="水族館">🐟 水族館</button>
+  <button class="f-btn tag-btn" data-tag="主題樂園">🎡 主題樂園</button>
+  <button class="f-btn tag-btn" data-tag="自然生態">🌿 自然生態</button>
+  <button class="f-btn tag-btn" data-tag="鐵道交通">🚂 鐵道交通</button>
+  <button class="f-btn tag-btn" data-tag="老街文化">🏮 老街文化</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">空間</span>
+  <button class="f-btn tag-btn" data-tag="室內">🏠 室內</button>
+  <button class="f-btn tag-btn" data-tag="戶外">☀️ 戶外</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">費用</span>
+  <button class="f-btn tag-btn" data-tag="免費">✅ 免費</button>
+  <button class="f-btn tag-btn" data-tag="付費">💳 付費</button>
+  <button class="f-btn reset-btn" id="filter-reset">清除篩選</button>
+  </div>
+</div>
+<div id="filter-count" style="font-size:13px;color:var(--text-muted);margin-bottom:8px;display:none;">共 <strong id="visible-count">0</strong> 個</div>
 <section class="modern-cards-grid" id="listing-grid">
-<article class="modern-card" data-lat="24.5602" data-lng="120.8214">
+<article class="modern-card" data-lat="24.5602" data-lng="120.8214" data-tags="[&quot;自然生態&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">雅聞七里香玫瑰森林</h3>
 <div class="tags-group">
@@ -87,7 +113,7 @@
 </div>
 <a class="action-btn" href="/miaoli/family-attractions/arwin-rose-garden/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.5602" data-lng="120.8214">
+<article class="modern-card" data-lat="24.5602" data-lng="120.8214" data-tags="[&quot;動物農場&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">飛牛牧場</h3>
 <div class="tags-group">
@@ -115,7 +141,7 @@
 </div>
 <a class="action-btn" href="/miaoli/family-attractions/flying-cow-ranch/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.4102" data-lng="120.7705">
+<article class="modern-card" data-lat="24.4102" data-lng="120.7705" data-tags="[&quot;自然生態&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">綠葉方舟</h3>
 <div class="tags-group">
@@ -143,7 +169,7 @@
 </div>
 <a class="action-btn" href="/miaoli/family-attractions/green-ark/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.4102" data-lng="120.7705">
+<article class="modern-card" data-lat="24.4102" data-lng="120.7705" data-tags="[&quot;老街文化&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">龍騰斷橋</h3>
 <div class="tags-group">
@@ -171,7 +197,7 @@
 </div>
 <a class="action-btn" href="/miaoli/family-attractions/longteng-bridge/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.5602" data-lng="120.8214">
+<article class="modern-card" data-lat="24.5602" data-lng="120.8214" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">貓裏喵親子公園</h3>
 <div class="tags-group">
@@ -199,7 +225,7 @@
 </div>
 <a class="action-btn" href="/miaoli/family-attractions/maolimao-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.5602" data-lng="120.8214">
+<article class="modern-card" data-lat="24.5602" data-lng="120.8214" data-tags="[&quot;主題樂園&quot;, &quot;室內&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">尚順育樂世界</h3>
 <div class="tags-group">
@@ -227,7 +253,7 @@
 </div>
 <a class="action-btn" href="/miaoli/family-attractions/shangshun-theme-world/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.5602" data-lng="120.8214">
+<article class="modern-card" data-lat="24.5602" data-lng="120.8214" data-tags="[&quot;博物館&quot;, &quot;室內&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">臺灣客家文化館</h3>
 <div class="tags-group">
@@ -255,7 +281,7 @@
 </div>
 <a class="action-btn" href="/miaoli/family-attractions/taiwan-hakka-museum/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.5602" data-lng="120.8214">
+<article class="modern-card" data-lat="24.5602" data-lng="120.8214" data-tags="[&quot;自然生態&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">西湖渡假村</h3>
 <div class="tags-group">
@@ -283,7 +309,7 @@
 </div>
 <a class="action-btn" href="/miaoli/family-attractions/westlake-resort/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.4102" data-lng="120.7705">
+<article class="modern-card" data-lat="24.4102" data-lng="120.7705" data-tags="[&quot;自然生態&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">卓也小屋</h3>
 <div class="tags-group">
@@ -311,7 +337,7 @@
 </div>
 <a class="action-btn" href="/miaoli/family-attractions/zhuoye-cottage/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.4088" data-lng="120.7756">
+<article class="modern-card" data-lat="24.4088" data-lng="120.7756" data-tags="[&quot;鐵道交通&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">舊山線鐵道自行車</h3>
 <div class="tags-group">
@@ -326,7 +352,7 @@
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>鐵道體驗 / 山城景點</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/miaoli/family-attractions/old-mountain-line-rail-bike/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.5743" data-lng="120.8871">
+<article class="modern-card" data-lat="24.5743" data-lng="120.8871" data-tags="[&quot;自然生態&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">明德水庫</h3>
 <div class="tags-group">
@@ -341,7 +367,7 @@
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>水岸景點 / 散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/miaoli/family-attractions/mingde-reservoir/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.6002" data-lng="121.0006">
+<article class="modern-card" data-lat="24.6002" data-lng="121.0006" data-tags="[&quot;老街文化&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">南庄老街</h3>
 <div class="tags-group">
@@ -356,7 +382,7 @@
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>老街景點 / 散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/miaoli/family-attractions/nanzhuang-old-street/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.4716" data-lng="121.0795">
+<article class="modern-card" data-lat="24.4716" data-lng="121.0795" data-tags="[&quot;自然生態&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">泰安溫泉風景區</h3>
 <div class="tags-group">
@@ -371,7 +397,7 @@
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>山區景點 / 溫泉順遊</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/miaoli/family-attractions/tai-an-hot-spring-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.5608" data-lng="120.8218">
+<article class="modern-card" data-lat="24.5608" data-lng="120.8218" data-tags="[&quot;博物館&quot;, &quot;室內&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">苗栗特色館</h3>
 <div class="tags-group">
@@ -384,3 +410,13 @@
 </div>
 <p class="card-desc">在地特色與品牌展示集中，停留時間短，適合接市區或公園行程一起安排。</p>
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>展
+</article>
+</section>
+</div>
+</main>
+<div id="site-footer-container"></div>
+<script src="/assets/footer.js"></script>
+<script src="/assets/location-sort-v2.js"></script>
+<script src="/assets/city-filter.js"></script>
+</body>
+</html>

@@ -40,7 +40,8 @@
     }
   ]
 }
-</script></head>
+</script><link href="/assets/filter.css" rel="stylesheet"/>
+</head>
 <body>
 <div data-active="events" id="site-header-container"></div>
 <main class="page-pad">
@@ -59,10 +60,29 @@
 </div>
 </section>
 
-<h2 style="font-size:18px;font-weight:800;color:var(--text-dark);margin:24px 0 12px;">特展與限期活動</h2>
+<div id="filter-bar" style="background:rgba(255,255,255,0.82);backdrop-filter:blur(14px);border:1px solid var(--border-color);border-radius:14px;padding:12px 16px;margin-bottom:20px;display:flex;flex-direction:column;gap:8px;">
+  <div class="filter-row">
+  <span class="filter-label">類型</span>
+  <button class="f-btn tag-btn" data-tag="展覽特展">🖼️ 展覽特展</button>
+  <button class="f-btn tag-btn" data-tag="手作體驗">🎨 手作體驗</button>
+  <button class="f-btn tag-btn" data-tag="生態自然">🌿 生態自然</button>
+  <button class="f-btn tag-btn" data-tag="演出劇場">🎭 演出劇場</button>
+  <button class="f-btn tag-btn" data-tag="節慶活動">🎊 節慶活動</button>
+  <button class="f-btn tag-btn" data-tag="博物館活動">🏛️ 博物館活動</button>
+  <button class="f-btn tag-btn" data-tag="戶外探索">🧭 戶外探索</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">費用</span>
+  <button class="f-btn tag-btn" data-tag="免費">✅ 免費</button>
+  <button class="f-btn tag-btn" data-tag="付費">💳 付費</button>
+  <button class="f-btn reset-btn" id="filter-reset">清除篩選</button>
+  </div>
+</div>
+<div id="filter-count" style="font-size:13px;color:var(--text-muted);margin-bottom:8px;display:none;">共 <strong id="visible-count">0</strong> 個</div>
 <section class="modern-cards-grid" id="listing-grid">
+<div class="section-divider">特展與限期活動</div>
 
-<article class="modern-card" data-lat="23.0041" data-lng="120.1595">
+<article class="modern-card" data-lat="23.0041" data-lng="120.1595" data-tags="[&quot;節慶活動&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">蕭壠 14 倉兒童藝術節</h3>
 <div class="tags-group">
@@ -92,7 +112,7 @@
 <a class="action-btn" href="/tainan/family-events/soulangh-art-festival-2026/">閱讀整理詳情 ➜</a>
 </article>
 
-<article class="modern-card" data-lat="22.9815" data-lng="120.1655">
+<article class="modern-card" data-lat="22.9815" data-lng="120.1655" data-tags="[&quot;節慶活動&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">新營藝術季「水水來造浪」</h3>
 <div class="tags-group">
@@ -122,7 +142,7 @@
 <a class="action-btn" href="/tainan/family-events/xinying-arts-festival-2026/">閱讀整理詳情 ➜</a>
 </article>
 
-<article class="modern-card" data-lat="22.9881" data-lng="120.2050">
+<article class="modern-card" data-lat="22.9881" data-lng="120.2050" data-tags="[&quot;展覽特展&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">遨遊雲端・維吉妮亞的飛行想像</h3>
 <div class="tags-group">
@@ -152,7 +172,7 @@
 <a class="action-btn" href="/tainan/family-events/water-town-exhibition-2026/">閱讀整理詳情 ➜</a>
 </article>
 
-<article class="modern-card" data-lat="22.9953" data-lng="120.1609">
+<article class="modern-card" data-lat="22.9953" data-lng="120.1609" data-tags="[&quot;展覽特展&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">德陽艦「熊熊艦到你」泰迪熊特展</h3>
 <div class="tags-group">
@@ -182,7 +202,7 @@
 <a class="action-btn" href="/tainan/family-events/deyang-teddy-bear-2026/">閱讀整理詳情 ➜</a>
 </article>
 
-<article class="modern-card" data-lat="23.0012" data-lng="120.2231">
+<article class="modern-card" data-lat="23.0012" data-lng="120.2231" data-tags="[&quot;戶外探索&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">台江風雲錄・解謎冒險</h3>
 <div class="tags-group">
@@ -211,7 +231,7 @@
 <a class="action-btn" href="/tainan/family-events/taijiang-adventure-2026/">閱讀整理詳情 ➜</a>
 </article>
 
-<article class="modern-card" data-lat="23.0041" data-lng="120.1595">
+<article class="modern-card" data-lat="23.0041" data-lng="120.1595" data-tags="[&quot;展覽特展&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">摸魚美學兒童藝術展</h3>
 <div class="tags-group">
@@ -240,12 +260,10 @@
 <a class="action-btn" href="/tainan/family-events/moyu-aesthetics-2026/">閱讀整理詳情 ➜</a>
 </article>
 
-</section>
 
-<h2 style="font-size:18px;font-weight:800;color:var(--text-dark);margin:24px 0 12px;">官方文化館舍</h2>
-<section class="modern-cards-grid">
+<div class="section-divider">官方文化館舍</div>
 
-<article class="modern-card" data-lat="22.9881" data-lng="120.2050">
+<article class="modern-card" data-lat="22.9881" data-lng="120.2050" data-tags="[&quot;博物館活動&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">國立臺南生活美學館</h3>
 <div class="tags-group">
@@ -275,7 +293,7 @@
 <a class="action-btn" href="/tainan/family-events/tainan-living-arts-2026/">閱讀整理詳情 ➜</a>
 </article>
 
-<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270" data-tags="[&quot;博物館活動&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">奇美博物館 動物廳親子共遊</h3>
 <div class="tags-group">
@@ -305,7 +323,7 @@
 <a class="action-btn" href="/tainan/family-events/chimei-animal-hall-family-guide/">閱讀整理詳情 ➜</a>
 </article>
 
-<article class="modern-card" data-lat="23.0280" data-lng="120.2631">
+<article class="modern-card" data-lat="23.0280" data-lng="120.2631" data-tags="[&quot;博物館活動&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">臺史博親子活動</h3>
 <div class="tags-group">
@@ -335,12 +353,10 @@
 <a class="action-btn" href="/tainan/family-events/nmth-family-program/">閱讀整理詳情 ➜</a>
 </article>
 
-</section>
 
-<h2 style="font-size:18px;font-weight:800;color:var(--text-dark);margin:24px 0 12px;">自然探索</h2>
-<section class="modern-cards-grid">
+<div class="section-divider">自然探索</div>
 
-<article class="modern-card" data-lat="23.0963" data-lng="120.5043">
+<article class="modern-card" data-lat="23.0963" data-lng="120.5043" data-tags="[&quot;博物館活動&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">左鎮化石園區 古今山海化石傳奇</h3>
 <div class="tags-group">
@@ -374,4 +390,5 @@
 
 </div>
 </main>
-<div id="site-footer-container"></div><script src="/assets/footer.js"></script></body></html>
+<div id="site-footer-container"></div><script src="/assets/footer.js"></script><script src="/assets/city-filter.js"></script>
+</body></html>

@@ -40,7 +40,8 @@
     }
   ]
 }
-</script></head>
+</script><link href="/assets/filter.css" rel="stylesheet"/>
+</head>
 <body>
 <div data-active="restaurants" id="site-header-container"></div>
 <main class="page-pad">
@@ -58,8 +59,35 @@
 <button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
 </div>
 </section>
+<div id="filter-bar" style="background:rgba(255,255,255,0.82);backdrop-filter:blur(14px);border:1px solid var(--border-color);border-radius:14px;padding:12px 16px;margin-bottom:20px;display:flex;flex-direction:column;gap:8px;">
+  <div class="filter-row">
+  <span class="filter-label">類型</span>
+  <button class="f-btn tag-btn" data-tag="親子餐廳">🧸 親子餐廳</button>
+  <button class="f-btn tag-btn" data-tag="景觀餐廳">🌄 景觀餐廳</button>
+  <button class="f-btn tag-btn" data-tag="咖啡廳">☕ 咖啡廳</button>
+  <button class="f-btn tag-btn" data-tag="農場用餐">🐄 農場用餐</button>
+  <button class="f-btn tag-btn" data-tag="兒童餐點">🍱 兒童餐點</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">設施</span>
+  <button class="f-btn tag-btn" data-tag="兒童遊戲區">🎠 兒童遊戲區</button>
+  <button class="f-btn tag-btn" data-tag="可包場">🎉 可包場</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">空間</span>
+  <button class="f-btn tag-btn" data-tag="室內">🏠 室內</button>
+  <button class="f-btn tag-btn" data-tag="戶外">☀️ 戶外</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">費用</span>
+  <button class="f-btn tag-btn" data-tag="有低消">💳 有低消</button>
+  <button class="f-btn tag-btn" data-tag="無低消">✅ 無低消</button>
+  <button class="f-btn reset-btn" id="filter-reset">清除篩選</button>
+  </div>
+</div>
+<div id="filter-count" style="font-size:13px;color:var(--text-muted);margin-bottom:8px;display:none;">共 <strong id="visible-count">0</strong> 個</div>
 <section class="modern-cards-grid" id="listing-grid">
-<article class="modern-card" data-lat="24.9657" data-lng="121.2243">
+<article class="modern-card" data-lat="24.9657" data-lng="121.2243" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">熊禾家 居酒食堂</h3>
 <div class="tags-group">
@@ -87,7 +115,7 @@
 </div>
 <a class="action-btn" href="/taoyuan/family-restaurants/bear-grain-house/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.9657" data-lng="121.2243">
+<article class="modern-card" data-lat="24.9657" data-lng="121.2243" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">夏帕義大利麵 桃園中壢店</h3>
 <div class="tags-group">
@@ -115,7 +143,7 @@
 </div>
 <a class="action-btn" href="/taoyuan/family-restaurants/chappa-zhongli/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.9936" data-lng="121.3010">
+<article class="modern-card" data-lat="24.9936" data-lng="121.3010" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">FUWA 芙蘊小食料理</h3>
 <div class="tags-group">
@@ -143,7 +171,7 @@
 </div>
 <a class="action-btn" href="/taoyuan/family-restaurants/fuwa-kitchen/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.9141" data-lng="121.1457">
+<article class="modern-card" data-lat="24.9141" data-lng="121.1457" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">千蘭拉麵</h3>
 <div class="tags-group">
@@ -171,7 +199,7 @@
 </div>
 <a class="action-btn" href="/taoyuan/family-restaurants/qianlan-ramen/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.9936" data-lng="121.3010">
+<article class="modern-card" data-lat="24.9936" data-lng="121.3010" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">雄獅小食堂</h3>
 <div class="tags-group">
@@ -199,7 +227,7 @@
 </div>
 <a class="action-btn" href="/taoyuan/family-restaurants/simbalion-canteen/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.9936" data-lng="121.3010">
+<article class="modern-card" data-lat="24.9936" data-lng="121.3010" data-tags="[&quot;親子餐廳&quot;, &quot;兒童遊戲區&quot;, &quot;室內&quot;, &quot;無低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">Smile Café 微笑咖啡</h3>
 <div class="tags-group">
@@ -227,7 +255,7 @@
 </div>
 <a class="action-btn" href="/taoyuan/family-restaurants/smile-cafe/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.9939" data-lng="121.3010">
+<article class="modern-card" data-lat="24.9939" data-lng="121.3010" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">Stay 樂待親子共融空間 桃園水岸店</h3>
 <div class="tags-group">
@@ -255,7 +283,7 @@
 </div>
 <a class="action-btn" href="/taoyuan/family-restaurants/stay-kids-space/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.9657" data-lng="121.2243">
+<article class="modern-card" data-lat="24.9657" data-lng="121.2243" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">韋爐復刻食鍋 中壢中美店</h3>
 <div class="tags-group">
@@ -283,7 +311,7 @@
 </div>
 <a class="action-btn" href="/taoyuan/family-restaurants/weilu-hotpot/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.9939" data-lng="121.3010">
+<article class="modern-card" data-lat="24.9939" data-lng="121.3010" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">問鼎 皇上吉祥宮廷火鍋 桃園藝文店</h3>
 <div class="tags-group">
@@ -311,7 +339,7 @@
 </div>
 <a class="action-btn" href="/taoyuan/family-restaurants/wen-ding-art-district/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.9939" data-lng="121.3010">
+<article class="modern-card" data-lat="24.9939" data-lng="121.3010" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">白桃鮮食鍋物饗宴</h3>
 <div class="tags-group">
@@ -339,7 +367,7 @@
 </div>
 <a class="action-btn" href="/taoyuan/family-restaurants/white-peach-hotpot/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.0566" data-lng="121.2887">
+<article class="modern-card" data-lat="25.0566" data-lng="121.2887" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">貳樓餐廳 桃園台茂店</h3>
 <div class="tags-group">
@@ -354,7 +382,7 @@
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>家庭聚餐 / 美式餐廳</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>商場停車方便</div></div></div>
 <a class="action-btn" href="/taoyuan/family-restaurants/second-floor-taoyuan/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.0566" data-lng="121.2887">
+<article class="modern-card" data-lat="25.0566" data-lng="121.2887" data-tags="[&quot;咖啡廳&quot;, &quot;室內&quot;, &quot;無低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">樂雅樂 台茂店</h3>
 <div class="tags-group">
@@ -369,7 +397,7 @@
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>家庭餐廳 / 親子友善</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/taoyuan/family-restaurants/royal-host-taimall/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.0565" data-lng="121.2886">
+<article class="modern-card" data-lat="25.0565" data-lng="121.2886" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">開飯川食堂 台茂店</h3>
 <div class="tags-group">
@@ -384,7 +412,7 @@
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>家庭聚餐 / 中式餐廳</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/taoyuan/family-restaurants/kai-fan-taimall/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="25.0147" data-lng="121.2138">
+<article class="modern-card" data-lat="25.0147" data-lng="121.2138" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">涓豆腐 華泰名品城店</h3>
 <div class="tags-group">
@@ -404,5 +432,6 @@
 </main>
 <div id="site-footer-container"></div>
 <script src="/assets/footer.js"></script>
+<script src="/assets/city-filter.js"></script>
 </body>
 </html>

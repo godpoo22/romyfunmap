@@ -37,10 +37,11 @@
 
   <!-- ══ 全台快速篩選 Widget ══ -->
   <div class="hw-widget">
-    <!-- 景點 / 餐廳 分頁 -->
+    <!-- 景點 / 餐廳 / 活動 分頁 -->
     <div class="hw-tabs">
       <button class="hw-tab active" data-target="attractions">🗺️ 景點</button>
       <button class="hw-tab" data-target="restaurants">🍽️ 餐廳</button>
+      <button class="hw-tab" data-target="events">🎉 活動</button>
     </div>
 
     <!-- 景點篩選 -->
@@ -137,6 +138,43 @@
       </div>
     </div>
 
+    <!-- 活動篩選 -->
+    <div class="hw-panel hidden" id="hw-panel-events">
+      <div class="hw-row">
+        <span class="hw-label">縣市</span>
+        <div class="hw-btns">
+          <button class="hw-city-btn" data-city="台北市">台北市</button>
+          <button class="hw-city-btn" data-city="新北市">新北市</button>
+          <button class="hw-city-btn" data-city="桃園市">桃園市</button>
+          <button class="hw-city-btn" data-city="台中市">台中市</button>
+          <button class="hw-city-btn" data-city="苗栗縣">苗栗縣</button>
+          <button class="hw-city-btn" data-city="南投縣">南投縣</button>
+          <button class="hw-city-btn" data-city="彰化縣">彰化縣</button>
+          <button class="hw-city-btn" data-city="台南市">台南市</button>
+          <button class="hw-city-btn" data-city="高雄市">高雄市</button>
+        </div>
+      </div>
+      <div class="hw-row">
+        <span class="hw-label">類型</span>
+        <div class="hw-btns">
+          <button class="hw-tag-btn" data-tag="展覽特展">🖼️ 展覽特展</button>
+          <button class="hw-tag-btn" data-tag="手作體驗">🎨 手作體驗</button>
+          <button class="hw-tag-btn" data-tag="生態自然">🌿 生態自然</button>
+          <button class="hw-tag-btn" data-tag="演出劇場">🎭 演出劇場</button>
+          <button class="hw-tag-btn" data-tag="節慶活動">🎊 節慶活動</button>
+          <button class="hw-tag-btn" data-tag="博物館活動">🏛️ 博物館活動</button>
+          <button class="hw-tag-btn" data-tag="戶外探索">🧭 戶外探索</button>
+        </div>
+      </div>
+      <div class="hw-row">
+        <span class="hw-label">費用</span>
+        <div class="hw-btns">
+          <button class="hw-tag-btn" data-tag="免費">✅ 免費</button>
+          <button class="hw-tag-btn" data-tag="付費">💳 付費</button>
+        </div>
+      </div>
+    </div>
+
     <div class="hw-submit-row">
       <button class="hw-submit-btn" id="hw-submit">送出篩選 →</button>
     </div>
@@ -154,9 +192,16 @@
       });
     });
 
-    // 篩選按鈕切換
-    document.querySelectorAll('.hw-city-btn, .hw-tag-btn').forEach(function (btn) {
-      btn.addEventListener('click', function () { btn.classList.toggle('active'); });
+    // 篩選按鈕：每個 hw-row 內單選，再點同一個取消
+    document.querySelectorAll('.hw-row').forEach(function (row) {
+      var btns = Array.prototype.slice.call(row.querySelectorAll('.hw-city-btn, .hw-tag-btn'));
+      btns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var wasActive = btn.classList.contains('active');
+          btns.forEach(function (b) { b.classList.remove('active'); });
+          if (!wasActive) btn.classList.add('active');
+        });
+      });
     });
 
     // 送出 → 跳到篩選頁並帶入條件
@@ -165,10 +210,8 @@
       var dest = activeTab.dataset.target;
       var panel = document.getElementById('hw-panel-' + dest);
 
-      var cities = [];
-      panel.querySelectorAll('.hw-city-btn.active').forEach(function (btn) {
-        cities.push(btn.dataset.city);
-      });
+      var cityBtn = panel.querySelector('.hw-city-btn.active');
+      var cities = cityBtn ? [cityBtn.dataset.city] : [];
       var tags = [];
       panel.querySelectorAll('.hw-tag-btn.active').forEach(function (btn) {
         tags.push(btn.dataset.tag);
@@ -176,7 +219,7 @@
 
       var url = '/' + dest + '/';
       var qs = [];
-      if (cities.length) qs.push('cities=' + encodeURIComponent(cities.join(',')));
+      if (cities.length) qs.push('cities=' + encodeURIComponent(cities[0]));
       if (tags.length)   qs.push('tags='   + encodeURIComponent(tags.join(',')));
       if (qs.length) url += '?' + qs.join('&');
       window.location.href = url;

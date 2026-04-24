@@ -49,15 +49,15 @@
   <h1>台北市親子資訊</h1>
   <p style="color:var(--text-muted); margin-top:8px;">整理台北市親子景點、餐廳與活動，先看交通方式、室內外與適合安排的行程方向。</p>
   <div class="wrap-nav">
-    <a class="mini-pill active" href="/taipei/family-attractions/">景點 (15)</a>
-    <a class="mini-pill" href="/taipei/family-restaurants/">餐廳 (12)</a>
-    <a class="mini-pill" href="/taipei/family-events/">活動 (3)</a>
+    <a class="mini-pill active" href="/taipei/family-attractions/">景點(15)</a>
+    <a class="mini-pill" href="/taipei/family-restaurants/">餐廳(12)</a>
+    <a class="mini-pill" href="/taipei/family-events/">活動(8)</a>
   </div>
 </div>
 
 <div class="preview-grid">
 
-  <a class="mini-card" href="/taipei/family-attractions/astronomy-museum/">
+  <a class="mini-card" data-cat="att" href="/taipei/family-attractions/astronomy-museum/">
     <div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
     <div class="mini-card-info">
       <h3>台北市立天文科學教育館</h3>
@@ -65,7 +65,7 @@
     </div>
   </a>
 
-  <a class="mini-card" href="/taipei/family-attractions/daan-forest-park/">
+  <a class="mini-card" data-cat="att" href="/taipei/family-attractions/daan-forest-park/">
     <div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
     <div class="mini-card-info">
       <h3>大安森林公園兒童遊戲場</h3>
@@ -73,7 +73,7 @@
     </div>
   </a>
 
-  <a class="mini-card" href="/taipei/family-attractions/hushan-park-6/">
+  <a class="mini-card" data-cat="att" href="/taipei/family-attractions/hushan-park-6/">
     <div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
     <div class="mini-card-info">
       <h3>湖山6號公園</h3>
@@ -81,7 +81,7 @@
     </div>
   </a>
 
-  <a class="mini-card" href="/taipei/family-attractions/maokong-gondola/">
+  <a class="mini-card" data-cat="att" href="/taipei/family-attractions/maokong-gondola/">
     <div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
     <div class="mini-card-info">
       <h3>貓空纜車</h3>
@@ -89,7 +89,7 @@
     </div>
   </a>
 
-  <a class="mini-card" href="/taipei/family-attractions/huashan-grassland/">
+  <a class="mini-card" data-cat="att" href="/taipei/family-attractions/huashan-grassland/">
     <div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
     <div class="mini-card-info">
       <h3>華山大草原遊戲場</h3>
@@ -97,7 +97,7 @@
     </div>
   </a>
 
-  <a class="mini-card" href="/taipei/family-restaurants/beetle-paradise/">
+  <a class="mini-card" data-cat="res" href="/taipei/family-restaurants/beetle-paradise/">
     <div class="mini-card-icon" style="background:#FDF2F8;color:#DB2777;">🍽️</div>
     <div class="mini-card-info">
       <h3>甲蟲秘境親子餐廳</h3>
@@ -105,7 +105,7 @@
     </div>
   </a>
 
-  <a class="mini-card" href="/taipei/family-restaurants/elephant-garden-neihu/">
+  <a class="mini-card" data-cat="res" href="/taipei/family-restaurants/elephant-garden-neihu/">
     <div class="mini-card-icon" style="background:#FDF2F8;color:#DB2777;">🍽️</div>
     <div class="mini-card-info">
       <h3>象園咖啡 內湖店</h3>
@@ -113,7 +113,7 @@
     </div>
   </a>
 
-  <a class="mini-card" href="/taipei/family-events/astronomy-museum-events/">
+  <a class="mini-card" data-cat="evt" href="/taipei/family-events/astronomy-museum-events/">
     <div class="mini-card-icon" style="background:#DCFCE7;color:#16A34A;">🎉</div>
     <div class="mini-card-info">
       <h3>天文館特別場次與活動</h3>
@@ -121,7 +121,7 @@
     </div>
   </a>
 
-  <a class="mini-card" href="/taipei/family-events/taipei-childrens-month-2026/">
+  <a class="mini-card" data-cat="evt" href="/taipei/family-events/taipei-childrens-month-2026/">
     <div class="mini-card-icon" style="background:#DCFCE7;color:#16A34A;">🎉</div>
     <div class="mini-card-info">
       <h3>2026 台北兒童月</h3>
@@ -133,5 +133,21 @@
 </main>
 <div id="site-footer-container"></div>
 <script src="/assets/footer.js"></script>
+
+<script>
+(function () {
+  // 各類別最多顯示 2 筆，其餘隱藏；每次載入隨機選取
+  ['att','res','evt'].forEach(function (cat) {
+    var pool = Array.from(document.querySelectorAll('.mini-card[data-cat="' + cat + '"]'));
+    if (pool.length <= 2) return;
+    // Fisher-Yates shuffle
+    for (var i = pool.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = pool[i]; pool[i] = pool[j]; pool[j] = tmp;
+    }
+    pool.slice(2).forEach(function (c) { c.style.display = 'none'; });
+  });
+})();
+</script>
 </body>
 </html>

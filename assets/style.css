@@ -882,3 +882,15 @@ body:has(.sticky-bottom-bar) { padding-bottom: 80px; }
   padding-bottom: 0;
   opacity: 0;
 }
+
+/* ── 活動頁 section divider (inside #listing-grid grid) ─────── */
+.section-divider {
+  grid-column: 1 / -1;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin: 12px 0 4px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+}
+.section-divider:first-child { border-top: none; padding-top: 0; }

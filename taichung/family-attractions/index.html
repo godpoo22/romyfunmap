@@ -60,35 +60,51 @@
 </div>
 </section>
 <div id="filter-bar" style="background:rgba(255,255,255,0.82);backdrop-filter:blur(14px);border:1px solid var(--border-color);border-radius:14px;padding:12px 16px;margin-bottom:20px;display:flex;flex-direction:column;gap:8px;">
-<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
-<span style="font-size:12px;font-weight:700;color:var(--text-muted);white-space:nowrap;width:32px;flex-shrink:0;">地區</span>
-<button class="f-btn dist-btn" data-district="東區">東區</button>
-<button class="f-btn dist-btn" data-district="清水區">清水區</button>
-<button class="f-btn dist-btn" data-district="北屯區">北屯區</button>
-<button class="f-btn dist-btn" data-district="西屯區">西屯區</button>
-<button class="f-btn dist-btn" data-district="梧棲區">梧棲區</button>
-<button class="f-btn dist-btn" data-district="東勢區">東勢區</button>
-<button class="f-btn dist-btn" data-district="大雅區">大雅區</button>
-<button class="f-btn dist-btn" data-district="后里區">后里區</button>
-<button class="f-btn dist-btn" data-district="太平區">太平區</button>
-<button class="f-btn dist-btn" data-district="大里區">大里區</button>
-<button class="f-btn dist-btn" data-district="西區">西區</button>
-<button class="f-btn dist-btn" data-district="北區">北區</button>
-<button class="f-btn dist-btn" data-district="潭子區">潭子區</button>
-<button class="f-btn dist-btn" data-district="南區">南區</button>
-<button class="f-btn dist-btn" data-district="中區">中區</button>
-<button class="f-btn dist-btn" data-district="南屯區">南屯區</button>
-<button class="f-btn dist-btn" data-district="大肚區">大肚區</button>
-</div>
-<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
-<span style="font-size:12px;font-weight:700;color:var(--text-muted);white-space:nowrap;width:32px;flex-shrink:0;">空間</span>
-<button class="f-btn space-btn" data-space="室內">🏠 室內</button>
-<button class="f-btn space-btn" data-space="戶外">☀️ 戶外</button>
-<button class="f-btn reset-btn" id="filter-reset">清除篩選</button>
-</div>
+  <div class="filter-row">
+  <span class="filter-label">地區</span>
+  <button class="f-btn dist-btn" data-district="東區">東區</button>
+  <button class="f-btn dist-btn" data-district="清水區">清水區</button>
+  <button class="f-btn dist-btn" data-district="北屯區">北屯區</button>
+  <button class="f-btn dist-btn" data-district="西屯區">西屯區</button>
+  <button class="f-btn dist-btn" data-district="梧棲區">梧棲區</button>
+  <button class="f-btn dist-btn" data-district="東勢區">東勢區</button>
+  <button class="f-btn dist-btn" data-district="大雅區">大雅區</button>
+  <button class="f-btn dist-btn" data-district="后里區">后里區</button>
+  <button class="f-btn dist-btn" data-district="太平區">太平區</button>
+  <button class="f-btn dist-btn" data-district="大里區">大里區</button>
+  <button class="f-btn dist-btn" data-district="西區">西區</button>
+  <button class="f-btn dist-btn" data-district="北區">北區</button>
+  <button class="f-btn dist-btn" data-district="潭子區">潭子區</button>
+  <button class="f-btn dist-btn" data-district="南區">南區</button>
+  <button class="f-btn dist-btn" data-district="中區">中區</button>
+  <button class="f-btn dist-btn" data-district="南屯區">南屯區</button>
+  <button class="f-btn dist-btn" data-district="大肚區">大肚區</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">類型</span>
+  <button class="f-btn tag-btn" data-tag="公園遊具">🛝 公園遊具</button>
+  <button class="f-btn tag-btn" data-tag="動物農場">🐄 動物農場</button>
+  <button class="f-btn tag-btn" data-tag="博物館">🏛️ 博物館</button>
+  <button class="f-btn tag-btn" data-tag="水族館">🐟 水族館</button>
+  <button class="f-btn tag-btn" data-tag="主題樂園">🎡 主題樂園</button>
+  <button class="f-btn tag-btn" data-tag="自然生態">🌿 自然生態</button>
+  <button class="f-btn tag-btn" data-tag="鐵道交通">🚂 鐵道交通</button>
+  <button class="f-btn tag-btn" data-tag="老街文化">🏮 老街文化</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">空間</span>
+  <button class="f-btn tag-btn" data-tag="室內">🏠 室內</button>
+  <button class="f-btn tag-btn" data-tag="戶外">☀️ 戶外</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">費用</span>
+  <button class="f-btn tag-btn" data-tag="免費">✅ 免費</button>
+  <button class="f-btn tag-btn" data-tag="付費">💳 付費</button>
+  <button class="f-btn reset-btn" id="filter-reset">清除篩選</button>
+  </div>
 </div>
 <div id="filter-count" style="font-size:13px;color:var(--text-muted);margin-bottom:8px;display:none;">共 <strong id="visible-count">0</strong> 個景點</div><section class="modern-cards-grid" id="listing-grid">
-<article class="modern-card" data-district="東區" data-lat="24.1379" data-lng="120.7068" data-space="戶外">
+<article class="modern-card" data-district="東區" data-lat="24.1379" data-lng="120.7068" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">泉源兒童交通主題公園</h3>
 <div class="tags-group">
@@ -116,7 +132,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/quanyuan-traffic-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="清水區" data-lat="24.2650" data-lng="120.5233" data-space="室內">
+<article class="modern-card" data-district="清水區" data-lat="24.2650" data-lng="120.5233" data-space="室內" data-tags="[&quot;水族館&quot;, &quot;室內&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">台中海洋館</h3>
 <div class="tags-group">
@@ -144,7 +160,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/taichung-aquarium/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="清水區" data-lat="24.2762" data-lng="120.5767" data-space="戶外">
+<article class="modern-card" data-district="清水區" data-lat="24.2762" data-lng="120.5767" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">鰲峰山運動公園</h3>
 <div class="tags-group">
@@ -172,7 +188,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/aofengshan-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="北屯區" data-lat="24.1882" data-lng="120.7250" data-space="室內">
+<article class="modern-card" data-district="北屯區" data-lat="24.1882" data-lng="120.7250" data-space="室內" data-tags="[&quot;主題樂園&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">紙箱王創意園區</h3>
 <div class="tags-group">
@@ -200,7 +216,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/carton-king/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="西屯區" data-lat="24.1815" data-lng="120.6278" data-space="戶外">
+<article class="modern-card" data-district="西屯區" data-lat="24.1815" data-lng="120.6278" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">中央公園飛行美樂地遊戲場</h3>
 <div class="tags-group">
@@ -228,7 +244,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/central-park-flying-melody/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="西屯區" data-lat="24.1815" data-lng="120.6278" data-space="室內">
+<article class="modern-card" data-district="西屯區" data-lat="24.1815" data-lng="120.6278" data-space="室內" data-tags="[&quot;博物館&quot;, &quot;室內&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">自行車文化探索館</h3>
 <div class="tags-group">
@@ -256,7 +272,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/cycling-museum/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="北屯區" data-lat="24.1882" data-lng="120.7250" data-space="戶外">
+<article class="modern-card" data-district="北屯區" data-lat="24.1882" data-lng="120.7250" data-space="戶外" data-tags="[&quot;自然生態&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">大坑1號步道體能訓練場</h3>
 <div class="tags-group">
@@ -284,7 +300,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/dakeng-fitness-trail/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="梧棲區" data-lat="24.2547" data-lng="120.5240" data-space="戶外">
+<article class="modern-card" data-district="梧棲區" data-lat="24.2547" data-lng="120.5240" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">頂魚寮公園</h3>
 <div class="tags-group">
@@ -312,7 +328,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/dingyu-liao-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="東勢區" data-lat="24.2592" data-lng="120.8278" data-space="戶外">
+<article class="modern-card" data-district="東勢區" data-lat="24.2592" data-lng="120.8278" data-space="戶外" data-tags="[&quot;自然生態&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">東勢林場遊樂區</h3>
 <div class="tags-group">
@@ -340,7 +356,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/dongshi-forest/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="北屯區" data-lat="24.1882" data-lng="120.7250" data-space="戶外">
+<article class="modern-card" data-district="北屯區" data-lat="24.1882" data-lng="120.7250" data-space="戶外" data-tags="[&quot;主題樂園&quot;, &quot;室內&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">HiONE 啵比星球</h3>
 <div class="tags-group">
@@ -368,7 +384,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/hione-babi-planet/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="大雅區" data-lat="24.2257" data-lng="120.6471" data-space="室內">
+<article class="modern-card" data-district="大雅區" data-lat="24.2257" data-lng="120.6471" data-space="室內" data-tags="[&quot;博物館&quot;, &quot;室內&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">伊莎貝爾數位烘焙體驗館</h3>
 <div class="tags-group">
@@ -396,7 +412,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/isabelle-bakery/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="后里區" data-lat="24.3095" data-lng="120.7225" data-space="戶外">
+<article class="modern-card" data-district="后里區" data-lat="24.3095" data-lng="120.7225" data-space="戶外" data-tags="[&quot;主題樂園&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">麗寶樂園渡假區（探索世界）</h3>
 <div class="tags-group">
@@ -424,7 +440,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/lihpao-land/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="西屯區" data-lat="24.1815" data-lng="120.6278" data-space="戶外">
+<article class="modern-card" data-district="西屯區" data-lat="24.1815" data-lng="120.6278" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">黎新公園</h3>
 <div class="tags-group">
@@ -452,7 +468,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/lixin-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="太平區" data-lat="24.1260" data-lng="120.7180" data-space="戶外">
+<article class="modern-card" data-district="太平區" data-lat="24.1260" data-lng="120.7180" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">馬卡龍公園</h3>
 <div class="tags-group">
@@ -480,7 +496,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/macaron-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="大里區" data-lat="24.1042" data-lng="120.6889" data-space="室內">
+<article class="modern-card" data-district="大里區" data-lat="24.1042" data-lng="120.6889" data-space="室內" data-tags="[&quot;博物館&quot;, &quot;室內&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">臺中市纖維工藝博物館</h3>
 <div class="tags-group">
@@ -508,7 +524,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/mofia/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="西區" data-lat="24.1415" data-lng="120.6632" data-space="室內">
+<article class="modern-card" data-district="西區" data-lat="24.1415" data-lng="120.6632" data-space="室內" data-tags="[&quot;博物館&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">國家漫畫博物館</h3>
 <div class="tags-group">
@@ -536,7 +552,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/national-comics-museum/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="北區" data-lat="24.1564" data-lng="120.6829" data-space="室內">
+<article class="modern-card" data-district="北區" data-lat="24.1564" data-lng="120.6829" data-space="室內" data-tags="[&quot;博物館&quot;, &quot;室內&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">國立自然科學博物館</h3>
 <div class="tags-group">
@@ -564,7 +580,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/nmns/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="潭子區" data-lat="24.2120" data-lng="120.7053" data-space="室內">
+<article class="modern-card" data-district="潭子區" data-lat="24.2120" data-lng="120.7053" data-space="室內" data-tags="[&quot;主題樂園&quot;, &quot;室內&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">寶熊漁樂碼頭</h3>
 <div class="tags-group">
@@ -592,7 +608,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/okuma-center/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="西屯區" data-lat="24.1815" data-lng="120.6278" data-space="戶外">
+<article class="modern-card" data-district="西屯區" data-lat="24.1815" data-lng="120.6278" data-space="戶外" data-tags="[&quot;自然生態&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">秋紅谷景觀生態公園</h3>
 <div class="tags-group">
@@ -620,7 +636,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/qiuhonggu-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="后里區" data-lat="24.3095" data-lng="120.7225" data-space="室內">
+<article class="modern-card" data-district="后里區" data-lat="24.3095" data-lng="120.7225" data-space="室內" data-tags="[&quot;博物館&quot;, &quot;室內&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">木匠兄妹木工房</h3>
 <div class="tags-group">
@@ -648,7 +664,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/woodworking-siblings/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="西屯區" data-lat="24.1815" data-lng="120.6278" data-space="戶外">
+<article class="modern-card" data-district="西屯區" data-lat="24.1815" data-lng="120.6278" data-space="戶外" data-tags="[&quot;動物農場&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">益健乳羊牧場</h3>
 <div class="tags-group">
@@ -676,7 +692,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/yijian-goat-farm/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="大里區" data-lat="24.1042" data-lng="120.6889" data-space="室內">
+<article class="modern-card" data-district="大里區" data-lat="24.1042" data-lng="120.6889" data-space="室內" data-tags="[&quot;主題樂園&quot;, &quot;室內&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">異想新樂園</h3>
 <div class="tags-group">
@@ -704,7 +720,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/yixiang-new-paradise/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="后里區" data-lat="24.3095" data-lng="120.7225" data-space="戶外">
+<article class="modern-card" data-district="后里區" data-lat="24.3095" data-lng="120.7225" data-space="戶外" data-tags="[&quot;老街文化&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">月眉觀光糖廠</h3>
 <div class="tags-group">
@@ -732,7 +748,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/yuemei-sugar-factory/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="大雅區" data-lat="24.2257" data-lng="120.6471" data-space="戶外">
+<article class="modern-card" data-district="大雅區" data-lat="24.2257" data-lng="120.6471" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">大雅中科公園</h3>
 <div class="tags-group">
@@ -760,7 +776,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/zhongke-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="后里區" data-lat="24.3271" data-lng="120.7396" data-space="戶外">
+<article class="modern-card" data-district="后里區" data-lat="24.3271" data-lng="120.7396" data-space="戶外" data-tags="[&quot;動物農場&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">后里馬場</h3>
 <div class="tags-group">
@@ -775,7 +791,7 @@
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>馬場園區 / 動物互動</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/taichung/family-attractions/houli-horse-ranch/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="北區" data-lat="24.1537" data-lng="120.6851" data-space="室內">
+<article class="modern-card" data-district="北區" data-lat="24.1537" data-lng="120.6851" data-space="室內" data-tags="[&quot;老街文化&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">臺中放送局</h3>
 <div class="tags-group">
@@ -790,7 +806,7 @@
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>歷史建築 / 展覽空間</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
 <a class="action-btn" href="/taichung/family-attractions/taichung-broadcasting-station/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="后里區" data-lat="24.3153" data-lng="120.7345" data-space="戶外">
+<article class="modern-card" data-district="后里區" data-lat="24.3153" data-lng="120.7345" data-space="戶外" data-tags="[&quot;鐵道交通&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">后豐鐵馬道</h3>
 <div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">后里區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div>
@@ -799,7 +815,7 @@
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>自行車道 / 鐵道景觀</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/taichung/family-attractions/houfeng-bikeway/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="西區" data-lat="24.1490" data-lng="120.6625" data-space="戶外">
+<article class="modern-card" data-district="西區" data-lat="24.1490" data-lng="120.6625" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">草悟道</h3>
 <div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">西區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div>
@@ -808,31 +824,31 @@
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>綠帶步道 / 城市散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
 <a class="action-btn" href="/taichung/family-attractions/calligraphy-greenway/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="西屯區" data-lat="24.1626" data-lng="120.6402" data-space="室內">
+<article class="modern-card" data-district="西屯區" data-lat="24.1626" data-lng="120.6402" data-space="室內" data-tags="[&quot;博物館&quot;, &quot;室內&quot;, &quot;免費&quot;]">
 <div class="card-header"><h3 class="card-title" style="margin-right:10px;">臺中國家歌劇院</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">西屯區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
 <p class="card-desc">建築本身很有辨識度，室內外都能安排，適合和秋紅谷、百貨商場一起規劃半日行程。</p>
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>藝文場館 / 建築景點</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
 <a class="action-btn" href="/taichung/family-attractions/national-taichung-theater/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="北屯區" data-lat="24.1785" data-lng="120.6904" data-space="室內">
+<article class="modern-card" data-district="北屯區" data-lat="24.1785" data-lng="120.6904" data-space="室內" data-tags="[&quot;老街文化&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header"><h3 class="card-title" style="margin-right:10px;">一德洋樓</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">北屯區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
 <p class="card-desc">閩式、和式與洋樓建築同場出現，很適合安排台中市區的文化散步和親子拍照行程。</p>
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>歷史建築 / 庭院散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
 <a class="action-btn" href="/taichung/family-attractions/yide-mansion/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="南區" data-lat="24.1154" data-lng="120.6627" data-space="室內">
+<article class="modern-card" data-district="南區" data-lat="24.1154" data-lng="120.6627" data-space="室內" data-tags="[&quot;博物館&quot;, &quot;室內&quot;, &quot;免費&quot;]">
 <div class="card-header"><h3 class="card-title" style="margin-right:10px;">國立公共資訊圖書館</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">南區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
 <p class="card-desc">館內兒童學習區、繪本和室內活動資源豐富，對親子家庭來說是很穩定的雨天備案。</p>
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>圖書館 / 兒童閱覽</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
 <a class="action-btn" href="/taichung/family-attractions/nlpi/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="中區" data-lat="24.1369" data-lng="120.6867" data-space="室內">
+<article class="modern-card" data-district="中區" data-lat="24.1369" data-lng="120.6867" data-space="室內" data-tags="[&quot;鐵道交通&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header"><h3 class="card-title" style="margin-right:10px;">臺中驛鐵道文化園區</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">中區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
 <p class="card-desc">舊車站、鐵道展示和月台空間辨識度高，對喜歡火車的孩子很有吸引力。</p>
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>鐵道園區 / 車站歷史</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
 <a class="action-btn" href="/taichung/family-attractions/taichung-station-rail-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="北屯區" data-lat="24.175" data-lng="120.712" data-space="戶外">
+<article class="modern-card" data-district="北屯區" data-lat="24.175" data-lng="120.712" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">北屯兒童公園（林間探索遊戲場）</h3>
 <div class="tags-group">
@@ -850,7 +866,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/beitun-kids-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="北屯區" data-lat="24.172" data-lng="120.706" data-space="戶外">
+<article class="modern-card" data-district="北屯區" data-lat="24.172" data-lng="120.706" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">南興公園（大樹原野遊戲場）</h3>
 <div class="tags-group">
@@ -868,7 +884,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/nanxing-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="南屯區" data-lat="24.126" data-lng="120.633" data-space="戶外">
+<article class="modern-card" data-district="南屯區" data-lat="24.126" data-lng="120.633" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">楓樹腳公園</h3>
 <div class="tags-group">
@@ -886,7 +902,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/fengshujiao-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="南區" data-lat="24.127" data-lng="120.688" data-space="戶外">
+<article class="modern-card" data-district="南區" data-lat="24.127" data-lng="120.688" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">綠川水淨樂園（共融式遊戲場）</h3>
 <div class="tags-group">
@@ -904,7 +920,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/lvchuan-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="東勢區" data-lat="24.251" data-lng="120.836" data-space="戶外">
+<article class="modern-card" data-district="東勢區" data-lat="24.251" data-lng="120.836" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">獨角仙生態公園</h3>
 <div class="tags-group">
@@ -922,7 +938,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/dujiaoxian-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="南屯區" data-lat="24.142" data-lng="120.659" data-space="戶外">
+<article class="modern-card" data-district="南屯區" data-lat="24.142" data-lng="120.659" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">十全公園</h3>
 <div class="tags-group">
@@ -940,7 +956,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/shiquan-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="太平區" data-lat="24.124" data-lng="120.751" data-space="戶外">
+<article class="modern-card" data-district="太平區" data-lat="24.124" data-lng="120.751" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">新福公園（攀爬式立體探索迷宮）</h3>
 <div class="tags-group">
@@ -958,7 +974,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/xinfu-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="北區" data-lat="24.162" data-lng="120.690" data-space="戶外">
+<article class="modern-card" data-district="北區" data-lat="24.162" data-lng="120.690" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">豬事園滿公園</h3>
 <div class="tags-group">
@@ -976,7 +992,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/pig-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="后里區" data-lat="24.342" data-lng="120.700" data-space="戶外">
+<article class="modern-card" data-district="后里區" data-lat="24.342" data-lng="120.700" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">后里環保公園（孩籽世界遊戲場）</h3>
 <div class="tags-group">
@@ -994,7 +1010,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/houli-eco-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="南屯區" data-lat="24.128" data-lng="120.649" data-space="戶外">
+<article class="modern-card" data-district="南屯區" data-lat="24.128" data-lng="120.649" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">文心森林公園</h3>
 <div class="tags-group">
@@ -1012,7 +1028,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/wenxin-forest-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="北屯區" data-lat="24.192" data-lng="120.775" data-space="戶外">
+<article class="modern-card" data-district="北屯區" data-lat="24.192" data-lng="120.775" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">風動石公園（隱藏版大坑森林遊戲場）</h3>
 <div class="tags-group">
@@ -1030,7 +1046,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/fengdongshi-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="大里區" data-lat="24.093" data-lng="120.682" data-space="戶外">
+<article class="modern-card" data-district="大里區" data-lat="24.093" data-lng="120.682" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">大里環保公園（幾何外星基地攀爬場）</h3>
 <div class="tags-group">
@@ -1048,7 +1064,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/dali-eco-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="后里區" data-lat="24.348" data-lng="120.692" data-space="戶外">
+<article class="modern-card" data-district="后里區" data-lat="24.348" data-lng="120.692" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">后里森林公園「搖籃遊戲場」</h3>
 <div class="tags-group">
@@ -1066,7 +1082,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/houli-forest-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="梧棲區" data-lat="24.293" data-lng="120.527" data-space="戶外">
+<article class="modern-card" data-district="梧棲區" data-lat="24.293" data-lng="120.527" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">漁寮運動公園</h3>
 <div class="tags-group">
@@ -1084,7 +1100,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/yuliao-sports-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="大肚區" data-lat="24.155" data-lng="120.548" data-space="戶外">
+<article class="modern-card" data-district="大肚區" data-lat="24.155" data-lng="120.548" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">日晷公園（天文時間主題公園）</h3>
 <div class="tags-group">
@@ -1102,7 +1118,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-attractions/rigui-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="南屯區" data-lat="24.119" data-lng="120.635" data-space="戶外">
+<article class="modern-card" data-district="南屯區" data-lat="24.119" data-lng="120.635" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">豐樂雕塑公園</h3>
 <div class="tags-group">

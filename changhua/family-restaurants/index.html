@@ -40,7 +40,8 @@
     }
   ]
 }
-</script></head>
+</script><link href="/assets/filter.css" rel="stylesheet"/>
+</head>
 <body>
 <div data-active="restaurants" id="site-header-container"></div>
 <main class="page-pad">
@@ -58,8 +59,35 @@
 <button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
 </div>
 </section>
+<div id="filter-bar" style="background:rgba(255,255,255,0.82);backdrop-filter:blur(14px);border:1px solid var(--border-color);border-radius:14px;padding:12px 16px;margin-bottom:20px;display:flex;flex-direction:column;gap:8px;">
+  <div class="filter-row">
+  <span class="filter-label">類型</span>
+  <button class="f-btn tag-btn" data-tag="親子餐廳">🧸 親子餐廳</button>
+  <button class="f-btn tag-btn" data-tag="景觀餐廳">🌄 景觀餐廳</button>
+  <button class="f-btn tag-btn" data-tag="咖啡廳">☕ 咖啡廳</button>
+  <button class="f-btn tag-btn" data-tag="農場用餐">🐄 農場用餐</button>
+  <button class="f-btn tag-btn" data-tag="兒童餐點">🍱 兒童餐點</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">設施</span>
+  <button class="f-btn tag-btn" data-tag="兒童遊戲區">🎠 兒童遊戲區</button>
+  <button class="f-btn tag-btn" data-tag="可包場">🎉 可包場</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">空間</span>
+  <button class="f-btn tag-btn" data-tag="室內">🏠 室內</button>
+  <button class="f-btn tag-btn" data-tag="戶外">☀️ 戶外</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">費用</span>
+  <button class="f-btn tag-btn" data-tag="有低消">💳 有低消</button>
+  <button class="f-btn tag-btn" data-tag="無低消">✅ 無低消</button>
+  <button class="f-btn reset-btn" id="filter-reset">清除篩選</button>
+  </div>
+</div>
+<div id="filter-count" style="font-size:13px;color:var(--text-muted);margin-bottom:8px;display:none;">共 <strong id="visible-count">0</strong> 個</div>
 <section class="modern-cards-grid" id="listing-grid">
-<article class="modern-card" data-lat="23.9567" data-lng="120.5717">
+<article class="modern-card" data-lat="23.9567" data-lng="120.5717" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">極光森林</h3>
 <div class="tags-group">
@@ -87,7 +115,7 @@
 </div>
 <a class="action-btn" href="/changhua/family-restaurants/aurora-forest/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="23.9567" data-lng="120.5717">
+<article class="modern-card" data-lat="23.9567" data-lng="120.5717" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">夏帕義大利麵 彰化員林店</h3>
 <div class="tags-group">
@@ -115,7 +143,7 @@
 </div>
 <a class="action-btn" href="/changhua/family-restaurants/chappa-yuanlin/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.0810" data-lng="120.5380">
+<article class="modern-card" data-lat="24.0810" data-lng="120.5380" data-tags="[&quot;景觀餐廳&quot;, &quot;咖啡廳&quot;, &quot;戶外&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">銀河鐵道望景餐廳</h3>
 <div class="tags-group">
@@ -143,7 +171,7 @@
 </div>
 <a class="action-btn" href="/changhua/family-restaurants/galaxy-railway/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="23.9567" data-lng="120.5717">
+<article class="modern-card" data-lat="23.9567" data-lng="120.5717" data-tags="[&quot;景觀餐廳&quot;, &quot;戶外&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">琉璃仙境</h3>
 <div class="tags-group">
@@ -171,7 +199,7 @@
 </div>
 <a class="action-btn" href="/changhua/family-restaurants/glass-fairyland/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="23.8795" data-lng="120.5219">
+<article class="modern-card" data-lat="23.8795" data-lng="120.5219" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">哈比雪兒</h3>
 <div class="tags-group">
@@ -199,7 +227,7 @@
 </div>
 <a class="action-btn" href="/changhua/family-restaurants/happy-share/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.0810" data-lng="120.5380">
+<article class="modern-card" data-lat="24.0810" data-lng="120.5380" data-tags="[&quot;農場用餐&quot;, &quot;咖啡廳&quot;, &quot;戶外&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">探索迷宮歐式莊園</h3>
 <div class="tags-group">
@@ -227,7 +255,7 @@
 </div>
 <a class="action-btn" href="/changhua/family-restaurants/maze-manor/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.0810" data-lng="120.5380">
+<article class="modern-card" data-lat="24.0810" data-lng="120.5380" data-tags="[&quot;咖啡廳&quot;, &quot;室內&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">水之鄉咖啡館</h3>
 <div class="tags-group">
@@ -255,7 +283,7 @@
 </div>
 <a class="action-btn" href="/changhua/family-restaurants/mizuworld-cafe/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.0810" data-lng="120.5380">
+<article class="modern-card" data-lat="24.0810" data-lng="120.5380" data-tags="[&quot;親子餐廳&quot;, &quot;兒童遊戲區&quot;, &quot;室內&quot;, &quot;無低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">屁格豬樂園火鍋餐廳</h3>
 <div class="tags-group">
@@ -283,7 +311,7 @@
 </div>
 <a class="action-btn" href="/changhua/family-restaurants/pig-park-hotpot/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.0809" data-lng="120.5425">
+<article class="modern-card" data-lat="24.0809" data-lng="120.5425" data-tags="[&quot;景觀餐廳&quot;, &quot;戶外&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">唯愛庭園 Vena Manor</h3>
 <div class="tags-group">
@@ -311,7 +339,7 @@
 </div>
 <a class="action-btn" href="/changhua/family-restaurants/vena-manor/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="23.9032" data-lng="120.5323">
+<article class="modern-card" data-lat="23.9032" data-lng="120.5323" data-tags="[&quot;景觀餐廳&quot;, &quot;咖啡廳&quot;, &quot;戶外&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">菁芳園</h3>
 <div class="tags-group">
@@ -326,7 +354,7 @@
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>庭園餐廳 / 家庭聚餐</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/changhua/family-restaurants/tenway-garden/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.0819" data-lng="120.5638">
+<article class="modern-card" data-lat="24.0819" data-lng="120.5638" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">卦山月圓景觀餐廳</h3>
 <div class="tags-group">
@@ -341,7 +369,7 @@
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>景觀餐廳 / 家庭聚餐</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/changhua/family-restaurants/guashan-moon/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.0715" data-lng="120.5406">
+<article class="modern-card" data-lat="24.0715" data-lng="120.5406" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;有低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">小班長的家</h3>
 <div class="tags-group">
@@ -356,7 +384,7 @@
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>親子餐廳 / 室內遊戲</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/changhua/family-restaurants/jhu-tang/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.0282" data-lng="120.5481">
+<article class="modern-card" data-lat="24.0282" data-lng="120.5481" data-tags="[&quot;咖啡廳&quot;, &quot;室內&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">茉莉花壇夢想館</h3>
 <div class="tags-group">
@@ -371,7 +399,7 @@
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>主題餐館 / 家庭聚餐</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/changhua/family-restaurants/moli-dream/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.0786" data-lng="120.5351">
+<article class="modern-card" data-lat="24.0786" data-lng="120.5351" data-tags="[&quot;咖啡廳&quot;, &quot;室內&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">花盒子飲食生活 彰化店</h3>
 <div class="tags-group">
@@ -391,6 +419,7 @@
 </main>
 <div id="site-footer-container"></div>
 <script src="/assets/footer.js"></script>
+<script src="/assets/city-filter.js"></script>
 </body>
 </html>
 

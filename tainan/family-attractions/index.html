@@ -40,7 +40,8 @@
     }
   ]
 }
-</script></head>
+</script><link href="/assets/filter.css" rel="stylesheet"/>
+</head>
 <body>
 <div data-active="attractions" id="site-header-container"></div>
 <main class="page-pad">
@@ -58,8 +59,33 @@
 <button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
 </div>
 </section>
+<div id="filter-bar" style="background:rgba(255,255,255,0.82);backdrop-filter:blur(14px);border:1px solid var(--border-color);border-radius:14px;padding:12px 16px;margin-bottom:20px;display:flex;flex-direction:column;gap:8px;">
+  <div class="filter-row">
+  <span class="filter-label">類型</span>
+  <button class="f-btn tag-btn" data-tag="公園遊具">🛝 公園遊具</button>
+  <button class="f-btn tag-btn" data-tag="動物農場">🐄 動物農場</button>
+  <button class="f-btn tag-btn" data-tag="博物館">🏛️ 博物館</button>
+  <button class="f-btn tag-btn" data-tag="水族館">🐟 水族館</button>
+  <button class="f-btn tag-btn" data-tag="主題樂園">🎡 主題樂園</button>
+  <button class="f-btn tag-btn" data-tag="自然生態">🌿 自然生態</button>
+  <button class="f-btn tag-btn" data-tag="鐵道交通">🚂 鐵道交通</button>
+  <button class="f-btn tag-btn" data-tag="老街文化">🏮 老街文化</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">空間</span>
+  <button class="f-btn tag-btn" data-tag="室內">🏠 室內</button>
+  <button class="f-btn tag-btn" data-tag="戶外">☀️ 戶外</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">費用</span>
+  <button class="f-btn tag-btn" data-tag="免費">✅ 免費</button>
+  <button class="f-btn tag-btn" data-tag="付費">💳 付費</button>
+  <button class="f-btn reset-btn" id="filter-reset">清除篩選</button>
+  </div>
+</div>
+<div id="filter-count" style="font-size:13px;color:var(--text-muted);margin-bottom:8px;display:none;">共 <strong id="visible-count">0</strong> 個</div>
 <section class="modern-cards-grid" id="listing-grid">
-<article class="modern-card" data-lat="23.0028" data-lng="120.1532">
+<article class="modern-card" data-lat="23.0028" data-lng="120.1532" data-tags="[&quot;老街文化&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">夕遊出張所</h3>
 <div class="tags-group">
@@ -74,7 +100,7 @@
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>安平小景點 / 文創館舍</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/tainan/family-attractions/siyou-salt-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270" data-tags="[&quot;博物館&quot;, &quot;室內&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">奇美博物館</h3>
 <div class="tags-group">
@@ -102,7 +128,7 @@
 </div>
 <a class="action-btn" href="/tainan/family-attractions/chimei-museum/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270" data-tags="[&quot;博物館&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">安平定情碼頭德陽艦園區</h3>
 <div class="tags-group">
@@ -130,7 +156,7 @@
 </div>
 <a class="action-btn" href="/tainan/family-attractions/deyang-ship/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">港濱歷史特色遊戲場</h3>
 <div class="tags-group">
@@ -158,7 +184,7 @@
 </div>
 <a class="action-btn" href="/tainan/family-attractions/gangbin-history-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">光賢交通公園</h3>
 <div class="tags-group">
@@ -186,7 +212,7 @@
 </div>
 <a class="action-btn" href="/tainan/family-attractions/guangxian-traffic-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">河樂廣場</h3>
 <div class="tags-group">
@@ -214,7 +240,7 @@
 </div>
 <a class="action-btn" href="/tainan/family-attractions/he-le-plaza/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">健康綠洲公園</h3>
 <div class="tags-group">
@@ -242,7 +268,7 @@
 </div>
 <a class="action-btn" href="/tainan/family-attractions/health-oasis-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270" data-tags="[&quot;自然生態&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">虎頭埤風景區</h3>
 <div class="tags-group">
@@ -270,7 +296,7 @@
 </div>
 <a class="action-btn" href="/tainan/family-attractions/hutoupi-scenic-area/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270" data-tags="[&quot;博物館&quot;, &quot;室內&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">南瀛天文館</h3>
 <div class="tags-group">
@@ -298,7 +324,7 @@
 </div>
 <a class="action-btn" href="/tainan/family-attractions/nanying-astronomical/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270" data-tags="[&quot;博物館&quot;, &quot;室內&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">國立臺灣歷史博物館</h3>
 <div class="tags-group">
@@ -326,7 +352,7 @@
 </div>
 <a class="action-btn" href="/tainan/family-attractions/nmth/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270" data-tags="[&quot;博物館&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">山上花園水道博物館</h3>
 <div class="tags-group">
@@ -354,7 +380,7 @@
 </div>
 <a class="action-btn" href="/tainan/family-attractions/shanshang-waterworks-museum/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270" data-tags="[&quot;博物館&quot;, &quot;室內&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">臺南市美術館</h3>
 <div class="tags-group">
@@ -382,7 +408,7 @@
 </div>
 <a class="action-btn" href="/tainan/family-attractions/tainan-art-museum/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270" data-tags="[&quot;主題樂園&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">十鼓文創園區</h3>
 <div class="tags-group">
@@ -410,7 +436,7 @@
 </div>
 <a class="action-btn" href="/tainan/family-attractions/ten-drum-cultural/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270" data-tags="[&quot;博物館&quot;, &quot;室內&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">樹谷生活科學館</h3>
 <div class="tags-group">
@@ -438,7 +464,7 @@
 </div>
 <a class="action-btn" href="/tainan/family-attractions/tree-valley-science/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270" data-tags="[&quot;動物農場&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">頑皮世界野生動物園</h3>
 <div class="tags-group">
@@ -466,7 +492,7 @@
 </div>
 <a class="action-btn" href="/tainan/family-attractions/wanpi-world/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">竹溪水岸園區</h3>
 <div class="tags-group">
@@ -494,7 +520,7 @@
 </div>
 <a class="action-btn" href="/tainan/family-attractions/zhuxi-riverside-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.9997" data-lng="120.2270">
+<article class="modern-card" data-lat="22.9997" data-lng="120.2270" data-tags="[&quot;博物館&quot;, &quot;室內&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">臺南左鎮化石園區</h3>
 <div class="tags-group">
@@ -522,7 +548,7 @@
 </div>
 <a class="action-btn" href="/tainan/family-attractions/zuozhen-fossil-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="23.1186" data-lng="120.2798">
+<article class="modern-card" data-lat="23.1186" data-lng="120.2798" data-tags="[&quot;博物館&quot;, &quot;室內&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">南科考古館</h3>
 <div class="tags-group">
@@ -537,7 +563,7 @@
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>考古博物館 / 互動展區</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/tainan/family-attractions/nanke-archaeology-museum/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="23.0453" data-lng="120.1321">
+<article class="modern-card" data-lat="23.0453" data-lng="120.1321" data-tags="[&quot;自然生態&quot;, &quot;室內&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">台江國家公園遊客中心</h3>
 <div class="tags-group">
@@ -552,7 +578,7 @@
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>遊客中心 / 生態展示</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/tainan/family-attractions/taijiang-visitor-center/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.9305" data-lng="120.1630">
+<article class="modern-card" data-lat="22.9305" data-lng="120.1630" data-tags="[&quot;老街文化&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">鯤喜灣文化園區</h3>
 <div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">南區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div>
@@ -561,7 +587,7 @@
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>海岸景點 / 文化園區</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/tainan/family-attractions/kunxiwan-cultural-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="23.3080" data-lng="120.3165">
+<article class="modern-card" data-lat="23.3080" data-lng="120.3165" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">南瀛綠都心5號公園</h3>
 <div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">新營區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div>
@@ -570,37 +596,37 @@
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>公園綠地 / 散步野餐</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
 <a class="action-btn" href="/tainan/family-attractions/nanying-green-heart-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.9293" data-lng="120.1518">
+<article class="modern-card" data-lat="22.9293" data-lng="120.1518" data-tags="[&quot;自然生態&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header"><h3 class="card-title" style="margin-right:10px;">黃金海岸</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">南區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
 <p class="card-desc">海灘、夕陽和海線散步都很有辨識度，適合安排台南南區的親子放風與看海行程。</p>
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>海岸景點 / 沙灘散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/tainan/family-attractions/golden-coast/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="23.3032" data-lng="120.3191">
+<article class="modern-card" data-lat="23.3032" data-lng="120.3191" data-tags="[&quot;鐵道交通&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header"><h3 class="card-title" style="margin-right:10px;">新營鐵道文化園區</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">新營區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
 <p class="card-desc">糖廠五分車和鐵道展示都很有辨識度，適合安排北台南的火車主題親子半日遊。</p>
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>鐵道園區 / 五分車</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
 <a class="action-btn" href="/tainan/family-attractions/sinying-railway-cultural-park/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="23.0008" data-lng="120.1596">
+<article class="modern-card" data-lat="23.0008" data-lng="120.1596" data-tags="[&quot;老街文化&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
 <div class="card-header"><h3 class="card-title" style="margin-right:10px;">安平樹屋</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">安平區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
 <p class="card-desc">樹根包覆老屋和木棧道的畫面很有辨識度，適合排進安平老街與港邊散步的半日行程。</p>
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>歷史園區 / 木棧道散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
 <a class="action-btn" href="/tainan/family-attractions/anping-tree-house/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.9919" data-lng="120.1617">
+<article class="modern-card" data-lat="22.9919" data-lng="120.1617" data-tags="[&quot;自然生態&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header"><h3 class="card-title" style="margin-right:10px;">漁光島</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">安平區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
 <p class="card-desc">海灘、木麻黃林和看海步道很適合放風，通常會和安平景點一起排成輕鬆的海線半日遊。</p>
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>海灘景點 / 看海散步</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/tainan/family-attractions/yuguang-island/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="23.0459" data-lng="120.1063">
+<article class="modern-card" data-lat="23.0459" data-lng="120.1063" data-tags="[&quot;自然生態&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
 <div class="card-header"><h3 class="card-title" style="margin-right:10px;">四草綠色隧道</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">安南區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
 <p class="card-desc">搭船穿越紅樹林的畫面很有辨識度，適合安排台南海線的自然觀察親子行程。</p>
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>生態體驗 / 搭船景點</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
 <a class="action-btn" href="/tainan/family-attractions/sicao-green-tunnel/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="23.1545" data-lng="120.1009">
+<article class="modern-card" data-lat="23.1545" data-lng="120.1009" data-tags="[&quot;自然生態&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
 <div class="card-header"><h3 class="card-title" style="margin-right:10px;">七股鹽山</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">七股區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
 <p class="card-desc">鹽山地景、冰棒和短時間散步都很好安排，很適合七股海線順遊時帶孩子停留。</p>
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>地景園區 / 海線順遊</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
@@ -611,6 +637,7 @@
 </main>
 <div id="site-footer-container"></div>
 <script src="/assets/footer.js"></script>
+<script src="/assets/city-filter.js"></script>
 </body>
 </html>
 

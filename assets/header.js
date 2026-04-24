@@ -69,7 +69,7 @@
     var slot = document.getElementById('drawer-filter-slot');
     if (!slot) return;
 
-    /* 把每個 .filter-row 改成可收放的 accordion 項目 */
+    /* 把每個 .filter-row 改成可收放的 accordion 項目（預設展開） */
     function makeAccordion(filterEl) {
       filterEl.querySelectorAll('.filter-row').forEach(function (row) {
         var labelEl = row.querySelector('.filter-label');
@@ -78,7 +78,6 @@
         // 把 label 以外的所有節點包進 .filter-row-btns
         var btnsWrap = document.createElement('div');
         btnsWrap.className = 'filter-row-btns';
-        // 先複製 childNodes（live list 所以要先轉陣列）
         var kids = Array.prototype.slice.call(row.childNodes);
         kids.forEach(function (n) {
           if (n !== labelEl) btnsWrap.appendChild(n);
@@ -93,12 +92,11 @@
         head.appendChild(labelEl);
         head.appendChild(toggleIcon);
 
-        // 重組 row（預設收起）
+        // 重組 row（預設展開）
         row.innerHTML = '';
         row.appendChild(head);
         row.appendChild(btnsWrap);
-        row.classList.add('collapsible', 'collapsed');
-        toggleIcon.textContent = '+';
+        row.classList.add('collapsible');
 
         // 點擊標題列收放
         head.addEventListener('click', function () {
@@ -106,6 +104,65 @@
           toggleIcon.textContent = collapsed ? '+' : '−';
         });
       });
+    }
+
+    /* ── 篩選條件摘要列 ────────────────────────── */
+    function buildFilterSummary(filterEl) {
+      var summary = document.createElement('div');
+      summary.id = 'drawer-filter-summary';
+      summary.style.cssText =
+        'display:none;margin:8px 0 4px;padding:8px 10px;' +
+        'background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.25);' +
+        'border-radius:10px;font-size:12px;color:#065f46;line-height:1.8;';
+
+      var summaryTitle = document.createElement('div');
+      summaryTitle.style.cssText = 'font-weight:700;margin-bottom:2px;font-size:11px;letter-spacing:0.03em;';
+      summaryTitle.textContent = '目前篩選條件';
+      summary.appendChild(summaryTitle);
+
+      var summaryBody = document.createElement('div');
+      summaryBody.id = 'drawer-filter-summary-body';
+      summaryBody.style.cssText = 'display:flex;flex-wrap:wrap;gap:4px;';
+      summary.appendChild(summaryBody);
+
+      // 插在 filterEl 上方（slot 內的第一個子元素之後，即 "篩選條件" label 之後）
+      filterEl.parentNode.insertBefore(summary, filterEl);
+
+      function updateSummary() {
+        // 找到所有 active 按鈕（排除清除篩選本身）
+        var activeBtns = Array.prototype.slice.call(
+          filterEl.querySelectorAll('button.active')
+        ).filter(function(b) {
+          return !b.classList.contains('reset-btn') && b.id !== 'reset-btn' && b.id !== 'filter-reset';
+        });
+
+        summaryBody.innerHTML = '';
+        if (activeBtns.length === 0) {
+          summary.style.display = 'none';
+          return;
+        }
+
+        activeBtns.forEach(function(b) {
+          var chip = document.createElement('span');
+          chip.style.cssText =
+            'display:inline-block;background:rgba(16,185,129,0.15);' +
+            'border-radius:20px;padding:2px 8px;font-size:11px;font-weight:600;';
+          chip.textContent = b.textContent.trim();
+          summaryBody.appendChild(chip);
+        });
+
+        summary.style.display = 'block';
+      }
+
+      // 監聽 filterEl 內所有按鈕點擊
+      filterEl.addEventListener('click', function(e) {
+        if (e.target.tagName === 'BUTTON') {
+          setTimeout(updateSummary, 0);
+        }
+      });
+
+      // 初始化（URL params 預選 / 頁面已有 active 狀態）
+      setTimeout(updateSummary, 250);
     }
 
     // 全台篩選頁 (.filter-section)
@@ -120,6 +177,7 @@
       slot.appendChild(label);
       slot.appendChild(globalFilter);
       makeAccordion(globalFilter);
+      buildFilterSummary(globalFilter);
       return;
     }
 
@@ -134,6 +192,7 @@
       slot.appendChild(label2);
       slot.appendChild(cityFilter);
       makeAccordion(cityFilter);
+      buildFilterSummary(cityFilter);
     }
   }
 

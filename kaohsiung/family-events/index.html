@@ -40,7 +40,8 @@
     }
   ]
 }
-</script></head>
+</script><link href="/assets/filter.css" rel="stylesheet"/>
+</head>
 <body>
 <div data-active="events" id="site-header-container"></div>
 <main class="page-pad">
@@ -59,10 +60,29 @@
 </div>
 </section>
 
-<h2 style="font-size:18px;font-weight:800;color:var(--text-dark);margin:24px 0 12px;">特展與限期活動</h2>
+<div id="filter-bar" style="background:rgba(255,255,255,0.82);backdrop-filter:blur(14px);border:1px solid var(--border-color);border-radius:14px;padding:12px 16px;margin-bottom:20px;display:flex;flex-direction:column;gap:8px;">
+  <div class="filter-row">
+  <span class="filter-label">類型</span>
+  <button class="f-btn tag-btn" data-tag="展覽特展">🖼️ 展覽特展</button>
+  <button class="f-btn tag-btn" data-tag="手作體驗">🎨 手作體驗</button>
+  <button class="f-btn tag-btn" data-tag="生態自然">🌿 生態自然</button>
+  <button class="f-btn tag-btn" data-tag="演出劇場">🎭 演出劇場</button>
+  <button class="f-btn tag-btn" data-tag="節慶活動">🎊 節慶活動</button>
+  <button class="f-btn tag-btn" data-tag="博物館活動">🏛️ 博物館活動</button>
+  <button class="f-btn tag-btn" data-tag="戶外探索">🧭 戶外探索</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">費用</span>
+  <button class="f-btn tag-btn" data-tag="免費">✅ 免費</button>
+  <button class="f-btn tag-btn" data-tag="付費">💳 付費</button>
+  <button class="f-btn reset-btn" id="filter-reset">清除篩選</button>
+  </div>
+</div>
+<div id="filter-count" style="font-size:13px;color:var(--text-muted);margin-bottom:8px;display:none;">共 <strong id="visible-count">0</strong> 個</div>
 <section class="modern-cards-grid" id="listing-grid">
+<div class="section-divider">特展與限期活動</div>
 
-<article class="modern-card" data-lat="23.2023" data-lng="120.7045">
+<article class="modern-card" data-lat="23.2023" data-lng="120.7045" data-tags="[&quot;生態自然&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">那瑪夏賞螢季</h3>
 <div class="tags-group">
@@ -92,7 +112,7 @@
 <a class="action-btn" href="/kaohsiung/family-events/namasia-firefly-2026/">閱讀整理詳情 ➜</a>
 </article>
 
-<article class="modern-card" data-lat="22.6724" data-lng="120.2834">
+<article class="modern-card" data-lat="22.6724" data-lng="120.2834" data-tags="[&quot;展覽特展&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">台電公共藝術祭「奧拉之城 III」</h3>
 <div class="tags-group">
@@ -122,7 +142,7 @@
 <a class="action-btn" href="/kaohsiung/family-events/taipower-art-festival-2026/">閱讀整理詳情 ➜</a>
 </article>
 
-<article class="modern-card" data-lat="22.6270" data-lng="120.3601">
+<article class="modern-card" data-lat="22.6270" data-lng="120.3601" data-tags="[&quot;手作體驗&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">Toyota 玩具復活節｜高雄場</h3>
 <div class="tags-group">
@@ -152,12 +172,10 @@
 <a class="action-btn" href="/kaohsiung/family-events/toy-revival-festival-2026/">閱讀整理詳情 ➜</a>
 </article>
 
-</section>
 
-<h2 style="font-size:18px;font-weight:800;color:var(--text-dark);margin:24px 0 12px;">高雄兒童美術館</h2>
-<section class="modern-cards-grid">
+<div class="section-divider">高雄兒童美術館</div>
 
-<article class="modern-card" data-lat="22.6694" data-lng="120.2818">
+<article class="modern-card" data-lat="22.6694" data-lng="120.2818" data-tags="[&quot;手作體驗&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">兒藝工作坊</h3>
 <div class="tags-group">
@@ -187,7 +205,7 @@
 <a class="action-btn" href="/kaohsiung/family-events/kmfa-art-workshop/">閱讀整理詳情 ➜</a>
 </article>
 
-<article class="modern-card" data-lat="22.6694" data-lng="120.2818">
+<article class="modern-card" data-lat="22.6694" data-lng="120.2818" data-tags="[&quot;展覽特展&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">生活藏寶圖</h3>
 <div class="tags-group">
@@ -216,7 +234,7 @@
 <a class="action-btn" href="/kaohsiung/family-events/kmfa-daily-treasure-map/">閱讀整理詳情 ➜</a>
 </article>
 
-<article class="modern-card" data-lat="22.6694" data-lng="120.2818">
+<article class="modern-card" data-lat="22.6694" data-lng="120.2818" data-tags="[&quot;博物館活動&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">高雄兒童美術館定時導覽</h3>
 <div class="tags-group">
@@ -245,7 +263,7 @@
 <a class="action-btn" href="/kaohsiung/family-events/kmfa-guided-tour/">閱讀整理詳情 ➜</a>
 </article>
 
-<article class="modern-card" data-lat="22.6694" data-lng="120.2818">
+<article class="modern-card" data-lat="22.6694" data-lng="120.2818" data-tags="[&quot;博物館活動&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">高雄兒童美術館說故事時間</h3>
 <div class="tags-group">
@@ -274,12 +292,10 @@
 <a class="action-btn" href="/kaohsiung/family-events/kmfa-storytime-2026/">閱讀整理詳情 ➜</a>
 </article>
 
-</section>
 
-<h2 style="font-size:18px;font-weight:800;color:var(--text-dark);margin:24px 0 12px;">科工館特展</h2>
-<section class="modern-cards-grid">
+<div class="section-divider">科工館特展</div>
 
-<article class="modern-card" data-lat="22.6359" data-lng="120.3415">
+<article class="modern-card" data-lat="22.6359" data-lng="120.3415" data-tags="[&quot;展覽特展&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">彩虹童畫親子樂園特展</h3>
 <div class="tags-group">
@@ -308,7 +324,7 @@
 <a class="action-btn" href="/kaohsiung/family-events/nstm-rainbow-playland/">閱讀整理詳情 ➜</a>
 </article>
 
-<article class="modern-card" data-lat="22.6359" data-lng="120.3415">
+<article class="modern-card" data-lat="22.6359" data-lng="120.3415" data-tags="[&quot;展覽特展&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">熱雪天堂兒童滑雪樂園 3.0</h3>
 <div class="tags-group">
@@ -337,12 +353,10 @@
 <a class="action-btn" href="/kaohsiung/family-events/nstm-snow-paradise/">閱讀整理詳情 ➜</a>
 </article>
 
-</section>
 
-<h2 style="font-size:18px;font-weight:800;color:var(--text-dark);margin:24px 0 12px;">衛武營系列</h2>
-<section class="modern-cards-grid">
+<div class="section-divider">衛武營系列</div>
 
-<article class="modern-card" data-lat="22.6096" data-lng="120.3434">
+<article class="modern-card" data-lat="22.6096" data-lng="120.3434" data-tags="[&quot;博物館活動&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">衛武營藝玩伴計畫</h3>
 <div class="tags-group">
@@ -371,7 +385,7 @@
 <a class="action-btn" href="/kaohsiung/family-events/weiwuying-art-fun-play/">閱讀整理詳情 ➜</a>
 </article>
 
-<article class="modern-card" data-lat="22.6096" data-lng="120.3434">
+<article class="modern-card" data-lat="22.6096" data-lng="120.3434" data-tags="[&quot;手作體驗&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">衛武營創意學習工作坊</h3>
 <div class="tags-group">
@@ -401,12 +415,10 @@
 <a class="action-btn" href="/kaohsiung/family-events/weiwuying-creative-workshop/">閱讀整理詳情 ➜</a>
 </article>
 
-</section>
 
-<h2 style="font-size:18px;font-weight:800;color:var(--text-dark);margin:24px 0 12px;">圖書館</h2>
-<section class="modern-cards-grid">
+<div class="section-divider">圖書館</div>
 
-<article class="modern-card" data-lat="22.5902" data-lng="120.3213">
+<article class="modern-card" data-lat="22.5902" data-lng="120.3213" data-tags="[&quot;博物館活動&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">高雄市立圖書館總館親子活動</h3>
 <div class="tags-group">
@@ -439,4 +451,5 @@
 
 </div>
 </main>
-<div id="site-footer-container"></div><script src="/assets/footer.js"></script></body></html>
+<div id="site-footer-container"></div><script src="/assets/footer.js"></script><script src="/assets/city-filter.js"></script>
+</body></html>
