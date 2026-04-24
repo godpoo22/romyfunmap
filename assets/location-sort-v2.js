@@ -266,13 +266,16 @@ document.addEventListener("DOMContentLoaded", () => {
         // Collect ALL cards on the page (including cards in secondary sections)
         const cards = Array.from(document.querySelectorAll(".modern-card"));
 
-        for (const card of cards) {
-          const { lat, lng } = await getCardCoordinates(card);
+        // Fetch all coordinates in parallel instead of sequentially
+        const coordsArray = await Promise.all(cards.map(card => getCardCoordinates(card)));
+
+        cards.forEach((card, i) => {
+          const { lat, lng } = coordsArray[i];
           const distanceTag = card.querySelector(".distance-tag");
 
           if (!Number.isFinite(lat) || !Number.isFinite(lng)) {
             card.dataset.distance = "9999";
-            continue;
+            return;
           }
 
           const distance = distanceBetween(
@@ -288,7 +291,7 @@ document.addEventListener("DOMContentLoaded", () => {
             distanceTag.style.display = "inline-block";
             distanceTag.textContent = formatDistance(distance);
           }
-        }
+        });
 
         // Hide section dividers, sort all cards together into one grid
         document.querySelectorAll(".section-divider").forEach((d) => { d.style.display = "none"; });
