@@ -7,6 +7,7 @@
 <title>台中市親子餐廳｜羅米親子玩樂地圖</title>
 <meta content="整理台中市台中市親子餐廳的用餐環境、親子設施與訂位資訊，方便安排台中市親子餐廳行程。先看店型與交通方式，再決定要安排聚餐、下午茶或順遊用餐。" name="description"/><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YS1QEYCML9');</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YS1QEYCML9"></script><script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4879544848259502"></script><link href="https://romyfunmap.com/taichung/family-restaurants/" rel="canonical"/><meta content="website" property="og:type"/><meta content="羅米親子玩樂地圖" property="og:site_name"/><meta content="zh_TW" property="og:locale"/><meta content="台中市親子餐廳｜羅米親子玩樂地圖" property="og:title"/><meta content="整理台中市台中市親子餐廳的用餐環境、親子設施與訂位資訊，方便安排台中市親子餐廳行程。先看店型與交通方式，再決定要安排聚餐、下午茶或順遊用餐。" property="og:description"/><meta content="https://romyfunmap.com/taichung/family-restaurants/" property="og:url"/><meta content="https://romyfunmap.com/images/og-cover.jpg" property="og:image"/>
 <link href="/assets/style.css" rel="stylesheet"/>
+<link href="/assets/filter.css" rel="stylesheet"/>
 <script src="/assets/header.js"></script>
 <script src="/assets/location-sort-v2.js"></script>
 <style>
@@ -58,8 +59,47 @@
 <button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
 </div>
 </section>
-<section class="modern-cards-grid" id="listing-grid">
-<article class="modern-card" data-lat="24.1835" data-lng="120.5935">
+<div id="filter-bar" style="background:rgba(255,255,255,0.82);backdrop-filter:blur(14px);border:1px solid var(--border-color);border-radius:14px;padding:12px 16px;margin-bottom:20px;display:flex;flex-direction:column;gap:8px;">
+  <div class="filter-row">
+  <span class="filter-label">地區</span>
+  <button class="f-btn dist-btn" data-district="西屯區">西屯區</button>
+  <button class="f-btn dist-btn" data-district="豐原區">豐原區</button>
+  <button class="f-btn dist-btn" data-district="新社區">新社區</button>
+  <button class="f-btn dist-btn" data-district="北屯區">北屯區</button>
+  <button class="f-btn dist-btn" data-district="大雅區">大雅區</button>
+  <button class="f-btn dist-btn" data-district="南屯區">南屯區</button>
+  <button class="f-btn dist-btn" data-district="沙鹿區">沙鹿區</button>
+  <button class="f-btn dist-btn" data-district="南區">南區</button>
+  <button class="f-btn dist-btn" data-district="霧峰區">霧峰區</button>
+  <button class="f-btn dist-btn" data-district="西區">西區</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">類型</span>
+  <button class="f-btn tag-btn" data-tag="親子餐廳">🧸 親子餐廳</button>
+  <button class="f-btn tag-btn" data-tag="景觀餐廳">🌄 景觀餐廳</button>
+  <button class="f-btn tag-btn" data-tag="咖啡廳">☕ 咖啡廳</button>
+  <button class="f-btn tag-btn" data-tag="農場用餐">🐄 農場用餐</button>
+  <button class="f-btn tag-btn" data-tag="兒童餐點">🍱 兒童餐點</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">設施</span>
+  <button class="f-btn tag-btn" data-tag="兒童遊戲區">🎠 兒童遊戲區</button>
+  <button class="f-btn tag-btn" data-tag="可包場">🎉 可包場</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">空間</span>
+  <button class="f-btn tag-btn" data-tag="室內">🏠 室內</button>
+  <button class="f-btn tag-btn" data-tag="戶外">☀️ 戶外</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">費用</span>
+  <button class="f-btn tag-btn" data-tag="有低消">💳 有低消</button>
+  <button class="f-btn tag-btn" data-tag="無低消">✅ 無低消</button>
+  <button class="f-btn reset-btn" id="filter-reset">清除篩選</button>
+  </div>
+</div>
+<div id="filter-count" style="font-size:13px;color:var(--text-muted);margin-bottom:8px;display:none;">共 <strong id="visible-count">0</strong> 間餐廳</div><section class="modern-cards-grid" id="listing-grid">
+<article class="modern-card" data-district="西屯區" data-lat="24.1835" data-lng="120.5935" data-space="室內" data-tags="[&quot;咖啡廳&quot;, &quot;室內&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">梨子咖啡館 東海森林店</h3>
 <div class="tags-group">
@@ -70,14 +110,14 @@
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
 </div>
-<p class="card-desc">東海周邊常被安排的親子友善餐廳，空間寬敞，飯前飯後散步也方便。</p>
+<p class="card-desc">東海大學校園內的森林系景觀咖啡廳，挑高天空樹空間，早午餐到義大利麵選擇多，可包廂辦聚餐抓周。</p>
 <div class="info-list">
-<div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>咖啡館 / 家庭聚餐</div></div>
+<div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>景觀餐廳 / 家庭聚餐</div></div>
 <div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div>
 </div>
 <a class="action-btn" href="/taichung/family-restaurants/pear-cafe-donghai/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.2515" data-lng="120.7720">
+<article class="modern-card" data-district="豐原區" data-lat="24.2515" data-lng="120.7720" data-space="戶外" data-tags='["play", "kidsmeal", "outdoor"]' data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;戶外&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">流星花園景觀餐廳</h3>
 <div class="tags-group">
@@ -88,14 +128,14 @@
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
 </div>
-<p class="card-desc">草地視野和山景辨識度高，適合安排看景加用餐的家庭聚會。</p>
+<p class="card-desc">豐原公老坪海拔500公尺的山景景觀餐廳，視野遼闊，設有彩虹溜滑梯，假日車流較多建議早點上山。</p>
 <div class="info-list">
 <div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>景觀餐廳 / 戶外用餐</div></div>
 <div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div>
 </div>
 <a class="action-btn" href="/taichung/family-restaurants/meteor-garden/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.1770" data-lng="120.8150">
+<article class="modern-card" data-district="新社區" data-lat="24.1770" data-lng="120.8150" data-space="戶外" data-tags='["outdoor"]' data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;戶外&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">安妮公主花園餐廳</h3>
 <div class="tags-group">
@@ -106,14 +146,14 @@
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
 </div>
-<p class="card-desc">新社山區的花園景觀餐廳，適合安排半日慢遊與草地散步。</p>
+<p class="card-desc">新社山區英式莊園風景觀餐廳，花園步道搭配下午茶，假日常需提前訂位。</p>
 <div class="info-list">
 <div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>景觀餐廳 / 花園園區</div></div>
 <div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div>
 </div>
 <a class="action-btn" href="/taichung/family-restaurants/annie-princess-garden/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.1882" data-lng="120.7250">
+<article class="modern-card" data-district="北屯區" data-lat="24.1882" data-lng="120.7250" data-space="室內" data-tags='["play", "outdoor"]' data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">奶油河馬家庭餐廳</h3>
 <div class="tags-group">
@@ -124,31 +164,30 @@
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
 </div>
-<p class="card-desc">北屯區常見的家庭聚餐點，雨天或需要穩定室內環境時比較好安排。</p>
+<p class="card-desc">北屯的馬戲團主題親子餐廳，結合室內遊樂設施與戶外大草皮沙坑，適合家庭聚餐抓周。</p>
 <div class="info-list">
-<div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>家庭餐廳 / 室內用餐</div></div>
+<div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>親子餐廳 / 室內遊戲區</div></div>
 <div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div>
 </div>
 <a class="action-btn" href="/taichung/family-restaurants/cream-hippo/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.2521" data-lng="120.7224">
+<article class="modern-card" data-district="豐原區" data-lat="24.2521" data-lng="120.7224" data-space="室內" data-tags='["play", "kidsmeal"]' data-tags="[&quot;親子餐廳&quot;, &quot;兒童遊戲區&quot;, &quot;可包場&quot;, &quot;室內&quot;, &quot;有低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">蘋果堡親子餐廳</h3>
 <div class="tags-group">
 <div class="tags-row">
 <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">豐原區</span>
-<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子餐廳</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
 </div>
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
 </div>
-<p class="card-desc">位於豐原葫蘆墩公園附近，木製溜滑梯是這間餐廳較有辨識度的特色，配備扮家家酒道具與童書閱讀角。設施規模較小，但各項配備齊全，步調輕鬆。提供包場服務，適合辦抓周、生日等小型聚會。</p>
+<p class="card-desc">豐原的小型親子餐廳，木製溜滑梯搭配家家酒角落，步調輕鬆，可包場辦抓周和生日。</p>
 <div class="info-list">
 <div class="info-item">
 <div class="info-icon">📍</div>
 <div class="info-text">
-<span>類型</span>親子餐廳
-                </div>
+<span>類型</span>親子餐廳</div>
 </div>
 <div class="info-item">
 <div class="info-icon">🚗</div>
@@ -159,24 +198,23 @@
 </div>
 <a class="action-btn" href="/taichung/family-restaurants/apple-castle/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.2257" data-lng="120.6471">
+<article class="modern-card" data-district="大雅區" data-lat="24.2257" data-lng="120.6471" data-space="戶外" data-tags='["play", "outdoor"]' data-tags="[&quot;農場用餐&quot;, &quot;親子餐廳&quot;, &quot;景觀餐廳&quot;, &quot;兒童遊戲區&quot;, &quot;室內&quot;, &quot;戶外&quot;, &quot;無低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">赤腳丫生態農莊</h3>
 <div class="tags-group">
 <div class="tags-row">
 <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">大雅區</span>
-<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子餐廳</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
 </div>
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
 </div>
-<p class="card-desc">結合景觀餐廳與生態農場的親子場所。前場有餐廳、遊戲區、戲水池與大草皮；農場區設有可愛動物區、魚菜共生區、沙坑與烤肉區。園區空間寬闊，孩子可在戶外自由活動，每月不定期安排表演或 DIY 體驗。</p>
+<p class="card-desc">大雅農場型親子場所，餐廳前場有遊戲區和戲水池，後場可接觸動物，空間寬闊不定期安排DIY。</p>
 <div class="info-list">
 <div class="info-item">
 <div class="info-icon">📍</div>
 <div class="info-text">
-<span>類型</span>親子餐廳
-                </div>
+<span>類型</span>農場餐廳 / 親子景點</div>
 </div>
 <div class="info-item">
 <div class="info-icon">🚗</div>
@@ -187,24 +225,23 @@
 </div>
 <a class="action-btn" href="/taichung/family-restaurants/chijiao-farm/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.1925" data-lng="120.6038">
+<article class="modern-card" data-district="西屯區" data-lat="24.1925" data-lng="120.6038" data-space="室內" data-tags='["play"]' data-tags="[&quot;親子餐廳&quot;, &quot;兒童遊戲區&quot;, &quot;室內&quot;, &quot;無低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">非晉餐廚PLUS 魔法森林館</h3>
 <div class="tags-group">
 <div class="tags-row">
-<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">西屯區（中科）</span>
-<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子餐廳</span>
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">西屯區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
 </div>
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
 </div>
-<p class="card-desc">台中市・西屯區（中科）｜以魔法森林為主題的室內親子餐廳，遊戲區設有攀爬、溜滑梯與迷宮等設施。餐點方面強調低溫舒肥肉品與蒸烤料理，以健康原型食材為訴求。位於中科附近新興住宅區，假日用餐限時 90 分鐘，適合有時間規劃彈性的親子組合。</p>
+<p class="card-desc">中科附近的魔法森林主題親子餐廳，攀爬溜滑梯遊戲區，主打低溫舒肥健康料理，假日限時90分鐘。</p>
 <div class="info-list">
 <div class="info-item">
 <div class="info-icon">📍</div>
 <div class="info-text">
-<span>類型</span>親子餐廳
-                </div>
+<span>類型</span>親子餐廳</div>
 </div>
 <div class="info-item">
 <div class="info-icon">🚗</div>
@@ -215,24 +252,23 @@
 </div>
 <a class="action-btn" href="/taichung/family-restaurants/feijin-kitchen/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.1815" data-lng="120.6278">
+<article class="modern-card" data-district="西屯區" data-lat="24.1815" data-lng="120.6278" data-space="戶外" data-tags='["outdoor"]' data-tags="[&quot;親子餐廳&quot;, &quot;兒童遊戲區&quot;, &quot;室內&quot;, &quot;戶外&quot;, &quot;有低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">GEOLIAM 門門</h3>
 <div class="tags-group">
 <div class="tags-row">
 <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">西屯區</span>
-<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子餐廳</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
 </div>
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
 </div>
-<p class="card-desc">室內外空間均寬敞，孩子可在戶外跑跳或在室內活動。不定期舉辦適合孩子的課程，由專業老師帶領，讓家長能在旁喝咖啡用餐稍作休息。與一般大型遊樂設施型親子餐廳不同，這裡著重在課程體驗與舒適環境。</p>
+<p class="card-desc">西屯的歐式莊園風咖啡廳，戶外大草坪不限時，室內供早午餐輕食，偶爾舉辦親子課程。</p>
 <div class="info-list">
 <div class="info-item">
 <div class="info-icon">📍</div>
 <div class="info-text">
-<span>類型</span>親子餐廳
-                </div>
+<span>類型</span>景觀餐廳 / 咖啡廳</div>
 </div>
 <div class="info-item">
 <div class="info-icon">🚗</div>
@@ -243,24 +279,23 @@
 </div>
 <a class="action-btn" href="/taichung/family-restaurants/geoliam/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.1383" data-lng="120.6167">
+<article class="modern-card" data-district="南屯區" data-lat="24.1383" data-lng="120.6167" data-space="室內" data-tags='["play", "kidsmeal"]' data-tags="[&quot;親子餐廳&quot;, &quot;兒童遊戲區&quot;, &quot;室內&quot;, &quot;無低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">嗨嗨台中 親子餐廳</h3>
 <div class="tags-group">
 <div class="tags-row">
 <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">南屯區</span>
-<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子餐廳</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
 </div>
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
 </div>
-<p class="card-desc">位於秀泰生活 2F 的親子餐廳，主打原型食材早午餐，餐點口味以清淡健康為取向。遊戲區空間雖然不大，但分設嬰幼兒爬行區（獨立圍欄）與較大孩子的遊戲空間，全區鋪有防撞軟墊。座位數控制得當，不容易顯得過於擁擠。</p>
+<p class="card-desc">秀泰生活2F的親子餐廳，主打原型食材早午餐，設嬰幼兒爬行專區與較大孩子遊戲空間。</p>
 <div class="info-list">
 <div class="info-item">
 <div class="info-icon">📍</div>
 <div class="info-text">
-<span>類型</span>親子餐廳
-                </div>
+<span>類型</span>親子餐廳</div>
 </div>
 <div class="info-item">
 <div class="info-icon">🚗</div>
@@ -271,24 +306,23 @@
 </div>
 <a class="action-btn" href="/taichung/family-restaurants/hihi-taichung/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.1882" data-lng="120.7250">
+<article class="modern-card" data-district="北屯區" data-lat="24.1882" data-lng="120.7250" data-space="室內" data-tags='["play", "kidsmeal"]' data-tags="[&quot;親子餐廳&quot;, &quot;兒童遊戲區&quot;, &quot;室內&quot;, &quot;無低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">小島3.5度 Island Aurora</h3>
 <div class="tags-group">
 <div class="tags-row">
 <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">北屯區</span>
-<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子餐廳</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
 </div>
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
 </div>
-<p class="card-desc">以恐龍叢林為主題的親子餐廳，一樓用餐、二樓整層為遊戲區。球池、沙坑、溜滑梯與角色扮演區各有分區，座位可看見二樓遊戲動線，對需要留意孩子動向的家長較為方便。採預約制，假日場次容易額滿。</p>
+<p class="card-desc">北屯恐龍主題親子餐廳，二樓整層遊戲區含球池、沙坑、溜滑梯，採預約制假日容易額滿。</p>
 <div class="info-list">
 <div class="info-item">
 <div class="info-icon">📍</div>
 <div class="info-text">
-<span>類型</span>親子餐廳
-                </div>
+<span>類型</span>親子餐廳</div>
 </div>
 <div class="info-item">
 <div class="info-icon">🚗</div>
@@ -299,24 +333,23 @@
 </div>
 <a class="action-btn" href="/taichung/family-restaurants/island-aurora/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.1882" data-lng="120.7250">
+<article class="modern-card" data-district="北屯區" data-lat="24.1882" data-lng="120.7250" data-space="室內" data-tags='["play", "kidsmeal"]' data-tags="[&quot;親子餐廳&quot;, &quot;兒童遊戲區&quot;, &quot;可包場&quot;, &quot;室內&quot;, &quot;無低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">咱們小時候 親子派對餐廳</h3>
 <div class="tags-group">
 <div class="tags-row">
 <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">北屯區</span>
-<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子餐廳</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
 </div>
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
 </div>
-<p class="card-desc">2025 年重新整修後以「環遊世界」為主題，入口設計成登機門，內設新加坡魚尾獅、法國凱旋門等場景。約 200 坪的空間配置球池、溜滑梯、攀岩、VR 設施等，並提供包廂辦理抓周、生日、主題派對等活動。用餐後遊戲區開放至打烊前。</p>
+<p class="card-desc">200坪環遊世界主題親子餐廳，球池溜滑梯VR設施齊備，可包廂辦抓周和生日派對。</p>
 <div class="info-list">
 <div class="info-item">
 <div class="info-icon">📍</div>
 <div class="info-text">
-<span>類型</span>親子餐廳
-                </div>
+<span>類型</span>親子餐廳</div>
 </div>
 <div class="info-item">
 <div class="info-icon">🚗</div>
@@ -327,24 +360,23 @@
 </div>
 <a class="action-btn" href="/taichung/family-restaurants/our-childhood/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.2377" data-lng="120.5663">
+<article class="modern-card" data-district="沙鹿區" data-lat="24.2377" data-lng="120.5663" data-space="室內" data-tags='["play", "outdoor"]' data-tags="[&quot;親子餐廳&quot;, &quot;兒童遊戲區&quot;, &quot;室內&quot;, &quot;戶外&quot;, &quot;有低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">想窩11餐旅館</h3>
 <div class="tags-group">
 <div class="tags-row">
 <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">沙鹿區</span>
-<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子餐廳</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
 </div>
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
 </div>
-<p class="card-desc">佔地約八百坪，整合餐廳、室內遊樂場、戶外草皮與旅館住宿的複合式場所。室內遊樂場設有大型溜滑梯球池、幼童專屬爬行區與扮家家酒超市；戶外草皮寬闊，孩子可自由奔跑。如有需要也可彈性搭配住宿行程。</p>
+<p class="card-desc">沙鹿的複合式親子場所，室內遊樂場加大片戶外草皮，視需求也可搭配住宿安排全日行程。</p>
 <div class="info-list">
 <div class="info-item">
 <div class="info-icon">📍</div>
 <div class="info-text">
-<span>類型</span>親子餐廳
-                </div>
+<span>類型</span>親子餐廳 / 住宿</div>
 </div>
 <div class="info-item">
 <div class="info-icon">🚗</div>
@@ -355,24 +387,23 @@
 </div>
 <a class="action-btn" href="/taichung/family-restaurants/xiangwo-11/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.1882" data-lng="120.7250">
+<article class="modern-card" data-district="北屯區" data-lat="24.1882" data-lng="120.7250" data-space="室內" data-tags='["play", "kidsmeal"]' data-tags="[&quot;親子餐廳&quot;, &quot;兒童遊戲區&quot;, &quot;室內&quot;, &quot;無低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">一朵親咕 韓式親子餐廳</h3>
 <div class="tags-group">
 <div class="tags-row">
 <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">北屯區</span>
-<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">親子餐廳</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
 </div>
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
 </div>
-<p class="card-desc">台中少見的韓式主題親子餐廳，一樓提供正宗韓式料理，二樓規劃為親子五感與顏料體驗空間。不同於一般遊戲型親子餐廳，這裡著重在感官啟發與課程體驗，不定期開設茶葉勇士大冒險、豆腐奶奶等主題活動，適合對韓式文化有興趣、希望為孩子安排不同類型體驗的家庭。</p>
+<p class="card-desc">北屯韓式親子餐廳，一樓韓式料理、二樓五感體驗空間，不定期舉辦主題課程活動。</p>
 <div class="info-list">
 <div class="info-item">
 <div class="info-icon">📍</div>
 <div class="info-text">
-<span>類型</span>親子餐廳
-                </div>
+<span>類型</span>親子餐廳</div>
 </div>
 <div class="info-item">
 <div class="info-icon">🚗</div>
@@ -383,7 +414,7 @@
 </div>
 <a class="action-btn" href="/taichung/family-restaurants/yiduo-cafe/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.1216" data-lng="120.6730">
+<article class="modern-card" data-district="南區" data-lat="24.1216" data-lng="120.6730" data-space="室內" data-tags='["play"]' data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">愛娃媽咪親子餐廳</h3>
 <div class="tags-group">
@@ -394,11 +425,11 @@
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
 </div>
-<p class="card-desc">台中近年很常被提到的親子餐廳，適合安排抓周、慶生或低齡孩子用餐。</p>
+<p class="card-desc">南區的親子餐廳，設有大型馬卡龍遊戲室，監控螢幕方便家長用餐，適合抓周與慶生。</p>
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>親子餐廳 / 室內遊戲區</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/taichung/family-restaurants/avamommy/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.2527" data-lng="120.7220">
+<article class="modern-card" data-district="豐原區" data-lat="24.2527" data-lng="120.7220" data-space="室內" data-tags='["play"]' data-tags="[&quot;咖啡廳&quot;, &quot;室內&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">吾子 WULI MO</h3>
 <div class="tags-group">
@@ -409,31 +440,31 @@
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
 </div>
-<p class="card-desc">甜點、輕食和木質遊戲角落都很適合安排豐原市區的親子下午茶。</p>
-<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>甜點店 / 親子友善</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
+<p class="card-desc">豐原韓系親子餐廳，二樓設溜滑梯與家家酒遊戲區，提供鹹派輕食甜點，須穿襪入場。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>親子餐廳</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
 <a class="action-btn" href="/taichung/family-restaurants/wuli-mo/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.0496" data-lng="120.7032">
+<article class="modern-card" data-district="霧峰區" data-lat="24.0496" data-lng="120.7032" data-space="戶外" data-tags='["outdoor"]' data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;戶外&quot;, &quot;無低消&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">窩草的日子</h3>
 <div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">霧峰區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div>
 </div>
-<p class="card-desc">大片草地和玻璃屋辨識度很高，適合安排霧峰一帶的親子聚餐與放風行程。</p>
+<p class="card-desc">霧峰微森林景觀餐廳，玻璃屋搭配大片草地，寵物友善，適合親子放風聚餐。</p>
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>景觀餐廳 / 草地庭園</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/taichung/family-restaurants/wocaoderizi/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.1454" data-lng="120.6576">
+<article class="modern-card" data-district="西區" data-lat="24.1454" data-lng="120.6576" data-space="室內" data-tags='["kidsmeal"]' data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">樂醬 LOVE JAM</h3>
 <div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">西區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div>
 </div>
-<p class="card-desc">西區很適合親子早午餐的店之一，有兒童餐也方便和草悟道行程一起安排。</p>
+<p class="card-desc">草悟道附近的早午餐咖啡廳，有兒童餐，空間輕鬆，方便和市區親子行程一起安排。</p>
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>早午餐 / 親子友善</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
 <a class="action-btn" href="/taichung/family-restaurants/love-jam/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="24.1871" data-lng="120.6908">
+<article class="modern-card" data-district="北屯區" data-lat="24.1871" data-lng="120.6908" data-space="室內" data-tags='["play"]' data-tags="[&quot;咖啡廳&quot;, &quot;室內&quot;, &quot;戶外&quot;, &quot;無低消&quot;, &quot;兒童遊戲區&quot;]">
 <div class="card-header"><h3 class="card-title" style="margin-right:10px;">梨子咖啡館 崇德店</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">北屯區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
-<p class="card-desc">有小書房、沙坑和親子廁所，對台中親子家庭來說是很成熟的聚餐選項。</p>
+<p class="card-desc">北屯的親子友善咖啡廳，設小書房繪本區與戶外沙坑，餐點多元，有親子廁所。</p>
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>親子餐廳 / 繪本沙坑</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/taichung/family-restaurants/pear-cafe-chongde/">閱讀整理詳情 ➜</a>
 </article>
@@ -442,5 +473,7 @@
 </main>
 <div id="site-footer-container"></div>
 <script src="/assets/footer.js"></script>
+<script src="/assets/city-filter.js"></script>
 </body>
 </html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

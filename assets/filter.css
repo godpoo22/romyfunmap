@@ -1,0 +1,169 @@
+/* ===================================================
+   filter.css — 全台篩選頁 + 縣市列表頁共用樣式
+   =================================================== */
+
+/* ---------- 全台篩選頁（/attractions/, /restaurants/）---------- */
+.filter-section {
+  background: rgba(255,255,255,0.82);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border-color);
+  padding: 14px 20px;
+  position: sticky;
+  top: 65px;
+  z-index: 100;
+}
+.filter-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.filter-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  white-space: nowrap;
+  width: 32px;
+  flex-shrink: 0;
+}
+.tag-btn {
+  border: 1.5px solid var(--border-color);
+  background: rgba(255,255,255,0.9);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all .15s;
+  white-space: nowrap;
+  line-height: 1.5;
+}
+.tag-btn:hover { border-color: var(--primary); color: var(--primary); }
+.tag-btn.active { background: var(--primary); border-color: var(--primary); color: #fff; }
+.tag-btn.reset {
+  border-color: transparent;
+  background: var(--border-light);
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-left: 4px;
+}
+.tag-btn.reset:hover { background: #e2e8f0; color: var(--text-dark); }
+
+.result-bar {
+  max-width: 900px;
+  margin: 14px auto 0;
+  padding: 0 20px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.cards-grid {
+  max-width: 900px;
+  margin: 12px auto 0;
+  padding: 0 20px 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+@media (max-width: 600px) {
+  .cards-grid { grid-template-columns: 1fr; gap: 10px; }
+  .filter-section { padding: 10px 14px; }
+}
+.att-card {
+  background: rgba(255,255,255,0.78);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.85);
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: transform .15s, box-shadow .15s;
+  text-decoration: none;
+  color: inherit;
+}
+.att-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+.att-card.hidden { display: none; }
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+.card-name {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1.4;
+}
+.card-city {
+  font-size: 11px;
+  background: var(--primary-light);
+  color: var(--primary);
+  border-radius: 7px;
+  padding: 2px 7px;
+  white-space: nowrap;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.card-desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  flex: 1;
+}
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.card-tag {
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 2px 6px;
+}
+.tag-type     { background:#EFF6FF; color:#3B82F6; }
+.tag-facility { background:#FDF4FF; color:#9333EA; }
+.tag-space    { background:#F0FDF4; color:#16A34A; }
+.tag-cost     { background:#FFF7ED; color:#EA580C; }
+.empty-msg {
+  grid-column: 1/-1;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 14px;
+  padding: 48px 0;
+  display: none;
+}
+.empty-msg.show { display: block; }
+
+/* ---------- 縣市列表頁篩選列（/taichung/family-attractions/ 等）---------- */
+.f-btn {
+  border: 1.5px solid var(--border-color);
+  background: rgba(255,255,255,0.9);
+  border-radius: 20px;
+  padding: 4px 11px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all .15s;
+  white-space: nowrap;
+  line-height: 1.6;
+}
+.f-btn:hover { border-color: var(--primary); color: var(--primary); }
+.f-btn.active { background: var(--primary); border-color: var(--primary); color: #fff; }
+.f-btn.reset-btn {
+  border-color: transparent;
+  background: var(--border-light);
+  margin-left: 4px;
+}
+.f-btn.reset-btn:hover { background: #e2e8f0; color: var(--text-dark); }
+article.modern-card.hidden { display: none; }

@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>高雄市親子活動｜羅米親子玩樂地圖</title>
-<meta content="整理高雄市親子活動資訊，包含美術館工作坊、科學館特展與節慶體驗活動，依類型與時間分類呈現，方便爸媽快速規劃高雄市親子假日出遊行程。" name="description"/><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YS1QEYCML9');</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YS1QEYCML9"></script><script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4879544848259502"></script><link href="https://romyfunmap.com/kaohsiung/family-events/" rel="canonical"/><meta content="website" property="og:type"/><meta content="羅米親子玩樂地圖" property="og:site_name"/><meta content="zh_TW" property="og:locale"/><meta content="高雄市親子活動｜羅米親子玩樂地圖" property="og:title"/><meta content="整理高雄市親子活動資訊，包含美術館工作坊、科學館特展與節慶體驗活動，依類型與時間分類呈現，方便爸媽快速規劃高雄市親子假日出遊行程。" property="og:description"/><meta content="https://romyfunmap.com/kaohsiung/family-events/" property="og:url"/><meta content="https://romyfunmap.com/images/og-cover.jpg" property="og:image"/>
+<meta content="整理高雄市親子活動資訊，包含美術館工作坊、科學館特展、公益活動與生態體驗，依類型與時間分類呈現，方便爸媽快速規劃高雄市親子假日出遊行程。" name="description"/><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YS1QEYCML9');</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YS1QEYCML9"></script><script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4879544848259502"></script><link href="https://romyfunmap.com/kaohsiung/family-events/" rel="canonical"/><meta content="website" property="og:type"/><meta content="羅米親子玩樂地圖" property="og:site_name"/><meta content="zh_TW" property="og:locale"/><meta content="高雄市親子活動｜羅米親子玩樂地圖" property="og:title"/><meta content="整理高雄市親子活動資訊，包含美術館工作坊、科學館特展、公益活動與生態體驗，依類型與時間分類呈現，方便爸媽快速規劃高雄市親子假日出遊行程。" property="og:description"/><meta content="https://romyfunmap.com/kaohsiung/family-events/" property="og:url"/><meta content="https://romyfunmap.com/images/og-cover.jpg" property="og:image"/>
 <link href="/assets/style.css" rel="stylesheet"/>
 <script src="/assets/header.js"></script>
 <script src="/assets/location-sort-v2.js"></script>
@@ -40,7 +40,8 @@
     }
   ]
 }
-</script></head>
+</script><link href="/assets/filter.css" rel="stylesheet"/>
+</head>
 <body>
 <div data-active="events" id="site-header-container"></div>
 <main class="page-pad">
@@ -53,42 +54,128 @@
             / 親子活動
           </div>
 <h1>高雄市親子活動</h1>
-<p>先從館舍導覽、工作坊與季節活動開始整理，後續再持續更新。</p>
+<p>整理美術館工作坊、科學館特展、公益活動與自然生態體驗，持續更新中。</p>
 <div style="margin-top:16px;">
 <button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
 </div>
 </section>
+
+<div id="filter-bar" style="background:rgba(255,255,255,0.82);backdrop-filter:blur(14px);border:1px solid var(--border-color);border-radius:14px;padding:12px 16px;margin-bottom:20px;display:flex;flex-direction:column;gap:8px;">
+  <div class="filter-row">
+  <span class="filter-label">類型</span>
+  <button class="f-btn tag-btn" data-tag="展覽特展">🖼️ 展覽特展</button>
+  <button class="f-btn tag-btn" data-tag="手作體驗">🎨 手作體驗</button>
+  <button class="f-btn tag-btn" data-tag="生態自然">🌿 生態自然</button>
+  <button class="f-btn tag-btn" data-tag="演出劇場">🎭 演出劇場</button>
+  <button class="f-btn tag-btn" data-tag="節慶活動">🎊 節慶活動</button>
+  <button class="f-btn tag-btn" data-tag="展館活動">🏛️ 展館活動</button>
+  <button class="f-btn tag-btn" data-tag="戶外探索">🧭 戶外探索</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">費用</span>
+  <button class="f-btn tag-btn" data-tag="免費">✅ 免費</button>
+  <button class="f-btn tag-btn" data-tag="付費">💳 付費</button>
+  <button class="f-btn reset-btn" id="filter-reset">清除篩選</button>
+  </div>
+</div>
+<div id="filter-count" style="font-size:13px;color:var(--text-muted);margin-bottom:8px;display:none;">共 <strong id="visible-count">0</strong> 個</div>
 <section class="modern-cards-grid" id="listing-grid">
-<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+<div class="section-divider">特展與限期活動</div>
+
+<article class="modern-card" data-lat="23.2023" data-lng="120.7045" data-tags="[&quot;生態自然&quot;, &quot;付費&quot;]">
 <div class="card-header">
-<h3 class="card-title" style="margin-right:10px;">2026 高雄兒童節 恐龍酷樂園</h3>
+<h3 class="card-title" style="margin-right:10px;">那瑪夏賞螢季</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">那瑪夏區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="event-date-badge">展至 5/3</span>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">帶孩子遠離市區光害，在那瑪夏山林步道夜間賞螢。2026 年活動展至 5 月 3 日，賞螢券 200 元／人（含 50 元消費抵用券）。週末提供免費接駁車。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">💰</div>
+<div class="info-text">
+<span>費用</span>200 元／人（含消費抵用 50 元）
+                </div>
+</div>
+<div class="info-item">
+<div class="info-icon">🚌</div>
+<div class="info-text">
+<span>交通</span>週末免費接駁車
+                </div>
+</div>
+</div>
+<a class="action-btn" href="/kaohsiung/family-events/namasia-firefly-2026/">閱讀整理詳情 ➜</a>
+</article>
+
+<article class="modern-card" data-lat="22.6724" data-lng="120.2834" data-tags="[&quot;展覽特展&quot;, &quot;免費&quot;]">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">台電公共藝術祭「奧拉之城 III」</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鼓山區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="event-date-badge">展至 6/7</span>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">第三屆台電公共藝術祭首度移師高雄市立美術館戶外園區，15 組藝術家以電力美學創作，並推出集換式卡牌與動畫 MV。免費入場，互動時間 15:00–18:00。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">💰</div>
+<div class="info-text">
+<span>費用</span>免費
+                </div>
+</div>
+<div class="info-item">
+<div class="info-icon">🚇</div>
+<div class="info-text">
+<span>交通</span>輕軌美術館站
+                </div>
+</div>
+</div>
+<a class="action-btn" href="/kaohsiung/family-events/taipower-art-festival-2026/">閱讀整理詳情 ➜</a>
+</article>
+
+<article class="modern-card" data-lat="22.6270" data-lng="120.3601" data-tags="[&quot;手作體驗&quot;, &quot;免費&quot;]">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">Toyota 玩具復活節｜高雄場</h3>
 <div class="tags-group">
 <div class="tags-row">
 <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鳳山區</span>
 <span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
 </div>
-<span class="event-date-badge">年度檔期</span>
+<span class="event-date-badge">5/30</span>
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
 </div>
-<p class="card-desc">高雄兒童節期間活動頁，活動日期為 2026 年 4 月 3 日至 4 月 6 日。</p>
+<p class="card-desc">全台巡迴純公益免費活動，Toyota 聯合台灣玩具圖書館協會舉辦。孩子可動手 DIY 修玩具、參加永續闖關遊戲，將環保理念融入歡樂體驗。</p>
 <div class="info-list">
+<div class="info-item">
+<div class="info-icon">💰</div>
+<div class="info-text">
+<span>費用</span>免費
+                </div>
+</div>
 <div class="info-item">
 <div class="info-icon">📍</div>
 <div class="info-text">
-<span>類型</span>親子活動
-                </div>
-</div>
-<div class="info-item">
-<div class="info-icon">🚗</div>
-<div class="info-text">
-<span>交通</span>開車方便
+<span>地點</span>鳳山區（詳細地址依官方公告）
                 </div>
 </div>
 </div>
-<a class="action-btn" href="/kaohsiung/family-events/kaohsiung-childrens-day-dino-2026/">閱讀整理詳情 ➜</a>
+<a class="action-btn" href="/kaohsiung/family-events/toy-revival-festival-2026/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+
+
+<div class="section-divider">高雄兒童美術館</div>
+
+<article class="modern-card" data-lat="22.6694" data-lng="120.2818" data-tags="[&quot;手作體驗&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">兒藝工作坊</h3>
 <div class="tags-group">
@@ -105,48 +192,20 @@
 <div class="info-item">
 <div class="info-icon">📍</div>
 <div class="info-text">
-<span>類型</span>親子活動
+<span>類型</span>親子工作坊
                 </div>
 </div>
 <div class="info-item">
-<div class="info-icon">🚗</div>
+<div class="info-icon">🚇</div>
 <div class="info-text">
-<span>交通</span>開車方便
+<span>交通</span>輕軌哈瑪星站
                 </div>
 </div>
 </div>
 <a class="action-btn" href="/kaohsiung/family-events/kmfa-art-workshop/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
-<div class="card-header">
-<h3 class="card-title" style="margin-right:10px;">童樂發現號｜高雄兒童美術館 2026 兒童節活動</h3>
-<div class="tags-group">
-<div class="tags-row">
-<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鼓山區</span>
-<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
-</div>
-<span class="event-date-badge">年度檔期</span>
-<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-</div>
-</div>
-<p class="card-desc">兒童美術館兒童節活動頁，活動日期為 2026 年 4 月 4 日至 4 月 5 日。</p>
-<div class="info-list">
-<div class="info-item">
-<div class="info-icon">📍</div>
-<div class="info-text">
-<span>類型</span>親子活動
-                </div>
-</div>
-<div class="info-item">
-<div class="info-icon">🚗</div>
-<div class="info-text">
-<span>交通</span>開車方便
-                </div>
-</div>
-</div>
-<a class="action-btn" href="/kaohsiung/family-events/kmfa-childrens-day-2026/">閱讀整理詳情 ➜</a>
-</article>
-<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+
+<article class="modern-card" data-lat="22.6694" data-lng="120.2818" data-tags="[&quot;展覽特展&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">生活藏寶圖</h3>
 <div class="tags-group">
@@ -162,19 +221,20 @@
 <div class="info-item">
 <div class="info-icon">📍</div>
 <div class="info-text">
-<span>類型</span>親子活動
+<span>類型</span>親子展覽
                 </div>
 </div>
 <div class="info-item">
-<div class="info-icon">🚗</div>
+<div class="info-icon">🚇</div>
 <div class="info-text">
-<span>交通</span>開車方便
+<span>交通</span>輕軌哈瑪星站
                 </div>
 </div>
 </div>
 <a class="action-btn" href="/kaohsiung/family-events/kmfa-daily-treasure-map/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+
+<article class="modern-card" data-lat="22.6694" data-lng="120.2818" data-tags="[&quot;展館活動&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">高雄兒童美術館定時導覽</h3>
 <div class="tags-group">
@@ -190,19 +250,20 @@
 <div class="info-item">
 <div class="info-icon">📍</div>
 <div class="info-text">
-<span>類型</span>親子活動
+<span>類型</span>館舍導覽
                 </div>
 </div>
 <div class="info-item">
-<div class="info-icon">🚗</div>
+<div class="info-icon">🚇</div>
 <div class="info-text">
-<span>交通</span>開車方便
+<span>交通</span>輕軌哈瑪星站
                 </div>
 </div>
 </div>
 <a class="action-btn" href="/kaohsiung/family-events/kmfa-guided-tour/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+
+<article class="modern-card" data-lat="22.6694" data-lng="120.2818" data-tags="[&quot;展館活動&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">高雄兒童美術館說故事時間</h3>
 <div class="tags-group">
@@ -218,47 +279,23 @@
 <div class="info-item">
 <div class="info-icon">📍</div>
 <div class="info-text">
-<span>類型</span>親子活動
+<span>類型</span>說故事活動
                 </div>
 </div>
 <div class="info-item">
-<div class="info-icon">🚗</div>
+<div class="info-icon">🚇</div>
 <div class="info-text">
-<span>交通</span>開車方便
+<span>交通</span>輕軌哈瑪星站
                 </div>
 </div>
 </div>
 <a class="action-btn" href="/kaohsiung/family-events/kmfa-storytime-2026/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
-<div class="card-header">
-<h3 class="card-title" style="margin-right:10px;">高雄市立圖書館總館親子活動</h3>
-<div class="tags-group">
-<div class="tags-row">
-<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">前鎮區</span>
-<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
-</div>
-<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
-</div>
-</div>
-<p class="card-desc">適合整理說故事、親子閱讀和館舍導覽，之後可用同一頁持續補新梯次。</p>
-<div class="info-list">
-<div class="info-item">
-<div class="info-icon">📍</div>
-<div class="info-text">
-<span>類型</span>親子活動
-                </div>
-</div>
-<div class="info-item">
-<div class="info-icon">🚗</div>
-<div class="info-text">
-<span>交通</span>開車方便
-                </div>
-</div>
-</div>
-<a class="action-btn" href="/kaohsiung/family-events/main-library-tour/">閱讀整理詳情 ➜</a>
-</article>
-<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+
+
+<div class="section-divider">科工館特展</div>
+
+<article class="modern-card" data-lat="22.6359" data-lng="120.3415" data-tags="[&quot;展覽特展&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">彩虹童畫親子樂園特展</h3>
 <div class="tags-group">
@@ -269,12 +306,12 @@
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
 </div>
-<p class="card-desc">科工館 B1 的長期親子特展，較適合 2 到 12 歲孩童。</p>
+<p class="card-desc">科工館 B1 的長期親子特展，較適合 2 到 12 歲孩童，互動展示豐富。</p>
 <div class="info-list">
 <div class="info-item">
 <div class="info-icon">📍</div>
 <div class="info-text">
-<span>類型</span>親子活動
+<span>類型</span>親子特展
                 </div>
 </div>
 <div class="info-item">
@@ -286,7 +323,8 @@
 </div>
 <a class="action-btn" href="/kaohsiung/family-events/nstm-rainbow-playland/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+
+<article class="modern-card" data-lat="22.6359" data-lng="120.3415" data-tags="[&quot;展覽特展&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">熱雪天堂兒童滑雪樂園 3.0</h3>
 <div class="tags-group">
@@ -297,12 +335,12 @@
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
 </div>
-<p class="card-desc">科工館內以仿雪體驗與攀爬探索為主的室內特展。</p>
+<p class="card-desc">科工館內以仿雪體驗與攀爬探索為主的室內特展，讓孩子在南台灣也能體驗雪地玩耍的樂趣。</p>
 <div class="info-list">
 <div class="info-item">
 <div class="info-icon">📍</div>
 <div class="info-text">
-<span>類型</span>親子活動
+<span>類型</span>親子特展
                 </div>
 </div>
 <div class="info-item">
@@ -314,7 +352,11 @@
 </div>
 <a class="action-btn" href="/kaohsiung/family-events/nstm-snow-paradise/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+
+
+<div class="section-divider">衛武營系列</div>
+
+<article class="modern-card" data-lat="22.6096" data-lng="120.3434" data-tags="[&quot;展館活動&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">衛武營藝玩伴計畫</h3>
 <div class="tags-group">
@@ -334,15 +376,16 @@
                 </div>
 </div>
 <div class="info-item">
-<div class="info-icon">🚗</div>
+<div class="info-icon">🚇</div>
 <div class="info-text">
-<span>交通</span>開車方便
+<span>交通</span>捷運衛武營站
                 </div>
 </div>
 </div>
 <a class="action-btn" href="/kaohsiung/family-events/weiwuying-art-fun-play/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.6273" data-lng="120.3014">
+
+<article class="modern-card" data-lat="22.6096" data-lng="120.3434" data-tags="[&quot;手作體驗&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">衛武營創意學習工作坊</h3>
 <div class="tags-group">
@@ -359,22 +402,54 @@
 <div class="info-item">
 <div class="info-icon">📍</div>
 <div class="info-text">
-<span>類型</span>親子活動
+<span>類型</span>親子工作坊
                 </div>
 </div>
 <div class="info-item">
-<div class="info-icon">🚗</div>
+<div class="info-icon">🚇</div>
 <div class="info-text">
-<span>交通</span>開車方便
+<span>交通</span>捷運衛武營站
                 </div>
 </div>
 </div>
 <a class="action-btn" href="/kaohsiung/family-events/weiwuying-creative-workshop/">閱讀整理詳情 ➜</a>
 </article>
+
+
+<div class="section-divider">圖書館</div>
+
+<article class="modern-card" data-lat="22.5902" data-lng="120.3213" data-tags="[&quot;展館活動&quot;, &quot;免費&quot;]">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">高雄市立圖書館總館親子活動</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">前鎮區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">說故事、親子閱讀和館舍導覽活動，同一頁持續補充新梯次，適合有閱讀習慣的親子。</p>
+<div class="info-list">
+<div class="info-item">
+<div class="info-icon">📍</div>
+<div class="info-text">
+<span>類型</span>親子閱讀
+                </div>
+</div>
+<div class="info-item">
+<div class="info-icon">🚇</div>
+<div class="info-text">
+<span>交通</span>捷運草衙站
+                </div>
+</div>
+</div>
+<a class="action-btn" href="/kaohsiung/family-events/main-library-tour/">閱讀整理詳情 ➜</a>
+</article>
+
 </section>
+
 </div>
 </main>
-<div id="site-footer-container"></div>
-<script src="/assets/footer.js"></script>
-</body>
-</html>
+<div id="site-footer-container"></div><script src="/assets/footer.js"></script><script src="/assets/city-filter.js"></script>
+</body></html>

@@ -40,7 +40,8 @@
     }
   ]
 }
-</script></head>
+</script><link href="/assets/filter.css" rel="stylesheet"/>
+</head>
 <body>
 <div data-active="restaurants" id="site-header-container"></div>
 <main class="page-pad">
@@ -58,8 +59,35 @@
 <button id="enable-location-btn" style="background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);border:1px solid var(--primary);color:var(--primary);padding:8px 16px;border-radius:20px;font-weight:800;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s;box-shadow:0 4px 10px rgba(0,0,0,0.05);">開啟定位，依我的距離排序</button>
 </div>
 </section>
+<div id="filter-bar" style="background:rgba(255,255,255,0.82);backdrop-filter:blur(14px);border:1px solid var(--border-color);border-radius:14px;padding:12px 16px;margin-bottom:20px;display:flex;flex-direction:column;gap:8px;">
+  <div class="filter-row">
+  <span class="filter-label">類型</span>
+  <button class="f-btn tag-btn" data-tag="親子餐廳">🧸 親子餐廳</button>
+  <button class="f-btn tag-btn" data-tag="景觀餐廳">🌄 景觀餐廳</button>
+  <button class="f-btn tag-btn" data-tag="咖啡廳">☕ 咖啡廳</button>
+  <button class="f-btn tag-btn" data-tag="農場用餐">🐄 農場用餐</button>
+  <button class="f-btn tag-btn" data-tag="兒童餐點">🍱 兒童餐點</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">設施</span>
+  <button class="f-btn tag-btn" data-tag="兒童遊戲區">🎠 兒童遊戲區</button>
+  <button class="f-btn tag-btn" data-tag="可包場">🎉 可包場</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">空間</span>
+  <button class="f-btn tag-btn" data-tag="室內">🏠 室內</button>
+  <button class="f-btn tag-btn" data-tag="戶外">☀️ 戶外</button>
+  </div>
+  <div class="filter-row">
+  <span class="filter-label">費用</span>
+  <button class="f-btn tag-btn" data-tag="有低消">💳 有低消</button>
+  <button class="f-btn tag-btn" data-tag="無低消">✅ 無低消</button>
+  <button class="f-btn reset-btn" id="filter-reset">清除篩選</button>
+  </div>
+</div>
+<div id="filter-count" style="font-size:13px;color:var(--text-muted);margin-bottom:8px;display:none;">共 <strong id="visible-count">0</strong> 個</div>
 <section class="modern-cards-grid" id="listing-grid">
-<article class="modern-card" data-lat="22.9928" data-lng="120.2324">
+<article class="modern-card" data-lat="22.9928" data-lng="120.2324" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">BELLINI PASTA PASTA 台南南紡店</h3>
 <div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">東區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div>
@@ -68,25 +96,25 @@
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>義式餐廳 / 家庭聚餐</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
 <a class="action-btn" href="/tainan/family-restaurants/bellini-nanfang/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.9817" data-lng="120.2210">
+<article class="modern-card" data-lat="22.9817" data-lng="120.2210" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;]">
 <div class="card-header"><h3 class="card-title" style="margin-right:10px;">努逗風味館 台南店</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">東區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
 <p class="card-desc">披薩、義大利麵和較寬鬆的家庭聚餐氛圍，適合帶孩子一起用餐。</p>
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>義式餐廳 / 家庭聚餐</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/tainan/family-restaurants/nudough-restaurant/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.9928" data-lng="120.2324">
+<article class="modern-card" data-lat="22.9928" data-lng="120.2324" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header"><h3 class="card-title" style="margin-right:10px;">漢來上海湯包 台南南紡店</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">東區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
 <p class="card-desc">位在南紡商場內，適合安排家庭聚餐、點心與東區順遊行程。</p>
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>中式餐廳 / 家庭聚餐</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>大眾運輸可到</div></div></div>
 <a class="action-btn" href="/tainan/family-restaurants/sunberno-nanfang/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.9911" data-lng="120.2036">
+<article class="modern-card" data-lat="22.9911" data-lng="120.2036" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;, &quot;兒童餐點&quot;]">
 <div class="card-header"><h3 class="card-title" style="margin-right:10px;">貳樓 台南店</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">中西區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
 <p class="card-desc">早午餐份量和兒童友善座位都很好安排，適合市區景點前後接一餐家庭用餐。</p>
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>早午餐 / 家庭聚餐</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/tainan/family-restaurants/second-floor-tainan/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-lat="22.9659" data-lng="120.1838">
+<article class="modern-card" data-lat="22.9659" data-lng="120.1838" data-tags="[&quot;景觀餐廳&quot;, &quot;室內&quot;, &quot;無低消&quot;]">
 <div class="card-header"><h3 class="card-title" style="margin-right:10px;">城食百匯自助餐廳</h3><div class="tags-group"><div class="tags-row"><span class="district-tag" style="background:#E6FFFA;color:#0D9488;">南區</span><span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span></div><span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span></div></div>
 <p class="card-desc">位在夏都城旅安平館內，適合安排家庭聚餐，並串接飯店親子設施或安平周邊行程。</p>
 <div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>自助餐 / 家庭聚餐</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
@@ -97,6 +125,7 @@
 </main>
 <div id="site-footer-container"></div>
 <script src="/assets/footer.js"></script>
+<script src="/assets/city-filter.js"></script>
 </body>
 </html>
 

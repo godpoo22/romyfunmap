@@ -130,7 +130,7 @@ const inferEnvironmentTag = (text) => {
 };
 
 const normalizeListingCards = (grid) => {
-  const cards = Array.from(grid.querySelectorAll(".modern-card"));
+  const cards = Array.from(document.querySelectorAll(".modern-card"));
 
   cards.forEach((card) => {
     const tags = card.querySelectorAll(".tags-row .district-tag");
@@ -263,7 +263,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     navigator.geolocation.getCurrentPosition(
       async (position) => {
-        const cards = Array.from(grid.querySelectorAll(".modern-card"));
+        // Collect ALL cards on the page (including cards in secondary sections)
+        const cards = Array.from(document.querySelectorAll(".modern-card"));
 
         for (const card of cards) {
           const { lat, lng } = await getCardCoordinates(card);
@@ -289,6 +290,8 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         }
 
+        // Hide section dividers, sort all cards together into one grid
+        document.querySelectorAll(".section-divider").forEach((d) => { d.style.display = "none"; });
         cards
           .sort((a, b) => Number(a.dataset.distance) - Number(b.dataset.distance))
           .forEach((card) => grid.appendChild(card));

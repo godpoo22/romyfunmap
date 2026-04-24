@@ -39,76 +39,76 @@
 <h1>南投縣親子資訊</h1>
 <p style="color:var(--text-muted); margin-top:8px;">整理南投縣親子景點、餐廳與活動，先看交通方式、室內外與適合安排的行程方向。</p>
 <div class="wrap-nav">
-<a class="mini-pill active" href="/nantou/family-attractions/">景點 (14)</a>
-<a class="mini-pill" href="/nantou/family-restaurants/">餐廳 (13)</a>
-<a class="mini-pill" href="/nantou/family-events/">活動 (3)</a>
+<a class="mini-pill active" href="/nantou/family-attractions/">景點(14)</a>
+<a class="mini-pill" href="/nantou/family-restaurants/">餐廳(13)</a>
+<a class="mini-pill" href="/nantou/family-events/">活動(7)</a>
 </div>
 </div>
 <div class="preview-grid">
-<a class="mini-card" href="/nantou/family-attractions/checheng/">
+<a class="mini-card" data-cat="att" href="/nantou/family-attractions/checheng/">
 <div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
 <div class="mini-card-info">
 <h3>車埕</h3>
 <p>火車站、木業商圈和湖景步道組成的慢步調景點，很適合親子一日遊。</p>
 </div>
 </a>
-<a class="mini-card" href="/nantou/family-attractions/cingjing-farm/">
+<a class="mini-card" data-cat="att" href="/nantou/family-attractions/cingjing-farm/">
 <div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
 <div class="mini-card-info">
 <h3>清境農場</h3>
 <p>綿羊和高山草原是南投很經典的親子景點。</p>
 </div>
 </a>
-<a class="mini-card" href="/nantou/family-attractions/conas-castle/">
+<a class="mini-card" data-cat="att" href="/nantou/family-attractions/conas-castle/">
 <div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
 <div class="mini-card-info">
 <h3>妮娜巧克力夢想城堡</h3>
 <p>巧克力主題和城堡造景都很有辨識度，也很適合加手作體驗一起安排。</p>
 </div>
 </a>
-<a class="mini-card" href="/nantou/family-attractions/luguo-coffee-farm/">
+<a class="mini-card" data-cat="att" href="/nantou/family-attractions/luguo-coffee-farm/">
 <div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
 <div class="mini-card-info">
 <h3>鹿篙咖啡莊園</h3>
 <p>景觀和步道適合安排親子散步休息。</p>
 </div>
 </a>
-<a class="mini-card" href="/nantou/family-attractions/sun-moon-lake-ropeway/">
+<a class="mini-card" data-cat="att" href="/nantou/family-attractions/sun-moon-lake-ropeway/">
 <div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
 <div class="mini-card-info">
 <h3>日月潭纜車</h3>
 <p>纜車視野和日月潭湖景很有辨識度，適合跟九族文化村一起安排半日到一日行程。</p>
 </div>
 </a>
-<a class="mini-card" href="/nantou/family-restaurants/barefoot-fairy/">
+<a class="mini-card" data-cat="res" href="/nantou/family-restaurants/barefoot-fairy/">
 <div class="mini-card-icon" style="background:#FDF2F8;color:#DB2777;">🍽️</div>
 <div class="mini-card-info">
 <h3>赤腳精靈景觀餐廳</h3>
 <p>南投常見的景觀型親子餐廳，草地與小火車讓孩子比較不容易坐不住。</p>
 </div>
 </a>
-<a class="mini-card" href="/nantou/family-restaurants/conas-restaurant/">
+<a class="mini-card" data-cat="res" href="/nantou/family-restaurants/conas-restaurant/">
 <div class="mini-card-icon" style="background:#FDF2F8;color:#DB2777;">🍽️</div>
 <div class="mini-card-info">
 <h3>妮娜巧克力夢想城堡餐飲</h3>
 <p>和巧克力城堡一起安排最方便。</p>
 </div>
 </a>
-<a class="mini-card" href="/nantou/family-restaurants/eyeslee/">
+<a class="mini-card" data-cat="res" href="/nantou/family-restaurants/eyeslee/">
 <div class="mini-card-icon" style="background:#FDF2F8;color:#DB2777;">🍽️</div>
 <div class="mini-card-info">
 <h3>Eyeslee 艾斯里貓羅小派對</h3>
 <p>南投市區可預約的親子派對與聚會空間。</p>
 </div>
 </a>
-<a class="mini-card" href="/nantou/family-events/conas-diy/">
+<a class="mini-card" data-cat="evt" href="/nantou/family-events/conas-diy/">
 <div class="mini-card-icon" style="background:#DCFCE7;color:#16A34A;">🎉</div>
 <div class="mini-card-info">
 <h3>妮娜巧克力 DIY 體驗</h3>
 <p>適合整理手作巧克力和整點導覽等體驗，之後能持續補不同課程內容。</p>
 </div>
 </a>
-<a class="mini-card" href="/nantou/family-events/nine-tribes-seasons/">
+<a class="mini-card" data-cat="evt" href="/nantou/family-events/nine-tribes-seasons/">
 <div class="mini-card-icon" style="background:#DCFCE7;color:#16A34A;">🎉</div>
 <div class="mini-card-info">
 <h3>九族季節活動</h3>
@@ -119,5 +119,21 @@
 </main>
 <div id="site-footer-container"></div>
 <script src="/assets/footer.js"></script>
+
+<script>
+(function () {
+  // 各類別最多顯示 2 筆，其餘隱藏；每次載入隨機選取
+  ['att','res','evt'].forEach(function (cat) {
+    var pool = Array.from(document.querySelectorAll('.mini-card[data-cat="' + cat + '"]'));
+    if (pool.length <= 2) return;
+    // Fisher-Yates shuffle
+    for (var i = pool.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = pool[i]; pool[i] = pool[j]; pool[j] = tmp;
+    }
+    pool.slice(2).forEach(function (c) { c.style.display = 'none'; });
+  });
+})();
+</script>
 </body>
 </html>
