@@ -84,17 +84,17 @@
     hint.id = 'filter-hint-bar';
     hint.style.cssText = [
       'display:flex','align-items:center','justify-content:space-between',
-      'gap:10px','background:rgba(255,255,255,0.88)',
-      'backdrop-filter:blur(10px)','-webkit-backdrop-filter:blur(10px)',
-      'border:1px solid rgba(255,255,255,0.9)',
-      'border-radius:12px','padding:10px 14px',
-      'margin:8px 16px 0','font-size:13px','color:#374151',
-      'box-shadow:0 2px 8px rgba(0,0,0,0.06)'
+      'gap:10px','background:rgba(16,185,129,0.12)',
+      'border:1.5px solid rgba(16,185,129,0.35)',
+      'border-radius:14px','padding:10px 14px',
+      'margin:8px 16px 0','font-size:13.5px',
+      'font-weight:600','color:#065f46',
+      'box-shadow:0 2px 8px rgba(16,185,129,0.1)'
     ].join(';');
     hint.innerHTML =
-      '<span>如需修改篩選條件，請點左上角 <strong>☰</strong> 開啟選單</span>' +
+      '<span>☰ 點左上角選單，可依縣市、類型、費用篩選</span>' +
       '<button onclick="this.parentElement.remove()" style="background:none;border:none;' +
-      'font-size:18px;color:#9CA3AF;cursor:pointer;padding:0 2px;line-height:1;flex-shrink:0">✕</button>';
+      'font-size:18px;color:#111827;cursor:pointer;padding:0 2px;line-height:1;flex-shrink:0">✕</button>';
     const resultBar = document.querySelector('.result-bar');
     if (resultBar && resultBar.parentNode) {
       resultBar.parentNode.insertBefore(hint, resultBar);
