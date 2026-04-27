@@ -97,7 +97,7 @@
       'font-size:18px;color:#111827;cursor:pointer;padding:0 2px;line-height:1;flex-shrink:0">✕</button>';
 
     var grid = document.getElementById('listing-grid');
-    if (grid && grid.parentNode) {
+    if (grid) {
       grid.parentNode.insertBefore(hint, grid);
     }
   })();
