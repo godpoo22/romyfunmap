@@ -8,7 +8,7 @@
     var CITY_SLUGS = [
       'newtaipei', 'taoyuan', 'taipei',
       'miaoli', 'taichung', 'changhua', 'nantou',
-      'tainan', 'kaohsiung'
+      'chiayi-city', 'chiayi-county', 'tainan', 'kaohsiung', 'pingtung'
     ];
 
     var firstSegment = (window.location.pathname.split('/').filter(Boolean)[0] || '').toLowerCase();

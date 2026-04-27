@@ -39,8 +39,8 @@
 <h1>彰化縣親子資訊</h1>
 <p style="color:var(--text-muted); margin-top:8px;">整理彰化縣親子景點、餐廳與活動，先看交通方式、室內外與適合安排的行程方向。</p>
 <div class="wrap-nav">
-<a class="mini-pill active" href="/changhua/family-attractions/">景點(15)</a>
-<a class="mini-pill" href="/changhua/family-restaurants/">餐廳(14)</a>
+<a class="mini-pill active" href="/changhua/family-attractions/">景點(23)</a>
+<a class="mini-pill" href="/changhua/family-restaurants/">餐廳(10)</a>
 <a class="mini-pill" href="/changhua/family-events/">活動(5)</a>
 </div>
 </div>
@@ -78,6 +78,62 @@
 <div class="mini-card-info">
 <h3>白蘭氏健康博物館</h3>
 <p>以健康知識與品牌展示為主的室內館舍，適合雨天和短時間共學行程。</p>
+</div>
+</a>
+<a class="mini-card" data-cat="att" href="/changhua/family-attractions/yuanlin-milu-park/">
+<div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
+<div class="mini-card-info">
+<h3>員林兔鹿公園</h3>
+<p>消防車主題特色公園，設有 9.6 公尺圓塔溜滑梯、環狀滑索、飛天鞦韆與沙池，適合幼兒到低年級的戶外放電行程。</p>
+</div>
+</a>
+<a class="mini-card" data-cat="att" href="/changhua/family-attractions/changhua-kids-park/">
+<div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
+<div class="mini-card-info">
+<h3>彰化市兒童公園</h3>
+<p>彰化市水陸共融遊戲場，夏天開放戲水池，另有城堡吊橋溜滑梯、六爪攀爬網、森林轉盤、鳥巢鞦韆與大型沙坑。</p>
+</div>
+</a>
+<a class="mini-card" data-cat="att" href="/changhua/family-attractions/tianzhong-bear-park/">
+<div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
+<div class="mini-card-info">
+<h3>田中熊趣米公園</h3>
+<p>高鐵田中站旁的動物主題公園，設有 6.7 公尺大熊造型高塔溜滑梯、獅子造型滑索與沙坑，交通方便。</p>
+</div>
+</a>
+<a class="mini-card" data-cat="att" href="/changhua/family-attractions/baguashan-family-zone/">
+<div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
+<div class="mini-card-info">
+<h3>八卦山親子探索區</h3>
+<p>八卦山大佛綠地內的親子探索區，設有天空步道與 27 公尺長、8.5 公尺高低差的超大型溜滑梯，視野開闊。</p>
+</div>
+</a>
+<a class="mini-card" data-cat="att" href="/changhua/family-attractions/puyan-sports-park/">
+<div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
+<div class="mini-card-info">
+<h3>埔鹽埔南運動公園</h3>
+<p>順寮宮旁的主題特色公園，設有 7 公尺高冠軍帽造型遊具塔、滑索與小勇士闖關區，適合喜歡挑戰型遊具的孩子。</p>
+</div>
+</a>
+<a class="mini-card" data-cat="att" href="/changhua/family-attractions/giraffe-leisure-farm/">
+<div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
+<div class="mini-card-info">
+<h3>長頸鹿休閒農場</h3>
+<p>埔鹽鄉假日限定的親子農場，設有手搖船、電動車、玩水池與沙坑溜滑梯，入場費約百元，無真實動物。</p>
+</div>
+</a>
+<a class="mini-card" data-cat="att" href="/changhua/family-attractions/sunmoon-hill-farm/">
+<div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
+<div class="mini-card-info">
+<h3>日月山景休閒農場</h3>
+<p>彰化市免門票的休閒農場，有大草地可以奔跑，提供擠乳牛體驗，適合安排輕鬆型親子郊遊。</p>
+</div>
+</a>
+<a class="mini-card" data-cat="att" href="/changhua/family-attractions/jasmine-huatan-museum/">
+<div class="mini-card-icon" style="background:#DBEAFE;color:#2563EB;">🧭</div>
+<div class="mini-card-info">
+<h3>茉莉花壇夢想館</h3>
+<p>菸廠改造的茉莉花主題展館，全年無休免費入場，設有 DIY 體驗與彩繪打卡牆，適合雨天親子行程。</p>
 </div>
 </a>
 <a class="mini-card" data-cat="res" href="/changhua/family-restaurants/aurora-forest/">
@@ -129,11 +185,4 @@
     // Fisher-Yates shuffle
     for (var i = pool.length - 1; i > 0; i--) {
       var j = Math.floor(Math.random() * (i + 1));
-      var tmp = pool[i]; pool[i] = pool[j]; pool[j] = tmp;
-    }
-    pool.slice(2).forEach(function (c) { c.style.display = 'none'; });
-  });
-})();
-</script>
-</body>
-</html>
+      var tmp = pool[i]; pool[i] = pool[j];

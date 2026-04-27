@@ -73,6 +73,16 @@
   <button class="f-btn dist-btn" data-district="萬里區">萬里區</button>
   <button class="f-btn dist-btn" data-district="貢寮區">貢寮區</button>
   <button class="f-btn dist-btn" data-district="烏來區">烏來區</button>
+  <button class="f-btn dist-btn" data-district="新店區">新店區</button>
+  <button class="f-btn dist-btn" data-district="林口區">林口區</button>
+  <button class="f-btn dist-btn" data-district="汐止區">汐止區</button>
+  <button class="f-btn dist-btn" data-district="中和區">中和區</button>
+  <button class="f-btn dist-btn" data-district="土城區">土城區</button>
+  <button class="f-btn dist-btn" data-district="五股區">五股區</button>
+  <button class="f-btn dist-btn" data-district="樹林區">樹林區</button>
+  <button class="f-btn dist-btn" data-district="新莊區">新莊區</button>
+  <button class="f-btn dist-btn" data-district="石碇區">石碇區</button>
+  <button class="f-btn dist-btn" data-district="三峽區">三峽區</button>
   </div>
   <div class="filter-row">
   <span class="filter-label">類型</span>
@@ -99,44 +109,13 @@
 </div>
 <div id="filter-count" style="font-size:13px;color:var(--text-muted);margin-bottom:8px;display:none;">共 <strong id="visible-count">0</strong> 個</div>
 <section class="modern-cards-grid" id="listing-grid">
-<div style="background:rgba(255,255,255,0.7);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.8);border-radius:16px;padding:14px 16px;margin-top:16px;display:flex;flex-direction:column;gap:10px;">
-<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
-<span style="font-size:12px;color:var(--text-muted);font-weight:600;min-width:28px;">地區</span>
-<button class="f-btn dist-btn" data-district="板橋區">板橋區</button>
-<button class="f-btn dist-btn" data-district="八里區">八里區</button>
-<button class="f-btn dist-btn" data-district="淡水區">淡水區</button>
-<button class="f-btn dist-btn" data-district="瑞芳區">瑞芳區</button>
-<button class="f-btn dist-btn" data-district="平溪區">平溪區</button>
-<button class="f-btn dist-btn" data-district="鶯歌區">鶯歌區</button>
-<button class="f-btn dist-btn" data-district="三重區">三重區</button>
-<button class="f-btn dist-btn" data-district="萬里區">萬里區</button>
-<button class="f-btn dist-btn" data-district="貢寮區">貢寮區</button>
-<button class="f-btn dist-btn" data-district="烏來區">烏來區</button>
-</div>
-<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
-<span style="font-size:12px;color:var(--text-muted);font-weight:600;min-width:28px;">特色</span>
-<button class="f-btn tag-btn" data-tag="free">🎟 免費入場</button>
-<button class="f-btn tag-btn" data-tag="interactive">🔬 互動體驗</button>
-<button class="f-btn tag-btn" data-tag="nature">🌊 自然景觀</button>
-</div>
-<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
-<span style="font-size:12px;color:var(--text-muted);font-weight:600;min-width:28px;">空間</span>
-<button class="f-btn space-btn" data-space="室內">室內</button>
-<button class="f-btn space-btn" data-space="戶外">戶外</button>
-<button class="f-btn space-btn" data-space="室內外">室內外</button>
-</div>
-<div style="display:flex;justify-content:flex-end;">
-<button id="filter-reset" style="font-size:12px;color:var(--text-muted);background:none;border:none;cursor:pointer;padding:0;">清除篩選</button>
-</div>
-<p id="filter-count" style="display:none;font-size:13px;color:var(--text-muted);margin:0;">找到 <strong id="visible-count">0</strong> 筆結果</p>
-</div>
 <article class="modern-card" data-district="八里區" data-lat="25.1461" data-lng="121.4068" data-space="戶外" data-tags='["free", "nature"]' data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">八里左岸公園</h3>
 <div class="tags-group">
 <div class="tags-row">
 <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">八里區</span>
-<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">水岸公園</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
 </div>
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
@@ -164,7 +143,7 @@
 <div class="tags-group">
 <div class="tags-row">
 <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">瑞芳區</span>
-<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">礦業文化、山城建築與館舍展示。</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內外</span>
 </div>
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
@@ -192,7 +171,7 @@
 <div class="tags-group">
 <div class="tags-row">
 <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">瑞芳區</span>
-<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">貓村景點</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
 </div>
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
@@ -220,7 +199,7 @@
 <div class="tags-group">
 <div class="tags-row">
 <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鶯歌區</span>
-<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">美術館</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
 </div>
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
@@ -248,7 +227,7 @@
 <div class="tags-group">
 <div class="tags-row">
 <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">平溪區</span>
-<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">老街景點</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
 </div>
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
@@ -276,7 +255,7 @@
 <div class="tags-group">
 <div class="tags-row">
 <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">平溪區</span>
-<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">瀑布觀景、步道散步與平溪線周邊景點。</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
 </div>
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
@@ -304,7 +283,7 @@
 <div class="tags-group">
 <div class="tags-row">
 <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">八里區</span>
-<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">考古文物、史前文化與親子互動展示。</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內外</span>
 </div>
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
@@ -332,7 +311,7 @@
 <div class="tags-group">
 <div class="tags-row">
 <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">淡水區</span>
-<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">港灣散步</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
 </div>
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
@@ -360,7 +339,7 @@
 <div class="tags-group">
 <div class="tags-row">
 <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">萬里區</span>
-<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">海洋主題景點</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內外</span>
 </div>
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
@@ -388,7 +367,7 @@
 <div class="tags-group">
 <div class="tags-row">
 <span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鶯歌區</span>
-<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">陶瓷常設展、兒童體驗與當期特展。</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內外</span>
 </div>
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
@@ -506,7 +485,7 @@
 </div>
 <a class="action-btn" href="/newtaipei/family-attractions/fulong-beach/">閱讀整理詳情 ➜</a>
 </article>
-<article class="modern-card" data-district="烏來區" data-lat="24.8629" data-lng="121.5512" data-space="戶外" data-tags='["nature"]' data-tags="[&quot;鐵道交通&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
+<article class="modern-card" data-district="烏來區" data-lat="24.8629" data-lng="121.5512" data-space="戶外" data-tags="[&quot;鐵道交通&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
 <div class="card-header">
 <h3 class="card-title" style="margin-right:10px;">烏來台車</h3>
 <div class="tags-group">
@@ -517,11 +496,298 @@
 <span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
 </div>
 </div>
-<p class="card-desc">短程鐵道與山林景觀結合，是烏來很受孩子歡迎的交通體驗型景點。</p>
-<div class="info-list">
-<div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>交通體驗景點 / 山林鐵道</div></div>
-<div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div>
-</div>
+<p class="card-desc">短程鐵道與山林溫泉風景結合，搭台車穿越烏來峽谷是親子很有記憶點的體驗。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>鐵道交通 / 台車體驗</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
 <a class="action-btn" href="/newtaipei/family-attractions/wulai-trolley/">閱讀整理詳情 ➜</a>
-
-</article></section></div></main></body></html>
+</article>
+<article class="modern-card" data-district="新店區" data-lat="24.9757" data-lng="121.5342" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">新店十四張歷史公園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">新店區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">新店區農村歷史主題特色公園，設有穀倉造型溜滑梯，夏天開放水圳戲水區，另有多種滑索、大型沙坑與輪椅鞦韆。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>公園遊具 / 主題特色公園</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>捷運新店區公所站步行可到</div></div></div>
+<a class="action-btn" href="/newtaipei/family-attractions/xinten-history-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-district="林口區" data-lat="25.0818" data-lng="121.3791" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">林口樂活公園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">林口區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">林口區以捷運為主題的共融遊戲場，設有4公尺捷運車廂造型溜滑梯、航空主題健體設施、彈跳床與漂流旋轉環。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>公園遊具 / 主題共融遊戲場</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>捷運林口站步行可到</div></div></div>
+<a class="action-btn" href="/newtaipei/family-attractions/linkou-active-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-district="汐止區" data-lat="25.0654" data-lng="121.6574" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">汐止星際遊戲場</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">汐止區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">汐止區以宇宙星空為主題的超腹地公園，緊鄰星光橋，設有八大行星設計的闖關設施，夏季開放戲水區，夜間有燈光照明。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>公園遊具 / 宇宙主題公園</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便，大眾運輸可到</div></div></div>
+<a class="action-btn" href="/newtaipei/family-attractions/xizhi-stargalaxy-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-district="中和區" data-lat="24.983" data-lng="121.493" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">中和鈴和運動公園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">中和區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">中和區設有28公尺超長滾輪溜滑梯的特色公園，依山坡地形設計，設有巨型攀爬網與多組不同高度的溜道，體能消耗度高。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>公園遊具 / 特色運動公園</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便，大眾運輸可到</div></div></div>
+<a class="action-btn" href="/newtaipei/family-attractions/zhonghe-linghe-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-district="土城區" data-lat="24.975" data-lng="121.4437" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">土城新龍山遺址文化公園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">土城區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">結合考古遺址教育意義的特色公園，設有山丘磨石子溜滑梯、大型沙坑與攀岩石壁，公園中央有泳水池，地形平坦寬闊。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>公園遊具 / 文化主題公園</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便，大眾運輸可到（捷運土城站附近）</div></div></div>
+<a class="action-btn" href="/newtaipei/family-attractions/tucheng-longshan-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-district="八里區" data-lat="25.1508" data-lng="121.4067" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">八里十三行文化公園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">八里區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">八里區以陶罐造型為意象的超大腹地戶外溜滑梯公園，設有7.6公尺陶罐意象超長溜滑梯（需自備滑板）、滑草坡與20公尺溜索。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>公園遊具 / 特色文化公園</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/newtaipei/family-attractions/bali-shihsanhang-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-district="金山區" data-lat="25.1989" data-lng="121.637" data-space="戶外" data-tags="[&quot;展館&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">朱銘美術館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">金山區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">金山區的戶外藝術園區，對親子相當友善，設有大量戶外雕塑可以拍照，地上有粉筆塗鴉區，園區內有戲水池與黑天鵝湖。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>展館 / 戶外藝術園區</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/newtaipei/family-attractions/juming-museum/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-district="五股區" data-lat="25.1008" data-lng="121.4333" data-space="戶外" data-tags="[&quot;動物農場&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">準休閒農場</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">五股區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">隱身在五股交流道旁的生態農場，有廣大草皮可野餐玩泡泡，可近距離餵倉鼠、兔子，並觀察陸龜與生態池，票價親民。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>動物農場 / 生態農場</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/newtaipei/family-attractions/zhunxiu-farm/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-district="八里區" data-lat="25.1519" data-lng="121.3866" data-space="室內" data-tags="[&quot;展館&quot;, &quot;室內&quot;, &quot;付費&quot;]">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">卡滋爆米花觀光工廠</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">八里區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">八里區的室內爆米花主題觀光工廠，館內充滿美式小鎮風情，可以試吃各口味爆米花，並參與爆米花手搖或甜筒DIY課程。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>展館 / 觀光工廠</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便（可搭配渡船頭或八里左岸安排）</div></div></div>
+<a class="action-btn" href="/newtaipei/family-attractions/kazz-popcorn-factory/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-district="土城區" data-lat="24.9667" data-lng="121.45" data-space="室內" data-tags="[&quot;展館&quot;, &quot;室內&quot;, &quot;付費&quot;]">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">手信坊創意和菓子文化館</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">土城區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">以京都街道風格打造的和菓子文化館，提供和菓子手作DIY體驗，孩子可穿著館內提供的小和服，親手製作日式甜點。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>展館 / 手作體驗館</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便，大眾運輸可到</div></div></div>
+<a class="action-btn" href="/newtaipei/family-attractions/shuxinfang-wagashi/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-district="中和區" data-lat="24.998" data-lng="121.5003" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">中和員山公園遊逸之丘</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">中和區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">中和區依山而建的大型特色公園，設有彩色超長滑草坡（需自備紙板或滑草板）、20公尺溜索、超大沙坑與城堡溜滑梯。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>公園遊具 / 山丘特色公園</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便，大眾運輸可到</div></div></div>
+<a class="action-btn" href="/newtaipei/family-attractions/zhonghe-yuanshan-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-district="樹林區" data-lat="24.9891" data-lng="121.433" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">樹林東昇公園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">樹林區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">樹林區以外星人與飛碟為主題的特色公園，設有飛碟造型溜滑梯遊戲塔、攀爬網、兩層透明滑道，地上鋪設彩色宇宙元素軟墊。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>公園遊具 / 主題特色公園</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/newtaipei/family-attractions/shulin-dongsheng-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-district="新莊區" data-lat="25.0393" data-lng="121.4537" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">新莊頭前運動公園漫步森林市</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">新莊區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">新莊區隱身都市的森林系公園，設有落羽松生態池、樹屋造型溜滑梯、原木攀爬闖關卡、大型彈珠床與沙坑，旁邊有大草坪。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>公園遊具 / 森林生態公園</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便，大眾運輸可到</div></div></div>
+<a class="action-btn" href="/newtaipei/family-attractions/xinzhuang-touqian-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-district="鶯歌區" data-lat="24.9517" data-lng="121.3498" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">鶯歌遠遙公園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">鶯歌區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">鶯歌區以恐龍化石為設計靈感的特色公園，設有三角龍化石攀爬網與溜滑梯，配有龍腳印沙坑、彈跳床與植物造景。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>公園遊具 / 恐龍主題公園</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便，大眾運輸可到</div></div></div>
+<a class="action-btn" href="/newtaipei/family-attractions/yingge-yuanyao-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-district="八里區" data-lat="25.1417" data-lng="121.4333" data-space="戶外" data-tags="[&quot;公園遊具&quot;, &quot;戶外&quot;, &quot;免費&quot;]">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">八里港公園</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">八里區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">八里區以大海洋為主題的鯨魚共融遊戲場，設有藍色大鯨魚地景造型溜滑梯，配有輪椅可使用的鞦韆、搖搖船等共融設施。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>公園遊具 / 海洋主題共融遊戲場</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便，可搭配八里渡船頭</div></div></div>
+<a class="action-btn" href="/newtaipei/family-attractions/bali-harbor-park/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-district="石碇區" data-lat="24.9833" data-lng="121.6167" data-space="戶外" data-tags="[&quot;老街文化&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">石碇許家手工麵線</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">石碇區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">石碇的傳統手工麵線體驗景點，可參與踩麵線、甩麵線的製作流程，並體驗流水麵線，親子實際動手參與傳統工藝製作。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>老街文化 / 手作體驗</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/newtaipei/family-attractions/shiding-handmade-noodle/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-district="金山區" data-lat="25.2094" data-lng="121.6283" data-space="戶外" data-tags="[&quot;動物農場&quot;, &quot;戶外&quot;, &quot;付費&quot;]">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">鹿羽松牧場</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">金山區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">戶外</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">位於金山海岸山丘上的生態牧場，可近距離餵食梅花鹿、跳跳羊與匈牙利錦羊，視野遼闊，兼具生命教育與自然觀察。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>動物農場 / 生態牧場</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/newtaipei/family-attractions/luyusong-farm/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-district="五股區" data-lat="25.0833" data-lng="121.45" data-space="室內" data-tags="[&quot;展館&quot;, &quot;室內&quot;, &quot;付費&quot;]">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">維格餅家鳳梨酥夢工場</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">五股區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">五股區的全室內鳳梨酥主題觀光工廠，設有巨大鳳梨造型手扶梯與互動多媒體，可報名鳳梨酥DIY課程，作品烤完即可帶回。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>展館 / 觀光工廠</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便</div></div></div>
+<a class="action-btn" href="/newtaipei/family-attractions/vigor-pineapple-factory/">閱讀整理詳情 ➜</a>
+</article>
+<article class="modern-card" data-district="三峽區" data-lat="24.9393" data-lng="121.3778" data-space="室內" data-tags="[&quot;老街文化&quot;, &quot;室內&quot;, &quot;付費&quot;]">
+<div class="card-header">
+<h3 class="card-title" style="margin-right:10px;">三峽藍染遊客服務中心</h3>
+<div class="tags-group">
+<div class="tags-row">
+<span class="district-tag" style="background:#E6FFFA;color:#0D9488;">三峽區</span>
+<span class="district-tag" style="background:#FFF7ED;color:#EA580C;">室內</span>
+</div>
+<span class="district-tag distance-tag" style="background:#F3F4F6;color:#4B5563;display:none;"></span>
+</div>
+</div>
+<p class="card-desc">三峽老街的藍染文化體驗景點，可在藍染公園或遊客服務中心學習傳統綁紮與浸染工序，最後製作出獨一無二的藍色花紋布作品。</p>
+<div class="info-list"><div class="info-item"><div class="info-icon">📍</div><div class="info-text"><span>類型</span>老街文化 / 手作體驗</div></div><div class="info-item"><div class="info-icon">🚗</div><div class="info-text"><span>交通</span>開車方便，大眾運輸可到</div></div></div>
+<a class="action-btn" href="/newtaipei/family-attractions/sanxia-indigo-dyeing/">閱讀整理詳情 ➜</a>
+</article>
+</section>
+</div>
+</main>
+<div id="site-footer-container"></div>
+</body>
+</html>
