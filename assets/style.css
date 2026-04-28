@@ -814,6 +814,65 @@ body:has(.sticky-bottom-bar) { padding-bottom: 80px; }
   transform: translateY(-1px);
 }
 
+/* Drawer 內的 hw-widget：移除玻璃卡片外框 */
+.site-drawer .hw-widget {
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: none;
+  box-shadow: none;
+  padding: 0 2px 4px;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.site-drawer .hw-tab {
+  background: rgba(20,184,166,0.06);
+  border-color: rgba(20,184,166,0.2);
+}
+.site-drawer .hw-tab.active {
+  background: #0d9488;
+  color: #ffffff;
+  border-color: #0d9488;
+}
+.site-drawer .hw-city-btn,
+.site-drawer .hw-tag-btn {
+  background: rgba(20,184,166,0.06);
+}
+.site-drawer .hw-city-btn.active,
+.site-drawer .hw-tag-btn.active {
+  background: #0d9488;
+  color: #ffffff;
+  border-color: #0d9488;
+  box-shadow: 0 2px 8px rgba(13,148,136,0.35);
+}
+.site-drawer .hw-submit-btn {
+  width: 100%;
+  text-align: center;
+}
+
+/* 首頁 篩選 CTA 按鈕 */
+.hw-open-btn {
+  display: block;
+  width: calc(100% - 32px);
+  margin: 36px 16px 14px;
+  padding: 13px 0;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(20,184,166,0.28);
+  letter-spacing: 0.03em;
+  transition: all 0.18s;
+}
+.hw-open-btn:hover {
+  background: var(--primary-dark, #0d9488);
+  box-shadow: 0 6px 20px rgba(20,184,166,0.35);
+  transform: translateY(-1px);
+}
+
 /* ══════════════════════════════════════════
    Drawer Filter Accordion (.filter-row.collapsible)
    ══════════════════════════════════════════ */
@@ -831,60 +890,23 @@ body:has(.sticky-bottom-bar) { padding-bottom: 80px; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 4px 10px;
   cursor: pointer;
+  padding: 8px 0;
   user-select: none;
-  -webkit-user-select: none;
 }
-.filter-row-head:hover .filter-row-toggle {
-  color: var(--primary);
-}
-.filter-row-head .filter-label {
-  font-size: 13px;
-  font-weight: 800;
-  color: var(--text-dark);
-  margin: 0;
-  pointer-events: none;
-}
-
-/* +  /  − 符號 */
 .filter-row-toggle {
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-muted);
   line-height: 1;
-  color: var(--primary);
-  transition: color 0.15s;
-  pointer-events: none;
+  flex-shrink: 0;
 }
-
-/* 按鈕區：展開狀態 */
 .filter-row-btns {
   display: flex;
   flex-wrap: wrap;
-  gap: 7px;
-  padding: 2px 4px 12px;
-  overflow: hidden;
-  max-height: 400px;          /* 足夠容納最多按鈕的高度 */
-  transition: max-height 0.28s ease, padding 0.28s ease, opacity 0.2s ease;
-  opacity: 1;
+  gap: 6px;
+  padding: 6px 0 10px;
 }
-
-/* 按鈕區：收起狀態 */
 .filter-row.collapsed .filter-row-btns {
-  max-height: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  opacity: 0;
+  display: none;
 }
-
-/* ── 活動頁 section divider (inside #listing-grid grid) ─────── */
-.section-divider {
-  grid-column: 1 / -1;
-  font-size: 18px;
-  font-weight: 800;
-  color: var(--text-dark);
-  margin: 12px 0 4px;
-  padding-top: 20px;
-  border-top: 1px solid var(--border-color);
-}
-.section-divider:first-child { border-top: none; padding-top: 0; }

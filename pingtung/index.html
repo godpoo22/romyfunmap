@@ -161,36 +161,27 @@
 <div id="site-footer-container"></div>
 <script src="/assets/footer.js"></script>
 
+
 <script>
 (function () {
-  // 各類別最多顯示 2 筆，其餘隱藏；每次載入隨機選取
-  ['att','res','evt'].forEach(function (cat) {
+  // 景點顯示 4 筆，餐廳顯示 2 筆，活動全部隱藏；每次載入隨機選取
+  var limits = { att: 4, res: 2, evt: 0 };
+  Object.keys(limits).forEach(function (cat) {
     var pool = Array.from(document.querySelectorAll('.mini-card[data-cat="' + cat + '"]'));
-    if (pool.length <= 2) return;
+    var limit = limits[cat];
+    // 活動全部隱藏
+    if (limit === 0) {
+      pool.forEach(function (el) { el.style.display = 'none'; });
+      return;
+    }
+    if (pool.length <= limit) return;
     // Fisher-Yates shuffle
     for (var i = pool.length - 1; i > 0; i--) {
       var j = Math.floor(Math.random() * (i + 1));
       var tmp = pool[i]; pool[i] = pool[j]; pool[j] = tmp;
     }
-    // 顯示前 2 筆，其餘隱藏
-    pool.forEach(function (el, idx) {
-      if (idx >= 2) el.style.display = 'none';
-    });
-    // 加上「顯示更多」按鈕
-    var btn = document.createElement('button');
-    btn.className = 'show-more-btn';
-    btn.textContent = '顯示更多景點 ▾';
-    btn.style.cssText = 'display:block;margin:8px auto 0;background:none;border:1.5px solid var(--primary);color:var(--primary);border-radius:20px;padding:6px 20px;font-size:14px;font-weight:600;cursor:pointer;';
-    btn.addEventListener('click', function () {
-      pool.forEach(function (el) { el.style.display = ''; });
-      btn.remove();
-    });
-    var grid = document.querySelector('.preview-grid');
-    // 在同類最後一筆之後插入
-    var lastEl = pool[pool.length - 1];
-    lastEl.parentNode.insertBefore(btn, lastEl.nextSibling);
+    // 隱藏超出 limit 的卡片
+    pool.slice(limit).forEach(function (el) { el.style.display = 'none'; });
   });
 })();
 </script>
-</body>
-</html>

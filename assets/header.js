@@ -52,10 +52,9 @@
       '</aside>'
     ].join('\n');
 
-    /* ── 開關邏輯 ─────────────────────────────── */
-    var hamBtn  = document.getElementById('ham-btn');
-    var overlay = document.getElementById('drawer-overlay');
-    var drawer  = document.getElementById('site-drawer');
+    var hamBtn   = document.getElementById('ham-btn');
+    var overlay  = document.getElementById('drawer-overlay');
+    var drawer   = document.getElementById('site-drawer');
     var closeBtn = document.getElementById('drawer-close');
 
     function openDrawer()  { drawer.classList.add('open');    overlay.classList.add('show');    document.body.classList.add('drawer-open');    }
@@ -65,25 +64,19 @@
     overlay.addEventListener('click', closeDrawer);
     closeBtn.addEventListener('click', closeDrawer);
 
-    /* ── 把頁面篩選器搬進 drawer ──────────────── */
     var slot = document.getElementById('drawer-filter-slot');
     if (!slot) return;
 
-    /* 把每個 .filter-row 改成可收放的 accordion 項目（預設展開） */
+    /* ── accordion ──────────────────────────── */
     function makeAccordion(filterEl) {
       filterEl.querySelectorAll('.filter-row').forEach(function (row) {
         var labelEl = row.querySelector('.filter-label');
         if (!labelEl) return;
-
-        // 把 label 以外的所有節點包進 .filter-row-btns
         var btnsWrap = document.createElement('div');
         btnsWrap.className = 'filter-row-btns';
-        var kids = Array.prototype.slice.call(row.childNodes);
-        kids.forEach(function (n) {
+        Array.prototype.slice.call(row.childNodes).forEach(function (n) {
           if (n !== labelEl) btnsWrap.appendChild(n);
         });
-
-        // 建立標題列（label + 收放符號）
         var head = document.createElement('div');
         head.className = 'filter-row-head';
         var toggleIcon = document.createElement('span');
@@ -91,14 +84,10 @@
         toggleIcon.textContent = '−';
         head.appendChild(labelEl);
         head.appendChild(toggleIcon);
-
-        // 重組 row（預設展開）
         row.innerHTML = '';
         row.appendChild(head);
         row.appendChild(btnsWrap);
         row.classList.add('collapsible');
-
-        // 點擊標題列收放
         head.addEventListener('click', function () {
           var collapsed = row.classList.toggle('collapsed');
           toggleIcon.textContent = collapsed ? '+' : '−';
@@ -106,7 +95,7 @@
       });
     }
 
-    /* ── 篩選條件摘要列 ────────────────────────── */
+    /* ── 篩選摘要 ──────────────────────────── */
     function buildFilterSummary(filterEl) {
       var summary = document.createElement('div');
       summary.id = 'drawer-filter-summary';
@@ -114,34 +103,23 @@
         'display:none;margin:8px 0 4px;padding:8px 10px;' +
         'background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.25);' +
         'border-radius:10px;font-size:12px;color:#065f46;line-height:1.8;';
-
       var summaryTitle = document.createElement('div');
       summaryTitle.style.cssText = 'font-weight:700;margin-bottom:2px;font-size:11px;letter-spacing:0.03em;';
       summaryTitle.textContent = '目前篩選條件';
       summary.appendChild(summaryTitle);
-
       var summaryBody = document.createElement('div');
       summaryBody.id = 'drawer-filter-summary-body';
       summaryBody.style.cssText = 'display:flex;flex-wrap:wrap;gap:4px;';
       summary.appendChild(summaryBody);
-
-      // 插在 filterEl 上方（slot 內的第一個子元素之後，即 "篩選條件" label 之後）
       filterEl.parentNode.insertBefore(summary, filterEl);
-
       function updateSummary() {
-        // 找到所有 active 按鈕（排除清除篩選本身）
         var activeBtns = Array.prototype.slice.call(
           filterEl.querySelectorAll('button.active')
         ).filter(function(b) {
           return !b.classList.contains('reset-btn') && b.id !== 'reset-btn' && b.id !== 'filter-reset';
         });
-
         summaryBody.innerHTML = '';
-        if (activeBtns.length === 0) {
-          summary.style.display = 'none';
-          return;
-        }
-
+        if (activeBtns.length === 0) { summary.style.display = 'none'; return; }
         activeBtns.forEach(function(b) {
           var chip = document.createElement('span');
           chip.style.cssText =
@@ -150,22 +128,15 @@
           chip.textContent = b.textContent.trim();
           summaryBody.appendChild(chip);
         });
-
         summary.style.display = 'block';
       }
-
-      // 監聽 filterEl 內所有按鈕點擊
       filterEl.addEventListener('click', function(e) {
-        if (e.target.tagName === 'BUTTON') {
-          setTimeout(updateSummary, 0);
-        }
+        if (e.target.tagName === 'BUTTON') setTimeout(updateSummary, 0);
       });
-
-      // 初始化（URL params 預選 / 頁面已有 active 狀態）
       setTimeout(updateSummary, 250);
     }
 
-    // 全台篩選頁 (.filter-section)
+    /* ── 全台篩選頁 ──────────────────────── */
     var globalFilter = document.querySelector('.filter-section');
     if (globalFilter) {
       globalFilter.style.cssText =
@@ -181,7 +152,7 @@
       return;
     }
 
-    // 縣市景點/餐廳頁 (#filter-bar)
+    /* ── 縣市列表頁 ──────────────────────── */
     var cityFilter = document.getElementById('filter-bar');
     if (cityFilter) {
       cityFilter.style.cssText =
@@ -193,7 +164,137 @@
       slot.appendChild(cityFilter);
       makeAccordion(cityFilter);
       buildFilterSummary(cityFilter);
+      return;
     }
+
+    /* ── 首頁快速篩選 Widget ─────────────── */
+    var hwWidget = buildHwWidget();
+    if (hwWidget) {
+      var label3 = document.createElement('p');
+      label3.className = 'drawer-filter-label';
+      label3.textContent = '快速篩選';
+      slot.appendChild(label3);
+      slot.appendChild(hwWidget);
+    }
+  }
+
+  /* ═══════════════════════════════════════════
+     buildHwWidget：動態建立篩選 widget 並注入 drawer
+     ═══════════════════════════════════════════ */
+  function buildHwWidget() {
+    var hc = document.getElementById('site-header-container');
+    if (!hc || hc.getAttribute('data-active') !== 'home') return null;
+
+    var CITIES = ['台北市','新北市','桃園市','台中市','苗栗縣','南投縣','彰化縣','台南市','高雄市','屏東縣','嘉義市','嘉義縣'];
+
+    function cityBtns() {
+      return CITIES.map(function(c) {
+        return '<button class="hw-city-btn" data-city="' + c + '">' + c + '</button>';
+      }).join('');
+    }
+    function tb(icon, tag) {
+      return '<button class="hw-tag-btn" data-tag="' + tag + '">' + icon + ' ' + tag + '</button>';
+    }
+    function row(lbl, btns) {
+      return '<div class="hw-row"><span class="hw-label">' + lbl + '</span><div class="hw-btns">' + btns + '</div></div>';
+    }
+
+    var attTags =
+      tb('🛝','公園遊具') + tb('🐄','動物農場') + tb('🏛️','展館') +
+      tb('🐟','水族館')   + tb('🎡','主題樂園') + tb('🌿','自然生態') +
+      tb('🚂','鐵道交通') + tb('🏮','老街文化');
+
+    var restTags =
+      tb('🧸','親子餐廳') + tb('🌄','景觀餐廳') + tb('☕','咖啡廳') +
+      tb('🐄','農場用餐') + tb('🍱','兒童餐點');
+
+    var restFac  = tb('🎠','兒童遊戲區') + tb('🎉','可包場');
+
+    var evtTags =
+      tb('🖼️','展覽特展') + tb('🎨','手作體驗') + tb('🌿','生態自然') +
+      tb('🎭','演出劇場') + tb('🎊','節慶活動') + tb('🏛️','展館活動') + tb('🧭','戶外探索');
+
+    var spaceTags = tb('🏠','室內') + tb('☀️','戶外');
+    var costTags  = tb('✅','免費') + tb('💳','付費');
+    var restCost  = tb('💳','有低消') + tb('✅','無低消');
+
+    var html =
+      '<div class="hw-widget" id="hw-widget-drawer">' +
+        '<div class="hw-tabs">' +
+          '<button class="hw-tab active" data-target="att">🗺️ 景點</button>' +
+          '<button class="hw-tab" data-target="rest">🍽️ 餐廳</button>' +
+          '<button class="hw-tab" data-target="evt">🎉 活動</button>' +
+        '</div>' +
+        '<div class="hw-panel" id="hw-p-att">' +
+          row('縣市', cityBtns()) +
+          row('類型', attTags) +
+          row('空間', spaceTags) +
+          row('費用', costTags) +
+        '</div>' +
+        '<div class="hw-panel hidden" id="hw-p-rest">' +
+          row('縣市', cityBtns()) +
+          row('類型', restTags) +
+          row('設施', restFac) +
+          row('空間', spaceTags) +
+          row('費用', restCost) +
+        '</div>' +
+        '<div class="hw-panel hidden" id="hw-p-evt">' +
+          row('縣市', cityBtns()) +
+          row('類型', evtTags) +
+          row('費用', costTags) +
+        '</div>' +
+        '<div class="hw-submit-row">' +
+          '<button class="hw-submit-btn" id="hw-submit-drawer">送出篩選 →</button>' +
+        '</div>' +
+      '</div>';
+
+    var wrap = document.createElement('div');
+    wrap.innerHTML = html;
+    var widget = wrap.firstChild;
+
+    var DEST_MAP = { att: 'attractions', rest: 'restaurants', evt: 'events' };
+
+    /* 分頁切換 */
+    widget.querySelectorAll('.hw-tab').forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        widget.querySelectorAll('.hw-tab').forEach(function(t) { t.classList.remove('active'); });
+        widget.querySelectorAll('.hw-panel').forEach(function(p) { p.classList.add('hidden'); });
+        tab.classList.add('active');
+        widget.querySelector('#hw-p-' + tab.dataset.target).classList.remove('hidden');
+      });
+    });
+
+    /* 單選按鈕（row 內互斥） */
+    widget.querySelectorAll('.hw-row').forEach(function(rowEl) {
+      var btns = Array.prototype.slice.call(rowEl.querySelectorAll('.hw-city-btn, .hw-tag-btn'));
+      btns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var wasActive = btn.classList.contains('active');
+          btns.forEach(function(b) { b.classList.remove('active'); });
+          if (!wasActive) btn.classList.add('active');
+        });
+      });
+    });
+
+    /* 送出 → 跳轉篩選頁 */
+    widget.querySelector('#hw-submit-drawer').addEventListener('click', function() {
+      var activeTab = widget.querySelector('.hw-tab.active');
+      var key  = activeTab.dataset.target;
+      var dest = DEST_MAP[key];
+      var panel = widget.querySelector('#hw-p-' + key);
+      var cityBtn = panel.querySelector('.hw-city-btn.active');
+      var cities = cityBtn ? [cityBtn.dataset.city] : [];
+      var tags = [];
+      panel.querySelectorAll('.hw-tag-btn.active').forEach(function(btn) { tags.push(btn.dataset.tag); });
+      var url = '/' + dest + '/';
+      var qs = [];
+      if (cities.length) qs.push('cities=' + encodeURIComponent(cities[0]));
+      if (tags.length)   qs.push('tags='   + encodeURIComponent(tags.join(',')));
+      if (qs.length) url += '?' + qs.join('&');
+      window.location.href = url;
+    });
+
+    return widget;
   }
 
   document.addEventListener('DOMContentLoaded', loadSiteHeader);

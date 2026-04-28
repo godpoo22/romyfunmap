@@ -184,13 +184,27 @@
 <div id="site-footer-container"></div>
 <script src="/assets/footer.js"></script>
 
+
 <script>
 (function () {
-  // 各類別最多顯示 2 筆，其餘隱藏；每次載入隨機選取
-  ['att','res','evt'].forEach(function (cat) {
+  // 景點顯示 4 筆，餐廳顯示 2 筆，活動全部隱藏；每次載入隨機選取
+  var limits = { att: 4, res: 2, evt: 0 };
+  Object.keys(limits).forEach(function (cat) {
     var pool = Array.from(document.querySelectorAll('.mini-card[data-cat="' + cat + '"]'));
-    if (pool.length <= 2) return;
+    var limit = limits[cat];
+    // 活動全部隱藏
+    if (limit === 0) {
+      pool.forEach(function (el) { el.style.display = 'none'; });
+      return;
+    }
+    if (pool.length <= limit) return;
     // Fisher-Yates shuffle
     for (var i = pool.length - 1; i > 0; i--) {
       var j = Math.floor(Math.random() * (i + 1));
-      var tmp = pool[i]; pool[i] = pool[j];
+      var tmp = pool[i]; pool[i] = pool[j]; pool[j] = tmp;
+    }
+    // 隱藏超出 limit 的卡片
+    pool.slice(limit).forEach(function (el) { el.style.display = 'none'; });
+  });
+})();
+</script>
