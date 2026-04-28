@@ -461,6 +461,126 @@ const coordinateOverrides = {
   "/taoyuan/family-events/tonghwa-festival-2026/": { lat: 24.9694, lng: 121.2457 },
   "/taoyuan/family-events/toy-revival-taoyuan-2026/": { lat: 24.9932, lng: 121.2958 },
   "/taoyuan/family-restaurants/second-floor-taoyuan/": { lat: 25.0566, lng: 121.2887 },
+  "/changhua/family-attractions/yuanlin-milu-park/": { lat: 23.9578, lng: 120.5709 },
+  "/changhua/family-attractions/changhua-kids-park/": { lat: 24.0814, lng: 120.5431 },
+  "/changhua/family-attractions/tianzhong-bear-park/": { lat: 23.8588, lng: 120.5274 },
+  "/changhua/family-attractions/baguashan-family-zone/": { lat: 24.0742, lng: 120.5469 },
+  "/changhua/family-attractions/puyan-sports-park/": { lat: 24.0006, lng: 120.4636 },
+  "/changhua/family-attractions/giraffe-leisure-farm/": { lat: 24.005, lng: 120.466 },
+  "/changhua/family-attractions/sunmoon-hill-farm/": { lat: 24.098, lng: 120.525 },
+  "/changhua/family-attractions/jasmine-huatan-museum/": { lat: 24.0263, lng: 120.538 },
+  "/tainan/family-attractions/renan-park/": { lat: 23.0393, lng: 120.1785 },
+  "/tainan/family-attractions/dingmei-park/": { lat: 22.9904, lng: 120.197 },
+  "/tainan/family-attractions/daen-park/": { lat: 22.9595, lng: 120.2053 },
+  "/tainan/family-attractions/yongkang-park7/": { lat: 23.0318, lng: 120.2483 },
+  "/tainan/family-attractions/tainan-sports-playground/": { lat: 22.9715, lng: 120.2204 },
+  "/tainan/family-attractions/longtan-chacha-park/": { lat: 23.1533, lng: 120.3023 },
+  "/tainan/family-attractions/heiqiao-sausage-museum/": { lat: 22.9756, lng: 120.2082 },
+  "/tainan/family-attractions/masagou-beach/": { lat: 23.2046, lng: 120.0823 },
+  "/taipei/family-attractions/xinsheng-park/": { lat: 25.0529, lng: 121.5315 },
+  "/taipei/family-attractions/huabo-butterfly-playground/": { lat: 25.069, lng: 121.5283 },
+  "/taipei/family-attractions/qingnian-park/": { lat: 25.0255, lng: 121.5027 },
+  "/taipei/family-attractions/dajia-riverside-ocean/": { lat: 25.0779, lng: 121.5403 },
+  "/taipei/family-attractions/qiangang-park/": { lat: 25.0978, lng: 121.5161 },
+  "/taipei/family-attractions/ntm-fossil-museum/": { lat: 25.0449, lng: 121.512 },
+  "/taipei/family-attractions/wenshan-forest-park/": { lat: 24.9934, lng: 121.5722 },
+  "/taipei/family-attractions/beitou-fuxing-park/": { lat: 25.1338, lng: 121.4931 },
+  "/taipei/family-attractions/nangang-forest-park/": { lat: 25.0542, lng: 121.6046 },
+  "/taipei/family-attractions/jiansheng-park/": { lat: 25.0574, lng: 121.5194 },
+  "/taipei/family-attractions/tianhe-park/": { lat: 25.0831, lng: 121.5361 },
+  "/taipei/family-attractions/cpc-petroleum-museum/": { lat: 25.033, lng: 121.5685 },
+  "/newtaipei/family-attractions/xinten-history-park/": { lat: 24.9757, lng: 121.5342 },
+  "/newtaipei/family-attractions/linkou-active-park/": { lat: 25.0818, lng: 121.3791 },
+  "/newtaipei/family-attractions/xizhi-stargalaxy-park/": { lat: 25.0654, lng: 121.6574 },
+  "/newtaipei/family-attractions/zhonghe-linghe-park/": { lat: 24.983, lng: 121.493 },
+  "/newtaipei/family-attractions/tucheng-longshan-park/": { lat: 24.975, lng: 121.4437 },
+  "/newtaipei/family-attractions/bali-shihsanhang-park/": { lat: 25.1508, lng: 121.4067 },
+  "/newtaipei/family-attractions/juming-museum/": { lat: 25.1989, lng: 121.637 },
+  "/newtaipei/family-attractions/zhunxiu-farm/": { lat: 25.1008, lng: 121.4333 },
+  "/newtaipei/family-attractions/kazz-popcorn-factory/": { lat: 25.1519, lng: 121.3866 },
+  "/newtaipei/family-attractions/shuxinfang-wagashi/": { lat: 24.9667, lng: 121.45 },
+  "/newtaipei/family-attractions/zhonghe-yuanshan-park/": { lat: 24.998, lng: 121.5003 },
+  "/newtaipei/family-attractions/shulin-dongsheng-park/": { lat: 24.9891, lng: 121.433 },
+  "/newtaipei/family-attractions/xinzhuang-touqian-park/": { lat: 25.0393, lng: 121.4537 },
+  "/newtaipei/family-attractions/yingge-yuanyao-park/": { lat: 24.9517, lng: 121.3498 },
+  "/newtaipei/family-attractions/bali-harbor-park/": { lat: 25.1417, lng: 121.4333 },
+  "/newtaipei/family-attractions/shiding-handmade-noodle/": { lat: 24.9833, lng: 121.6167 },
+  "/newtaipei/family-attractions/luyusong-farm/": { lat: 25.2094, lng: 121.6283 },
+  "/newtaipei/family-attractions/vigor-pineapple-factory/": { lat: 25.0833, lng: 121.45 },
+  "/newtaipei/family-attractions/sanxia-indigo-dyeing/": { lat: 24.9393, lng: 121.3778 },
+  "/taoyuan/family-attractions/bade-rongzhu-park/": { lat: 24.9389, lng: 121.2984 },
+  "/taoyuan/family-attractions/pingzhen-sports-park/": { lat: 24.9455, lng: 121.2157 },
+  "/taoyuan/family-attractions/longtan-sports-park/": { lat: 24.8688, lng: 121.2165 },
+  "/taoyuan/family-attractions/nankan-riverside-park/": { lat: 25.0029, lng: 121.2947 },
+  "/taoyuan/family-attractions/shuizhi-theme-park/": { lat: 25.0305, lng: 121.1407 },
+  "/taoyuan/family-attractions/qiaohu-dream-park/": { lat: 24.9728, lng: 121.2253 },
+  "/taoyuan/family-attractions/yongan-conch-park/": { lat: 25.0027, lng: 121.0735 },
+  "/taoyuan/family-attractions/taoyuan-aviation-museum/": { lat: 25.0596, lng: 121.2278 },
+  "/taoyuan/family-attractions/taimall-park/": { lat: 25.0575, lng: 121.2695 },
+  "/taoyuan/family-attractions/zhongli-culture-park/": { lat: 24.9665, lng: 121.2262 },
+  "/taoyuan/family-attractions/daxi-diting-park/": { lat: 24.8811, lng: 121.2873 },
+  "/taoyuan/family-attractions/pingzhen-xinshi-park/": { lat: 24.9458, lng: 121.2295 },
+  "/taoyuan/family-attractions/taoyuan-yangming-park/": { lat: 24.9929, lng: 121.3012 },
+  "/taoyuan/family-attractions/yanping-park/": { lat: 24.9966, lng: 121.3143 },
+  "/taoyuan/family-attractions/sheep-world-farm/": { lat: 24.9521, lng: 121.2388 },
+  "/taoyuan/family-attractions/snoopy-baseball-park/": { lat: 24.8655, lng: 121.2278 },
+  "/taoyuan/family-attractions/xiangyang-farm/": { lat: 25.0436, lng: 121.1232 },
+  "/taipei/family-attractions/xiangshan-park/": { lat: 25.0276, lng: 121.5655 },
+  "/taipei/family-attractions/beitou-revival-park/": { lat: 25.1298, lng: 121.5059 },
+  "/taipei/family-attractions/beitou-changan-park/": { lat: 25.1218, lng: 121.5002 },
+  "/taipei/family-attractions/rongxing-garden-park/": { lat: 25.0671, lng: 121.5386 },
+  "/taipei/family-attractions/nangang-xinxin-park/": { lat: 25.0576, lng: 121.6077 },
+  "/taipei/family-attractions/postal-museum/": { lat: 25.0312, lng: 121.5184 },
+  "/taipei/family-attractions/taipei-homeland-education/": { lat: 25.0369, lng: 121.4984 },
+  "/taipei/family-attractions/taiwan-insect-museum/": { lat: 25.0298, lng: 121.542 },
+  "/taipei/family-attractions/yucheng-whale-park/": { lat: 25.055, lng: 121.6069 },
+  "/taipei/family-attractions/dunren-police-park/": { lat: 25.0303, lng: 121.5438 },
+  "/taipei/family-attractions/meilun-science-park/": { lat: 25.0953, lng: 121.5203 },
+  "/taipei/family-attractions/xinhai-eco-park/": { lat: 24.9975, lng: 121.5625 },
+  "/taipei/family-attractions/liugong-treehouse-park/": { lat: 25.028, lng: 121.5694 },
+  "/taipei/family-attractions/shanshuilv-eco-park/": { lat: 25.0449, lng: 121.6175 },
+  "/taipei/family-attractions/taipei-discovery-center/": { lat: 25.0374, lng: 121.5645 },
+  "/taipei/family-attractions/taipei-hakka-park/": { lat: 25.0264, lng: 121.52 },
+  "/taipei/family-attractions/qingtiangang-grassland/": { lat: 25.1624, lng: 121.5555 },
+  "/taipei/family-restaurants/leyeshi-ximending/": { lat: 25.0433, lng: 121.5054 },
+  "/taipei/family-restaurants/hi-kidsroom/": { lat: 25.063, lng: 121.534 },
+  "/taipei/family-restaurants/stay-playspace-taipei/": { lat: 25.0494, lng: 121.5677 },
+  "/taipei/family-restaurants/home-kitchen-neihu/": { lat: 25.06, lng: 121.5889 },
+  "/taipei/family-restaurants/maokong-qingquan-plaza/": { lat: 24.971, lng: 121.5896 },
+  "/taipei/family-restaurants/chuanshi-hot-pot/": { lat: 25.0651, lng: 121.5238 },
+  "/taipei/family-restaurants/zumu-cafe/": { lat: 25.0537, lng: 121.571 },
+  "/taipei/family-restaurants/rumah-taipei/": { lat: 25.1275, lng: 121.5045 },
+  "/taipei/family-restaurants/nongshe-farmhouse-cafe/": { lat: 25.0806, lng: 121.5884 },
+  "/taipei/family-restaurants/longhou-hot-pot-dunbei/": { lat: 25.0607, lng: 121.5581 },
+  "/taipei/family-restaurants/mumuland-wanhua/": { lat: 25.0381, lng: 121.4987 },
+  "/taipei/family-restaurants/loveway-veggie-neihu/": { lat: 25.069, lng: 121.5756 },
+  "/taipei/family-restaurants/wired-cafe-dazhi/": { lat: 25.077, lng: 121.5526 },
+  "/taipei/family-restaurants/notwo-kitchen-daan/": { lat: 25.0342, lng: 121.5482 },
+  "/taichung/family-restaurants/mitang-garden-hotpot/": [24.2406, 120.7262],
+  "/taichung/family-restaurants/huidao-jurassic-taichung/": [24.251, 120.7223],
+  "/taichung/family-restaurants/seasoning-siji-taichung/": [24.1815, 120.6908],
+  "/taichung/family-restaurants/touching-camping-dajia/": [24.3458, 120.6212],
+  "/taichung/family-restaurants/loveme-playground-taichung/": [24.1363, 120.6852],
+  "/taichung/family-restaurants/leah-cafe-nantun/": [24.1382, 120.6574],
+  "/taichung/family-restaurants/tianyi-tycafe-houli/": [24.287, 120.6791],
+  "/taichung/family-restaurants/lvduo-farm-longjing/": [24.1175, 120.5532],
+  "/taichung/family-restaurants/phoenix-hotel-buffet/": [24.1461, 120.6821],
+  "/newtaipei/family-restaurants/ourhome-tucheng/": { lat: 25.0006, lng: 121.4449 },
+  "/newtaipei/family-restaurants/princess-land-tucheng/": { lat: 25.0014, lng: 121.4519 },
+  "/newtaipei/family-restaurants/taiwan-boar-city-linkou/": { lat: 25.0831, lng: 121.3782 },
+  "/newtaipei/family-restaurants/jkstudio-linkou/": { lat: 25.0753, lng: 121.3869 },
+  "/taoyuan/family-restaurants/nosey-cafe-guishan/": { lat: 25.0633, lng: 121.3597 },
+  "/newtaipei/family-restaurants/redbrick-eatery-shulin/": { lat: 24.9891, lng: 121.4355 },
+  "/newtaipei/family-restaurants/babywonderland-zhonghe/": { lat: 24.9964, lng: 121.4961 },
+  "/newtaipei/family-restaurants/wonder-kitchen-zhonghe/": { lat: 24.9934, lng: 121.4934 },
+  "/taoyuan/family-restaurants/cafe4fun-taoyuan/": { lat: 24.9942, lng: 121.2979 },
+  "/taoyuan/family-restaurants/hihi-taoyuan/": { lat: 24.9948, lng: 121.299 },
+  "/taoyuan/family-restaurants/lala-kitchen-ncu/": { lat: 24.9683, lng: 121.194 },
+  "/taoyuan/family-restaurants/nice-to-meet-u-taoyuan/": { lat: 24.9854, lng: 121.2958 },
+  "/taoyuan/family-restaurants/no3-cafe-xinwu/": { lat: 24.9768, lng: 121.0726 },
+  "/taoyuan/family-restaurants/busu-cafe-longtan/": { lat: 24.8739, lng: 121.2153 },
+  "/taoyuan/family-restaurants/xinlin-cafe-xinwu/": { lat: 24.9717, lng: 121.0749 },
+  "/taoyuan/family-restaurants/katomili-cafe-xinwu/": { lat: 24.9803, lng: 121.0432 },
 };
 
 const geocodeCacheKey = "parenting-site-location-cache-v1";
@@ -647,126 +767,6 @@ const getCardCoordinates = async (card) => {
   }
 
   return fallback;
-  "/changhua/family-attractions/yuanlin-milu-park/": { lat: 23.9578, lng: 120.5709 },
-  "/changhua/family-attractions/changhua-kids-park/": { lat: 24.0814, lng: 120.5431 },
-  "/changhua/family-attractions/tianzhong-bear-park/": { lat: 23.8588, lng: 120.5274 },
-  "/changhua/family-attractions/baguashan-family-zone/": { lat: 24.0742, lng: 120.5469 },
-  "/changhua/family-attractions/puyan-sports-park/": { lat: 24.0006, lng: 120.4636 },
-  "/changhua/family-attractions/giraffe-leisure-farm/": { lat: 24.005, lng: 120.466 },
-  "/changhua/family-attractions/sunmoon-hill-farm/": { lat: 24.098, lng: 120.525 },
-  "/changhua/family-attractions/jasmine-huatan-museum/": { lat: 24.0263, lng: 120.538 },
-  "/tainan/family-attractions/renan-park/": { lat: 23.0393, lng: 120.1785 },
-  "/tainan/family-attractions/dingmei-park/": { lat: 22.9904, lng: 120.197 },
-  "/tainan/family-attractions/daen-park/": { lat: 22.9595, lng: 120.2053 },
-  "/tainan/family-attractions/yongkang-park7/": { lat: 23.0318, lng: 120.2483 },
-  "/tainan/family-attractions/tainan-sports-playground/": { lat: 22.9715, lng: 120.2204 },
-  "/tainan/family-attractions/longtan-chacha-park/": { lat: 23.1533, lng: 120.3023 },
-  "/tainan/family-attractions/heiqiao-sausage-museum/": { lat: 22.9756, lng: 120.2082 },
-  "/tainan/family-attractions/masagou-beach/": { lat: 23.2046, lng: 120.0823 },
-  "/taipei/family-attractions/xinsheng-park/": { lat: 25.0529, lng: 121.5315 },
-  "/taipei/family-attractions/huabo-butterfly-playground/": { lat: 25.069, lng: 121.5283 },
-  "/taipei/family-attractions/qingnian-park/": { lat: 25.0255, lng: 121.5027 },
-  "/taipei/family-attractions/dajia-riverside-ocean/": { lat: 25.0779, lng: 121.5403 },
-  "/taipei/family-attractions/qiangang-park/": { lat: 25.0978, lng: 121.5161 },
-  "/taipei/family-attractions/ntm-fossil-museum/": { lat: 25.0449, lng: 121.512 },
-  "/taipei/family-attractions/wenshan-forest-park/": { lat: 24.9934, lng: 121.5722 },
-  "/taipei/family-attractions/beitou-fuxing-park/": { lat: 25.1338, lng: 121.4931 },
-  "/taipei/family-attractions/nangang-forest-park/": { lat: 25.0542, lng: 121.6046 },
-  "/taipei/family-attractions/jiansheng-park/": { lat: 25.0574, lng: 121.5194 },
-  "/taipei/family-attractions/tianhe-park/": { lat: 25.0831, lng: 121.5361 },
-  "/taipei/family-attractions/cpc-petroleum-museum/": { lat: 25.033, lng: 121.5685 },
-  "/newtaipei/family-attractions/xinten-history-park/": { lat: 24.9757, lng: 121.5342 },
-  "/newtaipei/family-attractions/linkou-active-park/": { lat: 25.0818, lng: 121.3791 },
-  "/newtaipei/family-attractions/xizhi-stargalaxy-park/": { lat: 25.0654, lng: 121.6574 },
-  "/newtaipei/family-attractions/zhonghe-linghe-park/": { lat: 24.983, lng: 121.493 },
-  "/newtaipei/family-attractions/tucheng-longshan-park/": { lat: 24.975, lng: 121.4437 },
-  "/newtaipei/family-attractions/bali-shihsanhang-park/": { lat: 25.1508, lng: 121.4067 },
-  "/newtaipei/family-attractions/juming-museum/": { lat: 25.1989, lng: 121.637 },
-  "/newtaipei/family-attractions/zhunxiu-farm/": { lat: 25.1008, lng: 121.4333 },
-  "/newtaipei/family-attractions/kazz-popcorn-factory/": { lat: 25.1519, lng: 121.3866 },
-  "/newtaipei/family-attractions/shuxinfang-wagashi/": { lat: 24.9667, lng: 121.45 },
-  "/newtaipei/family-attractions/zhonghe-yuanshan-park/": { lat: 24.998, lng: 121.5003 },
-  "/newtaipei/family-attractions/shulin-dongsheng-park/": { lat: 24.9891, lng: 121.433 },
-  "/newtaipei/family-attractions/xinzhuang-touqian-park/": { lat: 25.0393, lng: 121.4537 },
-  "/newtaipei/family-attractions/yingge-yuanyao-park/": { lat: 24.9517, lng: 121.3498 },
-  "/newtaipei/family-attractions/bali-harbor-park/": { lat: 25.1417, lng: 121.4333 },
-  "/newtaipei/family-attractions/shiding-handmade-noodle/": { lat: 24.9833, lng: 121.6167 },
-  "/newtaipei/family-attractions/luyusong-farm/": { lat: 25.2094, lng: 121.6283 },
-  "/newtaipei/family-attractions/vigor-pineapple-factory/": { lat: 25.0833, lng: 121.45 },
-  "/newtaipei/family-attractions/sanxia-indigo-dyeing/": { lat: 24.9393, lng: 121.3778 },
-  "/taoyuan/family-attractions/bade-rongzhu-park/": { lat: 24.9389, lng: 121.2984 },
-  "/taoyuan/family-attractions/pingzhen-sports-park/": { lat: 24.9455, lng: 121.2157 },
-  "/taoyuan/family-attractions/longtan-sports-park/": { lat: 24.8688, lng: 121.2165 },
-  "/taoyuan/family-attractions/nankan-riverside-park/": { lat: 25.0029, lng: 121.2947 },
-  "/taoyuan/family-attractions/shuizhi-theme-park/": { lat: 25.0305, lng: 121.1407 },
-  "/taoyuan/family-attractions/qiaohu-dream-park/": { lat: 24.9728, lng: 121.2253 },
-  "/taoyuan/family-attractions/yongan-conch-park/": { lat: 25.0027, lng: 121.0735 },
-  "/taoyuan/family-attractions/taoyuan-aviation-museum/": { lat: 25.0596, lng: 121.2278 },
-  "/taoyuan/family-attractions/taimall-park/": { lat: 25.0575, lng: 121.2695 },
-  "/taoyuan/family-attractions/zhongli-culture-park/": { lat: 24.9665, lng: 121.2262 },
-  "/taoyuan/family-attractions/daxi-diting-park/": { lat: 24.8811, lng: 121.2873 },
-  "/taoyuan/family-attractions/pingzhen-xinshi-park/": { lat: 24.9458, lng: 121.2295 },
-  "/taoyuan/family-attractions/taoyuan-yangming-park/": { lat: 24.9929, lng: 121.3012 },
-  "/taoyuan/family-attractions/yanping-park/": { lat: 24.9966, lng: 121.3143 },
-  "/taoyuan/family-attractions/sheep-world-farm/": { lat: 24.9521, lng: 121.2388 },
-  "/taoyuan/family-attractions/snoopy-baseball-park/": { lat: 24.8655, lng: 121.2278 },
-  "/taoyuan/family-attractions/xiangyang-farm/": { lat: 25.0436, lng: 121.1232 },
-  "/taipei/family-attractions/xiangshan-park/": { lat: 25.0276, lng: 121.5655 },
-  "/taipei/family-attractions/beitou-revival-park/": { lat: 25.1298, lng: 121.5059 },
-  "/taipei/family-attractions/beitou-changan-park/": { lat: 25.1218, lng: 121.5002 },
-  "/taipei/family-attractions/rongxing-garden-park/": { lat: 25.0671, lng: 121.5386 },
-  "/taipei/family-attractions/nangang-xinxin-park/": { lat: 25.0576, lng: 121.6077 },
-  "/taipei/family-attractions/postal-museum/": { lat: 25.0312, lng: 121.5184 },
-  "/taipei/family-attractions/taipei-homeland-education/": { lat: 25.0369, lng: 121.4984 },
-  "/taipei/family-attractions/taiwan-insect-museum/": { lat: 25.0298, lng: 121.542 },
-  "/taipei/family-attractions/yucheng-whale-park/": { lat: 25.055, lng: 121.6069 },
-  "/taipei/family-attractions/dunren-police-park/": { lat: 25.0303, lng: 121.5438 },
-  "/taipei/family-attractions/meilun-science-park/": { lat: 25.0953, lng: 121.5203 },
-  "/taipei/family-attractions/xinhai-eco-park/": { lat: 24.9975, lng: 121.5625 },
-  "/taipei/family-attractions/liugong-treehouse-park/": { lat: 25.028, lng: 121.5694 },
-  "/taipei/family-attractions/shanshuilv-eco-park/": { lat: 25.0449, lng: 121.6175 },
-  "/taipei/family-attractions/taipei-discovery-center/": { lat: 25.0374, lng: 121.5645 },
-  "/taipei/family-attractions/taipei-hakka-park/": { lat: 25.0264, lng: 121.52 },
-  "/taipei/family-attractions/qingtiangang-grassland/": { lat: 25.1624, lng: 121.5555 },
-  "/taipei/family-restaurants/leyeshi-ximending/": { lat: 25.0433, lng: 121.5054 },
-  "/taipei/family-restaurants/hi-kidsroom/": { lat: 25.063, lng: 121.534 },
-  "/taipei/family-restaurants/stay-playspace-taipei/": { lat: 25.0494, lng: 121.5677 },
-  "/taipei/family-restaurants/home-kitchen-neihu/": { lat: 25.06, lng: 121.5889 },
-  "/taipei/family-restaurants/maokong-qingquan-plaza/": { lat: 24.971, lng: 121.5896 },
-  "/taipei/family-restaurants/chuanshi-hot-pot/": { lat: 25.0651, lng: 121.5238 },
-  "/taipei/family-restaurants/zumu-cafe/": { lat: 25.0537, lng: 121.571 },
-  "/taipei/family-restaurants/rumah-taipei/": { lat: 25.1275, lng: 121.5045 },
-  "/taipei/family-restaurants/nongshe-farmhouse-cafe/": { lat: 25.0806, lng: 121.5884 },
-  "/taipei/family-restaurants/longhou-hot-pot-dunbei/": { lat: 25.0607, lng: 121.5581 },
-  "/taipei/family-restaurants/mumuland-wanhua/": { lat: 25.0381, lng: 121.4987 },
-  "/taipei/family-restaurants/loveway-veggie-neihu/": { lat: 25.069, lng: 121.5756 },
-  "/taipei/family-restaurants/wired-cafe-dazhi/": { lat: 25.077, lng: 121.5526 },
-  "/taipei/family-restaurants/notwo-kitchen-daan/": { lat: 25.0342, lng: 121.5482 },
-  "/taichung/family-restaurants/mitang-garden-hotpot/": [24.2406, 120.7262],
-  "/taichung/family-restaurants/huidao-jurassic-taichung/": [24.251, 120.7223],
-  "/taichung/family-restaurants/seasoning-siji-taichung/": [24.1815, 120.6908],
-  "/taichung/family-restaurants/touching-camping-dajia/": [24.3458, 120.6212],
-  "/taichung/family-restaurants/loveme-playground-taichung/": [24.1363, 120.6852],
-  "/taichung/family-restaurants/leah-cafe-nantun/": [24.1382, 120.6574],
-  "/taichung/family-restaurants/tianyi-tycafe-houli/": [24.287, 120.6791],
-  "/taichung/family-restaurants/lvduo-farm-longjing/": [24.1175, 120.5532],
-  "/taichung/family-restaurants/phoenix-hotel-buffet/": [24.1461, 120.6821],
-  "/newtaipei/family-restaurants/ourhome-tucheng/": { lat: 25.0006, lng: 121.4449 },
-  "/newtaipei/family-restaurants/princess-land-tucheng/": { lat: 25.0014, lng: 121.4519 },
-  "/newtaipei/family-restaurants/taiwan-boar-city-linkou/": { lat: 25.0831, lng: 121.3782 },
-  "/newtaipei/family-restaurants/jkstudio-linkou/": { lat: 25.0753, lng: 121.3869 },
-  "/taoyuan/family-restaurants/nosey-cafe-guishan/": { lat: 25.0633, lng: 121.3597 },
-  "/newtaipei/family-restaurants/redbrick-eatery-shulin/": { lat: 24.9891, lng: 121.4355 },
-  "/newtaipei/family-restaurants/babywonderland-zhonghe/": { lat: 24.9964, lng: 121.4961 },
-  "/newtaipei/family-restaurants/wonder-kitchen-zhonghe/": { lat: 24.9934, lng: 121.4934 },
-  "/taoyuan/family-restaurants/cafe4fun-taoyuan/": { lat: 24.9942, lng: 121.2979 },
-  "/taoyuan/family-restaurants/hihi-taoyuan/": { lat: 24.9948, lng: 121.299 },
-  "/taoyuan/family-restaurants/lala-kitchen-ncu/": { lat: 24.9683, lng: 121.194 },
-  "/taoyuan/family-restaurants/nice-to-meet-u-taoyuan/": { lat: 24.9854, lng: 121.2958 },
-  "/taoyuan/family-restaurants/no3-cafe-xinwu/": { lat: 24.9768, lng: 121.0726 },
-  "/taoyuan/family-restaurants/busu-cafe-longtan/": { lat: 24.8739, lng: 121.2153 },
-  "/taoyuan/family-restaurants/xinlin-cafe-xinwu/": { lat: 24.9717, lng: 121.0749 },
-  "/taoyuan/family-restaurants/katomili-cafe-xinwu/": { lat: 24.9803, lng: 121.0432 },
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -793,10 +793,27 @@ document.addEventListener("DOMContentLoaded", () => {
         const cards = Array.from(document.querySelectorAll(".modern-card"));
 
         // Fetch all coordinates in parallel instead of sequentially
-        const coordsArray = await Promise.all(cards.map(card => getCardCoordinates(card)));
+        const coordsData = cards.map((card) => {
+          const link = card.querySelector('a.action-btn, a[href]');
+          const href = link ? link.getAttribute('href') : '';
+          const override = coordinateOverrides[href];
+          let lat, lng;
+          if (override) {
+            if (Array.isArray(override)) {
+              lat = override[0];
+              lng = override[1];
+            } else {
+              lat = override.lat;
+              lng = override.lng;
+            }
+          } else {
+            lat = Number(card.dataset.lat);
+            lng = Number(card.dataset.lng);
+          }
+          return { card, lat, lng };
+        });
 
-        cards.forEach((card, i) => {
-          const { lat, lng } = coordsArray[i];
+        coordsData.forEach(({ card, lat, lng }) => {
           const distanceTag = card.querySelector(".distance-tag");
 
           if (!Number.isFinite(lat) || !Number.isFinite(lng)) {
@@ -819,4 +836,18 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
 
-        // Hide section 
+        cards
+          .sort((a, b) => Number(a.dataset.distance) - Number(b.dataset.distance))
+          .forEach((card) => grid.appendChild(card));
+
+        button.textContent = "已依距離排序";
+        button.style.background = "var(--primary)";
+        button.style.color = "#fff";
+      },
+      () => {
+        button.textContent = "開啟定位，依我的距離排序";
+        window.alert("沒有取得定位權限，頁面維持原本排序。");
+      }
+    );
+  });
+});
