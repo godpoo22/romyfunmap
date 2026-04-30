@@ -410,6 +410,16 @@ const coordinateOverrides = {
   // miaoli
   "/miaoli/family-attractions/miaoli-feature-pavilion/": { lat: 24.5604, lng: 120.8223 },
   "/miaoli/family-restaurants/nanzhuang-old-street-eatery/": { lat: 24.5949, lng: 120.9574 },
+  "/miaoli/family-attractions/houlong-no6-traffic-park/": { lat: 24.5980, lng: 120.8012 },
+  "/miaoli/family-attractions/sud-vista-farm/": { lat: 24.5949, lng: 120.9574 },
+  "/miaoli/family-attractions/tongmeng-farm/": { lat: 24.5780, lng: 120.9200 },
+  "/miaoli/family-attractions/maoli-mountain-tunnel/": { lat: 24.5601, lng: 120.8220 },
+  "/miaoli/family-attractions/shei-pa-dahu-visitor/": { lat: 24.4682, lng: 120.9090 },
+  "/miaoli/family-attractions/luyi-mountain-resort/": { lat: 24.4430, lng: 120.6620 },
+  "/miaoli/family-attractions/schokolake-farm/": { lat: 24.4720, lng: 120.9150 },
+  "/miaoli/family-attractions/flower-home-farm/": { lat: 24.3520, lng: 120.7980 },
+  "/miaoli/family-attractions/qiding-tunnel-station/": { lat: 24.7014, lng: 120.8782 },
+  "/miaoli/family-attractions/lanzhunnan-old-house/": { lat: 24.6931, lng: 120.8739 },
 
   // nantou
   "/nantou/family-attractions/formosan-aboriginal-culture-village-station/": { lat: 23.8558, lng: 120.9147 },
