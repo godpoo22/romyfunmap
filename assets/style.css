@@ -1,6 +1,7 @@
 /* =========================================
    羅米親子玩樂地圖 - 全站核心樣式表 (Modern App Style)
    ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&family=Chiron+Hei+HK:ital,wght@0,200..900;1,200..900&family=Dela+Gothic+One&family=Kosugi+Maru&family=Mochiy+Pop+P+One&display=swap');
 :root {
   /* 主題色：湖水綠 (景點/通用) */
   --primary: #14B8A6;
@@ -83,6 +84,7 @@ a { text-decoration: none; color: inherit; }
   font-weight: 900;
   color: var(--primary);
   white-space: nowrap;
+  font-family: 'Chiron GoRound TC', sans-serif;
 }
 .brand-title { white-space: nowrap; }
 .header-spacer { /* 右側佔位，保持 logo 視覺置中 */ }
@@ -213,7 +215,7 @@ body.drawer-open { overflow: hidden; }
 /* 手機版：縮小 header 字級與間距，讓品牌名不會擠成兩行 */
 @media (max-width: 600px) {
   .header-inner { padding: 10px 14px; gap: 6px; }
-  .brand { font-size: 16px; gap: 6px; }
+  .brand { font-size: 20px; gap: 6px; }
   .top-link { padding: 6px 9px; font-size: 13px; }
   .top-links { gap: 2px; }
 }
