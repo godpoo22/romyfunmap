@@ -57,7 +57,13 @@
     var drawer   = document.getElementById('site-drawer');
     var closeBtn = document.getElementById('drawer-close');
 
-    function openDrawer()  { drawer.classList.add('open');    overlay.classList.add('show');    document.body.classList.add('drawer-open');    }
+    function openDrawer()  {
+      drawer.scrollTop = 0;
+      if (slot) slot.scrollTop = 0;
+      drawer.classList.add('open');
+      overlay.classList.add('show');
+      document.body.classList.add('drawer-open');
+    }
     function closeDrawer() { drawer.classList.remove('open'); overlay.classList.remove('show'); document.body.classList.remove('drawer-open'); }
 
     hamBtn.addEventListener('click', openDrawer);
@@ -92,6 +98,28 @@
           var collapsed = row.classList.toggle('collapsed');
           toggleIcon.textContent = collapsed ? '+' : '−';
         });
+      });
+    }
+
+    /* ── 全台篩選頁：把現有 rows 換成首頁同款 hw-widget 排版 ── */
+    function makeHomeStyleRows(filterEl) {
+      filterEl.classList.add('hw-widget');
+      filterEl.querySelectorAll('.filter-row').forEach(function (row) {
+        var labelEl = row.querySelector('.filter-label');
+        if (!labelEl) return;
+        var btnsWrap = document.createElement('div');
+        btnsWrap.className = 'hw-btns';
+        Array.prototype.slice.call(row.childNodes).forEach(function (n) {
+          if (n !== labelEl) btnsWrap.appendChild(n);
+        });
+        row.innerHTML = '';
+        labelEl.classList.add('hw-label');
+        row.classList.add('hw-row');
+        if (btnsWrap.querySelector('.city-btn, .dist-btn, .hw-city-btn')) {
+          row.classList.add('hw-row-location');
+        }
+        row.appendChild(labelEl);
+        row.appendChild(btnsWrap);
       });
     }
 
@@ -147,7 +175,7 @@
       label.textContent = '篩選條件';
       slot.appendChild(label);
       slot.appendChild(globalFilter);
-      makeAccordion(globalFilter);
+      makeHomeStyleRows(globalFilter);
       buildFilterSummary(globalFilter);
       return;
     }
@@ -162,7 +190,7 @@
       label2.textContent = '篩選條件';
       slot.appendChild(label2);
       slot.appendChild(cityFilter);
-      makeAccordion(cityFilter);
+      makeHomeStyleRows(cityFilter);
       buildFilterSummary(cityFilter);
       return;
     }

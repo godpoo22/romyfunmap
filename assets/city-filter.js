@@ -15,6 +15,18 @@
   var countBar = document.getElementById('filter-count');
   var countEl  = document.getElementById('visible-count');
 
+  function getCardDistrict(card) {
+    if (card.dataset.district) return card.dataset.district;
+
+    var tag = card.querySelector('.district-tag');
+    if (!tag) return '';
+
+    var text = tag.textContent.trim();
+    if (!text) return '';
+    if (/^(室內|戶外|免費|有低消|無低消)$/.test(text)) return '';
+    return text;
+  }
+
   /* ── 篩選邏輯（直接從 DOM 讀取狀態）─────────────────────── */
   function applyFilter() {
     var distBtn = document.querySelector('.dist-btn.active');
@@ -28,7 +40,7 @@
     var visible = 0;
     cards.forEach(function (c) {
       // 地區比對
-      var distMatch = !activeDist || c.dataset.district === activeDist;
+      var distMatch = !activeDist || getCardDistrict(c) === activeDist;
 
       // Tag 比對（AND 邏輯，每列最多選一個，所以實際是各維度單選）
       var tagMatch = true;
