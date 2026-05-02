@@ -750,23 +750,27 @@ body:has(.sticky-bottom-bar) { padding-bottom: 80px; }
 /* 每一行篩選 */
 .hw-row {
   display: flex;
-  align-items: flex-start;
-  gap: 8px;
+  flex-direction: column;
+  gap: 6px;
   margin-bottom: 10px;
-  flex-wrap: wrap;
 }
 .hw-label {
   font-size: 12px;
   font-weight: 700;
   color: var(--text-muted);
   white-space: nowrap;
-  padding-top: 5px;
-  min-width: 26px;
 }
 .hw-btns {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+}
+/* 類型 / 設施 / 空間 / 費用：等寬兩欄 grid
+   .hw-tag-btn = 首頁，.tag-btn = 全台篩選頁 */
+.hw-btns:has(.hw-tag-btn),
+.hw-btns:has(.tag-btn) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 /* 篩選按鈕 */
@@ -847,6 +851,115 @@ body:has(.sticky-bottom-bar) { padding-bottom: 80px; }
   border-color: #0d9488;
   box-shadow: 0 2px 8px rgba(13,148,136,0.35);
 }
+.site-drawer .hw-widget .city-btn,
+.site-drawer .hw-widget .tag-btn {
+  padding: 5px 11px;
+  border: 1.5px solid rgba(20,184,166,0.2);
+  border-radius: 20px;
+  background: rgba(255,255,255,0.55);
+  color: var(--text-dark);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+.site-drawer .hw-widget .city-btn:hover,
+.site-drawer .hw-widget .tag-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.site-drawer .hw-widget .city-btn.active,
+.site-drawer .hw-widget .tag-btn.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+  box-shadow: 0 2px 8px rgba(20,184,166,0.2);
+}
+.site-drawer .hw-widget .dist-btn,
+.site-drawer .hw-widget .f-btn {
+  padding: 5px 11px;
+  border: 1.5px solid rgba(20,184,166,0.2);
+  border-radius: 20px;
+  background: rgba(255,255,255,0.55);
+  color: var(--text-dark);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+.site-drawer .hw-widget .dist-btn:hover,
+.site-drawer .hw-widget .f-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.site-drawer .hw-widget .dist-btn.active,
+.site-drawer .hw-widget .f-btn.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+  box-shadow: 0 2px 8px rgba(20,184,166,0.2);
+}
+.site-drawer .hw-widget .tag-btn.reset,
+.site-drawer .hw-widget .tag-btn#reset-btn {
+  border-color: transparent;
+  background: var(--border-light);
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-left: 0;
+}
+.site-drawer .hw-widget .tag-btn.reset:hover,
+.site-drawer .hw-widget .tag-btn#reset-btn:hover {
+  background: #e2e8f0;
+  color: var(--text-dark);
+}
+.site-drawer .hw-widget .reset-btn,
+.site-drawer .hw-widget #filter-reset {
+  border-color: transparent;
+  background: var(--border-light);
+  color: var(--text-muted);
+  font-size: 12px;
+}
+.site-drawer .hw-widget .reset-btn:hover,
+.site-drawer .hw-widget #filter-reset:hover {
+  background: #e2e8f0;
+  color: var(--text-dark);
+}
+.site-drawer .hw-widget .filter-row {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.site-drawer .hw-widget .filter-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  white-space: nowrap;
+  width: auto;
+  min-width: 0;
+  flex-shrink: 0;
+  padding-top: 0;
+}
+.site-drawer .hw-widget .hw-row-location .hw-btns {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+}
+.site-drawer .hw-widget .hw-btns:has(.dist-btn),
+.site-drawer .hw-widget .hw-btns:has(.f-btn),
+.site-drawer .hw-widget .hw-btns:has(.tag-btn) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.site-drawer .hw-widget .hw-btns:has(#filter-reset) {
+  display: block;
+}
+.site-drawer .hw-widget #filter-reset {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 12px;
+  margin-top: 4px;
+}
 .site-drawer .hw-submit-btn {
   width: 100%;
   text-align: center;
@@ -875,10 +988,21 @@ body:has(.sticky-bottom-bar) { padding-bottom: 80px; }
   transform: translateY(-1px);
 }
 
+/* 全台/縣市頁的城市/地區按鈕都改成 4 欄 */
+.site-drawer .hw-widget .hw-btns:has(.city-btn) {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+/* 清除篩選按鈕獨佔一整行 */
+.hw-btns #reset-btn {
+  grid-column: 1 / -1;
+}
+
 /* ══════════════════════════════════════════
    Drawer Filter Accordion (.filter-row.collapsible)
    ══════════════════════════════════════════ */
 .filter-row.collapsible {
+  display: block;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   padding-bottom: 0;
   margin-bottom: 0;
@@ -904,8 +1028,8 @@ body:has(.sticky-bottom-bar) { padding-bottom: 80px; }
   flex-shrink: 0;
 }
 .filter-row-btns {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 6px;
   padding: 6px 0 10px;
 }
